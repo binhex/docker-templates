@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>MariaDB</Name>
+  <Description>
+    MariaDB is a drop-in replacement for MySQL. MariaDB strives to be the logical choice for database professionals looking for a robust, scalable, and reliable SQL server. To accomplish this, the MariaDB Foundation work closely and cooperatively with the larger community of users and developers in the true spirit of Free and open source software, and release software in a manner that balances predictability with reliability.[br][br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]/db[/b] : this path is where the MariaDB database files are stored to.
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/needo/mariadb</Registry>
+  <GitHub>https://github.com/needo37/mariadb/</GitHub>
+  <Repository>needo/mariadb</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3306</HostPort>
+        <ContainerPort>3306</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/mariadb</HostDir>
+      <ContainerDir>/db</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>https://mariadb.org</WebUI>
+  <Banner>http://i.imgur.com/qSfq7gc.png</Banner>
+  <Icon>http://i.imgur.com/LSKW6sm.png</Icon>
+</Container>
