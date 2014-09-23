@@ -52,6 +52,6 @@
     </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:8112]/</WebUI>
-  <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/deluge-banner.png</Banner>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/deluge-icon.png</Icon>
+  <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/deluge-banner.png</Banner>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/deluge-icon.png</Icon>
 </Container>
