@@ -41,9 +41,9 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir> /etc/localtime</HostDir>
+      <HostDir>/etc/localtime</HostDir>
       <ContainerDir>/etc/localtime</ContainerDir>
-      <Mode>r0</Mode>
+      <Mode>ro</Mode>
     </Volume>  
     <Volume>
       <HostDir>path for data files</HostDir>
