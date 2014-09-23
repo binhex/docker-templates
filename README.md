@@ -1,11 +1,8 @@
-docker-templates
-================
-
 Description
 ===========
 unRAID Docker Templates repository for Docker images in the "binhex" repository.
 
-Instructions
+Installation
 ============
 1. Navigate to "Extensions" and then "Docker" in the unRAID webui
 2. Enter in a URL of https://github.com/binhex/docker-templates in the "Template repositories" field
