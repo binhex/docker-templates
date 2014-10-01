@@ -4,8 +4,8 @@
   <Description>
     ReadyMedia (formerly known as MiniDLNA) is a simple media server software, with the aim of being fully compliant with DLNA/UPnP-AV clients. It is developed by a NETGEAR employee for the ReadyNAS product line.[br][br]
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
-    [b]/config[/b] : this is where MiniDLNA will store it's configuration file.[br][br]
-    [b]/media[/b] : this is where MiniDLNA will scan for media files.[br][br]	
+    [b]/config:[/b] This is where MiniDLNA will store it's configuration file, database and logs.[br]
+    [b]/media:[/b] This is where MiniDLNA will scan for media files.[br][br]
   </Description>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-minidlna/</Registry>
   <GitHub>https://github.com/binhex/arch-minidlna</GitHub>
