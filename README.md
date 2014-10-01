@@ -11,4 +11,4 @@ Installation
 5. Click on the "Template" dropdown menu and select the desired Docker image
 6. Fill in required fields e.g. volume data, environment variables etc
 7. click on the "Add" button at the bottom of the window to begin pulling down the Docker image
-8. Once pulled down you should see it apper in the "Extensions" section under the heading "Docker Apps"
+8. Once the image is downloaded you should see it appear in the "Extensions" section under the heading "Docker Apps"
