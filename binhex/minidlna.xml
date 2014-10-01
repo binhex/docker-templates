@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Name>binhex-minidlna</Name>
+  <Description>
+    ReadyMedia (formerly known as MiniDLNA) is a simple media server software, with the aim of being fully compliant with DLNA/UPnP-AV clients. It is developed by a NETGEAR employee for the ReadyNAS product line.[br][br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]/config[/b] : this is where MiniDLNA will store it's configuration file.[br][br]
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/binhex/arch-minidlna/</Registry>
+  <GitHub>https://github.com/binhex/arch-minidlna</GitHub>
+  <Repository>binhex/arch-minidlna</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>path to config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/minidlna-banner.png</Banner>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/minidlna-icon.png</Icon>
+</Containers>
