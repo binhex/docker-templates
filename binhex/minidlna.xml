@@ -13,11 +13,16 @@
   <Repository>binhex/arch-minidlna</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
   <Networking>
     <Mode>host</Mode>
     <Publish/>
   </Networking>
-  <Environment/>
   <Data>
     <Volume>
       <HostDir>path to config</HostDir>
