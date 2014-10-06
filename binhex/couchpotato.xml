@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Container>
+<Containers>
   <Name>binhex-couchpotato</Name>
   <Description>
+	[b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
     CouchPotato (CP) is an automatic NZB and torrent downloader. You can keep a "movies I want"-list and it will search for NZBs/torrents of these movies every X hours. Once a movie is found, it will send it to SABnzbd or download the torrent to a specified directory.[br][br]
-    [b][span style='color: #E80000;']Directions:[/span][/b][br]
-    [b]/config[/b] : this path is used to store the configuration and the database files of Couchpotato.[br]
-    [b]/data[/b] : this path is used retrieve the downloaded files by your downloader application (e.g. SABnzbd or NZBGet)[br]
-    [b]/media[/b] : set this path to where you wish Couchpotato move your movies to.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where couchpotato will store it's configuration file, database and logs.[br]
+    [b]/data[/b] this path is used retrieve the downloaded files by your downloader application (e.g. SABnzbd or NZBGet)[br]	
+    [b]/media[/b] This is where couchpotato will scan for media files.[br][br]
   </Description>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-couchpotato/</Registry>
   <GitHub>https://github.com/binhex/arch-couchpotato</GitHub>
   <Repository>binhex/arch-couchpotato</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <Networking>
+    <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
@@ -28,10 +29,10 @@
       <Name></Name>
       <Value></Value>
     </Variable>
-  </Environment>
+  </Environment>    
   <Data>
     <Volume>
-      <HostDir>path for config files</HostDir>
+      <HostDir>path to config</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -39,14 +40,14 @@
       <HostDir>path for downloads</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
-    </Volume>
+    </Volume>	
     <Volume>
-      <HostDir>path for movies</HostDir>
+      <HostDir>path to media</HostDir>
       <ContainerDir>/media</ContainerDir>
       <Mode>rw</Mode>
-    </Volume>
+    </Volume>  	
   </Data>
-  <WebUI>http://[IP]:[PORT:5050]/</WebUI>
+  <WebUI>https://[IP]:[PORT:5050]/</WebUI>
   <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/couchpotato-banner.png</Banner>
   <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/couchpotato-icon.png</Icon>
-</Container>
+</Containers>
