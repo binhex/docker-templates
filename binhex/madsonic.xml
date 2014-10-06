@@ -13,12 +13,6 @@
   <Repository>binhex/arch-madsonic</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <Environment>
-    <Variable>
-      <Name></Name>
-      <Value></Value>
-    </Variable>
-  </Environment>  
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -34,6 +28,12 @@
       </Port>
     <Publish/>
   </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>    
   <Data>
     <Volume>
       <HostDir>path to config</HostDir>
