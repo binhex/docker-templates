@@ -6,7 +6,7 @@
 	FileBot is a tool for renaming your TV shows and anime, downloading subtitles from various sources or just simple file verification.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where filebot will store it's configuration file, database and logs.[br]
-    [b]/media[/b] This is where filebot will scan for media files.[br][br]
+    [b]/media[/b] This is where filebot will scan for media files.
   </Description>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-filebot/</Registry>
   <GitHub>https://github.com/binhex/arch-filebot</GitHub>

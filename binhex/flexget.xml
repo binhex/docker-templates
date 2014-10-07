@@ -9,7 +9,7 @@
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br]	
     [b]/media[/b] This is where flexget will scan for media files.[br][br]
 	[b][u][span style='color: #E80000;']Notes[/span][/u][/b][br]
-	Please configure flexget via the flexget.yml file located in your defined /config path from the above run command.[br][br]
+	Please configure flexget via the flexget.yml file located in your defined /config path from the above run command.
   </Description>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-flexget/</Registry>
   <GitHub>https://github.com/binhex/arch-flexget</GitHub>
