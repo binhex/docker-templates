@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Name>binhex-filebot</Name>
+  <Description>
+	[b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
+	FileBot is a tool for renaming your TV shows and anime, downloading subtitles from various sources or just simple file verification.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where filebot will store it's configuration file, database and logs.[br]
+    [b]/media[/b] This is where filebot will scan for media files.[br][br]
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/binhex/arch-filebot/</Registry>
+  <GitHub>https://github.com/binhex/arch-filebot</GitHub>
+  <Repository>binhex/arch-filebot</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>SHOWLIST</Name>
+      <Value>tv shows to rename</Value>
+    </Variable>
+  </Environment>    
+  <Data>
+    <Volume>
+      <HostDir>path to config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>path to media</HostDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>  	
+  </Data>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/filebot-icon.png</Icon>
+</Containers>
