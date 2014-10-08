@@ -26,6 +26,11 @@
         <ContainerPort>58846</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>	  
+      <Port>
+        <HostPort>58946</HostPort>
+        <ContainerPort>58946</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>	  	  
     </Publish>
   </Networking>
   <Environment>
