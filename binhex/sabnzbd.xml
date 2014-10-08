@@ -21,6 +21,11 @@
         <ContainerPort>8080</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
+      <Port>
+        <HostPort>8090</HostPort>
+        <ContainerPort>8090</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>	  
     </Publish>
   </Networking>
   <Environment>
