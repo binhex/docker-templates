@@ -44,7 +44,7 @@
     <Volume>
       <HostDir>path to media</HostDir>
       <ContainerDir>/media</ContainerDir>
-      <Mode>rw</Mode>
+      <Mode>ro</Mode>
     </Volume>  	
   </Data>
   <WebUI>https://[IP]:[PORT:4050]/</WebUI>
