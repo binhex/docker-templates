@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Name>binhex-sickbeard-piratebay</Name>
+  <Description>
+	[b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
+	Sick Beard TPB is a PVR for torrent and newsgroup users. It watches for new episodes of your favorite shows and when they are posted it downloads them, sorts and renames them, and optionally generates metadata for them. It retrieves show information from theTVDB.com and TVRage.com.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where sickbeard will store it's configuration file, database and logs.[br]
+    [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br]	
+    [b]/media[/b] This is where sickbeard will scan for media files.
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/binhex/arch-sickbeard-piratebay/</Registry>
+  <GitHub>https://github.com/binhex/arch-sickbeard-piratebay</GitHub>
+  <Repository>binhex/arch-sickbeard-piratebay</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8081</HostPort>
+        <ContainerPort>8081</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>    
+  <Data>
+    <Volume>
+      <HostDir>path to config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>path for downloads</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>	
+    <Volume>
+      <HostDir>path to media</HostDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>  	
+  </Data>
+  <WebUI>https://[IP]:[PORT:8081]/</WebUI>
+  <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/sickbeard-banner.png</Banner>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/sickbeard-icon.png</Icon>
+</Containers>
