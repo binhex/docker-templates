@@ -31,6 +31,11 @@
         <ContainerPort>58946</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>	  	  
+      <Port>
+        <HostPort>58946</HostPort>
+        <ContainerPort>58946</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>	  	  	  
     </Publish>
   </Networking>
   <Environment>
