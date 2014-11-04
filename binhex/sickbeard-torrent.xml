@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
-  <Name>binhex-sickbeard-piratebay</Name>
+  <Name>binhex-sickbeard-torrent</Name>
   <Description>
 	[b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
 	Sick Beard TPB is a PVR for torrent and newsgroup users. It watches for new episodes of your favorite shows and when they are posted it downloads them, sorts and renames them, and optionally generates metadata for them. It retrieves show information from theTVDB.com and TVRage.com.[br][br]
@@ -9,9 +9,9 @@
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br]	
     [b]/media[/b] This is where sickbeard will scan for media files.
   </Description>
-  <Registry>https://registry.hub.docker.com/u/binhex/arch-sickbeard-piratebay/</Registry>
-  <GitHub>https://github.com/binhex/arch-sickbeard-piratebay</GitHub>
-  <Repository>binhex/arch-sickbeard-piratebay</Repository>
+  <Registry>https://registry.hub.docker.com/u/binhex/arch-sickbeard-torrent/</Registry>
+  <GitHub>https://github.com/binhex/arch-sickbeard-torrent</GitHub>
+  <Repository>binhex/arch-sickbeard-torrent</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
