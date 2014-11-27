@@ -15,10 +15,15 @@
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
-    <Mode>host</Mode>
+    <Mode>bridge</Mode>
     <Publish>
+      <Port>
+        <HostPort>9191</HostPort>
+        <ContainerPort>9191</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
     </Publish>
-  </Networking>
+	</Networking>
   <Environment>
     <Variable>
       <Name></Name>
