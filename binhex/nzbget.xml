@@ -41,7 +41,7 @@
       <Mode>rw</Mode>
     </Volume>	
   </Data>
-  <WebUI>https://[IP]:[PORT:6789]/</WebUI>
+  <WebUI>http://[IP]:[PORT:6789]/</WebUI>
   <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/nzbget-banner.png</Banner>
   <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/nzbget-icon.png</Icon>
 </Containers>
