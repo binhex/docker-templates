@@ -7,7 +7,7 @@
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where deluge will store it's configuration file, database and logs.[br]
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.
-	[b]Note[/b] If you wish to restrict outbound communication only to PIA proxy then please set the Environment Variable "PIAPROXY" to "yes", otherwise set to "no" to allow any outbound communication.
+	[b]Note[/b] If you wish to restrict outbound communication only then please set the Environment Variable (FILTER) to the port you wish to allow, otherwise set to 0 to allow any outbound communication.
   </Description>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-deluge/</Registry>
   <GitHub>https://github.com/binhex/arch-deluge</GitHub>
@@ -41,8 +41,8 @@
   </Networking>
   <Environment>
     <Variable>
-      <Name>PIAPROXY</Name>
-      <Value>no</Value>
+      <Name>FILTER</Name>
+      <Value>0</Value>
     </Variable>
   </Environment>  
   <Data>
