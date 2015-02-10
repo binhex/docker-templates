@@ -6,7 +6,8 @@
 	Deluge is a full-featured ​BitTorrent client for Linux, OS X, Unix and Windows. It uses ​libtorrent in its backend and features multiple user-interfaces including: GTK+, web and console. It has been designed using the client server model with a daemon process that handles all the bittorrent activity. The Deluge daemon is able to run on headless machines with the user-interfaces being able to connect remotely from any platform.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where deluge will store it's configuration file, database and logs.[br]
-    [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.
+    [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br][br]
+	[b]Note[/b] This Docker includes OpenVPN to tunnel all traffic securely, please set the environment variables "PIA_USER" and "PIA_PASS" to your PIA (PrivateInternetAccess) credentials.
   </Description>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-delugevpn/</Registry>
   <GitHub>https://github.com/binhex/arch-delugevpn</GitHub>
@@ -26,22 +27,16 @@
         <ContainerPort>58846</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>	  
-      <Port>
-        <HostPort>58946</HostPort>
-        <ContainerPort>58946</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>	  	  
-      <Port>
-        <HostPort>58946</HostPort>
-        <ContainerPort>58946</ContainerPort>
-        <Protocol>udp</Protocol>
-      </Port>	  	  	  
     </Publish>
   </Networking>
   <Environment>
     <Variable>
-      <Name></Name>
-      <Value></Value>
+      <Name>PIA_USER</Name>
+      <Value>pia username</Value>
+    </Variable>
+    <Variable>
+      <Name>PIA_PASS</Name>
+      <Value>pia password</Value>
     </Variable>
   </Environment>    
   <Data>
