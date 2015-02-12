@@ -22,11 +22,6 @@
         <ContainerPort>8112</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
-      <Port>
-        <HostPort>58846</HostPort>
-        <ContainerPort>58846</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>	  
     </Publish>
   </Networking>
   <Environment>
