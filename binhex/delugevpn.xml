@@ -7,29 +7,7 @@
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where deluge will store it's configuration file, database and logs.[br]
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br][br]
-	[b]Note[/b] This Docker includes OpenVPN to tunnel all traffic securely, please set the environment variables "PIA_USER" and "PIA_PASS" to your PIA (PrivateInternetAccess) credentials. The environment variable PIA_REMOTE allows you to define the country you want the tunnel connected to, choices are:-
-	
-	UK London
-	UK Southampton
-	US California
-	US East
-	US Florida
-	US Midwest
-	US Seattle
-	US Texas
-	US West
-	Australia
-	CA North York
-	CA Toronto
-	France
-	Germany
-	Hong Kong
-	Israel
-	Japan
-	Netherlands
-	Romania
-	Sweden
-	Switzerland
+	[b]Note[/b] This Docker includes OpenVPN to tunnel all traffic securely, please set the environment variables "PIA_USER" and "PIA_PASS" to your PIA (PrivateInternetAccess) credentials. The environment variable PIA_REMOTE allows you to define the country you want the tunnel connected to, choices are:- UK London, UK Southampton, US California, US East, US Florida, US Midwest, US Seattle, US Texas, US West, Australia, CA North York, CA Toronto, France, Germany, Hong Kong, Israel, Japan, Netherlands, Romania, Sweden, Switzerland.
   </Description>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-delugevpn/</Registry>
   <GitHub>https://github.com/binhex/arch-delugevpn</GitHub>
