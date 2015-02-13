@@ -6,7 +6,7 @@
 	Deluge is a full-featured ​BitTorrent client for Linux, OS X, Unix and Windows. It uses ​libtorrent in its backend and features multiple user-interfaces including: GTK+, web and console. It has been designed using the client server model with a daemon process that handles all the bittorrent activity. The Deluge daemon is able to run on headless machines with the user-interfaces being able to connect remotely from any platform.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where deluge will store it's configuration file, database and logs.[br]
-    [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br][br]
+    [b]/data[/b] This is where deluge will store data downloaded, watched folder, and archived torrents.[br][br]
 	[b][span style='color: #E80000;']Note[/span][/b] This Docker includes OpenVPN to tunnel all traffic securely, please set the environment variables "PIA_USER" and "PIA_PASS" to your PIA (PrivateInternetAccess) credentials. The environment variable PIA_REMOTE allows you to define the country you want the tunnel connected to, choices are:- UK London, UK Southampton, US California, US East, US Florida, US Midwest, US Seattle, US Texas, US West, Australia, CA North York, CA Toronto, France, Germany, Hong Kong, Israel, Japan, Netherlands, Romania, Sweden, Switzerland.
   </Description>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-delugevpn/</Registry>
