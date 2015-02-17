@@ -7,7 +7,7 @@
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where deluge will store it's configuration file, database and logs.[br]
     [b]/data[/b] This is where deluge will store data downloaded, watched folder, and archived torrents.[br][br]
-	[b][span style='color: #E80000;']Note[/span][/b] This Docker includes OpenVPN to tunnel all traffic securely, please set the environment variables "PIA_USER" and "PIA_PASS" to your PIA (PrivateInternetAccess) credentials. The environment variable PIA_REMOTE allows you to define the country you want the tunnel connected to, choices are:- UK London, UK Southampton, US California, US East, US Florida, US Midwest, US Seattle, US Texas, US West, Australia, CA North York, CA Toronto, France, Germany, Hong Kong, Israel, Japan, Netherlands, Romania, Sweden, Switzerland.
+	[b][span style='color: #E80000;']Note[/span][/b] This Docker includes OpenVPN to tunnel all traffic securely, please set the environment variables "VPN_USER" and "VPN_PASS" to your VPN credentials. The environment variable VPN_REMOTE and VPN_PORT allows you to define the host you want the tunnel connected to, e.g. nl.privateinternetaccess.com (default), sweden.privateinternetaccess.com, uk-london.privateinternetaccess.com.
   </Description>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-delugevpn/</Registry>
   <GitHub>https://github.com/binhex/arch-delugevpn</GitHub>
@@ -22,20 +22,37 @@
         <ContainerPort>8112</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
+      <Port>
+        <HostPort>8118</HostPort>
+        <ContainerPort>8118</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>	  
     </Publish>
   </Networking>
   <Environment>
     <Variable>
-      <Name>PIA_USER</Name>
-      <Value>pia username</Value>
+      <Name>VPN_USER</Name>
+      <Value>vpn username</Value>
     </Variable>
     <Variable>
-      <Name>PIA_PASS</Name>
-      <Value>pia password</Value>
+      <Name>VPN_PASS</Name>
+      <Value>vpn password</Value>
     </Variable>
     <Variable>
-      <Name>PIA_REMOTE</Name>
-      <Value>pia remote gateway</Value>
+      <Name>VPN_REMOTE</Name>
+      <Value>nl.privateinternetaccess.com</Value>
+    </Variable>	
+    <Variable>
+      <Name>VPN_PORT</Name>
+      <Value>1194</Value>
+    </Variable>		
+    <Variable>
+      <Name>VPN_PROV</Name>
+      <Value>pia</Value>
+    </Variable>	
+    <Variable>	
+      <Name>ENABLE_PRIVOXY</Name>
+      <Value>no</Value>
     </Variable>	
   </Environment>    
   <Data>
