@@ -47,7 +47,7 @@
       <Mode>rw</Mode>
     </Volume>  	
   </Data>
-  <WebUI>https://[IP]:[PORT:5050]/</WebUI>
+  <WebUI>http://[IP]:[PORT:5050]/</WebUI>
   <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/couchpotato-banner.png</Banner>
   <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/couchpotato-icon.png</Icon>
 </Containers>

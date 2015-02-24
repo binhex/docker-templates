@@ -46,7 +46,7 @@
       <Mode>rw</Mode>
     </Volume>	
   </Data>
-  <WebUI>https://[IP]:[PORT:8080]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/sabnzbd-banner.png</Banner>
   <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/sabnzbd-icon.png</Icon>
 </Containers>
