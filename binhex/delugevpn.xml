@@ -17,9 +17,9 @@
 	2. Save the ovpn file to somewhere safe[br]
 	3. Start delugevpn docker to create the folder structure[br]
 	4. Stop delugevpn docker[br]
-	5. Copy the airvpn ovpn file to the host folder "openvpn" which is defined for volume /config[br]
+	5. Copy the airvpn ovpn file to the host subfolder "openvpn" which is defined for volume /config[br]
 	5. Start delugevpn docker[br]
-	6. Check supervisor.log to make sure you are connected to the tunnel
+	6. Check /config/supervisord.log to make sure you are connected to the tunnel
   </Description>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-delugevpn/</Registry>
   <GitHub>https://github.com/binhex/arch-delugevpn</GitHub>
@@ -60,7 +60,7 @@
     </Variable>		
     <Variable>
       <Name>VPN_PROV</Name>
-      <Value>pia</Value>
+      <Value>pia|airvpn|custom</Value>
     </Variable>	
     <Variable>	
       <Name>ENABLE_PRIVOXY</Name>
