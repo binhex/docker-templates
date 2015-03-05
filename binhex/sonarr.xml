@@ -22,6 +22,11 @@
         <ContainerPort>8989</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
+      <Port>
+        <HostPort>9897</HostPort>
+        <ContainerPort>9897</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>	  
     </Publish>
   </Networking>
   <Environment>
