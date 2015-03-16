@@ -47,7 +47,7 @@
       <Mode>ro</Mode>
     </Volume>  	
   </Data>
-  <WebUI>http://[IP]:[PORT:4050]/</WebUI>
+  <WebUI>http://[IP]:[PORT:4040]/</WebUI>
   <Banner></Banner>
   <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/madsonic-icon.png</Icon>
 </Containers>
