@@ -2,7 +2,6 @@
 <Containers>
   <Name>binhex-plex</Name>
   <Description>
-	[b][u][span style='color: #E80000;']Overview[/span][/u][/b][br]
 	The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free![br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where plex will store it's configuration file, database and logs.[br]
