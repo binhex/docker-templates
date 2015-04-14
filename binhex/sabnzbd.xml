@@ -8,10 +8,7 @@
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.
   </Description>
   <Overview>
-    SABnzbd is an Open Source Binary Newsreader written in Python. SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.[br][br]
-    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
-    [b]/config[/b] This is where sabnzbd will store it's configuration file, database and logs.[br]
-    [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.
+    SABnzbd is an Open Source Binary Newsreader written in Python. SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.
   </Overview>
   <Support>http://lime-technology.com/forum/index.php?topic=38055.0</Support>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-sabnzbd/</Registry>
@@ -19,7 +16,7 @@
   <Repository>binhex/arch-sabnzbd</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-    <Networking>
+  <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>

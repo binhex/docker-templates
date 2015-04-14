@@ -2,42 +2,27 @@
 <Containers>
   <Name>binhex-delugevpn</Name>
   <Description>
-	Deluge is a full-featured ​BitTorrent client for Linux, OS X, Unix and Windows. It uses ​libtorrent in its backend and features multiple user-interfaces including: GTK+, web and console. It has been designed using the client server model with a daemon process that handles all the bittorrent activity. The Deluge daemon is able to run on headless machines with the user-interfaces being able to connect remotely from any platform.[br]
-	This Docker includes OpenVPN to ensure a secure and private connection to the Internet, it also includes Privoxy to allow unfiltered access to index sites. To use Privoxy please point your application at "host ip:8118"[br][br]	
+    Deluge is a full-featured ​BitTorrent client for Linux, OS X, Unix and Windows. It uses ​libtorrent in its backend and features multiple user-interfaces including: GTK+, web and console. It has been designed using the client server model with a daemon process that handles all the bittorrent activity. The Deluge daemon is able to run on headless machines with the user-interfaces being able to connect remotely from any platform.[br]
+    This Docker includes OpenVPN to ensure a secure and private connection to the Internet, it also includes Privoxy to allow unfiltered access to index sites. To use Privoxy please point your application at "host ip:8118"[br][br]	
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where deluge will store it's configuration file, database and logs.[br]
     [b]/data[/b] This is where deluge will store data downloaded, watched folder, and archived torrents.[br][br]
-	[b][span style='color: #E80000;']Notes[/span][/b][br]
-	[u]PIA users[/u][br]
-	PIA users will need to supply VPN_USER and VPN_PASS, optionally define VPN_REMOTE (list of gateways https://www.privateinternetaccess.com/pages/client-support/#signup) if you wish to use another remote gateway other than the Netherlands.[br][br]
-	[u]AirVPN users[/u][br]
-	AirVPN users will need to generate a unique OpenVPN configuration file by using the following link https://airvpn.org/generator/[br][br]
-	1. Please select Linux and then choose the country you want to connect to[br]
-	2. Save the ovpn file to somewhere safe[br]
-	3. Start delugevpn docker to create the folder structure[br]
-	4. Stop delugevpn docker[br]
-	5. Copy the airvpn ovpn file to the host subfolder "openvpn" which is defined for volume /config[br]
-	5. Start delugevpn docker[br]
-	6. Check /config/supervisord.log to make sure you are connected to the tunnel
+    [b][span style='color: #E80000;']Notes[/span][/b][br]
+    [u]PIA users[/u][br]
+    PIA users will need to supply VPN_USER and VPN_PASS, optionally define VPN_REMOTE (list of gateways https://www.privateinternetaccess.com/pages/client-support/#signup) if you wish to use another remote gateway other than the Netherlands.[br][br]
+    [u]AirVPN users[/u][br]
+    AirVPN users will need to generate a unique OpenVPN configuration file by using the following link https://airvpn.org/generator/[br][br]
+    1. Please select Linux and then choose the country you want to connect to[br]
+    2. Save the ovpn file to somewhere safe[br]
+    3. Start delugevpn docker to create the folder structure[br]
+    4. Stop delugevpn docker[br]
+    5. Copy the airvpn ovpn file to the host subfolder "openvpn" which is defined for volume /config[br]
+    5. Start delugevpn docker[br]
+    6. Check /config/supervisord.log to make sure you are connected to the tunnel
   </Description>
   <Overview>
-	Deluge is a full-featured ​BitTorrent client for Linux, OS X, Unix and Windows. It uses ​libtorrent in its backend and features multiple user-interfaces including: GTK+, web and console. It has been designed using the client server model with a daemon process that handles all the bittorrent activity. The Deluge daemon is able to run on headless machines with the user-interfaces being able to connect remotely from any platform.[br]
-	This Docker includes OpenVPN to ensure a secure and private connection to the Internet, it also includes Privoxy to allow unfiltered access to index sites. To use Privoxy please point your application at "host ip:8118"[br][br]	
-    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
-    [b]/config[/b] This is where deluge will store it's configuration file, database and logs.[br]
-    [b]/data[/b] This is where deluge will store data downloaded, watched folder, and archived torrents.[br][br]
-	[b][span style='color: #E80000;']Notes[/span][/b][br]
-	[u]PIA users[/u][br]
-	PIA users will need to supply VPN_USER and VPN_PASS, optionally define VPN_REMOTE (list of gateways https://www.privateinternetaccess.com/pages/client-support/#signup) if you wish to use another remote gateway other than the Netherlands.[br][br]
-	[u]AirVPN users[/u][br]
-	AirVPN users will need to generate a unique OpenVPN configuration file by using the following link https://airvpn.org/generator/[br][br]
-	1. Please select Linux and then choose the country you want to connect to[br]
-	2. Save the ovpn file to somewhere safe[br]
-	3. Start delugevpn docker to create the folder structure[br]
-	4. Stop delugevpn docker[br]
-	5. Copy the airvpn ovpn file to the host subfolder "openvpn" which is defined for volume /config[br]
-	5. Start delugevpn docker[br]
-	6. Check /config/supervisord.log to make sure you are connected to the tunnel
+    Deluge is a full-featured ​BitTorrent client for Linux, OS X, Unix and Windows. It uses ​libtorrent in its backend and features multiple user-interfaces including: GTK+, web and console. It has been designed using the client server model with a daemon process that handles all the bittorrent activity. The Deluge daemon is able to run on headless machines with the user-interfaces being able to connect remotely from any platform.[br]
+    This Docker includes OpenVPN to ensure a secure and private connection to the Internet, it also includes Privoxy to allow unfiltered access to index sites. To use Privoxy please point your application at "host ip:8118"
   </Overview>
   <Support>http://lime-technology.com/forum/index.php?topic=38055.0</Support>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-delugevpn/</Registry>
@@ -45,7 +30,7 @@
   <Repository>binhex/arch-delugevpn</Repository>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
-    <Networking>
+  <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
