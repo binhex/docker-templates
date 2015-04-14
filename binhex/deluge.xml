@@ -7,6 +7,13 @@
     [b]/config[/b] This is where deluge will store it's configuration file, database and logs.[br]
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.
   </Description>
+  <Overview>
+	Deluge is a full-featured ​BitTorrent client for Linux, OS X, Unix and Windows. It uses ​libtorrent in its backend and features multiple user-interfaces including: GTK+, web and console. It has been designed using the client server model with a daemon process that handles all the bittorrent activity. The Deluge daemon is able to run on headless machines with the user-interfaces being able to connect remotely from any platform.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where deluge will store it's configuration file, database and logs.[br]
+    [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=38055.0</Support>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-deluge/</Registry>
   <GitHub>https://github.com/binhex/arch-deluge</GitHub>
   <Repository>binhex/arch-deluge</Repository>

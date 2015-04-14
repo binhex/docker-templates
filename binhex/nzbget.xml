@@ -7,6 +7,13 @@
     [b]/config[/b] This is where nzbget will store it's configuration file, database and logs.[br]
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.
   </Description>
+  <Overview>
+    NZBGet is a cross-platform binary newsgrabber for nzb files, written in C++. It supports client/server mode, automatic par-check/-repair, web-interface, command-line interface, etc. NZBGet requires low system resources and runs great on routers, NAS-devices and media players.[br][br]	
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where nzbget will store it's configuration file, database and logs.[br]
+    [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=38055.0</Support>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-nzbget/</Registry>
   <GitHub>https://github.com/binhex/arch-nzbget</GitHub>
   <Repository>binhex/arch-nzbget</Repository>

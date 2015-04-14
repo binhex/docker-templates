@@ -8,6 +8,14 @@
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br]	
     [b]/media[/b] This is where couchpotato will scan for media files.
   </Description>
+  <Overview>
+    CouchPotato (CP) is an automatic NZB and torrent downloader. You can keep a "movies I want"-list and it will search for NZBs/torrents of these movies every X hours. Once a movie is found, it will send it to SABnzbd or download the torrent to a specified directory.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where couchpotato will store it's configuration file, database and logs.[br]
+    [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br]	
+    [b]/media[/b] This is where couchpotato will scan for media files.
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=38055.0</Support>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-couchpotato/</Registry>
   <GitHub>https://github.com/binhex/arch-couchpotato</GitHub>
   <Repository>binhex/arch-couchpotato</Repository>
