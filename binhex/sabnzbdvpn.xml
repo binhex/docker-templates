@@ -6,7 +6,7 @@
     This Docker includes OpenVPN to ensure a secure and private connection to the Internet, including use of iptables to prevent IP leakage when the tunnel is down[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
 	[b]/config[/b] This is where sabnzbd will store it's configuration file, database and logs.[br]
-    [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.
+    [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br][br]
     [b][span style='color: #E80000;']Notes[/span][/b][br]
     [u]PIA users[/u][br]
     PIA users will need to supply VPN_USER and VPN_PASS, optionally define VPN_REMOTE (list of gateways https://www.privateinternetaccess.com/pages/client-support/#signup) if you wish to use another remote gateway other than the Netherlands.[br][br]
