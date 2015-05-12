@@ -2,7 +2,7 @@
 <Containers>
   <Name>binhex-mumble</Name>
   <Description>
-	Mumble is a voice over IP (VoIP) application primarily designed for use by gamers, similar to programs such as TeamSpeak and Ventrilo. Mumble uses a client–server architecture which allows users to talk to each other via the same server.[2] It has a very simple administrative interface and features high sound quality and low latency. All communication is encrypted to ensure user privacy.[br][br]
+	Mumble is a voice over IP (VoIP) application primarily designed for use by gamers, similar to programs such as TeamSpeak and Ventrilo. Mumble uses a client–server architecture which allows users to talk to each other via the same server. It has a very simple administrative interface and features high sound quality and low latency. All communication is encrypted to ensure user privacy.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where Mumble will store it's configuration file, database and logs.[br][br]
     [b][u][span style='color: #E80000;']Notes[/span][/u][/b][br]
@@ -10,7 +10,7 @@
     To authenticate use the privilege key shown in the supervisord.log file in the host mapped /config folder.
   </Description>
   <Overview>
-	Mumble is a voice over IP (VoIP) application primarily designed for use by gamers, similar to programs such as TeamSpeak and Ventrilo. Mumble uses a client–server architecture which allows users to talk to each other via the same server.[2] It has a very simple administrative interface and features high sound quality and low latency. All communication is encrypted to ensure user privacy.
+	Mumble is a voice over IP (VoIP) application primarily designed for use by gamers, similar to programs such as TeamSpeak and Ventrilo. Mumble uses a client–server architecture which allows users to talk to each other via the same server. It has a very simple administrative interface and features high sound quality and low latency. All communication is encrypted to ensure user privacy.
   </Overview>
   <Support>http://lime-technology.com/forum/index.php?topic=38055.0</Support>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-mumble/</Registry>
