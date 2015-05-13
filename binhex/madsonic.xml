@@ -29,7 +29,7 @@
         <HostPort>4050</HostPort>
         <ContainerPort>4050</ContainerPort>
         <Protocol>tcp</Protocol>
-      </Port>	  
+      </Port>
     </Publish>
   </Networking>
   <Environment>
