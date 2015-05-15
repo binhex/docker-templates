@@ -47,6 +47,10 @@
   </Networking>
   <Environment>
     <Variable>
+      <Name>VPN_ENABLED</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
       <Name>VPN_USER</Name>
       <Value>vpn username</Value>
     </Variable>
@@ -57,19 +61,19 @@
     <Variable>
       <Name>VPN_REMOTE</Name>
       <Value>nl.privateinternetaccess.com</Value>
-    </Variable>	
+    </Variable>
     <Variable>
       <Name>VPN_PORT</Name>
       <Value>1194</Value>
-    </Variable>		
+    </Variable>
     <Variable>
       <Name>VPN_PROV</Name>
       <Value>pia|airvpn|custom</Value>
-    </Variable>	
-    <Variable>	
+    </Variable>
+    <Variable>
       <Name>ENABLE_PRIVOXY</Name>
       <Value>no</Value>
-    </Variable>	
+    </Variable>
   </Environment>    
   <Data>
     <Volume>
@@ -81,7 +85,7 @@
       <HostDir>path for downloads</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
-    </Volume>	
+    </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:8112]/</WebUI>
   <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/deluge-banner.png</Banner>
