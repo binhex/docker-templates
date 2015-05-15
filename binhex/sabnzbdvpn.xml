@@ -47,6 +47,10 @@
   </Networking>
   <Environment>
     <Variable>
+      <Name>VPN_ENABLED</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
       <Name>VPN_USER</Name>
       <Value>vpn username</Value>
     </Variable>
