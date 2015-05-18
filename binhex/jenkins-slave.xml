@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Name>binhex-jenkins-slave</Name>
+  <Description>
+	Jenkins is an open source continuous integration tool written in Java. The project was forked from Hudson after a dispute with Oracle. Jenkins provides continuous integration services for software development. It is a server-based system running in a servlet container such as Apache Tomcat.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where jenkins will store it's configuration file, database and logs.
+  </Description>
+  <Overview>
+	Jenkins is an open source continuous integration tool written in Java. The project was forked from Hudson after a dispute with Oracle. Jenkins provides continuous integration services for software development. It is a server-based system running in a servlet container such as Apache Tomcat.
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=38055.0</Support>
+  <Registry>https://registry.hub.docker.com/u/binhex/arch-jenkins-slave/</Registry>
+  <GitHub>https://github.com/binhex/arch-jenkins-slave</GitHub>
+  <Repository>binhex/arch-jenkins-slave</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>22</HostPort>
+        <ContainerPort>22</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>    
+  <Data>
+    <Volume>
+      <HostDir>path to config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/jenkins-icon.png</Icon>
+</Containers>
