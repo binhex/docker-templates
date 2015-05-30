@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
+  <Beta>False</Beta>
+<Category>MediaApp:Video MediaServer:Video</Category>
   <Name>binhex-get-iplayer</Name>
   <Description>
     get_iplayer has PVR-like capabilities (like Sky+ / TiVo / Series-Link); You can save lists of programme searches which are automatically recorded when they become available so that you can watch them when you choose and on devices that cannot run Adobe Flash Player – even if you don’t have adequate broadband speeds or if your broadband streams too slowly at peak hours when you want to watch a programme.[br][br]
