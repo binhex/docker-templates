@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
+<Beta>False</Beta>
+<Category>Productivity: Tools:</Category>
   <Name>binhex-jenkins</Name>
   <Description>
 	Jenkins is an open source continuous integration tool written in Java. The project was forked from Hudson after a dispute with Oracle. Jenkins provides continuous integration services for software development. It is a server-based system running in a servlet container such as Apache Tomcat.[br][br]
