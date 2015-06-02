@@ -5,3 +5,4 @@
 [info]  Jenkins updated to ver 1.616
 [info] 2015-06-02 14:08:35 Jenkins updated to ver 1.616
 [info] 2015-06-02 14:39:54 Jenkins updated to ver 1.616
+[info] [FRIENDLY_NAME] 2015-06-02 14:42:26 Updated to ver 1.616
