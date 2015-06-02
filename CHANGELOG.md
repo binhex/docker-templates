@@ -1,3 +1,4 @@
+[info] [Jenkins] 2015-06-02 16:21:30 Updated to ver 1.616
 [info] [Jenkins] 2015-06-02 16:14:22 Updated to ver 1.616
 [info] [Jenkins] 2015-06-02 14:56:39 Updated to ver 1.616
 [info] [NZBGet] 2015/05/21 updated to version 15.0
