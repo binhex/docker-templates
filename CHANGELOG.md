@@ -1,3 +1,4 @@
+[info] [Madsonic] 2015-06-03 22:10:24 Updated to ver 5.1.5200
 [info] [SABnzbd] 2015-06-03 21:14:10 Updated to ver 0.7.20
 [info] [SickRage] 2015-06-03 21:09:49 Updated to ver 4.0.23
 [info] [Deluge] 2015-06-03 20:55:21 Updated to ver 1.3.11
