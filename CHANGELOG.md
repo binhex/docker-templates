@@ -1,3 +1,4 @@
+[info] [Deluge] 2015-06-03 20:55:21 Updated to ver 1.3.11
 [info] [Plex] 2015-06-03 20:43:44 Updated to ver 0.9.12.1.1079
 [info] [Plex] 2015-06-03 20:35:45 Updated to ver 0.9.12.1.1079
 [info] [NZBGet] 2015-06-03 20:10:15 Updated to ver 15.0
