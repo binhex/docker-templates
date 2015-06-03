@@ -1,3 +1,4 @@
+[info] [NZBGet] 2015-06-03 20:10:15 Updated to ver 15.0
 [info] [MiniDLNA] 2015-06-03 20:05:41 Updated to ver 1.1.4
 [info] [Deluge] 2015-06-03 20:00:56 Updated to ver 1.3.11
 [info] [Jenkins] 2015-06-03 19:54:54 Updated to ver 1.616
