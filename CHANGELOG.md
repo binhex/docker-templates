@@ -1,3 +1,4 @@
+[info] [Jenkins] 2015-06-03 09:14:59 Updated to ver $(curl -s https://www.archlinux.org/packages/community/any/jenkins/ | grep -P -o -m 1 '(?<=<h2>)[^<]+' | grep -P -o -m 1 '[d.]+[^-]')
 [info] [Jenkins] 2015-06-02 21:42:20 Updated to ver 1.616
 [info] [Jenkins] 2015-06-02 16:21:30 Updated to ver 1.616
 [info] [Jenkins] 2015-06-02 16:14:22 Updated to ver 1.616
