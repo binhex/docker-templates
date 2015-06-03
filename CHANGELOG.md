@@ -1,3 +1,4 @@
+[info] [MiniDLNA] 2015-06-03 22:28:32 Updated to ver 1.1.4
 [info] [Teamspeak] 2015-06-03 22:27:34 Updated to ver 3.0.11.2
 [info] [Madsonic] 2015-06-03 22:10:24 Updated to ver 5.1.5200
 [info] [SABnzbd] 2015-06-03 21:14:10 Updated to ver 0.7.20
