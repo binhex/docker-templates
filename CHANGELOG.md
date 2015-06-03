@@ -1,3 +1,4 @@
+[info] [Plex] 2015-06-03 20:43:44 Updated to ver 0.9.12.1.1079
 [info] [Plex] 2015-06-03 20:35:45 Updated to ver 0.9.12.1.1079
 [info] [NZBGet] 2015-06-03 20:10:15 Updated to ver 15.0
 [info] [MiniDLNA] 2015-06-03 20:05:41 Updated to ver 1.1.4
