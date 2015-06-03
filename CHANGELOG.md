@@ -1,3 +1,4 @@
+[info] [SABnzbd] 2015-06-03 21:14:10 Updated to ver 0.7.20
 [info] [SickRage] 2015-06-03 21:09:49 Updated to ver 4.0.23
 [info] [Deluge] 2015-06-03 20:55:21 Updated to ver 1.3.11
 [info] [Plex] 2015-06-03 20:43:44 Updated to ver 0.9.12.1.1079
