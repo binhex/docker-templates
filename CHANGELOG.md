@@ -1,3 +1,4 @@
+[info] [SickRage] 2015-06-07 22:05:00 Updated to ver 4.0.24
 [info] [Sonarr] 2015-06-07 22:04:51 Updated to ver 2.0.0.3212
 [info] [Plex] 2015-06-04 16:37:21 Updated to ver 0.9.12.3.1173
 [info] [Plex] 2015-06-04 16:34:55 Updated to ver 0.9.12.3.1173
