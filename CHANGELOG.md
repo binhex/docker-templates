@@ -1,3 +1,4 @@
+[info] [Sonarr] 2015-06-07 22:04:51 Updated to ver 2.0.0.3212
 [info] [Plex] 2015-06-04 16:37:21 Updated to ver 0.9.12.3.1173
 [info] [Plex] 2015-06-04 16:34:55 Updated to ver 0.9.12.3.1173
 [info] [Sonarr] 2015-06-03 22:30:17 Updated to ver 2.0.0.3004
