@@ -1,3 +1,4 @@
+[info] [SickRage] 2015-06-17 10:19:17 Updated to ver 4.0.26
 [info] [SickRage] 2015-06-17 10:18:17 Updated to ver 4.0.26
 [info] [SickRage] 2015-06-17 10:17:41 Updated to ver 4.0.26
 [info] [SickRage] 2015-06-09 18:53:20 Updated to ver 4.0.24
