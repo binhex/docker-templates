@@ -20,7 +20,8 @@
     4. Stop delugevpn docker[br]
     5. Copy the airvpn ovpn file to the host subfolder "openvpn" which is defined for volume /config[br]
     5. Start delugevpn docker[br]
-    6. Check /config/supervisord.log to make sure you are connected to the tunnel
+    6. Check /config/supervisord.log to make sure you are connected to the tunnel[br][br]
+    If you wish to allow access to the Deluge Daemon (not required for docker to docker communication) then please specify the local LAN IP range for the host(s) requiring access for the env variable LAN_RANGE e.g. 192.168.1.90-192.168.1.100
   </Description>
   <Overview>
     Deluge is a full-featured ​BitTorrent client for Linux, OS X, Unix and Windows. It uses ​libtorrent in its backend and features multiple user-interfaces including: GTK+, web and console. It has been designed using the client server model with a daemon process that handles all the bittorrent activity. The Deluge daemon is able to run on headless machines with the user-interfaces being able to connect remotely from any platform.[br]
@@ -81,7 +82,11 @@
       <Name>ENABLE_PRIVOXY</Name>
       <Value>no</Value>
     </Variable>
-  </Environment>    
+    <Variable>
+      <Name>LAN_RANGE</Name>
+      <Value></Value>
+    </Variable>
+  </Environment> 
   <Data>
     <Volume>
       <HostDir>path to config</HostDir>
