@@ -39,6 +39,10 @@
       <Name>SSL</Name>
       <Value>yes</Value>
     </Variable>
+    <Variable>
+      <Name>CONTEXT_PATH</Name>
+      <Value>/</Value>
+    </Variable>
   </Environment>    
   <Data>
     <Volume>
