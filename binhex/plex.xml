@@ -25,8 +25,8 @@
   </Networking>
   <Environment>
     <Variable>
-      <Name></Name>
-      <Value></Value>
+      <Name>TRANS_DIR</Name>
+      <Value>/config/transcode</Value>
     </Variable>
   </Environment>    
   <Data>
