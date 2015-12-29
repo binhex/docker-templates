@@ -1,3 +1,4 @@
+[info] [Jenkins] 2015-12-29 16:09:33 Updated to ver 1.643
 [info] [Deluge] 2015-12-29 15:36:37 Updated to ver 1.3.12
 [info] [Deluge] 2015-12-29 15:32:32 Updated to ver 1.3.12
 [info] [SickRage] 2015-06-17 10:19:17 Updated to ver 4.0.26
