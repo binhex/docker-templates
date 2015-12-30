@@ -1,3 +1,4 @@
+[info] [Plex] 2015-12-30 13:44:57 updated to ver. 0.9.14.6.1620
 [info] [Madsonic] 2015-12-30 13:36:34 updated to ver. 5.1.5250
 [info] [Deluge] 2015-12-30 09:40:10 updated to ver. 1.3.12
 [info] [Jenkins] 2015-12-30 09:26:14 updated to ver. 1.643
