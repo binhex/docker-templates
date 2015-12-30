@@ -1,3 +1,4 @@
+[info] [Deluge] 2015-12-30 09:40:10 updated to ver. 1.3.12
 [info] [Jenkins] 2015-12-30 09:26:14 updated to ver. 1.643
 [info] [Jenkins] 2015-12-29 23:14:49 updated to ver. 1.643
 [info] [Jenkins] 2015-12-29 23:12:45 updated to ver. 1.643
