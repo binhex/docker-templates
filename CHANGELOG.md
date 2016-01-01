@@ -1,3 +1,4 @@
+[info] [Deluge] 2016-01-01 21:19:40 updated to ver. 1.3.12
 [info] [Deluge] 2016-01-01 21:16:24 updated to ver. 1.3.12
 [info] [Deluge] 2016-01-01 21:11:15 updated to ver. 1.3.12
 [info] [Deluge] 2016-01-01 21:02:48 updated to ver. 1.3.12
