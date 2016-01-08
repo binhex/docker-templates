@@ -53,6 +53,6 @@
     </Volume>  	
   </Data>
   <WebUI>http://[IP]:[PORT:8081]/</WebUI>
-  <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/sickrage-banner.png</Banner>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/sickrage-icon.png</Icon>
+  <Banner>https://cloud.githubusercontent.com/assets/1121837/12184946/2dc25c22-b590-11e5-8574-ac811a97c941.png</Banner>
+  <Icon>https://cloud.githubusercontent.com/assets/1121837/12184947/2dc43db2-b590-11e5-8860-e3bd9a96450b.png</Icon>
 </Containers>

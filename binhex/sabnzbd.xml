@@ -52,6 +52,6 @@
     </Volume>	
   </Data>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
-  <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/sabnzbd-banner.png</Banner>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/sabnzbd-icon.png</Icon>
+  <Banner>https://cloud.githubusercontent.com/assets/1121837/12184941/2dab3b14-b590-11e5-909f-77d80d93fd37.png</Banner>
+  <Icon>https://cloud.githubusercontent.com/assets/1121837/12184943/2db19612-b590-11e5-8ff8-14a03f7354fc.png</Icon>
 </Containers>

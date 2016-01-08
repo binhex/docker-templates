@@ -53,6 +53,5 @@
     </Volume>  	
   </Data>
   <WebUI></WebUI>
-  <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/moviegrabber-banner.png</Banner>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/moviegrabber-icon.png</Icon>
+  <Icon>https://cloud.githubusercontent.com/assets/1121837/12184937/2d9734de-b590-11e5-9060-77a91e1328f4.png</Icon>
 </Containers>

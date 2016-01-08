@@ -58,5 +58,5 @@
   </Data>
   <WebUI>http://[IP]:[PORT:4040]/</WebUI>
   <Banner></Banner>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/madsonic-icon.png</Icon>
+  <Icon>https://cloud.githubusercontent.com/assets/1121837/12184935/2d8ef1b6-b590-11e5-8238-01e037e3f372.png</Icon>
 </Containers>
