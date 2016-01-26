@@ -13,7 +13,7 @@
   <Overview>
     Madsonic is a fork of the Subsonic 4.x Server, Madsonic is a full replacement for your current Subsonic server!, Madsonic is designed for people who want more from the vanilla Subsonic features.
   </Overview>
-  <Support>http://lime-technology.com/forum/index.php?topic=38055.0</Support>
+  <Support>http://lime-technology.com/forum/index.php?topic=45840.0</Support>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-madsonic/</Registry>
   <GitHub>https://github.com/binhex/arch-madsonic</GitHub>
   <Repository>binhex/arch-madsonic</Repository>
