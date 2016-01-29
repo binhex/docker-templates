@@ -53,6 +53,6 @@
     </Volume>  	
   </Data>
   <WebUI>http://[IP]:[PORT:5050]/</WebUI>
-  <Banner>https://cloud.githubusercontent.com/assets/1121837/12184929/2d781b8a-b590-11e5-87e1-1229a414edb0.png</Banner>
-  <Icon>https://cloud.githubusercontent.com/assets/1121837/12184928/2d751782-b590-11e5-9040-c6affdbcc4a3.png</Icon>
+  <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/couchpotato-banner.png</Banner>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/couchpotato-icon.png</Icon>
 </Containers>

@@ -39,9 +39,9 @@
       <HostDir>path to media</HostDir>
       <ContainerDir>/media</ContainerDir>
       <Mode>rw</Mode>
-    </Volume>  	
+    </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
-  <Banner>https://cloud.githubusercontent.com/assets/1121837/12184940/2da73a96-b590-11e5-8004-525bb158f344.png</Banner>
-  <Icon>https://cloud.githubusercontent.com/assets/1121837/12184942/2dabf6f8-b590-11e5-8531-dddf097ff64b.png</Icon>
+  <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/plex-banner.png</Banner>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/plex-icon.png</Icon>  
 </Containers>

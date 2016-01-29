@@ -30,7 +30,7 @@
         <HostPort>8090</HostPort>
         <ContainerPort>8090</ContainerPort>
         <Protocol>tcp</Protocol>
-      </Port>	  
+      </Port>
     </Publish>
   </Networking>
   <Environment>
@@ -49,9 +49,9 @@
       <HostDir>path for downloads</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
-    </Volume>	
+    </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
-  <Banner>https://cloud.githubusercontent.com/assets/1121837/12184941/2dab3b14-b590-11e5-909f-77d80d93fd37.png</Banner>
-  <Icon>https://cloud.githubusercontent.com/assets/1121837/12184943/2db19612-b590-11e5-8ff8-14a03f7354fc.png</Icon>
+  <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/sabnzbd-banner.png</Banner>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/sabnzbd-icon.png</Icon>
 </Containers>

@@ -44,9 +44,9 @@
       <HostDir>path for downloads</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
-    </Volume>	
+    </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:6789]/</WebUI>
-  <Banner>https://cloud.githubusercontent.com/assets/1121837/12184938/2d9b9a74-b590-11e5-9be2-7a410d7d3769.png</Banner>
-  <Icon>https://cloud.githubusercontent.com/assets/1121837/12184939/2da10964-b590-11e5-83eb-25ef6c5474b1.png</Icon>
+  <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/nzbget-banner.png</Banner>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/nzbget-icon.png</Icon>
 </Containers>

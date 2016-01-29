@@ -45,13 +45,14 @@
       <HostDir>path for downloads</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
-    </Volume>		
+    </Volume>
     <Volume>
       <HostDir>path to media</HostDir>
       <ContainerDir>/media</ContainerDir>
       <Mode>rw</Mode>
-    </Volume>  	
+    </Volume>
   </Data>
   <WebUI></WebUI>
-  <Icon>https://cloud.githubusercontent.com/assets/1121837/12184937/2d9734de-b590-11e5-9060-77a91e1328f4.png</Icon>
+  <Banner></Banner>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/madsonic-icon.png</Icon>
 </Containers>

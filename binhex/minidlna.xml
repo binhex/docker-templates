@@ -39,9 +39,9 @@
       <HostDir>path to media</HostDir>
       <ContainerDir>/media</ContainerDir>
       <Mode>rw</Mode>
-    </Volume>  	
+    </Volume>
   </Data>
   <WebUI></WebUI>
-  <Banner>https://cloud.githubusercontent.com/assets/1121837/12184934/2d8e99c8-b590-11e5-9c97-4dd7a7bb90f4.png</Banner>
-  <Icon>https://cloud.githubusercontent.com/assets/1121837/12184936/2d93c75e-b590-11e5-8e5e-0258aee2dfed.png</Icon>
+  <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/minidlna-banner.png</Banner>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/minidlna-icon.png</Icon>
 </Containers>

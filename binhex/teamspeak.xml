@@ -39,6 +39,6 @@
     </Volume>
   </Data>
   <WebUI></WebUI>
-  <Banner>https://cloud.githubusercontent.com/assets/1121837/12184950/2dd35734-b590-11e5-9c59-ae9c65c9e392.png</Banner>
-  <Icon>https://cloud.githubusercontent.com/assets/1121837/12184951/2dd3d614-b590-11e5-938f-3e4804862ce1.png</Icon>
+  <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/teamspeak-banner.png</Banner>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/teamspeak-icon.png</Icon>
 </Containers>

@@ -108,6 +108,6 @@
     </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:8112]/</WebUI>
-  <Banner>https://cloud.githubusercontent.com/assets/1121837/12184930/2d7a22e0-b590-11e5-95fd-1d27454f0300.png</Banner>
-  <Icon>https://cloud.githubusercontent.com/assets/1121837/12184931/2d7d9a10-b590-11e5-9b42-87217af54a7d.png</Icon>
+  <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/deluge-banner.png</Banner>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/deluge-icon.png</Icon>  
 </Containers>

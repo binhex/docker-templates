@@ -50,14 +50,14 @@
       <HostDir>path for downloads</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
-    </Volume>	
+    </Volume>
     <Volume>
       <HostDir>path to media</HostDir>
       <ContainerDir>/media</ContainerDir>
       <Mode>rw</Mode>
-    </Volume>  	
+    </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:8989]/</WebUI>
-  <Banner>https://cloud.githubusercontent.com/assets/1121837/12184948/2dc9aa40-b590-11e5-9f22-841a5ebd1d06.png</Banner>
-  <Icon>https://cloud.githubusercontent.com/assets/1121837/12184949/2dcc376a-b590-11e5-9a78-54b7dc5d3647.png</Icon>
+  <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/sonarr-banner.png</Banner>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/sonarr-icon.png</Icon>
 </Containers>
