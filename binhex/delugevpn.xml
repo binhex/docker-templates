@@ -90,6 +90,10 @@
       <Name>LAN_RANGE</Name>
       <Value>192.168.1.1-192.168.1.254</Value>
     </Variable>
+    <Variable>
+      <Name>DEBUG</Name>
+      <Value>false</Value>
+    </Variable>
   </Environment> 
   <Data>
     <Volume>

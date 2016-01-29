@@ -85,6 +85,10 @@
       <Name>ENABLE_PRIVOXY</Name>
       <Value>no</Value>
     </Variable>
+    <Variable>
+      <Name>DEBUG</Name>
+      <Value>false</Value>
+    </Variable>
   </Environment>    
   <Data>
     <Volume>
