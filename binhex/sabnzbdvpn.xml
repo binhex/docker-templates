@@ -10,17 +10,8 @@
     [b]/config[/b] This is where sabnzbd will store it's configuration file, database and logs.[br]
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br][br]
     [b][span style='color: #E80000;']Notes[/span][/b][br]
-    [u]PIA users[/u][br]
-    PIA users will need to supply VPN_USER and VPN_PASS, optionally define VPN_REMOTE (list of gateways https://www.privateinternetaccess.com/pages/client-support/#signup) if you wish to use another remote gateway other than the Netherlands.[br][br]
-    [u]AirVPN users[/u][br]
-    AirVPN users will need to generate a unique OpenVPN configuration file by using the following link https://airvpn.org/generator/[br][br]
-    1. Please select Linux and then choose the country you want to connect to[br]
-    2. Save the ovpn file to somewhere safe[br]
-    3. Start sabnzbdvpn docker to create the folder structure[br]
-    4. Stop sabnzbdvpn docker[br]
-    5. Copy the airvpn ovpn file to the host subfolder "openvpn" which is defined for volume /config[br]
-    5. Start sabnzbdvpn docker[br]
-    6. Check /config/supervisord.log to make sure you are connected to the tunnel
+    For help on configuration for PIA, AirVPN and custom VPN providers please go here http://lime-technology.com/forum/index.php?topic=45812.msg437678#msg437678[br]
+    IMPORTANT - To allow access to the Deluge webui, Privoxy and Deluge deamon you need to specify you LAN network, using CIDR notation for the mask, a subnet mask of 255.255.255.0 would equate to CIDR /24, 255.255.0.0 would equate to CIDR /16.[br]
   </Description>
   <Overview>
     SABnzbd is an Open Source Binary Newsreader written in Python. SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.[br]
