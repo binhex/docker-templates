@@ -6,13 +6,13 @@
   <Description>
     Emby Server is a home media server built on top of other popular open source technologies such as Service Stack, jQuery, jQuery mobile, and Mono.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
-    [b]/config[/b] This is where plex will store it's configuration file, database and logs.[br]
-    [b]/media[/b] This is where plex will scan for media files.
+    [b]/config[/b] This is where emby will store it's configuration file, database and logs.[br]
+    [b]/media[/b] This is where emby will scan for media files.
   </Description>
   <Overview>
     Emby Server is a home media server built on top of other popular open source technologies such as Service Stack, jQuery, jQuery mobile, and Mono.
   </Overview>
-  <Support>http://lime-technology.com/forum/index.php?topic=45820.0</Support>
+  <Support>http://lime-technology.com/forum/index.php?topic=46382.0</Support>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-emby/</Registry>
   <GitHub>https://github.com/binhex/arch-emby</GitHub>
   <Repository>binhex/arch-emby</Repository>
