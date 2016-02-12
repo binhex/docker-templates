@@ -2,7 +2,7 @@
 
 N/A
 
-**Application description**
+**Description**
 
 unRAID Docker Templates for Docker images in the "binhex" repository.
 
