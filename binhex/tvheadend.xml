@@ -35,6 +35,12 @@
   </Networking>
   <Environment>
     <Variable>
+      <Name>UID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>GID</Name>
+      <Value>100</Value>
     </Variable>
   </Environment>    
   <Data>

@@ -30,17 +30,17 @@
         <HostPort>58846</HostPort>
         <ContainerPort>58846</ContainerPort>
         <Protocol>tcp</Protocol>
-      </Port>	  
+      </Port>
       <Port>
         <HostPort>58946</HostPort>
         <ContainerPort>58946</ContainerPort>
         <Protocol>tcp</Protocol>
-      </Port>	  	  
+      </Port>
       <Port>
         <HostPort>58946</HostPort>
         <ContainerPort>58946</ContainerPort>
         <Protocol>udp</Protocol>
-      </Port>	  	  	  
+      </Port>
     </Publish>
   </Networking>
   <Environment>
@@ -59,7 +59,7 @@
       <HostDir>path for downloads</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
-    </Volume>	
+    </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:8112]/</WebUI>
   <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/deluge-banner.png</Banner>
