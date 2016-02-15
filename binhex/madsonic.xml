@@ -43,7 +43,15 @@
       <Name>CONTEXT_PATH</Name>
       <Value>/</Value>
     </Variable>
-  </Environment>    
+    <Variable>
+      <Name>UID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>GID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
   <Data>
     <Volume>
       <HostDir>path to config</HostDir>
@@ -54,9 +62,10 @@
       <HostDir>path to media</HostDir>
       <ContainerDir>/media</ContainerDir>
       <Mode>ro</Mode>
-    </Volume>  	
+    </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:4040]/</WebUI>
   <Banner></Banner>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/madsonic-icon.png</Icon>  
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/madsonic-icon.png</Icon>
+  <ExtraParams></ExtraParams>
 </Containers>

@@ -4,7 +4,7 @@
 <Category>Downloaders:</Category>
   <Name>binhex-nzbget</Name>
   <Description>
-    NZBGet is a cross-platform binary newsgrabber for nzb files, written in C++. It supports client/server mode, automatic par-check/-repair, web-interface, command-line interface, etc. NZBGet requires low system resources and runs great on routers, NAS-devices and media players.[br][br]	
+    NZBGet is a cross-platform binary newsgrabber for nzb files, written in C++. It supports client/server mode, automatic par-check/-repair, web-interface, command-line interface, etc. NZBGet requires low system resources and runs great on routers, NAS-devices and media players.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where nzbget will store it's configuration file, database and logs.[br]
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.
@@ -30,10 +30,14 @@
   </Networking>
   <Environment>
     <Variable>
-      <Name></Name>
-      <Value></Value>
+      <Name>UID</Name>
+      <Value>99</Value>
     </Variable>
-  </Environment>    
+    <Variable>
+      <Name>GID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
   <Data>
     <Volume>
       <HostDir>path to config</HostDir>
@@ -49,4 +53,5 @@
   <WebUI>http://[IP]:[PORT:6789]/</WebUI>
   <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/nzbget-banner.png</Banner>
   <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/nzbget-icon.png</Icon>
+  <ExtraParams></ExtraParams>
 </Containers>

@@ -28,7 +28,15 @@
       <Name>TRANS_DIR</Name>
       <Value>/config/transcode</Value>
     </Variable>
-  </Environment>    
+    <Variable>
+      <Name>UID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>GID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
   <Data>
     <Volume>
       <HostDir>path to config</HostDir>
@@ -43,5 +51,6 @@
   </Data>
   <WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
   <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/plex-banner.png</Banner>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/plex-icon.png</Icon>  
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/plex-icon.png</Icon>
+  <ExtraParams></ExtraParams>
 </Containers>

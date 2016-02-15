@@ -67,7 +67,7 @@
     <Variable>
       <Name>VPN_PROTOCOL</Name>
       <Value>udp</Value>
-    </Variable>	
+    </Variable>
     <Variable>
       <Name>VPN_PROV</Name>
       <Value>pia|airvpn|custom</Value>
@@ -80,7 +80,15 @@
       <Name>DEBUG</Name>
       <Value>false</Value>
     </Variable>
-  </Environment>    
+    <Variable>
+      <Name>UID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>GID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
   <Data>
     <Volume>
       <HostDir>path to config</HostDir>
@@ -96,4 +104,5 @@
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/sabnzbd-banner.png</Banner>
   <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/sabnzbd-icon.png</Icon>
+  <ExtraParams></ExtraParams>
 </Containers>

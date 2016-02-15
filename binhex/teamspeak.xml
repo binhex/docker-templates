@@ -27,10 +27,14 @@
   </Networking>
   <Environment>
     <Variable>
-      <Name></Name>
-      <Value></Value>
+      <Name>UID</Name>
+      <Value>99</Value>
     </Variable>
-  </Environment>    
+    <Variable>
+      <Name>GID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
   <Data>
     <Volume>
       <HostDir>path to config</HostDir>
@@ -41,4 +45,5 @@
   <WebUI></WebUI>
   <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/teamspeak-banner.png</Banner>
   <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/teamspeak-icon.png</Icon>
+  <ExtraParams></ExtraParams>
 </Containers>

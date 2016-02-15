@@ -4,7 +4,7 @@
 <Category>MediaServer:Video</Category>
   <Name>binhex-minidlna</Name>
   <Description>
-    ReadyMedia (formerly known as MiniDLNA) is a simple media server software, with the aim of being fully compliant with DLNA/UPnP-AV clients. It is developed by a NETGEAR employee for the ReadyNAS product line.[br][br]	
+    ReadyMedia (formerly known as MiniDLNA) is a simple media server software, with the aim of being fully compliant with DLNA/UPnP-AV clients. It is developed by a NETGEAR employee for the ReadyNAS product line.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where minidlna will store it's configuration file, database and logs.[br]
     [b]/media[/b] This is where minidlna will scan for media files.
@@ -25,10 +25,14 @@
   </Networking>
   <Environment>
     <Variable>
-      <Name></Name>
-      <Value></Value>
+      <Name>UID</Name>
+      <Value>99</Value>
     </Variable>
-  </Environment>    
+    <Variable>
+      <Name>GID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
   <Data>
     <Volume>
       <HostDir>path to config</HostDir>
@@ -44,4 +48,5 @@
   <WebUI></WebUI>
   <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/minidlna-banner.png</Banner>
   <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/minidlna-icon.png</Icon>
+  <ExtraParams></ExtraParams>
 </Containers>

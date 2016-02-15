@@ -42,7 +42,7 @@
       <Name>GID</Name>
       <Value>100</Value>
     </Variable>
-  </Environment>    
+  </Environment>
   <Data>
     <Volume>
       <HostDir>path to config</HostDir>
@@ -58,5 +58,5 @@
   <WebUI>http://[IP]:[PORT:9981]/</WebUI>
   <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/tvheadend-banner.png</Banner>
   <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/tvheadend-icon.png</Icon>
-  <ExtraParams>--device=path to tuner device</ExtraParams>  
+  <ExtraParams>--device=path to tuner device</ExtraParams>
 </Containers>

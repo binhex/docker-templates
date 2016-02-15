@@ -7,7 +7,7 @@
     Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where sonarr will store it's configuration file, database and logs.[br]
-    [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br]	
+    [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br]
     [b]/media[/b] This is where sonarr will scan for media files.
   </Description>
   <Overview>
@@ -31,15 +31,19 @@
         <HostPort>9897</HostPort>
         <ContainerPort>9897</ContainerPort>
         <Protocol>tcp</Protocol>
-      </Port>	  
+      </Port>
     </Publish>
   </Networking>
   <Environment>
     <Variable>
-      <Name></Name>
-      <Value></Value>
+      <Name>UID</Name>
+      <Value>99</Value>
     </Variable>
-  </Environment>    
+    <Variable>
+      <Name>GID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
   <Data>
     <Volume>
       <HostDir>path to config</HostDir>
@@ -60,4 +64,5 @@
   <WebUI>http://[IP]:[PORT:8989]/</WebUI>
   <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/sonarr-banner.png</Banner>
   <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/sonarr-icon.png</Icon>
+  <ExtraParams></ExtraParams>
 </Containers>

@@ -84,7 +84,15 @@
       <Name>DEBUG</Name>
       <Value>false</Value>
     </Variable>
-  </Environment> 
+    <Variable>
+      <Name>UID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>GID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
   <Data>
     <Volume>
       <HostDir>path to config</HostDir>
@@ -99,5 +107,6 @@
   </Data>
   <WebUI>http://[IP]:[PORT:8112]/</WebUI>
   <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/deluge-banner.png</Banner>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/deluge-icon.png</Icon>  
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/deluge-icon.png</Icon>
+  <ExtraParams></ExtraParams>
 </Containers>

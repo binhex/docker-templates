@@ -34,10 +34,14 @@
   </Networking>
   <Environment>
     <Variable>
-      <Name></Name>
-      <Value></Value>
+      <Name>UID</Name>
+      <Value>99</Value>
     </Variable>
-  </Environment>    
+    <Variable>
+      <Name>GID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
   <Data>
     <Volume>
       <HostDir>path to config</HostDir>
@@ -48,4 +52,5 @@
   <WebUI>http://[IP]:[PORT:8090]/</WebUI>
   <Banner>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/jenkins-banner.png</Banner>
   <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/jenkins-icon.png</Icon>
+  <ExtraParams></ExtraParams>
 </Containers>
