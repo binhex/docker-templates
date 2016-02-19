@@ -18,7 +18,7 @@ Firstly you need to be running unRAID ver 6.0.0 or later, once installed follow 
 6. Click the "Advanced View" toggle on the top right and fill in required fields e.g. volume data, environment variables etc
 7. Click on the "Create" button at the bottom of the window to begin pulling down the Docker image
 8. Once the image is downloaded you should see it appear in the "Docker Containers" sub-tab
-
+___
 If you appreciate my work, then please consider buying me a beer  :D
 
 [![PayPal donation](https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JTSH886FD9UM6)
