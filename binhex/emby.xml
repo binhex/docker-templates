@@ -30,11 +30,11 @@
     </Networking>
   <Environment>
     <Variable>
-      <Name>UID</Name>
+      <Name>PUID</Name>
       <Value>99</Value>
     </Variable>
     <Variable>
-      <Name>GID</Name>
+      <Name>PGID</Name>
       <Value>100</Value>
     </Variable>
   </Environment>
