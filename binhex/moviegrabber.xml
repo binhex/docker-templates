@@ -58,6 +58,6 @@
   </Data>
   <WebUI></WebUI>
   <Banner></Banner>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/madsonic-icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/moviegrabber-icon.png</Icon>
   <ExtraParams></ExtraParams>
 </Containers>
