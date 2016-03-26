@@ -27,8 +27,8 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>8112</HostPort>
-        <ContainerPort>8112</ContainerPort>
+        <HostPort>5000</HostPort>
+        <ContainerPort>5000</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
