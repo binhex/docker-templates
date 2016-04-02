@@ -85,6 +85,10 @@
       <Value>false</Value>
     </Variable>
     <Variable>
+      <Name>PHP_TZ</Name>
+      <Value>UTC</Value>
+    </Variable>
+    <Variable>
       <Name>PUID</Name>
       <Value>99</Value>
     </Variable>
