@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Beta>False</Beta>
+<Category>MediaServer:Music</Category>
+  <Name>binhex-libresonic</Name>
+  <Description>
+    Libresonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where libresonic will store it's configuration file, database and logs.[br]
+    [b]/media[/b] This is where libresonic will scan for media files.[br][br]
+    [b]Note[/b] If you wish to use HTTP then please set the Environment Variable "SSL" to "no", otherwise set to "yes" to enable HTTPS.
+  </Description>
+  <Overview>
+    Libresonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=49757.0</Support>
+  <Registry>https://registry.hub.docker.com/u/binhex/arch-libresonic/</Registry>
+  <GitHub>https://github.com/binhex/arch-libresonic</GitHub>
+  <Repository>binhex/arch-libresonic</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>4040</HostPort>
+        <ContainerPort>4040</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>4050</HostPort>
+        <ContainerPort>4050</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>SSL</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
+      <Name>CONTEXT_PATH</Name>
+      <Value>/</Value>
+    </Variable>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>path to config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>path to media</HostDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:4040]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/libresonic-icon.png</Icon>
+  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
