@@ -16,6 +16,7 @@
   <Registry>https://registry.hub.docker.com/u/binhex/arch-emby/</Registry>
   <GitHub>https://github.com/binhex/arch-emby</GitHub>
   <Repository>binhex/arch-emby</Repository>
+  <Project>https://emby.media/</Project>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>

@@ -18,6 +18,7 @@
   <Registry>https://registry.hub.docker.com/u/binhex/arch-teamspeak/</Registry>
   <GitHub>https://github.com/binhex/arch-teamspeak</GitHub>
   <Repository>binhex/arch-teamspeak</Repository>
+  <Project>https://www.teamspeak.com/teamspeak3</Project>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
