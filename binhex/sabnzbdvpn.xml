@@ -78,6 +78,14 @@
       <Value>no</Value>
     </Variable>
     <Variable>
+      <Name>LAN_NETWORK</Name>
+      <Value>192.168.1.0/24</Value>
+    </Variable>
+    <Variable>
+      <Name>ADDITIONAL_PORTS</Name>
+      <Value>8081</Value>
+    </Variable>
+    <Variable>
       <Name>DEBUG</Name>
       <Value>false</Value>
     </Variable>
