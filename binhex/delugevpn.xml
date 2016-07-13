@@ -63,7 +63,7 @@
     </Variable>
     <Variable>
       <Name>VPN_PORT</Name>
-      <Value>1194</Value>
+      <Value>1198</Value>
     </Variable>
     <Variable>
       <Name>VPN_PROTOCOL</Name>
