@@ -74,6 +74,10 @@
       <Value>pia|airvpn|custom</Value>
     </Variable>
     <Variable>
+      <Name>STRONG_CERTS</Name>
+      <Value>no</Value>
+    </Variable>
+    <Variable>
       <Name>ENABLE_PRIVOXY</Name>
       <Value>no</Value>
     </Variable>
