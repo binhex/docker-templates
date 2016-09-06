@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Beta>False</Beta>
+<Category>Backup: Cloud: Network:Other Productivity: Tools:</Category>
+  <Name>binhex-onedrive</Name>
+  <Description>
+    OneDrive (previously SkyDrive, Windows Live SkyDrive, and Windows Live Folders) is a file hosting service that allows users to sync files and later access them from a web browser or mobile device. Users can share files publicly or with their contacts; publicly shared files do not require a Microsoft account to access them. OneDrive is included in the suite of online services formerly known as Windows Live.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where onedrive will store it's configuration file, database and logs.[br]
+    [b]/sync[/b] This path is used to syncronise files to/from onedrive.[br]
+    [b]/media[/b] This is where onedrive will scan for media files.
+  </Description>
+  <Overview>
+    OneDrive (previously SkyDrive, Windows Live SkyDrive, and Windows Live Folders) is a file hosting service that allows users to sync files and later access them from a web browser or mobile device. Users can share files publicly or with their contacts; publicly shared files do not require a Microsoft account to access them. OneDrive is included in the suite of online services formerly known as Windows Live.
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=45837.0</Support>
+  <Registry>https://registry.hub.docker.com/u/binhex/arch-onedrive/</Registry>
+  <GitHub>https://github.com/binhex/arch-onedrive</GitHub>
+  <Repository>binhex/arch-onedrive</Repository>
+  <Project>https://github.com/skilion/onedrive</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>LIVE_USER</Name>
+      <Value>live username</Value>
+    </Variable>
+    <Variable>
+      <Name>LIVE_PASS</Name>
+      <Value>live password</Value>
+    </Variable>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>path to config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>path for sync data</HostDir>
+      <ContainerDir>/sync</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>path to media</HostDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/onedrive-icon.png</Icon>
+  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
