@@ -35,6 +35,14 @@
   </Networking>
   <Environment>
     <Variable>
+      <Name>JAVA_ARGS</Name>
+      <Value>-Xmx512m</Value>
+    </Variable>
+    <Variable>
+      <Name>JAVA_OPTS</Name>
+      <Value>-Dhudson.footerURL=http://mycompany.com</Value>
+    </Variable>
+    <Variable>
       <Name>PUID</Name>
       <Value>99</Value>
     </Variable>
