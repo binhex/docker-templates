@@ -55,12 +55,12 @@
   </Environment>
   <Data>
     <Volume>
-      <HostDir>path to config</HostDir>
+      <HostDir>/mnt/cache/appdata/config</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>path to media</HostDir>
+      <HostDir>/mnt/user</HostDir>
       <ContainerDir>/media</ContainerDir>
       <Mode>ro</Mode>
     </Volume>

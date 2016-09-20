@@ -46,12 +46,12 @@
   </Environment>
   <Data>
     <Volume>
-      <HostDir>path to config</HostDir>
+      <HostDir>/mnt/cache/appdata/config</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>path for downloads</HostDir>
+      <HostDir>/mnt/cache/appdata/data</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>

@@ -38,7 +38,7 @@
   </Environment>
   <Data>
     <Volume>
-      <HostDir>path to config</HostDir>
+      <HostDir>/mnt/cache/appdata/config</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
