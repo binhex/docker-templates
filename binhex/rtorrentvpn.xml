@@ -75,6 +75,10 @@
       <Value>udp</Value>
     </Variable>
     <Variable>
+      <Name>VPN_DEVICE_TYPE</Name>
+      <Value>tun</Value>
+    </Variable>
+    <Variable>
       <Name>VPN_PROV</Name>
       <Value>pia|airvpn|custom</Value>
     </Variable>
