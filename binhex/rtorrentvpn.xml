@@ -95,6 +95,10 @@
       <Value>192.168.1.0/24</Value>
     </Variable>
     <Variable>
+      <Name>NAME_SERVERS</Name>
+      <Value>8.8.8.8,37.235.1.174,8.8.4.4,37.235.1.177</Value>
+    </Variable>
+    <Variable>
       <Name>DEBUG</Name>
       <Value>false</Value>
     </Variable>
