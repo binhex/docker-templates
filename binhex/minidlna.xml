@@ -33,6 +33,18 @@
       <Name>PGID</Name>
       <Value>100</Value>
     </Variable>
+    <Variable>
+      <Name>SCHEDULE_SCAN_DAYS</Name>
+      <Value>06</Value>
+    </Variable>
+    <Variable>
+      <Name>SCHEDULE_SCAN_HOURS</Name>
+      <Value>02</Value>
+    </Variable>
+    <Variable>
+      <Name>SCAN_ON_BOOT</Name>
+      <Value>no</Value>
+    </Variable>
   </Environment>
   <Data>
     <Volume>
