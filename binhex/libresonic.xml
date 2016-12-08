@@ -28,22 +28,9 @@
         <ContainerPort>4040</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
-      <Port>
-        <HostPort>4050</HostPort>
-        <ContainerPort>4050</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
     </Publish>
   </Networking>
   <Environment>
-    <Variable>
-      <Name>SSL</Name>
-      <Value>yes</Value>
-    </Variable>
-    <Variable>
-      <Name>CONTEXT_PATH</Name>
-      <Value>/</Value>
-    </Variable>
     <Variable>
       <Name>PUID</Name>
       <Value>99</Value>
