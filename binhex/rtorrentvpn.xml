@@ -80,6 +80,10 @@
       <Value>udp</Value>
     </Variable>
     <Variable>
+      <Name>VPN_INCOMING_PORT</Name>
+      <Value>49160</Value>
+    </Variable>
+    <Variable>
       <Name>VPN_DEVICE_TYPE</Name>
       <Value>tun</Value>
     </Variable>
