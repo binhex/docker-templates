@@ -30,22 +30,22 @@ This Docker includes OpenVPN to ensure a secure and private connection to the In
 For help on configuration for PIA, AirVPN and custom VPN providers please go here http://lime-technology.com/forum/index.php?topic=45812.msg437678#msg437678[br]&#xD;
 IMPORTANT - To allow access to the Deluge webui, Privoxy and Deluge deamon you need to specify you LAN network, using CIDR notation for the mask, a subnet mask of 255.255.255.0 would equate to CIDR /24, 255.255.0.0 would equate to CIDR /16.&#xD;
 </Description>
-  <Config Name="Web UI Port HTTP" Target="8112" Default="8112" Mode="tcp" Description="Web UI Port HTTP" Type="Port" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="Deluge Daemon" Target="58846" Default="58846" Mode="tcp" Description="Deluge Daemon" Type="Port" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="Privoxy Port" Target="8118" Default="8118" Mode="tcp" Description="Privoxy Port" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Deluge Web UI port" Target="8112" Default="8112" Mode="tcp" Description="Web UI port" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Deluge Daemon port" Target="58846" Default="58846" Mode="tcp" Description="Deluge Daemon port" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Privoxy port" Target="8118" Default="8118" Mode="tcp" Description="Privoxy port" Type="Port" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Deluge configuration path" Target="/config" Default="/mnt/cache/appdata/config/delugevpn/" Mode="rw" Description="Deluge configuration path" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Deluge Downloads path" Target="/data" Default="/mnt/cache/appdata/" Mode="rw" Description="Deluge Downloads path" Type="Path" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="Enable VPN" Target="VPN_ENABLED" Default="yes" Mode="" Description="Enable VPN" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Enable VPN" Target="VPN_ENABLED" Default="yes|no" Mode="" Description="Enable VPN" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="VPN providers username" Target="VPN_USER" Default="vpn username" Mode="" Description="VPN providers username" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="VPN providers password" Target="VPN_PASS" Default="vpn password" Mode="" Description="VPN providers password" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="VPN remote endpoint hostname" Target="VPN_REMOTE" Default="nl.privateinternetaccess.com" Mode="" Description="VPN remote endpoint hostname" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="VPN remote endpoint port" Target="VPN_PORT" Default="1198" Mode="" Description="VPN remote endpoint port" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="VPN remote endpoint protocol" Target="VPN_PROTOCOL" Default="udp" Mode="" Description="VPN remote endpoint protocol" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="VPN remote endpoint port" Target="VPN_PORT" Default="1198|1197" Mode="" Description="VPN remote endpoint port" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="VPN remote endpoint protocol" Target="VPN_PROTOCOL" Default="udp|tcp" Mode="" Description="VPN remote endpoint protocol" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="VPN provider" Target="VPN_PROV" Default="pia|airvpn|custom" Mode="" Description="VPN provider" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="Enable Privoxy" Target="ENABLE_PRIVOXY" Default="no" Mode="" Description="Enable Privoxy" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="Define LAN network" Target="LAN_NETWORK" Default="192.168.1.0/24" Mode="" Description="Define LAN network" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="Enable Additional logging" Target="DEBUG" Default="true" Mode="" Description="Enable Additional logging" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Enable Privoxy" Target="ENABLE_PRIVOXY" Default="no|yes" Mode="" Description="Enable Privoxy" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Define LAN" Target="LAN_NETWORK" Default="192.168.1.0/24" Mode="" Description="Define LAN" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Enable additional logging" Target="DEBUG" Default="false|true" Mode="" Description="Enable additional logging" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Define User ID to run as" Target="PUID" Default="99" Mode="" Description="Define User ID to run as" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Define Group ID to run as" Target="PGID" Default="100" Mode="" Description="Define Group ID to run as" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="Enable strong certificates (PIA only)" Target="STRONG_CERTS" Default="no" Mode="" Description="Enable strong certificates (PIA only)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Enable strong certificates (applies to PIA only)" Target="STRONG_CERTS" Default="no|yes" Mode="" Description="Enable strong certificates (applies to PIA only)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
 </Container>
