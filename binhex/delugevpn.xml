@@ -78,6 +78,10 @@
       <Value>pia|airvpn|custom</Value>
     </Variable>
     <Variable>
+      <Name>VPN_OPTIONS</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
       <Name>STRONG_CERTS</Name>
       <Value>no|yes</Value>
     </Variable>
