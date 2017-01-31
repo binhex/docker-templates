@@ -41,7 +41,7 @@ IMPORTANT - To allow access to the Deluge webui, Privoxy and Deluge deamon you n
   <Config Name="VPN remote endpoint hostname" Target="VPN_REMOTE" Default="nl.privateinternetaccess.com" Mode="" Description="VPN remote endpoint hostname" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="VPN remote endpoint port" Target="VPN_PORT" Default="1198" Mode="" Description="VPN remote endpoint port" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="VPN remote endpoint protocol" Target="VPN_PROTOCOL" Default="udp" Mode="" Description="VPN remote endpoint protocol" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="VPN provider" Target="VPN_PROV" Default="pia" Mode="" Description="VPN provider" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="VPN provider" Target="VPN_PROV" Default="pia|airvpn|custom" Mode="" Description="VPN provider" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Enable Privoxy" Target="ENABLE_PRIVOXY" Default="no" Mode="" Description="Enable Privoxy" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Define LAN network" Target="LAN_NETWORK" Default="192.168.1.0/24" Mode="" Description="Define LAN network" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Enable Additional logging" Target="DEBUG" Default="true" Mode="" Description="Enable Additional logging" Type="Variable" Display="always" Required="false" Mask="false"></Config>
