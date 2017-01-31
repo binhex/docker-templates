@@ -47,7 +47,7 @@
   <Environment>
     <Variable>
       <Name>VPN_ENABLED</Name>
-      <Value>yes</Value>
+      <Value>yes|no</Value>
     </Variable>
     <Variable>
       <Name>VPN_USER</Name>
@@ -67,11 +67,11 @@
     </Variable>
     <Variable>
       <Name>VPN_PROTOCOL</Name>
-      <Value>udp</Value>
+      <Value>udp|tcp</Value>
     </Variable>
     <Variable>
       <Name>VPN_DEVICE_TYPE</Name>
-      <Value>tun</Value>
+      <Value>tun|tap</Value>
     </Variable>
     <Variable>
       <Name>VPN_PROV</Name>
@@ -79,11 +79,11 @@
     </Variable>
     <Variable>
       <Name>STRONG_CERTS</Name>
-      <Value>no</Value>
+      <Value>no|yes</Value>
     </Variable>
     <Variable>
       <Name>ENABLE_PRIVOXY</Name>
-      <Value>no</Value>
+      <Value>no|yes</Value>
     </Variable>
     <Variable>
       <Name>LAN_NETWORK</Name>
@@ -95,7 +95,7 @@
     </Variable>
     <Variable>
       <Name>DEBUG</Name>
-      <Value>false</Value>
+      <Value>false|true</Value>
     </Variable>
     <Variable>
       <Name>PUID</Name>
