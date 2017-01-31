@@ -20,7 +20,7 @@ IMPORTANT - To allow access to the Deluge webui, Privoxy and Deluge deamon you n
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/deluge-icon.png</Icon>
   <ExtraParams/>
-  <DateInstalled>1485810553</DateInstalled>
+  <DateInstalled></DateInstalled>
   <Description>Deluge is a full-featured &#x200B;BitTorrent client for Linux, OS X, Unix and Windows. It uses &#x200B;libtorrent in its backend and features multiple user-interfaces including: GTK+, web and console. It has been designed using the client server model with a daemon process that handles all the bittorrent activity. The Deluge daemon is able to run on headless machines with the user-interfaces being able to connect remotely from any platform.[br]&#xD;
 This Docker includes OpenVPN to ensure a secure and private connection to the Internet, including use of iptables to prevent IP leakage when the tunnel is down. It also includes Privoxy to allow unfiltered access to index sites, to use Privoxy please point your application at "host ip:8118"[br][br]&#xD;
 [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
@@ -44,8 +44,8 @@ IMPORTANT - To allow access to the Deluge webui, Privoxy and Deluge deamon you n
   <Config Name="VPN provider" Target="VPN_PROV" Default="pia|airvpn|custom" Mode="" Description="VPN provider" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Enable Privoxy" Target="ENABLE_PRIVOXY" Default="no|yes" Mode="" Description="Enable Privoxy" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Define LAN" Target="LAN_NETWORK" Default="192.168.1.0/24" Mode="" Description="Define LAN" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Enable strong certificates (applies to PIA only)" Target="STRONG_CERTS" Default="no|yes" Mode="" Description="Enable strong certificates (applies to PIA only)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Enable additional logging" Target="DEBUG" Default="false|true" Mode="" Description="Enable additional logging" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Define User ID to run as" Target="PUID" Default="99" Mode="" Description="Define User ID to run as" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Define Group ID to run as" Target="PGID" Default="100" Mode="" Description="Define Group ID to run as" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="Enable strong certificates (applies to PIA only)" Target="STRONG_CERTS" Default="no|yes" Mode="" Description="Enable strong certificates (applies to PIA only)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
 </Container>
