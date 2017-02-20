@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>test</Name>
+  <Repository>binhex/arch-test</Repository>
+  <Registry>https://registry.hub.docker.com/u/binhex/arch-test/</Registry>
+  <Project>http://test-torrent.org/</Project>
+  <Privileged>true</Privileged>
+  <Support>http://lime-technology.com/forum/index.php?topic=45812.0</Support>
+  <Overview>test is a full-featured ​BitTorrent client for Linux, OS X, Unix and Windows. It uses ​libtorrent in its backend and features multiple user-interfaces including: GTK+, web and console. It has been designed using the client server model with a daemon process that handles all the bittorrent activity. The test daemon is able to run on headless machines with the user-interfaces being able to connect remotely from any platform. This Docker includes OpenVPN to ensure a secure and private connection to the Internet, including use of iptables to prevent IP leakage when the tunnel is down. It also includes Privoxy to allow unfiltered access to index sites, to use Privoxy please point your application at 'host ip:8118'</Overview>
+  <Category>Downloaders: HomeAutomation: MediaApp:Video Status:Stable</Category>
+  <WebUI>http://[IP]:[PO77RT:8112]/</WebUI>
+  <TemplateURL>https://github.com/binhex/docker-templates/tree/master/binhex</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/test-icon.png</Icon>
+  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <ExtraParams></ExtraParams>
+  <DateInstalled></DateInstalled>
+  <Description>test is a full-featured ​BitTorrent client for Linux, OS X, Unix and Windows. It uses ​libtorrent in its backend and features multiple user-interfaces including: GTK+, web and console. It has been designed using the client server model with a daemon process that handles all the bittorrent activity. The test daemon is able to run on headless machines with the user-interfaces being able to connect remotely from any platform. This Docker includes OpenVPN to ensure a secure and private connection to the Internet, including use of iptables to prevent IP leakage when the tunnel is down. It also includes Privoxy to allow unfiltered access to index sites, to use Privoxy please point your application at 'host ip:8118'</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8112</HostPort>
+        <ContainerPort>8112</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort> 58846</HostPort>
+        <ContainerPort> 58846</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort> 8118</HostPort>
+        <ContainerPort> 8118</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+  </Networking>
+  <Data>
+    <path>
+      <HostDir>/mnt/cache/appdata/config</HostDir>
+        <ContainerDir>/config</ContainerDir>
+        <Mode>rw</Mode>
+    </path>
+    <path>
+      <HostDir> /mnt/cache/appdata/data</HostDir>
+        <ContainerDir>/data</ContainerDir>
+        <Mode>rw</Mode>
+    </path>
+  </Data>
+  <Environment>
+    <Variable>
+      <Name>VPN_ENABLED</Name>
+      <Value>yes|no</Value>
+    </Variable>
+    <Variable>
+      <Name> VPN_USER</Name>
+      <Value>vpn_user</Value>
+    </Variable>
+    <Variable>
+      <Name> VPN_PASS</Name>
+      <Value>vpn_pass</Value>
+    </Variable>
+    <Variable>
+      <Name> VPN_REMOTE</Name>
+      <Value>nl.privateinternetaccess.com</Value>
+    </Variable>
+    <Variable>
+      <Name> VPN_PORT</Name>
+      <Value>1198</Value>
+    </Variable>
+    <Variable>
+      <Name> VPN_PROTOCOL</Name>
+      <Value>udp|tcp</Value>
+    </Variable>
+    <Variable>
+      <Name> VPN_DEVICE_TYPE</Name>
+      <Value>tun|tap</Value>
+    </Variable>
+    <Variable>
+      <Name> VPN_PROV</Name>
+      <Value>pia|airvpn|custom</Value>
+    </Variable>
+    <Variable>
+      <Name> STRONG_CERTS</Name>
+      <Value>no|yes</Value>
+    </Variable>
+    <Variable>
+      <Name> VPN_OPTIONS</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name> ENABLE_PRIVOXY</Name>
+      <Value>no|yes</Value>
+    </Variable>
+    <Variable>
+      <Name> LAN_NETWORK</Name>
+      <Value>192.168.1.0/24</Value>
+    </Variable>
+    <Variable>
+      <Name> NAME_SERVERS</Name>
+      <Value>8.8.8.8,37.235.1.174,8.8.4.4,37.235.1.177</Value>
+    </Variable>
+    <Variable>
+      <Name> DEBUG</Name>
+      <Value>no|yes</Value>
+    </Variable>
+    <Variable>
+      <Name> PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name> PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Config Name="test WebUI Port" Target="8112" Default="8112" Mode="tcp" Description="test WebUI Port" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="test Daemon Port" Target=" 58846" Default=" 58846" Mode="tcp" Description="test Daemon Port" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Privoxy Port" Target=" 8118" Default=" 8118" Mode="tcp" Description="Privoxy Port" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Configuration Path" Target="/config" Default="/mnt/cache/appdata/config" Mode="rw" Description="Configuration Path" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Downloads Path" Target="/data" Default=" /mnt/cache/appdata/data" Mode="rw" Description="Downloads Path" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Toggle VPN" Target="VPN_ENABLED" Default="yes|no" Mode="" Description="Toggle VPN" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="VPN provider username" Target=" VPN_USER" Default="vpn_user" Mode="" Description="VPN provider username" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="VPN provider password" Target=" VPN_PASS" Default="vpn_pass" Mode="" Description="VPN provider password" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="VPN provider remote endpoint" Target=" VPN_REMOTE" Default="nl.privateinternetaccess.com" Mode="" Description="VPN provider remote endpoint" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="VPN provider remote port" Target=" VPN_PORT" Default="1198" Mode="" Description="VPN provider remote port" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="VPN provider remote protocol" Target=" VPN_PROTOCOL" Default="udp|tcp" Mode="" Description="VPN provider remote protocol" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="VPN provider device type" Target=" VPN_DEVICE_TYPE" Default="tun|tap" Mode="" Description="VPN provider device type" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="VPN provider selection" Target=" VPN_PROV" Default="pia|airvpn|custom" Mode="" Description="VPN provider selection" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="VPN provider strong certificate support (PIA only)" Target=" STRONG_CERTS" Default="no|yes" Mode="" Description="VPN provider strong certificate support (PIA only)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="OpenVPN additional command line options" Target=" VPN_OPTIONS" Default="" Mode="" Description="OpenVPN additional command line options" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Toggle Privoxy (web proxy)" Target=" ENABLE_PRIVOXY" Default="no|yes" Mode="" Description="Toggle Privoxy (web proxy)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Define LAN network in CIDR format" Target=" LAN_NETWORK" Default="192.168.1.0/24" Mode="" Description="Define LAN network in CIDR format" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Name Servers used for name resolution inside the container" Target=" NAME_SERVERS" Default="8.8.8.8,37.235.1.174,8.8.4.4,37.235.1.177" Mode="" Description="Name Servers used for name resolution inside the container" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Toggle additional debugging (useful when having issues)" Target=" DEBUG" Default="no|yes" Mode="" Description="Toggle additional debugging (useful when having issues)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="UID of the user that the container will run as" Target=" PUID" Default="99" Mode="" Description="UID of the user that the container will run as" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="GID of the user that the container will run as" Target=" PGID" Default="100" Mode="" Description="GID of the user that the container will run as" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+</Container>
