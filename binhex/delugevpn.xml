@@ -38,6 +38,16 @@
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
+        <HostPort>58946</HostPort>
+        <ContainerPort>58946</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>58946</HostPort>
+        <ContainerPort>58946</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
         <HostPort>8118</HostPort>
         <ContainerPort>8118</ContainerPort>
         <Protocol>tcp</Protocol>
