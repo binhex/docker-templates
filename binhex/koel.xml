@@ -42,7 +42,11 @@
     <Variable>
       <Name>FASTCGI_READ_TIMEOUT</Name>
       <Value>6000</Value>
-    </Variable>  
+    </Variable>
+    <Variable>
+      <Name>UMASK</Name>
+      <Value>000</Value>
+    </Variable>
     <Variable>
       <Name>PUID</Name>
       <Value>99</Value>

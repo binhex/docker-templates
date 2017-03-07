@@ -30,6 +30,10 @@
       <Value>/config/transcode</Value>
     </Variable>
     <Variable>
+      <Name>UMASK</Name>
+      <Value>000</Value>
+    </Variable>
+    <Variable>
       <Name>PUID</Name>
       <Value>99</Value>
     </Variable>
