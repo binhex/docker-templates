@@ -86,6 +86,10 @@
       <Value>no</Value>
     </Variable>
     <Variable>
+      <Name>STRICT_PORT_FORWARD</Name>
+      <Value>no|yes</Value>
+    </Variable>
+    <Variable>
       <Name>ENABLE_PRIVOXY</Name>
       <Value>no</Value>
     </Variable>
