@@ -68,24 +68,8 @@
       <Value>vpn password</Value>
     </Variable>
     <Variable>
-      <Name>VPN_REMOTE</Name>
-      <Value>nl.privateinternetaccess.com</Value>
-    </Variable>
-    <Variable>
-      <Name>VPN_PORT</Name>
-      <Value>1198</Value>
-    </Variable>
-    <Variable>
-      <Name>VPN_PROTOCOL</Name>
-      <Value>udp</Value>
-    </Variable>
-    <Variable>
       <Name>VPN_INCOMING_PORT</Name>
       <Value>49160</Value>
-    </Variable>
-    <Variable>
-      <Name>VPN_DEVICE_TYPE</Name>
-      <Value>tun</Value>
     </Variable>
     <Variable>
       <Name>VPN_PROV</Name>
@@ -94,10 +78,6 @@
     <Variable>
       <Name>VPN_OPTIONS</Name>
       <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>STRONG_CERTS</Name>
-      <Value>no</Value>
     </Variable>
     <Variable>
       <Name>STRICT_PORT_FORWARD</Name>
