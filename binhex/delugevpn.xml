@@ -68,22 +68,6 @@
       <Value>vpn password</Value>
     </Variable>
     <Variable>
-      <Name>VPN_REMOTE</Name>
-      <Value>nl.privateinternetaccess.com</Value>
-    </Variable>
-    <Variable>
-      <Name>VPN_PORT</Name>
-      <Value>1198</Value>
-    </Variable>
-    <Variable>
-      <Name>VPN_PROTOCOL</Name>
-      <Value>udp|tcp</Value>
-    </Variable>
-    <Variable>
-      <Name>VPN_DEVICE_TYPE</Name>
-      <Value>tun|tap</Value>
-    </Variable>
-    <Variable>
       <Name>VPN_PROV</Name>
       <Value>pia|airvpn|custom</Value>
     </Variable>
@@ -92,12 +76,8 @@
       <Value></Value>
     </Variable>
     <Variable>
-      <Name>STRONG_CERTS</Name>
-      <Value>no|yes</Value>
-    </Variable>
-    <Variable>
       <Name>STRICT_PORT_FORWARD</Name>
-      <Value>no|yes</Value>
+      <Value>yes</Value>
     </Variable>
     <Variable>
       <Name>ENABLE_PRIVOXY</Name>
