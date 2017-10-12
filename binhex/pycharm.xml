@@ -54,7 +54,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:6080]/vnc.html%3Fresize=remote%26host=[IP]%26port=[PORT:6080]%26autoconnect%3D1</WebUI>
+  <WebUI>http://[IP]:[PORT:6080]/vnc.html\?resize=remote\&host=[IP]\&port=[PORT:6080]\&\&autoconnect=1</WebUI>
   <Banner></Banner>
   <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/pycharm-icon.png</Icon>
   <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
