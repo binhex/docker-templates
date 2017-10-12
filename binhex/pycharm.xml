@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
   <Beta>False</Beta>
-<Category>Productivity: Tools:</Category>
+  <Category>Productivity: Tools:</Category>
   <Name>binhex-pycharm</Name>
   <Description>
     PyCharm is an Integrated Development Environment (IDE) used in computer programming, specifically for the Python language. It is developed by the Czech company JetBrains.[2] It provides code analysis, a graphical debugger, an integrated unit tester, integration with version control systems (VCSes), and supports web development with Django.[br][br]
@@ -18,7 +18,7 @@
   <Project>https://www.jetbrains.com/pycharm/</Project>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-    <Networking>
+  <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
@@ -54,7 +54,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:6080]/vnc.html?resize=remote&host=[IP]&port=[PORT:6080]&&autoconnect=1</WebUI>
+  <WebUI>http://[IP]:[PORT:6080]/vnc.html?resize=remote&autoconnect=1</WebUI>
   <Banner></Banner>
   <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/pycharm-icon.png</Icon>
   <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
