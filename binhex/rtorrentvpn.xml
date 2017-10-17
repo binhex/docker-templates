@@ -88,6 +88,10 @@
       <Value>no</Value>
     </Variable>
     <Variable>
+      <Name>ENABLE_AUTODL_IRSSI</Name>
+      <Value>no</Value>
+    </Variable>
+    <Variable>
       <Name>LAN_NETWORK</Name>
       <Value>192.168.1.0/24</Value>
     </Variable>
