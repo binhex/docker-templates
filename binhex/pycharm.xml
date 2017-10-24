@@ -53,6 +53,11 @@
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/data</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:6080]/vnc.html?resize=remote&amp;host=[IP]&amp;port=[PORT:6080]&amp;autoconnect=1</WebUI>
   <Banner></Banner>
