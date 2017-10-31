@@ -12,7 +12,7 @@
   <Overview>
     LibreOffice is a free and open source office suite, a project of The Document Foundation. It was forked from OpenOffice.org in 2010, which was an open-sourced version of the earlier StarOffice. The LibreOffice suite comprises programs for word processing, the creation and editing of spreadsheets, slideshows, diagrams and drawings, working with databases, and composing mathematical formulae. It is available in 110 languages.
   </Overview>
-  <Support>https://forums.lime-technology.com/topic/60734-support-binhex-libreoffice/</Support>
+  <Support>https://forums.lime-technology.com/topic/61110-support-binhex-libreoffice-fresh/</Support>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-libreoffice/</Registry>
   <GitHub>https://github.com/binhex/arch-libreoffice</GitHub>
   <Repository>binhex/arch-libreoffice</Repository>
