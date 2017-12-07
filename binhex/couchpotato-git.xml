@@ -20,7 +20,7 @@
   <Project>https://couchpota.to/</Project>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-    <Networking>
+  <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
