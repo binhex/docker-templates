@@ -14,7 +14,7 @@
   <Overview>
     NZBHydra is a meta search for NZB indexers. It provides easy access to a number of raw and newznab based indexers. You can search all your indexers from one place and use it as indexer source for tools like Sonarr or CouchPotato.
   </Overview>
-  <Support>https://forums.lime-technology.com/topic/62378-support-binhex-nzbhdra/</Support>
+  <Support>https://forums.lime-technology.com/topic/62378-support-binhex-nzbhydra/</Support>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-nzbhydra/</Registry>
   <GitHub>https://github.com/binhex/arch-nzbhydra</GitHub>
   <Repository>binhex/arch-nzbhydra</Repository>
