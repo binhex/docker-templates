@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
+  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/delugevpn.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>Downloaders:</Category>
   <Name>binhex-delugevpn</Name>

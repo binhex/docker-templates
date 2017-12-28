@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
-<Beta>False</Beta>
-<Category>MediaServer:Music</Category>
+  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/madsonic.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>MediaServer:Music</Category>
   <Name>binhex-madsonic</Name>
   <Description>
     Madsonic is a fork of the Subsonic 4.x Server, Madsonic is a full replacement for your current Subsonic server!, Madsonic is designed for people who want more from the vanilla Subsonic features.[br][br]

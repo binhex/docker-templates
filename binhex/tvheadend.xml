@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
-<Beta>False</Beta>
-<Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
+  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/tvheadend.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
   <Name>binhex-tvheadend</Name>
   <Description>
     Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT>IP and HDHomeRun as input sources. Tvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT>IP streaming. Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).[br][br]

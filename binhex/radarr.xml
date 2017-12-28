@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
+  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/radarr.xml</TemplateURL>
   <Beta>False</Beta>
-<Category>Downloaders: MediaApp:Video</Category>
+  <Category>Downloaders: MediaApp:Video</Category>
   <Name>binhex-radarr</Name>
   <Description>
     This fork of Sonarr aims to turn it into something like Couchpotato. NOTE This application is under heavy development right now, it may not work correctly.[br][br]

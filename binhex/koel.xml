@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
+  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/koel.xml</TemplateURL>
   <Beta>False</Beta>
-<Category>MediaServer:Music</Category>
+  <Category>MediaServer:Music</Category>
   <Name>binhex-koel</Name>
   <Description>
     Stylized as koel, with a lowercase k) is a simple web-based personal audio streaming service written in Vue on the client side and Laravel on the server side. Targeting web developers, Koel embraces some of the more modern web technologies – flexbox, audio, and drag-and-drop API to name a few – to do its job.[br][br]
@@ -31,7 +32,7 @@
         <HostPort>8060</HostPort>
         <ContainerPort>8060</ContainerPort>
         <Protocol>tcp</Protocol>
-      </Port>  
+      </Port>
     </Publish>
   </Networking>
   <Environment>

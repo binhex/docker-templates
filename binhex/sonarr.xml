@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
+  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/sonarr.xml</TemplateURL>
   <Beta>False</Beta>
-<Category>Downloaders: MediaApp:Video</Category>
+  <Category>Downloaders: MediaApp:Video</Category>
   <Name>binhex-sonarr</Name>
   <Description>
     Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.[br][br]

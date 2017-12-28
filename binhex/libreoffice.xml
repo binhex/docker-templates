@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
+  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/libreoffice.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>Productivity: Tools:</Category>
   <Name>binhex-libreoffice</Name>
