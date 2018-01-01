@@ -19,7 +19,6 @@
   <GitHub>https://github.com/binhex/arch-nzbhydra</GitHub>
   <Repository>binhex/arch-nzbhydra</Repository>
   <Project>https://github.com/theotherp/nzbhydra</Project>
-  <Deprecated>false</Deprecated>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
