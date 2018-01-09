@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
   <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/nzbhydra2.xml</TemplateURL>
-  <Beta>false</Beta>
+  <Beta>true</Beta>
   <Category>Downloaders: MediaApp:Video</Category>
   <Name>binhex-nzbhydra2</Name>
   <Description>
