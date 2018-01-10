@@ -56,11 +56,6 @@
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-    <Volume>
-      <HostDir>/mnt/user</HostDir>
-      <ContainerDir>/media</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:5075]/</WebUI>
   <Banner></Banner>
