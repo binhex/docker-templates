@@ -67,7 +67,7 @@
     <Volume>
       <HostDir>/mnt/user</HostDir>
       <ContainerDir>/media</ContainerDir>
-      <Mode>ro</Mode>
+      <Mode>rw</Mode>
     </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:4040]/</WebUI>
