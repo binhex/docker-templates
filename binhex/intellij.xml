@@ -23,11 +23,6 @@
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
-    <Port>
-        <HostPort>5950</HostPort>
-        <ContainerPort>5900</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
       <Port>
         <HostPort>6080</HostPort>
         <ContainerPort>6080</ContainerPort>
