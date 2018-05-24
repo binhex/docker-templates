@@ -33,7 +33,7 @@
   <Environment>
     <Variable>
       <Name>TITLE_NAME</Name>
-      <Value>noVNC</Value>
+      <Value>Tower</Value>
     </Variable>
     <Variable>
       <Name>UMASK</Name>
