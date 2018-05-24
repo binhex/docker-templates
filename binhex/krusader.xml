@@ -32,6 +32,10 @@
   </Networking>
   <Environment>
     <Variable>
+      <Name>TITLE_NAME</Name>
+      <Value>noVNC</Value>
+    </Variable>
+    <Variable>
       <Name>UMASK</Name>
       <Value>000</Value>
     </Variable>
