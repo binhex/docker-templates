@@ -32,7 +32,7 @@
   </Networking>
   <Environment>
     <Variable>
-      <Name>TITLE_NAME</Name>
+      <Name>WEBPAGE_TITLE</Name>
       <Value>Tower</Value>
     </Variable>
     <Variable>
