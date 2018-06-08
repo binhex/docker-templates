@@ -40,6 +40,10 @@
       <Value>Tower</Value>
     </Variable>
     <Variable>
+      <Name>VNC_PASSWORD</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
       <Name>UMASK</Name>
       <Value>000</Value>
     </Variable>
