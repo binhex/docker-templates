@@ -19,6 +19,7 @@
   <GitHub>https://github.com/binhex/arch-sickrage</GitHub>
   <Repository>binhex/arch-sickrage</Repository>
   <Project>https://github.com/sickRage/SickRage</Project>
+  <Deprecated>true</Deprecated>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
