@@ -12,7 +12,7 @@
     [b]/data[/b] This is where qBittorrent will store data downloaded, watched folder, and archived torrents.[br][br]
     [b][span style='color: #E80000;']Notes[/span][/b][br]
     [b]IMPORTANT[/b]
-    To allow access to the qBittorrent web ui and Privoxy outside of your LAN you must configure the LAN_NETWORK, using CIDR notation for the mask, a subnet mask of 255.255.255.0 would equate to CIDR /24, 255.255.0.0 would equate to CIDR /16.[br]
+    To allow access to the qBittorrent web ui and Privoxy outside of your LAN you must configure the LAN_NETWORK, using CIDR notation for the mask, a subnet mask of 255.255.255.0 would equate to CIDR /24, 255.255.0.0 would equate to CIDR /16.[br][br]
     Due to issues with CSRF and port mapping, should you require to alter the port for the web ui you need to change both sides of the -p 8080 switch AND set the WEBUI_PORT variable to the new port. For example, to set the port to 8090 you need to set -p 8090:8090 and -e WEBUI_PORT=8090.
   </Description>
   <Overview>
