@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/qbittorrentvpn.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Downloaders:</Category>
+  <Name>binhex-qbittorrentvpn</Name>
+  <Description>
+    qBittorrent is a bittorrent client programmed in C++ / Qt that uses libtorrent (sometimes called libtorrent-rasterbar) by Arvid Norberg. It aims to be a good alternative to all other bittorrent clients out there. qBittorrent is fast, stable and provides unicode support as well as many features. This Docker image is using the headless configuration with the web frontend enabled, as well as OpenVPN to ensure a secure and private connection to the Internet, including use of iptables to prevent IP leakage when the tunnel is down. Privoxy is also included to allow unfiltered access to index sites, to use Privoxy please point your application at http://<host ip>:8118.[br]
+    This Docker includes OpenVPN to ensure a secure and private connection to the Internet, including use of iptables to prevent IP leakage when the tunnel is down. It also includes Privoxy to allow unfiltered access to index sites, to use Privoxy please point your application at "host ip:8118"[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where qBittorrent will store it's configuration file, database and logs.[br]
+    [b]/data[/b] This is where qBittorrent will store data downloaded, watched folder, and archived torrents.[br][br]
+    [b][span style='color: #E80000;']Notes[/span][/b][br]
+    [b]IMPORTANT[/b]
+    To allow access to the qBittorrent webui, Privoxy and qBittorrent outside of your LAN you must configure the LAN_NETWORK, using CIDR notation for the mask, a subnet mask of 255.255.255.0 would equate to CIDR /24, 255.255.0.0 would equate to CIDR /16.
+    Due to issues with CSRF and port mapping, should you require to alter the port for the webui you need to change both sides of the -p 8080 switch AND set the WEBUI_PORT variable to the new port.
+    For example, to set the port to 8090 you need to set -p 8090:8090 and -e WEBUI_PORT=8090
+  </Description>
+  <Overview>
+    qBittorrent is a bittorrent client programmed in C++ / Qt that uses libtorrent (sometimes called libtorrent-rasterbar) by Arvid Norberg. It aims to be a good alternative to all other bittorrent clients out there. qBittorrent is fast, stable and provides unicode support as well as many features. This Docker image is using the headless configuration with the web frontend enabled, as well as OpenVPN to ensure a secure and private connection to the Internet, including use of iptables to prevent IP leakage when the tunnel is down. Privoxy is also included to allow unfiltered access to index sites, to use Privoxy please point your application at http://<host ip>:8118.
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=47832.0</Support>
+  <Registry>https://registry.hub.docker.com/u/binhex/arch-qbittorrentvpn/</Registry>
+  <GitHub>https://github.com/binhex/arch-qbittorrentvpn</GitHub>
+  <Repository>binhex/arch-qbittorrentvpn</Repository>
+  <Project>https://www.qbittorrent.org/</Project>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>6881</HostPort>
+        <ContainerPort>6881</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>6881</HostPort>
+        <ContainerPort>6881</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8118</HostPort>
+        <ContainerPort>8118</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>VPN_ENABLED</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
+      <Name>VPN_USER</Name>
+      <Value>vpn username</Value>
+    </Variable>
+    <Variable>
+      <Name>VPN_PASS</Name>
+      <Value>vpn password</Value>
+    </Variable>
+    <Variable>
+      <Name>VPN_PROV</Name>
+      <Value>pia|airvpn|custom</Value>
+    </Variable>
+    <Variable>
+      <Name>VPN_OPTIONS</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>STRICT_PORT_FORWARD</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
+      <Name>ENABLE_PRIVOXY</Name>
+      <Value>no</Value>
+    </Variable>
+    <Variable>
+      <Name>WEBUI_PORT</Name>
+      <Value>8080</Value>
+    </Variable>
+    <Variable>
+      <Name>LAN_NETWORK</Name>
+      <Value>192.168.1.0/24</Value>
+    </Variable>
+    <Variable>
+      <Name>NAME_SERVERS</Name>
+      <Value>209.222.18.222,37.235.1.174,1.1.1.1,8.8.8.8,209.222.18.218,37.235.1.177,1.0.0.1,8.8.4.4</Value>
+    </Variable>
+    <Variable>
+      <Name>DEBUG</Name>
+      <Value>false</Value>
+    </Variable>
+    <Variable>
+      <Name>UMASK</Name>
+      <Value>000</Value>
+    </Variable>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/data</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/qbittorrent-icon.png</Icon>
+  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
