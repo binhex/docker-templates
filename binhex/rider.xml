@@ -11,8 +11,9 @@
   </Description>
   <Overview>
     JetBrains Rider is a cross-platform .NET IDE based on the IntelliJ platform and ReSharper. Rider supports .NET Framework, the new cross-platform .NET Core, and Mono based projects. This lets you develop a wide range of applications including .NET desktop applications, services and libraries, Unity games, Xamarin apps, ASP.NET and ASP.NET Core web applications.
+    Note:- This application requires a license, otherwise it will run in Evaluation Mode for 30 days.
   </Overview>
-  <Support>https://forums.lime-technology.com/topic/60734-support-binhex-rider/</Support>
+  <Support>https://forums.unraid.net/topic/76727-support-binhex-rider/</Support>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-rider/</Registry>
   <GitHub>https://github.com/binhex/arch-rider</GitHub>
   <Repository>binhex/arch-rider</Repository>
