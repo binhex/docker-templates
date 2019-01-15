@@ -47,6 +47,14 @@
   </Networking>
   <Environment>
     <Variable>
+      <Name>DELUGE_DAEMON_LOG_LEVEL</Name>
+      <Value>info</Value>
+    </Variable>
+    <Variable>
+      <Name>DELUGE_WEB_LOG_LEVEL</Name>
+      <Value>info</Value>
+    </Variable>
+    <Variable>
       <Name>UMASK</Name>
       <Value>000</Value>
     </Variable>
