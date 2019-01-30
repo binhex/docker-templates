@@ -19,6 +19,7 @@
   <GitHub>https://github.com/binhex/arch-libresonic</GitHub>
   <Repository>binhex/arch-libresonic</Repository>
   <Project>https://github.com/Libresonic/libresonic</Project>
+  <Deprecated>true</Deprecated>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>

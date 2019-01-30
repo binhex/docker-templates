@@ -19,6 +19,7 @@
   <GitHub>https://github.com/binhex/arch-madsonic</GitHub>
   <Repository>binhex/arch-madsonic</Repository>
   <Project>http://www.madsonic.org/</Project>
+  <Deprecated>true</Deprecated>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
