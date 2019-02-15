@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/privoxyvpn.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Productivity: Tools:</Category>
+  <Name>binhex-privoxyvpn</Name>
+  <Description>
+    Privoxy is a free non-caching web proxy with filtering capabilities for enhancing privacy, manipulating cookies and modifying web page data and HTTP headers before the page is rendered by the browser. Privoxy is a "privacy enhancing proxy", filtering web pages and removing advertisements. Privoxy can be customized by users, for both stand-alone systems and multi-user networks. Privoxy can be chained to other proxies and is frequently used in combination with Squid and can be used to bypass Internet censorship.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where sabnzbd will store it's configuration file, database and logs.[br]
+    [b][span style='color: #E80000;']Notes[/span][/b][br]
+    For help on configuration for PIA, AirVPN and custom VPN providers please go here http://lime-technology.com/forum/index.php?topic=45812.msg437678#msg437678[br]
+    IMPORTANT - To allow access to Privoxy you need to specify you LAN network, using CIDR notation for the mask, a subnet mask of 255.255.255.0 would equate to CIDR /24, 255.255.0.0 would equate to CIDR /16.
+  </Description>
+  <Overview>
+    Privoxy is a free non-caching web proxy with filtering capabilities for enhancing privacy, manipulating cookies and modifying web page data and HTTP headers before the page is rendered by the browser. Privoxy is a "privacy enhancing proxy", filtering web pages and removing advertisements. Privoxy can be customized by users, for both stand-alone systems and multi-user networks. Privoxy can be chained to other proxies and is frequently used in combination with Squid and can be used to bypass Internet censorship.
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=45822.0</Support>
+  <Registry>https://registry.hub.docker.com/u/binhex/arch-privoxyvpn/</Registry>
+  <GitHub>https://github.com/binhex/arch-privoxyvpn</GitHub>
+  <Repository>binhex/arch-privoxyvpn</Repository>
+  <Project>http://www.privoxy.org/</Project>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8118</HostPort>
+        <ContainerPort>8118</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>VPN_ENABLED</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
+      <Name>VPN_USER</Name>
+      <Value>vpn username</Value>
+    </Variable>
+    <Variable>
+      <Name>VPN_PASS</Name>
+      <Value>vpn password</Value>
+    </Variable>
+    <Variable>
+      <Name>VPN_PROV</Name>
+      <Value>pia|airvpn|custom</Value>
+    </Variable>
+    <Variable>
+      <Name>VPN_OPTIONS</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>LAN_NETWORK</Name>
+      <Value>192.168.1.0/24</Value>
+    </Variable>
+    <Variable>
+      <Name>NAME_SERVERS</Name>
+      <Value>209.222.18.222,37.235.1.174,1.1.1.1,8.8.8.8,209.222.18.218,37.235.1.177,1.0.0.1,8.8.4.4</Value>
+    </Variable>
+    <Variable>
+      <Name>DEBUG</Name>
+      <Value>false</Value>
+    </Variable>
+    <Variable>
+      <Name>UMASK</Name>
+      <Value>000</Value>
+    </Variable>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8118]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/privoxy-icon.png</Icon>
+  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
