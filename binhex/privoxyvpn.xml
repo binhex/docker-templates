@@ -15,7 +15,7 @@
   <Overview>
     Privoxy is a free non-caching web proxy with filtering capabilities for enhancing privacy, manipulating cookies and modifying web page data and HTTP headers before the page is rendered by the browser. Privoxy is a "privacy enhancing proxy", filtering web pages and removing advertisements. Privoxy can be customized by users, for both stand-alone systems and multi-user networks. Privoxy can be chained to other proxies and is frequently used in combination with Squid and can be used to bypass Internet censorship.
   </Overview>
-  <Support>http://lime-technology.com/forum/index.php?topic=45822.0</Support>
+  <Support>https://forums.unraid.net/topic/78028-support-binhex-privoxyvpn/</Support>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-privoxyvpn/</Registry>
   <GitHub>https://github.com/binhex/arch-privoxyvpn</GitHub>
   <Repository>binhex/arch-privoxyvpn</Repository>
