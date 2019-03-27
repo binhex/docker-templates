@@ -93,6 +93,14 @@
       <Value>no</Value>
     </Variable>
     <Variable>
+      <Name>ENABLE_RPC2</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
+      <Name>ENABLE_RPC2_AUTH</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
       <Name>LAN_NETWORK</Name>
       <Value>192.168.1.0/24</Value>
     </Variable>
