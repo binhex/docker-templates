@@ -17,7 +17,7 @@
   <GitHub>https://github.com/binhex/arch-tdb</GitHub>
   <Repository>binhex/arch-tdb</Repository>
   <Project>https://github.com/binhex/trigger-docker-build</Project>
-  <Deprecated>true</Deprecated>
+  <Deprecated>false</Deprecated>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
