@@ -29,11 +29,6 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>3000</HostPort>
-        <ContainerPort>3000</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
         <HostPort>5000</HostPort>
         <ContainerPort>5000</ContainerPort>
         <Protocol>tcp</Protocol>
@@ -82,10 +77,6 @@
     </Variable>
     <Variable>
       <Name>ENABLE_PRIVOXY</Name>
-      <Value>no</Value>
-    </Variable>
-    <Variable>
-      <Name>ENABLE_FLOOD</Name>
       <Value>no</Value>
     </Variable>
     <Variable>
