@@ -40,6 +40,14 @@
   </Networking>
   <Environment>
     <Variable>
+      <Name>CONTEXT_PATH</Name>
+      <Value>/</Value>
+    </Variable>
+    <Variable>
+      <Name>MAX_MEMORY</Name>
+      <Value>2046</Value>
+    </Variable>
+    <Variable>
       <Name>UMASK</Name>
       <Value>000</Value>
     </Variable>
