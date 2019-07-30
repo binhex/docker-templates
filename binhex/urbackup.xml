@@ -29,23 +29,8 @@
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
-    <Mode>bridge</Mode>
+    <Mode>host</Mode>
     <Publish>
-      <Port>
-        <HostPort>55413</HostPort>
-        <ContainerPort>55413</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>55414</HostPort>
-        <ContainerPort>55414</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>55415</HostPort>
-        <ContainerPort>55415</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
     </Publish>
     </Networking>
   <Environment>
