@@ -2,7 +2,7 @@
 <Containers>
   <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/urbackup.xml</TemplateURL>
   <Beta>False</Beta>
-  <Category>Productivity: Tools:</Category>
+  <Category>Productivity: Tools: Backup:</Category>
   <Name>binhex-urbackup</Name>
   <Description>
     UrBackup is an easy to setup Open Source client/server backup system, that through a combination of image and file backups accomplishes both data safety and a fast restoration time.
@@ -25,7 +25,7 @@
   <Registry>https://registry.hub.docker.com/u/binhex/arch-urbackup/</Registry>
   <GitHub>https://github.com/binhex/arch-urbackup</GitHub>
   <Repository>binhex/arch-urbackup</Repository>
-  <Project>https://urbackup.media/</Project>
+  <Project>https://urbackup.org/</Project>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
