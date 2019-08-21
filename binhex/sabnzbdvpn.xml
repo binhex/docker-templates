@@ -11,9 +11,6 @@
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where sabnzbd will store it's configuration file, database and logs.[br]
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br][br]
-    [b][span style='color: #E80000;']Notes[/span][/b][br]
-    For help on configuration for PIA, AirVPN and custom VPN providers please go here http://lime-technology.com/forum/index.php?topic=45812.msg437678#msg437678[br]
-    IMPORTANT - To allow access to the Deluge webui, Privoxy and Deluge deamon you need to specify you LAN network, using CIDR notation for the mask, a subnet mask of 255.255.255.0 would equate to CIDR /24, 255.255.0.0 would equate to CIDR /16.[br][br]
     [b][u][span style='color: #E80000;']Documentation[/span][/u][/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>
