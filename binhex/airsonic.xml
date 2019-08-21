@@ -12,9 +12,9 @@
     Based on Java technology, Airsonic runs on most platforms, including Windows, Mac, Linux and Unix variants.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where airsonic will store it's configuration file, database and logs.[br]
-    [b]/media[/b] This is where airsonic will scan for media files.[br]
+    [b]/media[/b] This is where airsonic will scan for media files.[br][br]
     [b][u][span style='color: #E80000;']Documentation[/span][/u][/b][br]
-    https://github.com/binhex/documentation[br]
+    https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>
     Airsonic is a free, web-based media streamer, providing ubiquitious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.[br]
