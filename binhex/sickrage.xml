@@ -5,11 +5,14 @@
   <Category>Downloaders: MediaApp:Video</Category>
   <Name>binhex-sickrage</Name>
   <Description>
+    [b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
     SickRage is a Video File Manager for TV Shows, It watches for new episodes of your favorite shows and when they are posted it does its magic. SickRage is currently in beta release stage. There may be severe bugs in it and at any given time it may not work at all.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where sickrage will store it's configuration file, database and logs.[br]
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br]
-    [b]/media[/b] This is where sickrage will scan for media files.
+    [b]/media[/b] This is where sickrage will scan for media files.[br][br]
+    [b][u][span style='color: #E80000;']Documentation[/span][/u][/b][br]
+    https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>
     SickRage is a Video File Manager for TV Shows, It watches for new episodes of your favorite shows and when they are posted it does its magic. SickRage is currently in beta release stage. There may be severe bugs in it and at any given time it may not work at all.

@@ -5,13 +5,16 @@
   <Category>MediaApp:Video MediaServer:Video</Category>
   <Name>binhex-get-iplayer</Name>
   <Description>
+    [b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
     get_iplayer has PVR-like capabilities (like Sky+ / TiVo / Series-Link); You can save lists of programme searches which are automatically recorded when they become available so that you can watch them when you choose and on devices that cannot run Adobe Flash Player – even if you don’t have adequate broadband speeds or if your broadband streams too slowly at peak hours when you want to watch a programme.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where get-iplayer will store it's configuration file, database and logs.[br]
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br][br]
     [b][span style='color: #E80000;']Notes[/span][/b][br]
     Please specify the shows to download via the Environment Variable "SHOWS" value, if you want to specify more than one then please use a comma to seperate show names e.g. "show1,show2".
-    Please specify the frequency to check for new shows using the Environment Variable "SCHEDULE" value, where the value is s for seconds, m for minutes, h for hours or d for days, e.g. "12h".
+    Please specify the frequency to check for new shows using the Environment Variable "SCHEDULE" value, where the value is s for seconds, m for minutes, h for hours or d for days, e.g. "12h".[br][br]
+    [b][u][span style='color: #E80000;']Documentation[/span][/u][/b][br]
+    https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>
     get_iplayer has PVR-like capabilities (like Sky+ / TiVo / Series-Link); You can save lists of programme searches which are automatically recorded when they become available so that you can watch them when you choose and on devices that cannot run Adobe Flash Player – even if you don’t have adequate broadband speeds or if your broadband streams too slowly at peak hours when you want to watch a programme.

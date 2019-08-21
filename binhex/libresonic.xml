@@ -5,11 +5,14 @@
   <Category>MediaServer:Music</Category>
   <Name>binhex-libresonic</Name>
   <Description>
+    [b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
     Libresonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where libresonic will store it's configuration file, database and logs.[br]
     [b]/media[/b] This is where libresonic will scan for media files.[br][br]
-    [b]Note[/b] If you wish to use HTTP then please set the Environment Variable "SSL" to "no", otherwise set to "yes" to enable HTTPS.
+    [b]Note[/b] If you wish to use HTTP then please set the Environment Variable "SSL" to "no", otherwise set to "yes" to enable HTTPS.[br][br]
+    [b][u][span style='color: #E80000;']Documentation[/span][/u][/b][br]
+    https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>
     Libresonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.

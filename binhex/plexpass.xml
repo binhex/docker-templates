@@ -5,10 +5,13 @@
   <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
   <Name>binhex-plexpass</Name>
   <Description>
+    [b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
     The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free!. Please note you WILL require an active Plex Pass account, if you don't have a Plex Pass account then please use the free version, binhex-plex.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where plex will store it's configuration file, database and logs.[br]
-    [b]/media[/b] This is where plex will scan for media files.
+    [b]/media[/b] This is where plex will scan for media files.[br][br]
+    [b][u][span style='color: #E80000;']Documentation[/span][/u][/b][br]
+    https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>
     The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free!. Please note you WILL require an active Plex Pass account, if you don't have a Plex Pass account then please use the free version, binhex-plex.

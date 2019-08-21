@@ -5,11 +5,14 @@
   <Category>Downloaders: MediaApp:Video</Category>
   <Name>binhex-sonarr</Name>
   <Description>
+    [b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
     Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where sonarr will store it's configuration file, database and logs.[br]
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br]
-    [b]/media[/b] This is where sonarr will scan for media files.
+    [b]/media[/b] This is where sonarr will scan for media files.[br][br]
+    [b][u][span style='color: #E80000;']Documentation[/span][/u][/b][br]
+    https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>
     Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.
