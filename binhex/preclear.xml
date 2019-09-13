@@ -9,6 +9,8 @@
     A utility to "burn-in" a new disk, before adding it to your array has been requested several times.  Also requested is a process to "pre-clear" a hard disk before adding it to your array.  When a special "signature" is detected, the lengthy "clearing" step otherwise performed by unRAID is skipped.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where preclear will store it's configuration file, database and logs.[br][br]
+    [b][u][span style='color: #E80000;']IMPORTANT[/span][/u][/b][br]
+    This container MUST run as user and group 'root' (defined via PUID 0 and PGID 0), it also MUST run as 'Privileged'. Do NOT modify any of the paths on the container or host side for the 'ro' volume mounts, these are required to correctly read the status of drives in the array.[br][br]
     [b][u][span style='color: #E80000;']Documentation[/span][/u][/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>
