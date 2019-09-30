@@ -84,6 +84,16 @@
       <Mode>ro</Mode>
     </Volume>
     <Volume>
+      <HostDir>/boot/config/plugins/dynamix/dynamix.cfg</HostDir>
+      <ContainerDir>/unraid/dynamix.cfg</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/etc/ssmtp/ssmtp.conf</HostDir>
+      <ContainerDir>/etc/ssmtp/ssmtp.conf</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+    <Volume>
       <HostDir>/mnt/cache/appdata/config</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
