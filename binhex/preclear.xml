@@ -85,12 +85,12 @@
     </Volume>
     <Volume>
       <HostDir>/boot/config/plugins/dynamix/dynamix.cfg</HostDir>
-      <ContainerDir>/unraid/dynamix.cfg</ContainerDir>
+      <ContainerDir>/unraid/config/plugins/dynamix/dynamix.cfg</ContainerDir>
       <Mode>ro</Mode>
     </Volume>
     <Volume>
       <HostDir>/etc/ssmtp/ssmtp.conf</HostDir>
-      <ContainerDir>/unraid/ssmtp.conf</ContainerDir>
+      <ContainerDir>/unraid/ssmtp/ssmtp.conf</ContainerDir>
       <Mode>ro</Mode>
     </Volume>
     <Volume>
