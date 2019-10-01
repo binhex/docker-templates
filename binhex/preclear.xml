@@ -90,7 +90,7 @@
     </Volume>
     <Volume>
       <HostDir>/etc/ssmtp/ssmtp.conf</HostDir>
-      <ContainerDir>/etc/ssmtp/ssmtp.conf</ContainerDir>
+      <ContainerDir>/unraid/ssmtp.conf</ContainerDir>
       <Mode>ro</Mode>
     </Volume>
     <Volume>
