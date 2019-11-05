@@ -15,7 +15,7 @@
   <Overview>
     Minecraft is a sandbox video game created by Swedish game developer Markus Persson and released by Mojang in 2011. The game allows players to build with a variety of different blocks in a 3D procedurally generated world, requiring creativity from players. Other activities in the game include exploration, resource gathering, crafting, and combat. Multiple game modes that change gameplay are available, including—but not limited to—a survival mode, in which players must acquire resources to build the world and maintain health, and a creative mode, where players have unlimited resources to build with.
   </Overview>
-  <Support>http://lime-technology.com/forum/index.php?topic=45837.0</Support>
+  <Support>https://forums.unraid.net/topic/84880-support-binhex-minecraftserver/</Support>
   <Registry>https://registry.hub.docker.com/u/binhex/arch-minecraftserver/</Registry>
   <GitHub>https://github.com/binhex/arch-minecraftserver</GitHub>
   <Repository>binhex/arch-minecraftserver</Repository>
