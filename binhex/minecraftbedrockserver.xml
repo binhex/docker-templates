@@ -23,18 +23,8 @@
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
-    <Mode>bridge</Mode>
+    <Mode>host</Mode>
     <Publish>
-      <Port>
-        <HostPort>19132</HostPort>
-        <ContainerPort>19132</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>48897</HostPort>
-        <ContainerPort>48897</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
     </Publish>
   </Networking>
   <Environment>
