@@ -23,8 +23,28 @@
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
-    <Mode>host</Mode>
+    <Mode>bridge</Mode>
     <Publish>
+      <Port>
+        <HostPort>19132</HostPort>
+        <ContainerPort>19132</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>19132</HostPort>
+        <ContainerPort>19132</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>19133</HostPort>
+        <ContainerPort>19133</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>19133</HostPort>
+        <ContainerPort>19133</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
     </Publish>
   </Networking>
   <Environment>
