@@ -101,7 +101,7 @@
     </Variable>
     <Variable>
       <Name>RPC2_PASS</Name>
-      <Value>rutorrent</Value>
+      <Value></Value>
     </Variable>
     <Variable>
       <Name>WEBUI_USER</Name>
@@ -109,7 +109,7 @@
     </Variable>
     <Variable>
       <Name>WEBUI_PASS</Name>
-      <Value>rutorrent</Value>
+      <Value></Value>
     </Variable>
     <Variable>
       <Name>LAN_NETWORK</Name>
