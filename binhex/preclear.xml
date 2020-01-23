@@ -18,7 +18,7 @@
     A utility to "burn-in" a new disk, before adding it to your array has been requested several times.  Also requested is a process to "pre-clear" a hard disk before adding it to your array.  When a special "signature" is detected, the lengthy "clearing" step otherwise performed by unRAID is skipped.
   </Overview>
   <Support>https://forums.unraid.net/topic/83465-support-binhex-preclear/</Support>
-  <Registry>https://registry.hub.docker.com/u/binhex/arch-preclear/</Registry>
+  <Registry>https://registry.hub.docker.com/r/binhex/arch-preclear/</Registry>
   <GitHub>https://github.com/binhex/arch-preclear</GitHub>
   <Repository>binhex/arch-preclear</Repository>
   <Project>https://forums.unraid.net/topic/2732-preclear_disksh-a-new-utility-to-burn-in-and-pre-clear-disks-for-quick-add/</Project>

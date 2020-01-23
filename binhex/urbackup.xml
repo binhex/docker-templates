@@ -25,7 +25,7 @@
     A web interface makes setting up your own backup server really easy.
   </Overview>
   <Support>https://forums.unraid.net/topic/82198-support-binhex-urbackup/</Support>
-  <Registry>https://registry.hub.docker.com/u/binhex/arch-urbackup/</Registry>
+  <Registry>https://registry.hub.docker.com/r/binhex/arch-urbackup/</Registry>
   <GitHub>https://github.com/binhex/arch-urbackup</GitHub>
   <Repository>binhex/arch-urbackup</Repository>
   <Project>https://urbackup.org/</Project>
