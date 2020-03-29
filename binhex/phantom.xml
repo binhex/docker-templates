@@ -56,6 +56,7 @@
       <Name>REMOTE_MINECRAFT_PORT</Name>
       <Value>19132</Value>
     </Variable>
+    <Variable>
       <Name>CLEANUP_TIMEOUT</Name>
       <Value>60</Value>
     </Variable>
