@@ -49,10 +49,13 @@
   </Networking>
   <Environment>
     <Variable>
-      <Name>MINECRAFT_SERVER</Name>
+      <Name>REMOTE_MINECRAFT_IP</Name>
       <Value></Value>
     </Variable>
     <Variable>
+      <Name>REMOTE_MINECRAFT_PORT</Name>
+      <Value>19132</Value>
+    </Variable>
       <Name>CLEANUP_TIMEOUT</Name>
       <Value>60</Value>
     </Variable>
