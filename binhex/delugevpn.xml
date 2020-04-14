@@ -101,6 +101,10 @@
       <Value>info</Value>
     </Variable>
     <Variable>
+      <Name>ADDITIONAL_PORTS</Name>
+      <Value>1234</Value>
+    </Variable>
+    <Variable>
       <Name>DEBUG</Name>
       <Value>false|true</Value>
     </Variable>

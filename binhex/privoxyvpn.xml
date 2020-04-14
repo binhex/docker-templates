@@ -83,6 +83,10 @@
       <Value>yes</Value>
     </Variable>
     <Variable>
+      <Name>ADDITIONAL_PORTS</Name>
+      <Value>1234</Value>
+    </Variable>
+    <Variable>
       <Name>DEBUG</Name>
       <Value>false</Value>
     </Variable>
