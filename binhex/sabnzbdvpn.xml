@@ -84,7 +84,7 @@
     </Variable>
     <Variable>
       <Name>ADDITIONAL_PORTS</Name>
-      <Value>1234</Value>
+      <Value></Value>
     </Variable>
     <Variable>
       <Name>DEBUG</Name>
