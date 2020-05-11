@@ -84,8 +84,8 @@
       <Mode>ro</Mode>
     </Volume>
     <Volume>
-      <HostDir>/boot/config/plugins/dynamix/dynamix.cfg</HostDir>
-      <ContainerDir>/unraid/config/plugins/dynamix/dynamix.cfg</ContainerDir>
+      <HostDir>/boot/config/plugins/dynamix</HostDir>
+      <ContainerDir>/unraid/config/plugins/dynamix</ContainerDir>
       <Mode>ro</Mode>
     </Volume>
     <Volume>
