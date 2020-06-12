@@ -36,7 +36,7 @@
   <Environment>
      <Variable>
       <Name>TEMP_FOLDER</Name>
-      <Value>/config/krusader/tmp</Value>
+      <Value>/config/home/.config/krusader/tmp</Value>
     </Variable>
     <Variable>
       <Name>WEBPAGE_TITLE</Name>
