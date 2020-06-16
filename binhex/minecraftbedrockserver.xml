@@ -47,6 +47,11 @@
         <ContainerPort>19133</ContainerPort>
         <Protocol>udp</Protocol>
       </Port>
+      <Port>
+        <HostPort>8222</HostPort>
+        <ContainerPort>8222</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
     </Publish>
   </Networking>
   <Environment>
@@ -57,6 +62,14 @@
     <Variable>
       <Name>PURGE_BACKUP_DAYS</Name>
       <Value>14</Value>
+    </Variable>
+    <Variable>
+      <Name>ENABLE_WEBUI_CONSOLE</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
+      <Name>WEBUI_CONSOLE_TITLE</Name>
+      <Value>Minecraft Bedrock</Value>
     </Variable>
     <Variable>
       <Name>UMASK</Name>
@@ -79,6 +92,7 @@
     </Volume>
   </Data>
   <Banner></Banner>
+  <WebUI>http://[IP]:[PORT:8222]/</WebUI>
   <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/minecraftbedrockserver-icon.png</Icon>
   <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
   <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
