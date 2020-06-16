@@ -68,6 +68,18 @@
       <Value>yes</Value>
     </Variable>
     <Variable>
+      <Name>ENABLE_WEBUI_AUTH</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
+      <Name>WEBUI_USER</Name>
+      <Value>admin</Value>
+    </Variable>
+    <Variable>
+      <Name>WEBUI_PASS</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
       <Name>WEBUI_CONSOLE_TITLE</Name>
       <Value>Minecraft Bedrock</Value>
     </Variable>
