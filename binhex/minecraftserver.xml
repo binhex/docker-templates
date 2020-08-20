@@ -30,12 +30,41 @@
         <ContainerPort>25565</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
+      <Port>
+        <HostPort>8222</HostPort>
+        <ContainerPort>8222</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
     </Publish>
   </Networking>
   <Environment>
     <Variable>
-      <Name>MAX_BACKUPS</Name>
-      <Value>10</Value>
+      <Name>CREATE_BACKUP_HOURS</Name>
+      <Value>12</Value>
+    </Variable>
+    <Variable>
+      <Name>PURGE_BACKUP_DAYS</Name>
+      <Value>14</Value>
+    </Variable>
+    <Variable>
+      <Name>ENABLE_WEBUI_CONSOLE</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
+      <Name>ENABLE_WEBUI_AUTH</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
+      <Name>WEBUI_USER</Name>
+      <Value>admin</Value>
+    </Variable>
+    <Variable>
+      <Name>WEBUI_PASS</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>WEBUI_CONSOLE_TITLE</Name>
+      <Value>Minecraft Java</Value>
     </Variable>
     <Variable>
       <Name>JAVA_INITIAL_HEAP_SIZE</Name>
