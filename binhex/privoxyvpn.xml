@@ -6,22 +6,25 @@
   <Name>binhex-privoxyvpn</Name>
   <Description>
     [b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
-    Privoxy is a free non-caching web proxy with filtering capabilities for enhancing privacy, manipulating cookies and modifying web page data and HTTP headers before the page is rendered by the browser. Privoxy is a "privacy enhancing proxy", filtering web pages and removing advertisements. Privoxy can be customized by users, for both stand-alone systems and multi-user networks. Privoxy can be chained to other proxies and is frequently used in combination with Squid and can be used to bypass Internet censorship. microsocks is a SOCKS5 service that you can run on your remote boxes to tunnel connections through them, if for some reason SSH doesn't cut it for you. It's very lightweight, and very light on resources too: for every client, a thread with a stack size of 8KB is spawned. the main process basically doesn't consume any resources at all. The only limits are the amount of file descriptors and the RAM.[br][br]
+    Privoxy is a free non-caching web proxy with filtering capabilities for enhancing privacy, manipulating cookies and modifying web page data and HTTP headers before the page is rendered by the browser. Privoxy is a "privacy enhancing proxy", filtering web pages and removing advertisements. Privoxy can be customized by users, for both stand-alone systems and multi-user networks. Privoxy can be chained to other proxies and is frequently used in combination with Squid and can be used to bypass Internet censorship.[br]
+    microsocks is a SOCKS5 service that you can run on your remote boxes to tunnel connections through them, if for some reason SSH doesn't cut it for you. It's very lightweight, and very light on resources too: for every client, a thread with a stack size of 8KB is spawned. the main process basically doesn't consume any resources at all. The only limits are the amount of file descriptors and the RAM.[br]
+    This Docker includes OpenVPN and WireGuard to ensure a secure and private connection to the Internet, including use of iptables to prevent IP leakage when the tunnel is down.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where sabnzbd will store it's configuration file, database and logs.[br][br]
     [b][u][span style='color: #E80000;']Documentation[/span][/u][/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>
-    Privoxy is a free non-caching web proxy with filtering capabilities for enhancing privacy, manipulating cookies and modifying web page data and HTTP headers before the page is rendered by the browser. Privoxy is a "privacy enhancing proxy", filtering web pages and removing advertisements. Privoxy can be customized by users, for both stand-alone systems and multi-user networks. Privoxy can be chained to other proxies and is frequently used in combination with Squid and can be used to bypass Internet censorship. microsocks is a SOCKS5 service that you can run on your remote boxes to tunnel connections through them, if for some reason SSH doesn't cut it for you. It's very lightweight, and very light on resources too: for every client, a thread with a stack size of 8KB is spawned. the main process basically doesn't consume any resources at all. The only limits are the amount of file descriptors and the RAM.
-  </Overview>
+    Privoxy is a free non-caching web proxy with filtering capabilities for enhancing privacy, manipulating cookies and modifying web page data and HTTP headers before the page is rendered by the browser. Privoxy is a "privacy enhancing proxy", filtering web pages and removing advertisements. Privoxy can be customized by users, for both stand-alone systems and multi-user networks. Privoxy can be chained to other proxies and is frequently used in combination with Squid and can be used to bypass Internet censorship.
+    microsocks is a SOCKS5 service that you can run on your remote boxes to tunnel connections through them, if for some reason SSH doesn't cut it for you. It's very lightweight, and very light on resources too: for every client, a thread with a stack size of 8KB is spawned. the main process basically doesn't consume any resources at all. The only limits are the amount of file descriptors and the RAM.
+    This Docker includes OpenVPN and WireGuard to ensure a secure and private connection to the Internet, including use of iptables to prevent IP leakage when the tunnel is down.</Overview>
   <Support>https://forums.unraid.net/topic/78028-support-binhex-privoxyvpn/</Support>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-privoxyvpn/</Registry>
   <GitHub>https://github.com/binhex/arch-privoxyvpn</GitHub>
   <Repository>binhex/arch-privoxyvpn</Repository>
   <Project>http://www.privoxy.org/</Project>
   <BindTime>true</BindTime>
-  <Privileged>false</Privileged>
+  <Privileged>true</Privileged>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -53,6 +56,10 @@
     <Variable>
       <Name>VPN_PROV</Name>
       <Value>pia|airvpn|custom</Value>
+    </Variable>
+    <Variable>
+      <Name>VPN_CLIENT</Name>
+      <Value>openvpn|wireguard</Value>
     </Variable>
     <Variable>
       <Name>VPN_OPTIONS</Name>
@@ -115,5 +122,5 @@
   <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
   <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
   <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
-  <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
+  <ExtraParams></ExtraParams>
 </Containers>
