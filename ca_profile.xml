@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+    <Icon>
+        https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/profile.jpg
+    </Icon>
+    <Profile>
+        Producing Docker Images with Arch Linux base OS, the main philosophy here is to produce Docker Images that are up to date with the latest stable release (no beta's where possible) to minimize any coding related issues.
+    </Profile>
+</Maintainer>
