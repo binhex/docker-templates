@@ -37,6 +37,10 @@
       <Value></Value>
     </Variable>
     <Variable>
+      <Name>SHOWS_PID</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
       <Name>SCHEDULE</Name>
       <Value>12h</Value>
     </Variable>
