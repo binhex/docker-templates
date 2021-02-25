@@ -26,7 +26,7 @@
     In addition to being a streaming media server, Airsonic works very well as a local jukebox. The intuitive web interface, as well as search and index facilities, are optimized for efficient browsing through large media libraries. Airsonic also comes with an integrated Podcast receiver, with many of the same features as you find in iTunes.[br]
     Based on Java technology, Airsonic runs on most platforms, including Windows, Mac, Linux and Unix variants.[br][br]
   </Overview>
-  <Support>https://forums.lime-technology.com/topic/59427-support-binhex-airsonic-advanced/</Support>
+  <Support>https://forums.unraid.net/topic/103190-support-binhex-airsonic-advanced/</Support>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-airsonic-advanced/</Registry>
   <GitHub>https://github.com/binhex/arch-airsonic-advanced</GitHub>
   <Repository>binhex/arch-airsonic-advanced</Repository>
