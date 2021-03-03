@@ -90,7 +90,11 @@
       <Value>yes</Value>
     </Variable>
     <Variable>
-      <Name>ADDITIONAL_PORTS</Name>
+      <Name>VPN_INPUT_PORTS</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>VPN_OUTPUT_PORTS</Name>
       <Value></Value>
     </Variable>
     <Variable>
