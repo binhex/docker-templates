@@ -44,6 +44,10 @@
   </Networking>
   <Environment>
     <Variable>
+      <Name>CHMOD_EXCLUDE_PATHS</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
       <Name>WEBUI_PASSWORD</Name>
       <Value>mineos</Value>
     </Variable>
