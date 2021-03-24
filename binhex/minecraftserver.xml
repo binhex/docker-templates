@@ -67,6 +67,14 @@
       <Value>Minecraft Java</Value>
     </Variable>
     <Variable>
+      <Name>CUSTOM_JAR_PATH</Name>
+      <Value>/config/minecraft/minecraft_server.jar</Value>
+    </Variable>
+    <Variable>
+      <Name>JAVA_VERSION</Name>
+      <Value>8</Value>
+    </Variable>
+    <Variable>
       <Name>JAVA_INITIAL_HEAP_SIZE</Name>
       <Value>512M</Value>
     </Variable>
