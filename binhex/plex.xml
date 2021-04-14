@@ -34,6 +34,14 @@
       <Value>/config/transcode</Value>
     </Variable>
     <Variable>
+      <Name>NVIDIA_DRIVER_CAPABILITIES</Name>
+      <Value>all</Value>
+    </Variable>
+    <Variable>
+      <Name>NVIDIA_VISIBLE_DEVICES</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
       <Name>UMASK</Name>
       <Value>000</Value>
     </Variable>
