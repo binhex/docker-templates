@@ -31,8 +31,8 @@
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>25565</HostPort>
-        <ContainerPort>25565</ContainerPort>
+        <HostPort>25565-25575</HostPort>
+        <ContainerPort>25565-25575</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
