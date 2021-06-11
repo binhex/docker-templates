@@ -30,8 +30,8 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>8050</HostPort>
-        <ContainerPort>8050</ContainerPort>
+        <HostPort>8500</HostPort>
+        <ContainerPort>8500</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
@@ -66,7 +66,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>https://[IP]:[PORT:8050]/</WebUI>
+  <WebUI>https://[IP]:[PORT:8500]/</WebUI>
   <Banner></Banner>
   <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/code-server-icon.png</Icon>
   <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
