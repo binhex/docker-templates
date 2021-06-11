@@ -10,7 +10,7 @@
     Take advantage of a cloud server by offloading the system demanding tasks such as tests, compilations, downloads to another machine. Preserve battery life when you’re on the go or spend your downtime doing something else while the computationally intensive processes are running on your cloud server.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where code-server will store it's configuration file, database and logs.[br]
-    [b]/data[/b] This path is used to store source code.[br]
+    [b]/data[/b] This path is used to store source code.[br][br]
     [b][u][span style='color: #E80000;']Documentation[/span][/u][/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>
