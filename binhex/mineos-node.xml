@@ -52,6 +52,10 @@
       <Value>mineos</Value>
     </Variable>
     <Variable>
+      <Name>JAVA_VERSION</Name>
+      <Value>8</Value>
+    </Variable>
+    <Variable>
       <Name>UMASK</Name>
       <Value>000</Value>
     </Variable>
