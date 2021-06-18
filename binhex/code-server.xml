@@ -19,7 +19,7 @@
 
     Take advantage of a cloud server by offloading the system demanding tasks such as tests, compilations, downloads to another machine. Preserve battery life when you’re on the go or spend your downtime doing something else while the computationally intensive processes are running on your cloud server.
   </Overview>
-  <Support>http://lime-technology.com/forum/index.php?topic=45837.0</Support>
+  <Support>https://forums.unraid.net/topic/110282-support-binhex-code-server/</Support>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-code-server/</Registry>
   <GitHub>https://github.com/binhex/arch-code-server</GitHub>
   <Repository>binhex/arch-code-server</Repository>
@@ -37,6 +37,22 @@
     </Publish>
   </Networking>
   <Environment>
+    <Variable>
+      <Name>CERT_PATH</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>CERT_KEY_PATH</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>SELF_SIGNED_CERT</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
+      <Name>BIND_CLOUD_NAME</Name>
+      <Value></Value>
+    </Variable>
     <Variable>
       <Name>PASSWORD</Name>
       <Value>code-server</Value>
