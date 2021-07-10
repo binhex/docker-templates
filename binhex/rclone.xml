@@ -20,7 +20,7 @@
     Rclone has powerful cloud equivalents to the unix commands rsync, cp, mv, mount, ls, ncdu, tree, rm, and cat. Rclone's familiar syntax includes shell pipeline support, and --dry-run protection. It is used at the command line, in scripts or via its API.
     Users call rclone The Swiss army knife of cloud storage, and Technology indistinguishable from magic.
   </Overview>
-  <Support>http://lime-technology.com/forum/index.php?topic=55549.0</Support>
+  <Support>https://forums.unraid.net/topic/111235-support-binhex-rclone/</Support>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-rclone/</Registry>
   <GitHub>https://github.com/binhex/arch-rclone</GitHub>
   <Repository>binhex/arch-rclone</Repository>
