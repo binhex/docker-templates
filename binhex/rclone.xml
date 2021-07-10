@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/rclone.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Utilities: Backup: Cloud: Tools:Utilities Plugins:</Category>
+  <Name>binhex-rclone</Name>
+  <Description>
+    [b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
+    Rclone is a command line program to manage files on cloud storage. It is a feature rich alternative to cloud vendors' web storage interfaces. Over 40 cloud storage products support rclone including S3 object stores, business and consumer file storage services, as well as standard transfer protocols.
+    Rclone has powerful cloud equivalents to the unix commands rsync, cp, mv, mount, ls, ncdu, tree, rm, and cat. Rclone's familiar syntax includes shell pipeline support, and --dry-run protection. It is used at the command line, in scripts or via its API.
+    Users call rclone The Swiss army knife of cloud storage, and Technology indistinguishable from magic.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where rclone will store it's configuration file, database and logs.[br]
+    [b]/media[/b] This is where rclone will scan for media files.[br][br]
+    [b][u][span style='color: #E80000;']Documentation[/span][/u][/b][br]
+    https://github.com/binhex/documentation[br][br]
+  </Description>
+  <Overview>
+    Rclone is a command line program to manage files on cloud storage. It is a feature rich alternative to cloud vendors' web storage interfaces. Over 40 cloud storage products support rclone including S3 object stores, business and consumer file storage services, as well as standard transfer protocols.
+    Rclone has powerful cloud equivalents to the unix commands rsync, cp, mv, mount, ls, ncdu, tree, rm, and cat. Rclone's familiar syntax includes shell pipeline support, and --dry-run protection. It is used at the command line, in scripts or via its API.
+    Users call rclone The Swiss army knife of cloud storage, and Technology indistinguishable from magic.
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=55549.0</Support>
+  <Registry>https://registry.hub.docker.com/r/binhex/arch-rclone/</Registry>
+  <GitHub>https://github.com/binhex/arch-rclone</GitHub>
+  <Repository>binhex/arch-rclone</Repository>
+  <Project>https://rclone.org/</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>53682</HostPort>
+        <ContainerPort>53682</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5572</HostPort>
+        <ContainerPort>5572</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>RCLONE_CONFIG_PATH</Name>
+      <Value>/config/rclone/config/rclone.conf</Value>
+    </Variable>
+    <Variable>
+      <Name>RCLONE_MEDIA_SHARES</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>RCLONE_REMOTE_NAME</Name>
+      <Value>remote</Value>
+    </Variable>
+    <Variable>
+      <Name>RCLONE_SLEEP_PERIOD</Name>
+      <Value>24h</Value>
+    </Variable>
+    <Variable>
+      <Name>RCLONE_USER_FLAGS</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>RCLONE_OPERATION</Name>
+      <Value>copy</Value>
+    </Variable>
+    <Variable>
+      <Name>RCLONE_POST_CHECK</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
+      <Name>ENABLE_WEBUI</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
+      <Name>WEBUI_USER</Name>
+      <Value>admin</Value>
+    </Variable>
+    <Variable>
+      <Name>WEBUI_PASS</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>UMASK</Name>
+      <Value>000</Value>
+    </Variable>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:5572]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/rclone-icon.png</Icon>
+  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
