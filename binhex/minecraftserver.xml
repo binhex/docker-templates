@@ -72,7 +72,7 @@
     </Variable>
     <Variable>
       <Name>JAVA_VERSION</Name>
-      <Value>8</Value>
+      <Value>16</Value>
     </Variable>
     <Variable>
       <Name>JAVA_INITIAL_HEAP_SIZE</Name>
