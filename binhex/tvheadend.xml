@@ -5,12 +5,12 @@
   <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
   <Name>binhex-tvheadend</Name>
   <Description>
-    Description
+    [b]Description[/b][br]
     Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT>IP and HDHomeRun as input sources. Tvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT>IP streaming. Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).[br][br]
-    Configuration
+    [b]Configuration[/b][br]
     [b]/config[/b] This is where plex will store it's configuration file, database and logs.[br]
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br][br]
-    Documentation
+    [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>

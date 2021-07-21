@@ -5,13 +5,13 @@
   <Category>Cloud: Productivity: Tools:Utilities</Category>
   <Name>binhex-code-server</Name>
   <Description>
-    Description
+    [b]Description[/b][br]
     Code-server is a Visual Studio Code instance running on a remote server accessible through any web browser. It allows you to code anywhere and on any device such as a tablet or laptop with a consistent integrated development environment (IDE). Set up a secure a Linux development machine and get coding on any device with a web browser.[br][br]
     Take advantage of a cloud server by offloading the system demanding tasks such as tests, compilations, downloads to another machine. Preserve battery life when you’re on the go or spend your downtime doing something else while the computationally intensive processes are running on your cloud server.[br][br]
-    Configuration
+    [b]Configuration[/b][br]
     [b]/config[/b] This is where code-server will store it's configuration file, database and logs.[br]
     [b]/data[/b] This path is used to store source code.[br][br]
-    Documentation
+    [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>

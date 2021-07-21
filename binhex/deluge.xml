@@ -5,12 +5,12 @@
   <Category>Downloaders:</Category>
   <Name>binhex-deluge</Name>
   <Description>
-    Description
+    [b]Description[/b][br]
     Deluge is a full-featured ​BitTorrent client for Linux, OS X, Unix and Windows. It uses ​libtorrent in its backend and features multiple user-interfaces including: GTK+, web and console. It has been designed using the client server model with a daemon process that handles all the bittorrent activity. The Deluge daemon is able to run on headless machines with the user-interfaces being able to connect remotely from any platform.[br][br]
-    Configuration
+    [b]Configuration[/b][br]
     [b]/config[/b] This is where deluge will store it's configuration file, database and logs.[br]
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br][br]
-    Documentation
+    [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>

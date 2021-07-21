@@ -5,12 +5,12 @@
   <Category>MediaServer:Video</Category>
   <Name>binhex-minidlna</Name>
   <Description>
-    Description
+    [b]Description[/b][br]
     ReadyMedia (formerly known as MiniDLNA) is a simple media server software, with the aim of being fully compliant with DLNA/UPnP-AV clients. It is developed by a NETGEAR employee for the ReadyNAS product line.[br][br]
-    Configuration
+    [b]Configuration[/b][br]
     [b]/config[/b] This is where minidlna will store it's configuration file, database and logs.[br]
     [b]/media[/b] This is where minidlna will scan for media files.[br][br]
-    Documentation
+    [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>

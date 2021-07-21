@@ -5,12 +5,12 @@
   <Category>Downloaders:</Category>
   <Name>binhex-nzbget</Name>
   <Description>
-    Description
+    [b]Description[/b][br]
     NZBGet is a cross-platform binary newsgrabber for nzb files, written in C++. It supports client/server mode, automatic par-check/-repair, web-interface, command-line interface, etc. NZBGet requires low system resources and runs great on routers, NAS-devices and media players.[br][br]
-    Configuration.[br]
+    [b]Configuration[/b][br].[br]
     [b]/config[/b] This is where nzbget will store it's configuration file, database and logs.[br]
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br][br]
-    Documentation
+    [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>

@@ -5,13 +5,13 @@
   <Category>Downloaders:</Category>
   <Name>binhex-moviegrabber</Name>
   <Description>
-    Description
+    [b]Description[/b][br]
     MovieGrabber is a fully automated way of downloading movies from usenet or torrents, it supports any nzb client that has a "watched" or "monitor" folder facility such as Sabnzbd+, Grabit and Newsbin. MovieGrabber works by checking imdb for matching criteria and if a match is found the nzb will be downloaded and stored in either a specified queued folder for user review or sent to the watched folder for processing and automatic downloading via your usenet binary client.[[br][br]
-    Configuration
+    [b]Configuration[/b][br]
     [b]/config[/b] This is where moviegrabber will store it's configuration file, database and logs.[br]
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br]
     [b]/media[/b] This is where moviegrabber will scan for media files.[br][br]
-    Documentation
+    [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>

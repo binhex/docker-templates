@@ -5,12 +5,12 @@
   <Category>Productivity: Tools: Backup:</Category>
   <Name>binhex-syncthing</Name>
   <Description>
-    Description
+    [b]Description[/b][br]
     Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers in real time, safely protected from prying eyes. Your data is your data alone and you deserve to choose where it is stored, whether it is shared with some third party, and how it's transmitted over the internet.[br][br]
-    Configuration
+    [b]Configuration[/b][br]
     [b]/config[/b] This is where syncthing will store it's configuration file, database and logs.[br]
     [b]/media[/b] This is media to sync.[br][br]
-    Documentation
+    [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>

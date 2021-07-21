@@ -5,11 +5,11 @@
   <Category>Productivity: Tools:</Category>
   <Name>binhex-pycharm</Name>
   <Description>
-    Description
+    [b]Description[/b][br]
     PyCharm is an Integrated Development Environment (IDE) used in computer programming, specifically for the Python language. It is developed by the Czech company JetBrains.[2] It provides code analysis, a graphical debugger, an integrated unit tester, integration with version control systems (VCSes), and supports web development with Django.[br][br]
-    Configuration
+    [b]Configuration[/b][br]
     [b]/config[/b] This is where pycharm will store it's configuration files, database and logs.[br][br]
-    Documentation
+    [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>

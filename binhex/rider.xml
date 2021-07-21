@@ -5,11 +5,11 @@
   <Category>Productivity: Tools:</Category>
   <Name>binhex-rider</Name>
   <Description>
-    Description
+    [b]Description[/b][br]
     JetBrains Rider is a cross-platform .NET IDE based on the IntelliJ platform and ReSharper. Rider supports .NET Framework, the new cross-platform .NET Core, and Mono based projects. This lets you develop a wide range of applications including .NET desktop applications, services and libraries, Unity games, Xamarin apps, ASP.NET and ASP.NET Core web applications.[br][br]
-    Configuration
+    [b]Configuration[/b][br]
     [b]/config[/b] This is where rider will store it's configuration files, database and logs.[br][br]
-    Documentation
+    [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>

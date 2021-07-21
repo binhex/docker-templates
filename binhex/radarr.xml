@@ -5,13 +5,13 @@
   <Category>Downloaders: MediaApp:Video</Category>
   <Name>binhex-radarr</Name>
   <Description>
-    Description
+    [b]Description[/b][br]
     This fork of Sonarr aims to turn it into something like Couchpotato. NOTE This application is under heavy development right now, it may not work correctly.[br][br]
-    Configuration
+    [b]Configuration[/b][br]
     [b]/config[/b] This is where radarr will store it's configuration file, database and logs.[br]
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br]
     [b]/media[/b] This is where radarr will scan for media files.[br][br]
-    Documentation
+    [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>

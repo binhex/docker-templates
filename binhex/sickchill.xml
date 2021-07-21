@@ -5,13 +5,13 @@
   <Category>Downloaders: MediaApp:Video</Category>
   <Name>binhex-sickchill</Name>
   <Description>
-    Description
+    [b]Description[/b][br]
     SickChill is a Video File Manager for TV Shows, It watches for new episodes of your favorite shows and when they are posted it does its magic. SickChill is currently in beta release stage. There may be severe bugs in it and at any given time it may not work at all.[br][br]
-    Configuration
+    [b]Configuration[/b][br]
     [b]/config[/b] This is where sickchill will store it's configuration file, database and logs.[br]
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br]
     [b]/media[/b] This is where sickchill will scan for media files.[br][br]
-    Documentation
+    [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>

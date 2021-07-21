@@ -5,11 +5,11 @@
   <Category>Productivity: Tools:</Category>
   <Name>binhex-hexchat</Name>
   <Description>
-    Description
+    [b]Description[/b][br]
     HexChat is an IRC client based on XChat, but unlike XChat it’s completely free for both Windows and Unix-like systems. Since XChat is open source, it’s perfectly legal. For more info. HexChat was originally called XChat-WDK which in turn was a successor of freakschat.[br][br]
-    Configuration
+    [b]Configuration[/b][br]
     [b]/config[/b] This is where hexchat will store it's configuration files and logs.[br][br]
-    Documentation
+    [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>

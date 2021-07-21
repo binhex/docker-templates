@@ -5,12 +5,12 @@
   <Category>GameServers:</Category>
   <Name>binhex-mineos-node</Name>
   <Description>
-    Description
+    [b]Description[/b][br]
     MineOS is a server front-end to ease managing Minecraft administrative tasks. This iteration using Node.js aims to enhance previous MineOS scripts (Python-based), by leveraging the event-triggering, asyncronous model of Node.JS and websockets.[br][br] This allows the front-end to provide system health, disk and memory usage, and logging in real-time.[br][br] The front-end also allows you to create and manage a multitude of Java based servers, including Mojang Java, Spigot, Nukkit, Forge and many other popular Minecraft server types. You can create archives and restore points of your world's straight from the web ui, meaning loss of important game data is minimised.[br][br]
-    Configuration
+    [b]Configuration[/b][br]
     [b]/config[/b] This is where Minecraft will store it's configuration file, database and logs.[br]
     [b]Note[/b] This container MUST be run as user 'root', group 'root' i.e. PUID = 0 PGID = 0[br][br]
-    Documentation
+    [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>
