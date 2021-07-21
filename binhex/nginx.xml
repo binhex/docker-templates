@@ -5,11 +5,11 @@
   <Category>Network:Web Network:Proxy</Category>
   <Name>binhex-nginx</Name>
   <Description>
-    [b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
+    Description
     NGINX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, and more. It started out as a web server designed for maximum performance and stability. In addition to its HTTP server capabilities, NGINX can also function as a proxy server for email (IMAP, POP3, and SMTP) and a reverse proxy and load balancer for HTTP, TCP, and UDP servers.[br][br]
-    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    Configuration
     [b]/config[/b] This is where nginx will store it's configuration file, database and logs.[br][br]
-    [b][u][span style='color: #E80000;']Documentation[/span][/u][/b][br]
+    Documentation
     https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>

@@ -5,13 +5,13 @@
   <Category>Downloaders:</Category>
   <Name>binhex-rtorrentvpn</Name>
   <Description>
-    [b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
+    Description
     rTorrent is a quick and efficient BitTorrent client that uses, and is in development alongside, the libTorrent (not to be confused with libtorrent-rasterbar) library. It is written in C++ and uses the ncurses programming library, which means it uses a text user interface. When combined with a terminal multiplexer (e.g. GNU Screen or Tmux) and Secure Shell, it becomes a convenient remote BitTorrent client, this Docker image includes the popular ruTorrent web frontend to rTorrent for ease of use.[br]
     This Docker includes OpenVPN and WireGuard to ensure a secure and private connection to the Internet, including use of iptables to prevent IP leakage when the tunnel is down. It also includes Privoxy to allow unfiltered access to index sites, to use Privoxy please point your application at "http://host ip:8118".[br][br]
-    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    Configuration
     [b]/config[/b] This is where rTorrent will store it's configuration file, database and logs.[br]
     [b]/data[/b] This is where rTorrent will store data downloaded, watched folder, and archived torrents.[br][br]
-    [b][u][span style='color: #E80000;']Documentation[/span][/u][/b][br]
+    Documentation
     https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>

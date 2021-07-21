@@ -5,14 +5,14 @@
   <Category>Network:Voip</Category>
   <Name>binhex-teamspeak</Name>
   <Description>
-    [b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
+    Description
     TeamSpeak is proprietary voice-over-Internet Protocol (VoIP) software that allows computer users to speak on a chat channel with fellow computer users, much like a telephone conference call. A TeamSpeak user will often wear a headset with an integrated microphone. Users use the TeamSpeak client software to connect to a TeamSpeak server of their choice, from there they can join chat channels and discuss things.[br][br]
-    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    Configuration
     [b]/config[/b] This is where teamspeak will store it's configuration file, database and logs.[br][br]
     [b][u][span style='color: #E80000;']Notes[/span][/u][/b][br]
     Connect to the server using the TeamSpeak client with the host IP address and port 9987.[br]
     To authenticate use the privilege key shown in the supervisord.log file in the host mapped /config folder.[br][br]
-    [b][u][span style='color: #E80000;']Documentation[/span][/u][/b][br]
+    Documentation
     https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>

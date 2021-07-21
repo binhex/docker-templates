@@ -5,20 +5,16 @@
   <Category>GameServers:</Category>
   <Name>binhex-mineos-node</Name>
   <Description>
-    [b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
+    Description
     MineOS is a server front-end to ease managing Minecraft administrative tasks. This iteration using Node.js aims to enhance previous MineOS scripts (Python-based), by leveraging the event-triggering, asyncronous model of Node.JS and websockets.[br][br] This allows the front-end to provide system health, disk and memory usage, and logging in real-time.[br][br] The front-end also allows you to create and manage a multitude of Java based servers, including Mojang Java, Spigot, Nukkit, Forge and many other popular Minecraft server types. You can create archives and restore points of your world's straight from the web ui, meaning loss of important game data is minimised.[br][br]
-    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    Configuration
     [b]/config[/b] This is where Minecraft will store it's configuration file, database and logs.[br]
     [b]Note[/b] This container MUST be run as user 'root', group 'root' i.e. PUID = 0 PGID = 0[br][br]
-    [b][u][span style='color: #E80000;']Documentation[/span][/u][/b][br]
+    Documentation
     https://github.com/binhex/documentation[br][br]
   </Description>
   <Overview>
-    MineOS is a server front-end to ease managing Minecraft administrative tasks. This iteration using Node.js aims to enhance previous MineOS scripts (Python-based), by leveraging the event-triggering, asyncronous model of Node.JS and websockets.
-
-    This allows the front-end to provide system health, disk and memory usage, and logging in real-time.
-
-    The front-end also allows you to create and manage a multitude of Java based servers, including Mojang Java, Spigot, Nukkit, Forge and many other popular Minecraft server types. You can create archives and restore points of your world's straight from the web ui, meaning loss of important game data is minimised.
+    MineOS is a server front-end to ease managing Minecraft administrative tasks. This iteration using Node.js aims to enhance previous MineOS scripts (Python-based), by leveraging the event-triggering, asyncronous model of Node.JS and websockets. This allows the front-end to provide system health, disk and memory usage, and logging in real-time. The front-end also allows you to create and manage a multitude of Java based servers, including Mojang Java, Spigot, Nukkit, Forge and many other popular Minecraft server types. You can create archives and restore points of your world's straight from the web ui, meaning loss of important game data is minimised.
   </Overview>
   <Support>https://forums.unraid.net/topic/92533-support-binhex-mineos-node/</Support>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-mineos-node/</Registry>
