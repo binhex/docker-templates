@@ -2,7 +2,7 @@
 <Containers>
   <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/rclone.xml</TemplateURL>
   <Beta>False</Beta>
-  <Category>Utilities: Backup: Cloud: Tools:Utilities Plugins:</Category>
+  <Category>Backup: Cloud: Tools:Utilities</Category>
   <Name>binhex-rclone</Name>
   <Description>
     [b]Description[/b][br]
