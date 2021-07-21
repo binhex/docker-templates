@@ -10,8 +10,8 @@
     Rclone has powerful cloud equivalents to the unix commands rsync, cp, mv, mount, ls, ncdu, tree, rm, and cat. Rclone's familiar syntax includes shell pipeline support, and --dry-run protection. It is used at the command line, in scripts or via its API.
     Users call rclone The Swiss army knife of cloud storage, and Technology indistinguishable from magic.[br][br]
     [b]Configuration[/b][br]
-    [b]/config[/b] This is where rclone will store it's configuration file, database and logs.[br]
-    [b]/media[/b] This is where rclone will scan for media files.[br][br]
+    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br]
+    [b]/media[/b] This is the path to media located on the host system.[br][br]
     [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>

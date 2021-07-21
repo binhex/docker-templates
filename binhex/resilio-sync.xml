@@ -10,7 +10,7 @@
 
     Although not touted by the developers as an intended direct replacement nor competitor to cloud-based file synchronization services, it has attained much of its publicity in this potential role.This is mainly due to the ability of Resilio Sync to address many of the concerns in existing services relating to file storage limits, privacy, cost, and performance.[br][br]
     [b]Configuration[/b][br]
-    [b]/config[/b] This is where Resilio Sync will store it's configuration file, database and logs.[br]
+    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br]
     [b]/media[/b] This is media to sync.[br][br]
     [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]

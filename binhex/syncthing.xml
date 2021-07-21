@@ -8,7 +8,7 @@
     [b]Description[/b][br]
     Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers in real time, safely protected from prying eyes. Your data is your data alone and you deserve to choose where it is stored, whether it is shared with some third party, and how it's transmitted over the internet.[br][br]
     [b]Configuration[/b][br]
-    [b]/config[/b] This is where syncthing will store it's configuration file, database and logs.[br]
+    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br]
     [b]/media[/b] This is media to sync.[br][br]
     [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]

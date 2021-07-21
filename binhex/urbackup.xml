@@ -12,8 +12,8 @@
     Your files can be restored through the web interface, via the client or the Windows Explorer while the backups of drive volumes can be restored with a bootable CD or USB-Stick (bare metal restore).
     A web interface makes setting up your own backup server really easy.[br][br]
     [b]Configuration[/b][br]
-    [b]/config[/b] This is where urbackup will store it's configuration file, database and logs.[br]
-    [b]/media[/b] This is where urbackup will store backups.[br][br]
+    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br]
+    [b]/media[/b] This is the path to media located on the host system.[br][br]
     [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>

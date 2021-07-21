@@ -8,8 +8,8 @@
     [b]Description[/b][br]
     LibreOffice is a free and open source office suite, a project of The Document Foundation. It was forked from OpenOffice.org in 2010, which was an open-sourced version of the earlier StarOffice. The LibreOffice suite comprises programs for word processing, the creation and editing of spreadsheets, slideshows, diagrams and drawings, working with databases, and composing mathematical formulae. It is available in 110 languages.[br][br]
     [b]Configuration[/b][br]
-    [b]/config[/b] This is where libreoffice will store it's configuration files, database and logs.[br]
-    [b]/data[/b] This is where users will store application generated data, such as documents, spreadsheets, etc.[br][br]
+    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br]
+    [b]/data[/b] This is where the application will store downloaded files, user created content etc.[br][br]
     [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>

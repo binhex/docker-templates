@@ -9,7 +9,7 @@
     SABnzbd is an Open Source Binary Newsreader written in Python. It's totally free, incredibly easy to use, and works practically everywhere. SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb.[br]
     This Docker includes OpenVPN and WireGuard to ensure a secure and private connection to the Internet, including use of iptables to prevent IP leakage when the tunnel is down. It also includes Privoxy to allow unfiltered access to index sites, to use Privoxy please point your application at "http://host ip:8118".[br][br]
     [b]Configuration[/b][br]
-    [b]/config[/b] This is where sabnzbd will store it's configuration file, database and logs.[br]
+    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br]
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br][br]
     [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]

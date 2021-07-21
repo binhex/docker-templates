@@ -12,8 +12,8 @@
     In addition to being a streaming media server, Airsonic works very well as a local jukebox. The intuitive web interface, as well as search and index facilities, are optimized for efficient browsing through large media libraries. Airsonic also comes with an integrated Podcast receiver, with many of the same features as you find in iTunes.[br][br]
     Based on Java technology, Airsonic runs on most platforms, including Windows, Mac, Linux and Unix variants.[br][br]
     [b]Configuration[/b][br]
-    [b]/config[/b] This is where airsonic will store it's configuration file, database and logs.[br]
-    [b]/media[/b] This is where airsonic will scan for media files.[br][br]
+    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br]
+    [b]/media[/b] This is the path to media located on the host system.[br][br]
     [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>

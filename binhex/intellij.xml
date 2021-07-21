@@ -8,8 +8,8 @@
     [b]Description[/b][br]
     IntelliJ IDEA is a special programming environment or integrated development environment (IDE) largely meant for Java. This environment is used especially for the development of programs. It is developed by a company called JetBrains, which was formally called IntelliJ. It is available in two editions: the Community Edition which is licensed by Apache 2.0, and a commercial edition known as the Ultimate Edition. Both of them can be used for creating software which can be sold. What makes IntelliJ IDEA so different from its counterparts is its ease of use, flexibility and its solid design. This Docker Image includes Git for SCM and Scala, Kotlin and Groovy programming languages.[br][br]
     [b]Configuration[/b][br]
-    [b]/config[/b] This is where intellij will store it's configuration files, database and logs.[br]
-    [b]/data[/b] This is where you store data created by the application.[br][br]
+    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br]
+    [b]/data[/b] This is where the application will store downloaded files, user created content etc.[br][br]
     [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>

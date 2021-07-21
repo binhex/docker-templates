@@ -8,7 +8,7 @@
     [b]Description[/b][br]
     SABnzbd is an Open Source Binary Newsreader written in Python. SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.[br][br]
     [b]Configuration[/b][br]
-    [b]/config[/b] This is where sabnzbd will store it's configuration file, database and logs.[br]
+    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br]
     [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br][br]
     [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]

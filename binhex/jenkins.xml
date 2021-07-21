@@ -8,7 +8,7 @@
     [b]Description[/b][br]
   Jenkins is an open source continuous integration tool written in Java. The project was forked from Hudson after a dispute with Oracle. Jenkins provides continuous integration services for software development. It is a server-based system running in a servlet container such as Apache Tomcat.[br][br]
     [b]Configuration[/b][br]
-    [b]/config[/b] This is where jenkins will store it's configuration file, database and logs.[br][br]
+    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br][br]
     [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>

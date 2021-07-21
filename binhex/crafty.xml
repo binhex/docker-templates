@@ -8,7 +8,7 @@
     [b]Description[/b][br]
     Crafty is a Minecraft Server Wrapper / Controller / Launcher. The purpose of Crafty is to launch a Minecraft server in the background and present a web interface for the admin to use to interact with their server.[br][br]
     [b]Configuration[/b][br]
-    [b]/config[/b] This is where Crafty will store it's configuration file, database and logs.[br][br]
+    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br][br]
     [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>

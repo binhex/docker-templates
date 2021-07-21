@@ -8,8 +8,8 @@
     [b]Description[/b][br]
     Emby Server is a home media server built on top of other popular open source technologies such as Service Stack, jQuery, jQuery mobile, and Mono.[br][br]
     [b]Configuration[/b][br]
-    [b]/config[/b] This is where emby will store it's configuration file, database and logs.[br]
-    [b]/media[/b] This is where emby will scan for media files.[br][br]
+    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br]
+    [b]/media[/b] This is the path to media located on the host system.[br][br]
     [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>

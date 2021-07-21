@@ -8,7 +8,7 @@
     [b]Description[/b][br]
     Makes hosted Bedrock/MCPE servers show up as LAN servers, specifically for consoles. You can now play on remote servers (not Realms!) on your Xbox and PS4 with friends. It's like having a LAN server that's not actually there, spooky.[br][br]
     [b]Configuration[/b][br]
-    [b]/config[/b] This is where Phantom will store it's configuration file, database and logs.[br][br]
+    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br][br]
     [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>

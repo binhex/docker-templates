@@ -8,10 +8,10 @@
     [b]Description[/b][br]
     Minecraft is a sandbox video game created by Swedish game developer Markus Persson and released by Mojang in 2011. The game allows players to build with a variety of different blocks in a 3D procedurally generated world, requiring creativity from players. Other activities in the game include exploration, resource gathering, crafting, and combat. Multiple game modes that change gameplay are available, including—but not limited to—a survival mode, in which players must acquire resources to build the world and maintain health, and a creative mode, where players have unlimited resources to build with.[br][br]
     [b]Configuration[/b][br]
-    [b]/config[/b] This is where Minecraft will store it's configuration file, database and logs.[br][br]
+    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br][br]
     [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
-    [b][u][span style='color: #E80000;']Notes[/span][/u][/b][br]
+    [b]Notes[/b][br]
     If you do [b]NOT[/b] want world backups and/or purging of backups then set the value to '0' for env vars 'CREATE_BACKUP_HOURS' and/or 'PURGE_BACKUP_DAYS'.[br][br]
   </Description>
   <Overview>

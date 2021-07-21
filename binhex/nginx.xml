@@ -8,7 +8,7 @@
 	[b]Description[/b][br]
     NGINX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, and more. It started out as a web server designed for maximum performance and stability. In addition to its HTTP server capabilities, NGINX can also function as a proxy server for email (IMAP, POP3, and SMTP) and a reverse proxy and load balancer for HTTP, TCP, and UDP servers.[br][br]
     [b]Configuration[/b][br]
-    [b]/config[/b] This is where nginx will store it's configuration file, database and logs.[br][br]
+    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br][br]
     [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>
