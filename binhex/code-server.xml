@@ -53,9 +53,13 @@
       <Value></Value>
     </Variable>
     <Variable>
-      <Name>PASSWORD</Name>
-      <Value>code-server</Value>
+      <Name>ENABLE_STARTUP_SCRIPTS</Name>
+      <Value>yes</Value>
     </Variable>
+    <Variable>
+	  <Name>PASSWORD</Name>
+	  <Value>code-server</Value>
+	</Variable>
     <Variable>
       <Name>UMASK</Name>
       <Value>000</Value>
