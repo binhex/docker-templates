@@ -35,7 +35,7 @@
   <Environment>
     <Variable>
       <Name>WEBPAGE_TITLE</Name>
-      <Value>Tower</Value>
+      <Value>HexChat</Value>
     </Variable>
     <Variable>
       <Name>VNC_PASSWORD</Name>

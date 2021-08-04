@@ -36,7 +36,7 @@
   <Environment>
     <Variable>
       <Name>WEBPAGE_TITLE</Name>
-      <Value>Tower</Value>
+      <Value>IntelliJ</Value>
     </Variable>
     <Variable>
       <Name>VNC_PASSWORD</Name>
