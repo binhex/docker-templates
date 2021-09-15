@@ -66,6 +66,10 @@
       <Value>copy</Value>
     </Variable>
     <Variable>
+      <Name>RCLONE_DIRECTION</Name>
+      <Value>localtoremote</Value>
+    </Variable>
+    <Variable>
       <Name>RCLONE_POST_CHECK</Name>
       <Value>yes</Value>
     </Variable>
