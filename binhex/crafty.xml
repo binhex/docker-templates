@@ -40,7 +40,7 @@
   <Environment>
     <Variable>
       <Name>JAVA_VERSION</Name>
-      <Value>16</Value>
+      <Value>latest</Value>
     </Variable>
     <Variable>
       <Name>UMASK</Name>
