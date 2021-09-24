@@ -39,6 +39,10 @@
   </Networking>
   <Environment>
     <Variable>
+      <Name>JAVA_VERSION</Name>
+      <Value>16</Value>
+    </Variable>
+    <Variable>
       <Name>UMASK</Name>
       <Value>000</Value>
     </Variable>

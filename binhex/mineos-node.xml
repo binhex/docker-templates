@@ -49,7 +49,7 @@
     </Variable>
     <Variable>
       <Name>JAVA_VERSION</Name>
-      <Value>8</Value>
+      <Value>11</Value>
     </Variable>
     <Variable>
       <Name>UMASK</Name>
