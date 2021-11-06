@@ -17,6 +17,7 @@
     The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free!
   </Overview>
   <Support>http://lime-technology.com/forum/index.php?topic=45844.0</Support>
+	<ReadMe>https://github.com/binhex/documentation</ReadMe>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-plex/</Registry>
   <GitHub>https://github.com/binhex/arch-plex</GitHub>
   <Repository>binhex/arch-plex</Repository>

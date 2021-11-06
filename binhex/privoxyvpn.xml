@@ -17,6 +17,7 @@
     microsocks is a SOCKS5 service that you can run on your remote boxes to tunnel connections through them, if for some reason SSH doesn't cut it for you. It's very lightweight, and very light on resources too: for every client, a thread with a stack size of 8KB is spawned. the main process basically doesn't consume any resources at all. The only limits are the amount of file descriptors and the RAM.
     This Docker includes OpenVPN and WireGuard to ensure a secure and private connection to the Internet, including use of iptables to prevent IP leakage when the tunnel is down.</Overview>
   <Support>https://forums.unraid.net/topic/78028-support-binhex-privoxyvpn/</Support>
+	<ReadMe>https://github.com/binhex/documentation</ReadMe>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-privoxyvpn/</Registry>
   <GitHub>https://github.com/binhex/arch-privoxyvpn</GitHub>
   <Repository>binhex/arch-privoxyvpn</Repository>

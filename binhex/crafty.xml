@@ -16,6 +16,7 @@
     Crafty is a Minecraft Server Wrapper / Controller / Launcher. The purpose of Crafty is to launch a Minecraft server in the background and present a web interface for the admin to use to interact with their server.
   </Overview>
   <Support>https://forums.unraid.net/topic/108893-support-binhex-crafty/</Support>
+	<ReadMe>https://github.com/binhex/documentation</ReadMe>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-crafty/</Registry>
   <GitHub>https://github.com/binhex/arch-crafty</GitHub>
   <Repository>binhex/arch-crafty</Repository>

@@ -21,6 +21,7 @@
     Based on Java technology, Airsonic runs on most platforms, including Windows, Mac, Linux and Unix variants.[br][br]
   </Overview>
   <Support>https://forums.lime-technology.com/topic/59427-support-binhex-airsonic/</Support>
+	<ReadMe>https://github.com/binhex/documentation</ReadMe>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-airsonic/</Registry>
   <GitHub>https://github.com/binhex/arch-airsonic</GitHub>
   <Repository>binhex/arch-airsonic</Repository>

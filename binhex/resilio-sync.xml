@@ -19,6 +19,7 @@
     Although not touted by the developers as an intended direct replacement nor competitor to cloud-based file synchronization services, it has attained much of its publicity in this potential role.This is mainly due to the ability of Resilio Sync to address many of the concerns in existing services relating to file storage limits, privacy, cost, and performance.
   </Overview>
   <Support>https://forums.unraid.net/topic/103784-support-binhex-resilio-sync/</Support>
+	<ReadMe>https://github.com/binhex/documentation</ReadMe>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-resilio-sync/</Registry>
   <GitHub>https://github.com/binhex/arch-resilio-sync</GitHub>
   <Repository>binhex/arch-resilio-sync</Repository>

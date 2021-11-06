@@ -17,6 +17,7 @@
     Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers in real time, safely protected from prying eyes. Your data is your data alone and you deserve to choose where it is stored, whether it is shared with some third party, and how it's transmitted over the internet.
   </Overview>
   <Support>https://forums.unraid.net/topic/103137-support-binhex-syncthing/</Support>
+	<ReadMe>https://github.com/binhex/documentation</ReadMe>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-syncthing/</Registry>
   <GitHub>https://github.com/binhex/arch-syncthing</GitHub>
   <Repository>binhex/arch-syncthing</Repository>
