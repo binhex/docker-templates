@@ -17,7 +17,7 @@
     NZBGet is a cross-platform binary newsgrabber for nzb files, written in C++. It supports client/server mode, automatic par-check/-repair, web-interface, command-line interface, etc. NZBGet requires low system resources and runs great on routers, NAS-devices and media players.
   </Overview>
   <Support>http://lime-technology.com/forum/index.php?topic=45843.0</Support>
-	<ReadMe>https://github.com/binhex/documentation</ReadMe>
+  <ReadMe>https://github.com/binhex/documentation</ReadMe>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-nzbget/</Registry>
   <GitHub>https://github.com/binhex/arch-nzbget</GitHub>
   <Repository>binhex/arch-nzbget</Repository>

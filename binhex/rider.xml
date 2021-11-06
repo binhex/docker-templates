@@ -17,7 +17,7 @@
     Note:- This application requires a license, otherwise it will run in Evaluation Mode for 30 days.
   </Overview>
   <Support>https://forums.unraid.net/topic/76727-support-binhex-rider/</Support>
-	<ReadMe>https://github.com/binhex/documentation</ReadMe>
+  <ReadMe>https://github.com/binhex/documentation</ReadMe>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-rider/</Registry>
   <GitHub>https://github.com/binhex/arch-rider</GitHub>
   <Repository>binhex/arch-rider</Repository>

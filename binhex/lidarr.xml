@@ -18,7 +18,7 @@
     Lidarr is a music collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new tracks from your favorite artists and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.
   </Overview>
   <Support>https://forums.lime-technology.com/topic/62284-support-binhex-lidarr/</Support>
-	<ReadMe>https://github.com/binhex/documentation</ReadMe>
+  <ReadMe>https://github.com/binhex/documentation</ReadMe>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-lidarr/</Registry>
   <GitHub>https://github.com/binhex/arch-lidarr</GitHub>
   <Repository>binhex/arch-lidarr</Repository>
