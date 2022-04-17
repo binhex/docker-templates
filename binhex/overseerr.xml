@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/overseerr.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Downloaders: MediaApp:Video</Category>
+  <Name>binhex-overseerr</Name>
+  <Description>
+    [b]Description[/b][br]
+    Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem. Overseerr helps you find media you want to watch. With inline recommendations and suggestions, you will find yourself deeper and deeper in a rabbit hole of content you never knew you just had to have.[br][br]
+    [b]Configuration[/b][br]
+    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br]
+    [b]/media[/b] This is the path to media located on the host system.[br][br]
+    [b]Documentation[/b][br]
+    https://github.com/binhex/documentation[br][br]
+  </Description>
+  <Overview>
+    Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem. Overseerr helps you find media you want to watch. With inline recommendations and suggestions, you will find yourself deeper and deeper in a rabbit hole of content you never knew you just had to have.
+  </Overview>
+  <Support>https://forums.lime-technology.com/topic/61433-support-binhex-overseerr/</Support>
+  <ReadMe>https://github.com/binhex/documentation</ReadMe>
+  <Registry>https://registry.hub.docker.com/r/binhex/arch-overseerr/</Registry>
+  <GitHub>https://github.com/binhex/arch-overseerr</GitHub>
+  <Repository>binhex/arch-overseerr</Repository>
+  <Project>https://github.com/sct/overseerr</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5055</HostPort>
+        <ContainerPort>5055</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>UMASK</Name>
+      <Value>000</Value>
+    </Variable>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:5055]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/overseerr-icon.png</Icon>
+  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
