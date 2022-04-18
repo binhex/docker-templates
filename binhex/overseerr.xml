@@ -8,8 +8,7 @@
     [b]Description[/b][br]
     Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem. Overseerr helps you find media you want to watch. With inline recommendations and suggestions, you will find yourself deeper and deeper in a rabbit hole of content you never knew you just had to have.[br][br]
     [b]Configuration[/b][br]
-    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br]
-    [b]/media[/b] This is the path to media located on the host system.[br][br]
+    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br][br]
     [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
   </Description>
@@ -53,11 +52,6 @@
       <HostDir>/mnt/user/appdata/config</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user</HostDir>
-      <ContainerDir>/media</ContainerDir>
-      <Mode>ro</Mode>
     </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:5055]/</WebUI>
