@@ -18,7 +18,7 @@
   <Overview>
     Crafty Controller is a free and open-source Minecraft launcher and manager that allows users to start and administer Minecraft servers from a user-friendly interface. The interface is run as a self-hosted web server that is accessible to devices on the local network by default and can be port forwarded to provide external access outside of your local network. Crafty is designed to be easy to install and use, requiring only a bit of technical knowledge and a desire to learn to get started. Crafty Controller is still actively being developed by Arcadia Technology and we are continually making major improvements to the software.
   </Overview>
-  <Support>https://forums.unraid.net/topic/108893-support-binhex-crafty/</Support>
+  <Support>https://forums.unraid.net/topic/124948-support-binhex-crafty-4/</Support>
   <ReadMe>https://github.com/binhex/documentation</ReadMe>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-crafty-4/</Registry>
   <GitHub>https://github.com/binhex/arch-crafty-4</GitHub>
