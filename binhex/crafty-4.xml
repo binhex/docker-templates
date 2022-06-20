@@ -30,8 +30,18 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
+        <HostPort>8000</HostPort>
+        <ContainerPort>8000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
         <HostPort>8443</HostPort>
         <ContainerPort>8443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>19132-19142</HostPort>
+        <ContainerPort>19132-19142</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
