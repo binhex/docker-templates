@@ -40,23 +40,13 @@
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>19132</HostPort>
-        <ContainerPort>19132</ContainerPort>
+        <HostPort>19132-19232</HostPort>
+        <ContainerPort>19132-19232</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>19132</HostPort>
-        <ContainerPort>19132</ContainerPort>
-        <Protocol>udp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>19133</HostPort>
-        <ContainerPort>19133</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>19133</HostPort>
-        <ContainerPort>19133</ContainerPort>
+        <HostPort>19132-19232</HostPort>
+        <ContainerPort>19132-19232</ContainerPort>
         <Protocol>udp</Protocol>
       </Port>
       <Port>
