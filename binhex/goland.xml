@@ -16,7 +16,7 @@
   <Overview>
     GoLand wouldn't be a true IDE without a rich set of tools which, in addition to core Go development, support JavaScript, TypeScript, NodeJS, SQL, Databases, Docker, Kubernetes, and Terraform. All together, these capabilities make it perfectly equipped for working on any task, be it a modern web application or DevOps tools.
   </Overview>
-  <Support>https://lime-technology.com/forums/topic/62598-support-binhex-goland/</Support>
+  <Support>https://forums.unraid.net/topic/130806-support-binhex-goland/</Support>
   <ReadMe>https://github.com/binhex/documentation</ReadMe>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-goland/</Registry>
   <GitHub>https://github.com/binhex/arch-goland</GitHub>
