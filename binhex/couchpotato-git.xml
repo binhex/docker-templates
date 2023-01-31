@@ -17,7 +17,7 @@
   <Overview>
     CouchPotato (CP) is an automatic NZB and torrent downloader. You can keep a "movies I want"-list and it will search for NZBs/torrents of these movies every X hours. Once a movie is found, it will send it to SABnzbd or download the torrent to a specified directory.
   </Overview>
-  <Support>http://lime-technology.com/forum/index.php?topic=45837.0</Support>
+  <Support>http://forums.unraid.net/index.php?topic=45837.0</Support>
   <ReadMe>https://github.com/binhex/documentation</ReadMe>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-couchpotato-git/</Registry>
   <GitHub>https://github.com/binhex/arch-couchpotato-git</GitHub>

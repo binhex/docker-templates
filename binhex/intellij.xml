@@ -16,7 +16,7 @@
   <Overview>
     IntelliJ IDEA is a special programming environment or integrated development environment (IDE) largely meant for Java. This environment is used especially for the development of programs. It is developed by a company called JetBrains, which was formally called IntelliJ. It is available in two editions: the Community Edition which is licensed by Apache 2.0, and a commercial edition known as the Ultimate Edition. Both of them can be used for creating software which can be sold. What makes IntelliJ IDEA so different from its counterparts is its ease of use, flexibility and its solid design. This Docker Image includes Git for SCM and Scala, Kotlin and Groovy programming languages.
   </Overview>
-  <Support>https://lime-technology.com/forums/topic/62598-support-binhex-intellij/</Support>
+  <Support>https://forums.unraid.net/topic/62598-support-binhex-intellij/</Support>
   <ReadMe>https://github.com/binhex/documentation</ReadMe>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-intellij/</Registry>
   <GitHub>https://github.com/binhex/arch-intellij</GitHub>
