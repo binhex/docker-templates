@@ -105,6 +105,10 @@
       <Value>info</Value>
     </Variable>
     <Variable>
+      <Name>DELUGE_ENABLE_WEBUI_PASSWORD</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
       <Name>VPN_INPUT_PORTS</Name>
       <Value></Value>
     </Variable>
