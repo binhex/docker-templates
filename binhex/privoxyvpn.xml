@@ -54,7 +54,7 @@
     </Variable>
     <Variable>
       <Name>VPN_PROV</Name>
-      <Value>pia|airvpn|custom</Value>
+      <Value>pia|airvpn|protonvpn|custom</Value>
     </Variable>
     <Variable>
       <Name>VPN_CLIENT</Name>
