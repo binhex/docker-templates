@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/rustrover.xml</TemplateURL>
+  <Beta>true</Beta>
+  <Category>Productivity: Tools:</Category>
+  <Name>binhex-rustrover</Name>
+  <Description>
+    [b]Description[/b][br]
+    RustRover allows you to write code faster by completing relevant names everywhere in your code, adding details such as missing fields, imports, or trait methods, and generating typical constructs with live templates.
+    While you type, RustRover applies a set of inspections to your code and suggests quick-fixes to resolve any problems automatically. RustRover offers many refactorings that work across the whole codebase.[br][br]
+    [b]Configuration[/b][br]
+    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br]
+    [b]/data[/b] This is where the application will store downloaded files, user created content etc.[br][br]
+    [b]Documentation[/b][br]
+    https://github.com/binhex/documentation[br][br]
+  </Description>
+  <Overview>
+    RustRover allows you to write code faster by completing relevant names everywhere in your code, adding details such as missing fields, imports, or trait methods, and generating typical constructs with live templates.
+    While you type, RustRover applies a set of inspections to your code and suggests quick-fixes to resolve any problems automatically. RustRover offers many refactorings that work across the whole codebase.
+  </Overview>
+  <Support>https://forums.unraid.net/topic/62598-support-binhex-rustrover/</Support>
+  <ReadMe>https://github.com/binhex/documentation</ReadMe>
+  <Registry>https://registry.hub.docker.com/r/binhex/arch-rustrover/</Registry>
+  <GitHub>https://github.com/binhex/arch-rustrover</GitHub>
+  <Repository>binhex/arch-rustrover</Repository>
+  <Project>https://www.jetbrains.com/rust/</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>6080</HostPort>
+        <ContainerPort>6080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>WEBPAGE_TITLE</Name>
+      <Value>RustRover</Value>
+    </Variable>
+    <Variable>
+      <Name>VNC_PASSWORD</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>UMASK</Name>
+      <Value>000</Value>
+    </Variable>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/data</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:6080]/vnc.html?resize=remote&amp;host=[IP]&amp;port=[PORT:6080]&amp;autoconnect=1</WebUI>
+  <Banner></Banner>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/rustrover-icon.png</Icon>
+  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
