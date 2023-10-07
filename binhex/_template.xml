@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
+  <RemoveFromCA>true</RemoveFromCA>
   <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/appnamelower.xml</TemplateURL>
   <Beta>false</Beta>
   <Category>appcategory:</Category>
