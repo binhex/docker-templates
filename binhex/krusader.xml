@@ -48,6 +48,10 @@
       <Value></Value>
     </Variable>
     <Variable>
+      <Name>ENABLE_STARTUP_SCRIPTS</Name>
+      <Value>no</Value>
+    </Variable>
+    <Variable>
       <Name>UMASK</Name>
       <Value>000</Value>
     </Variable>
