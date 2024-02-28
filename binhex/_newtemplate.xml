@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+	<!-- Find and replace 'APPNAME' with the name of the application -->
+	<!-- Find and replace 'THREAD' with the forum URL after creating the Support Thread -->
+	<!-- Find and replace '0000' with the Web UI port of the application -->
+    <Name>APPNAME</Name>
+    <Repository>binhex/arch-APPNAME</Repository>
+    <Registry>https://github.com/binhex/arch-APPNAME</Registry>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+    <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://forums.unraid.net/topic/THREAD/</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/binhex/arch-APPNAME</GitHub>
+    <ReadMe>https://github.com/binhex/documentation</ReadMe>
+    <Project>https://github.com/APPNAME/</Project>
+    <Overview>Airsonic-advanced(https://github.com/APPNAME) is a free, web-based media streamer, providing ubiquitious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.</Overview>
+    <WebUI>http://[IP]:[PORT:0000]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/APPNAME.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/APPNAME-icon.png</Icon>
+    <Date>1970-01-01</Date>
+    <Changes></Changes>
+    <Config Name="Port: WebUI" Target="0000" Default="0000" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /config" Target="/config" Default="" Mode="rw" Description="This is the container path to your configuration files, database and logs etc." Type="Path" Display="advanced" Required="true" Mask="false"/>
+	<Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="This is the container path to your downloaded files, user created content etc." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Path: /media" Target="/media" Default="" Mode="rw" Description="This is the container path to your media files, i.e. movies, tv, music, pictures etc." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: UMASK" Target="UMASK" Default="000" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+</Container>
