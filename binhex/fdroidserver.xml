@@ -6,17 +6,17 @@
   <Category>MediaServer:Other</Category>
   <Name>binhex-fdroidserver</Name>
   <Overview>
-    [b]Description[/b]&#xD;
-    fdroidserver is a suite of tools to publish and work with collections of Android apps (APK files) and other kinds of packages. It is used to maintain the f-droid.org application repository. These same tools can be used to create additional or alternative repositories for publishing, or to assist in creating, testing and submitting metadata to the f-droid.org repository, also known as fdroiddata.&#xD;
-    &#xD;
-    [b]Configuration[/b]&#xD;
-    [b]/config[/b] This is the container path to your configuration files, database and logs etc.&#xD;
-    &#xD;
-    [b]Documentation[/b]&#xD;
-    https://github.com/binhex/documentation[br]&#xD;
-    &#xD;
-    [b]Notes[/b]&#xD;
-    N/A
+Description&#xD;
+fdroidserver is a suite of tools to publish and work with collections of Android apps (APK files) and other kinds of packages. It is used to maintain the f-droid.org application repository. These same tools can be used to create additional or alternative repositories for publishing, or to assist in creating, testing and submitting metadata to the f-droid.org repository, also known as fdroiddata.&#xD;
+&#xD;
+Configuration&#xD;
+/config This is the container path to your configuration files, database and logs etc.&#xD;
+&#xD;
+Documentation&#xD;
+https://github.com/binhex/documentation&#xD;
+&#xD;
+Notes&#xD;
+N/A
   </Overview>
   <ReadMe>https://github.com/binhex/documentation</ReadMe>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-fdroidserver/</Registry>
