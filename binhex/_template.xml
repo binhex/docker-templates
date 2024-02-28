@@ -5,21 +5,22 @@
   <Beta>false</Beta>
   <Category>appcategory:</Category>
   <Name>binhex-appnamelower</Name>
-  <Overview>[b]Description[/b]&#xD;
-appdescription-paragraph1&#xD;
-&#xD;
-appdescription paragraph2&#xD;
-&#xD;
-[b]Configuration[/b]&#xD;
-[b]/config[/b] This is the container path to your configuration files, database and logs etc.&#xD;
-[b]/media[/b] This is the container path to your media files, i.e. movies, tv, music, pictures etc.&#xD;
-[b]/data[/b] This is the container path to your downloaded files, user created content etc.[br]&#xD;
-&#xD;
-[b]Documentation[/b]&#xD;
-https://github.com/binhex/documentation[br]&#xD;
-&#xD;
-[b]Notes[/b]&#xD;
-N/A
+  <Overview>
+    [b]Description[/b]&#xD;
+    appdescription-paragraph1&#xD;
+    &#xD;
+    appdescription paragraph2&#xD;
+    &#xD;
+    [b]Configuration[/b]&#xD;
+    [b]/config[/b] This is the container path to your configuration files, database and logs etc.&#xD;
+    [b]/media[/b] This is the container path to your media files, i.e. movies, tv, music, pictures etc.&#xD;
+    [b]/data[/b] This is the container path to your downloaded files, user created content etc.[br]&#xD;
+    &#xD;
+    [b]Documentation[/b]&#xD;
+    https://github.com/binhex/documentation[br]&#xD;
+    &#xD;
+    [b]Notes[/b]&#xD;
+    N/A
   </Overview>
   <ReadMe>https://github.com/binhex/documentation</ReadMe>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-appnamelower/</Registry>
