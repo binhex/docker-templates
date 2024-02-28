@@ -54,11 +54,6 @@
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/data</HostDir>
-      <ContainerDir>/data</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:9117]/</WebUI>
   <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/jackett-icon.png</Icon>
