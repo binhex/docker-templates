@@ -15,7 +15,7 @@
   <Overview>
     FlareSolverr starts a proxy server, and it waits for user requests in an idle state using few resources. When some request arrives, it uses Selenium with the undetected-chromedriver to create a web browser (Chrome). It opens the URL with user parameters and waits until the Cloudflare challenge is solved (or timeout). The HTML code and the cookies are sent back to the user, and those cookies can be used to bypass Cloudflare using other HTTP clients.
   </Overview>
-  <Support>https://forums.lime-technology.com/topic/61433-support-binhex-flaresolverr/</Support>
+  <Support>https://forums.unraid.net/topic/155853-support-binhex-flaresolverr/</Support>
   <ReadMe>https://github.com/binhex/documentation</ReadMe>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-flaresolverr/</Registry>
   <GitHub>https://github.com/binhex/arch-flaresolverr</GitHub>
