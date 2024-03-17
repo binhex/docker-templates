@@ -42,10 +42,17 @@
     <Variable>
       <Name>JAVA_ARGS</Name>
       <Value>-Xmx512m</Value>
+      <Description>Java arguments</Description>
     </Variable>
     <Variable>
       <Name>JAVA_OPTS</Name>
       <Value>-Dhudson.footerURL=http://mycompany.com</Value>
+      <Description>Java options</Description>
+    </Variable>
+    <Variable>
+      <Name>ADDITIONAL_PKGS</Name>
+      <Value></Value>
+      <Description>Space-separated list of Pacman packages to install</Description>
     </Variable>
     <Variable>
       <Name>UMASK</Name>
