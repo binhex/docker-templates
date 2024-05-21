@@ -24,6 +24,9 @@
     <Config Name="Port: Web Interface" Target="4747" Default="4747" Mode="tcp" Description="This is the port for the Web UI for the application" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/gonic" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /media" Target="/media" Default="" Mode="rw" Description="This is the container path to your media files, e.g. movies, tv, music, pictures etc." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: GONIC_MUSIC_PATH" Target="GONIC_MUSIC_PATH" Default="/media" Description="Path to music files" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: GONIC_PODCAST_PATH" Target="GONIC_PODCAST_PATH" Default="/config/gonic/podcasts" Description="Path to store downloaded podcasts" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: GONIC_PLAYLISTS_PATH" Target="GONIC_PLAYLISTS_PATH" Default="/config/gonic/playlists" Description="Path to store created playlists" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Variable: PUID" Target="PUID" Default="99" Description="User ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Group ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Variable: UMASK" Target="UMASK" Default="000" Description="UMASK for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
