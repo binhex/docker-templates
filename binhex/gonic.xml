@@ -11,7 +11,7 @@
     <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
-    <Support>https://forums.unraid.net/topic/THREAD/</Support>
+    <Support>https://forums.unraid.net/topic/165665-support-binhex-gonic</Support>
     <Shell>bash</Shell>
     <GitHub>https://github.com/binhex/arch-gonic</GitHub>
     <ReadMe>https://github.com/binhex/documentation</ReadMe>
