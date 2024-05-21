@@ -2,7 +2,8 @@
 <Container version="2">
     <Name>Gonic</Name>
 	<Beta>false</Beta>
-	<Category>MediaServer:Music,MediaServer:Other</Category>
+    <CategoryList>MediaServer-Music</CategoryList>
+    <CategoryList>MediaServer-Other</CategoryList>
     <Repository>binhex/arch-gonic</Repository>
     <Registry>https://github.com/binhex/arch-gonic</Registry>
     <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>

@@ -8,7 +8,7 @@
 	<!-- Find and replace '0000' with the Web UI port of the application -->
     <Name>APPNAME</Name>
 	<Beta>false</Beta>
-	<Category>CATEGORY:</Category>
+    <CategoryList>CATEGORY</CategoryList>
     <Repository>binhex/arch-APPNAME</Repository>
     <Registry>https://github.com/binhex/arch-APPNAME</Registry>
     <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
