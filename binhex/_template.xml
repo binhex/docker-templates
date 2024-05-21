@@ -6,9 +6,10 @@
 	<!-- Find and replace 'CATEGORY' with the CA category of the application -->
 	<!-- Find and replace 'THREAD' with the forum ID after creating the Support Thread -->
 	<!-- Find and replace '0000' with the Web UI port of the application -->
+    <!-- Remove line containing 'RemoveFromCA' -->
     <Name>APPNAME</Name>
 	<Beta>false</Beta>
-    <CategoryList>CATEGORY</CategoryList>
+    <Category>CATEGORY</Category>
     <Repository>binhex/arch-APPNAME</Repository>
     <Registry>https://github.com/binhex/arch-APPNAME</Registry>
     <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
