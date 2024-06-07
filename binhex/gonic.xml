@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-    <Name>Gonic</Name>
+    <Name>binhex-gonic</Name>
 	<Beta>false</Beta>
     <Category>MediaServer:Music MediaServer:Other</Category>
     <Repository>binhex/arch-gonic</Repository>
