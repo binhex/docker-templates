@@ -1,158 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/delugevpn.xml</TemplateURL>
-  <Beta>False</Beta>
-  <Category>Downloaders:</Category>
-  <Name>binhex-delugevpn</Name>
-  <Description>
-    [b]Description[/b][br]
-    Deluge is a full-featured ​BitTorrent client for Linux, OS X, Unix and Windows. It uses ​libtorrent in its backend and features multiple user-interfaces including: GTK+, web and console. It has been designed using the client server model with a daemon process that handles all the bittorrent activity. The Deluge daemon is able to run on headless machines with the user-interfaces being able to connect remotely from any platform. This Docker includes OpenVPN and WireGuard to ensure a secure and private connection to the Internet, including use of iptables to prevent IP leakage when the tunnel is down. It also includes Privoxy to allow unfiltered access to index sites, to use Privoxy please point your application at "http://host ip:8118".[br][br]
-    [b]Configuration[/b][br]
-    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br]
-    [b]/data[/b] This is where the application will store downloaded files, user created content etc.[br][br]
-    [b]Documentation[/b][br]
-    https://github.com/binhex/documentation[br][br]
-  </Description>
-  <Overview>
-    Deluge is a full-featured ​BitTorrent client for Linux, OS X, Unix and Windows. It uses ​libtorrent in its backend and features multiple user-interfaces including: GTK+, web and console. It has been designed using the client server model with a daemon process that handles all the bittorrent activity. The Deluge daemon is able to run on headless machines with the user-interfaces being able to connect remotely from any platform.
-    This Docker includes OpenVPN and WireGuard to ensure a secure and private connection to the Internet, including use of iptables to prevent IP leakage when the tunnel is down. It also includes Privoxy to allow unfiltered access to index sites, to use Privoxy please point your application at "http://host ip:8118".
-  </Overview>
-  <Support>http://forums.unraid.net/index.php?topic=45812.0</Support>
-  <ReadMe>https://github.com/binhex/documentation</ReadMe>
-  <Registry>https://registry.hub.docker.com/r/binhex/arch-delugevpn/</Registry>
-  <GitHub>https://github.com/binhex/arch-delugevpn</GitHub>
-  <Repository>binhex/arch-delugevpn</Repository>
-  <Project>http://deluge-torrent.org/</Project>
-  <BindTime>true</BindTime>
-  <Privileged>true</Privileged>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8112</HostPort>
-        <ContainerPort>8112</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>58846</HostPort>
-        <ContainerPort>58846</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>58946</HostPort>
-        <ContainerPort>58946</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>58946</HostPort>
-        <ContainerPort>58946</ContainerPort>
-        <Protocol>udp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>8118</HostPort>
-        <ContainerPort>8118</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Environment>
-    <Variable>
-      <Name>VPN_ENABLED</Name>
-      <Value>yes|no</Value>
-    </Variable>
-    <Variable>
-      <Name>VPN_USER</Name>
-      <Value>vpn username</Value>
-    </Variable>
-    <Variable>
-      <Name>VPN_PASS</Name>
-      <Value>vpn password</Value>
-    </Variable>
-    <Variable>
-      <Name>VPN_PROV</Name>
-      <Value>pia|airvpn|protonvpn|custom</Value>
-    </Variable>
-    <Variable>
-      <Name>VPN_CLIENT</Name>
-      <Value>openvpn|wireguard</Value>
-    </Variable>
-    <Variable>
-      <Name>VPN_OPTIONS</Name>
-      <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>STRICT_PORT_FORWARD</Name>
-      <Value>yes</Value>
-    </Variable>
-    <Variable>
-      <Name>ENABLE_PRIVOXY</Name>
-      <Value>no|yes</Value>
-    </Variable>
-    <Variable>
-      <Name>ENABLE_STARTUP_SCRIPTS</Name>
-      <Value>no</Value>
-    </Variable>
-    <Variable>
-      <Name>LAN_NETWORK</Name>
-      <Value>192.168.1.0/24</Value>
-    </Variable>
-    <Variable>
-      <Name>NAME_SERVERS</Name>
-      <Value>84.200.69.80,37.235.1.174,1.1.1.1,37.235.1.177,84.200.70.40,1.0.0.1</Value>
-    </Variable>
-    <Variable>
-      <Name>DELUGE_DAEMON_LOG_LEVEL</Name>
-      <Value>info</Value>
-    </Variable>
-    <Variable>
-      <Name>DELUGE_WEB_LOG_LEVEL</Name>
-      <Value>info</Value>
-    </Variable>
-    <Variable>
-      <Name>DELUGE_ENABLE_WEBUI_PASSWORD</Name>
-      <Value>yes</Value>
-    </Variable>
-    <Variable>
-      <Name>VPN_INPUT_PORTS</Name>
-      <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>VPN_OUTPUT_PORTS</Name>
-      <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>DEBUG</Name>
-      <Value>false|true</Value>
-    </Variable>
-    <Variable>
-      <Name>UMASK</Name>
-      <Value>000</Value>
-    </Variable>
-    <Variable>
-      <Name>PUID</Name>
-      <Value>99</Value>
-    </Variable>
-    <Variable>
-      <Name>PGID</Name>
-      <Value>100</Value>
-    </Variable>
-  </Environment>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/config</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/data</HostDir>
-      <ContainerDir>/data</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <WebUI>http://[IP]:[PORT:8112]/</WebUI>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/deluge-icon.png</Icon>
-  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
-  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
-  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
-  <ExtraParams>--sysctl="net.ipv4.conf.all.src_valid_mark=1"</ExtraParams>
-</Containers>
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>binhex-delugevpn</Name>
+	<Beta>false</Beta>
+    <Category>Downloaders:</Category>
+    <Repository>binhex/arch-delugevpn</Repository>
+    <Registry>https://github.com/binhex/arch-delugevpn</Registry>
+    <Network>bridge</Network>
+    <Privileged>true</Privileged>
+    <ExtraParams>--sysctl="net.ipv4.conf.all.src_valid_mark=1"</ExtraParams>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/binhex/arch-delugevpn</GitHub>
+    <ReadMe>https://github.com/binhex/documentation</ReadMe>
+    <Support>https://forums.unraid.net/index.php?topic=45812.0/</Support>
+    <Project>https://deluge-torrent.org/</Project>
+    <Overview>Deluge is a full-featured BitTorrent client for Linux, OS X, Unix and Windows. It uses ​libtorrent in its backend and features multiple user-interfaces including: GTK+, web and console. It has been designed using the client server model with a daemon process that handles all the bittorrent activity. The Deluge daemon is able to run on headless machines with the user-interfaces being able to connect remotely from any platform. This Docker includes OpenVPN and WireGuard to ensure a secure and private connection to the Internet, including use of iptables to prevent IP leakage when the tunnel is down. It also includes Privoxy to allow unfiltered access to index sites, to use Privoxy please point your application at "http://host ip:8118".</Overview>
+    <WebUI>http://[IP]:[PORT:8112]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/delugevpn.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/deluge-icon.png</Icon>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+    <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+    <Date>1970-01-01</Date>
+    <Changes></Changes>
+    <Config Name="Port: Web Interface" Target="8112" Default="8112" Mode="tcp" Description="This is the port for the Web UI for the application." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: Privoxy" Target="8118" Default="8118" Mode="tcp" Description="This is the port for Privoxy application - HTTPS proxy server." Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: Daemon" Target="58846" Default="58846" Mode="tcp" Description="This is the port for the applications daemon." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: Incoming port TCP" Target="58946" Default="58946" Mode="tcp" Description="This is the TCP incoming port when VPN_ENABLED is set to 'no'." Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: Incoming port UDP" Target="58946" Default="58946" Mode="udp" Description="This is the UDP incoming port when VPN_ENABLED is set to 'no'." Type="Port" Display="always" Required="false" Mask="false"/>
+
+    <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/delugevpn" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
+	<Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="This is the container path to your downloaded files or user created content." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /shared" Target="/shared" Default="shared" Mode="rw" Description="This is a special Docker Volume used to store shared information between containers, such as incoming port number." Type="Path" Display="advanced" Required="false" Mask="false"/>
+
+    <Config Name="Variable: VPN_ENABLED" Target="VPN_ENABLED" Default="yes|no" Description="Specify whether to enable the VPN." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: VPN_USER" Target="VPN_USER" Default="" Description="Specify your VPN providers username." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="Variable: VPN_PASS" Target="VPN_PASS" Default="" Description="Specify your VPN providers password." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="Variable: VPN_PROV" Target="VPN_PROV" Default="pia|airvpn|protonvpn|custom" Description="Specify your VPN providers password." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: VPN_CLIENT" Target="VPN_CLIENT" Default="openvpn|wireguard" Description="Specify either Wireguard or OpenVPN." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: VPN_OPTIONS" Target="VPN_OPTIONS" Default="" Description="Advanced OpenVPN options, do not specify unless you know what you are doing." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: STRICT_PORT_FORWARD" Target="STRICT_PORT_FORWARD" Default="yes|no" Description="Required only for VPN providers PIA and ProtonVPN, this forces connection only to port forward enabled endpoints." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: ENABLE_PRIVOXY" Target="ENABLE_PRIVOXY" Default="no|yes" Description="Specify whether to run Privoxy - HTTPS proxy server." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: ENABLE_STARTUP_SCRIPTS" Target="ENABLE_STARTUP_SCRIPTS" Default="no|yes" Description="Advanced option, used to enable the running of an arbitary script before the VPN tunnel is established." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: LAN_NETWORK" Target="LAN_NETWORK" Default="192.168.1.0/24" Description="Specify your internal network in CIDR format." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: NAME_SERVERS" Target="NAME_SERVERS" Default="84.200.69.80,37.235.1.174,1.1.1.1,37.235.1.177,84.200.70.40,1.0.0.1" Description="Specify the Name Servers used to perform lookups inside the container." Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: DELUGE_DAEMON_LOG_LEVEL" Target="DELUGE_DAEMON_LOG_LEVEL" Default="info" Description="Specify the level of logging for the daemon." Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: DELUGE_WEB_LOG_LEVEL" Target="DELUGE_WEB_LOG_LEVEL" Default="info" Description="Specify the level of logging for the web ui." Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: DELUGE_ENABLE_WEBUI_PASSWORD" Target="DELUGE_ENABLE_WEBUI_PASSWORD" Default="yes|no" Description="Specify whether you want to be prompted for credentials when connecting to the web ui." Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: VPN_INPUT_PORTS" Target="VPN_INPUT_PORTS" Default="" Description="Specify any inbound ports for the VPN network." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: VPN_OUTPUT_PORTS" Target="VPN_OUTPUT_PORTS" Default="" Description="SSpecify any outbound ports for the VPN network." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: DEBUG" Target="DEBUG" Default="false|true" Description="Specify whether you want to enable debug logging, useful when diagnosing startup issues." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: PUID" Target="PUID" Default="99" Description="User ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Group ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: UMASK" Target="UMASK" Default="000" Description="UMASK for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+</Container>
