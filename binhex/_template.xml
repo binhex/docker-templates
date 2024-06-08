@@ -20,7 +20,7 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/binhex/arch-APPNAME</GitHub>
     <ReadMe>https://github.com/binhex/documentation</ReadMe>
-    <Support>https://forums.unraid.net/THREAD/</Support>
+    <Support>https://forums.unraid.net/topic/THREAD/</Support>
     <Project>https://PROJECTURL/</Project>
     <Overview>DESC</Overview>
     <WebUI>http://[IP]:[PORT:0000]</WebUI>
