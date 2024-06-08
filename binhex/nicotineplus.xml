@@ -2,7 +2,7 @@
 <Container version="2">
     <Name>binhex-nicotineplus</Name>
 	<Beta>false</Beta>
-    <Category>Downloader:</Category>
+    <Category>Downloaders:</Category>
     <Repository>binhex/arch-nicotineplus</Repository>
     <Registry>https://github.com/binhex/arch-nicotineplus</Registry>
     <Network>bridge</Network>
