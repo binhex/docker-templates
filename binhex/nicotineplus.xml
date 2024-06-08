@@ -11,7 +11,7 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/binhex/arch-nicotineplus</GitHub>
     <ReadMe>https://github.com/binhex/documentation</ReadMe>
-    <Support>https://forums.unraid.net/THREAD/</Support>
+    <Support>https://forums.unraid.net/topic/167779-support-binhex-nicotine/</Support>
     <Project>https://nicotine-plus.org/</Project>
     <Overview>Nicotine+ is a graphical client for the Soulseek peer-to-peer network. Nicotine+ aims to be a lightweight, pleasant, free and open source (FOSS) alternative to the official Soulseek client, while also providing a comprehensive set of features.Nicotine+ is written in Python and uses GTK for its graphical user interface.</Overview>
     <WebUI>http://[IP]:[PORT:6080]/vnc.html?resize=remote&amp;host=[IP]&amp;port=[PORT:6080]&amp;autoconnect=1</WebUI>
