@@ -3,7 +3,7 @@
 	<!-- Find and replace 'APPNAME' with the name of the application -->
 	<!-- Find and replace 'PROJECTURL' with the project URL of the application -->
 	<!-- Find and replace 'DESC' with the description of the application -->
-	<!-- Find and replace 'CATEGORY' with the CA category of the application -->
+	<!-- Find and replace 'CACATEGORY' with the CA category of the application -->
 	<!-- Find and replace 'THREAD' with the forum ID after creating the Support Thread -->
 	<!-- Find and replace '0000' with the Web UI port of the application -->
     <!-- Remove any unrequired paths, e.g. /shared, /media -->
@@ -11,7 +11,7 @@
     <!-- Remove these comments -->
     <Name>binhex-APPNAME</Name>
 	<Beta>false</Beta>
-    <Category>CATEGORY</Category>
+    <Category>CACATEGORY</Category>
     <Repository>binhex/arch-APPNAME</Repository>
     <Registry>https://github.com/binhex/arch-APPNAME</Registry>
     <Network>bridge</Network>

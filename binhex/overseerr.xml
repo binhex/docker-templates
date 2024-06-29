@@ -2,7 +2,7 @@
 <Container version="2">
     <Name>binhex-overseerr</Name>
 	<Beta>false</Beta>
-    <Downloaders: MediaApp:Video>Downloaders: MediaApp:Video</Downloaders: MediaApp:Video>
+    <Category>Downloaders: MediaApp:Video</Category>
     <Repository>binhex/arch-overseerr</Repository>
     <Registry>https://github.com/binhex/arch-overseerr</Registry>
     <Network>bridge</Network>
