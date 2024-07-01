@@ -1,96 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/code-server.xml</TemplateURL>
-  <Beta>False</Beta>
-  <Category>Cloud: Productivity: Tools:Utilities</Category>
-  <Name>binhex-code-server</Name>
-  <Description>
-    [b]Description[/b][br]
-    Code-server is a Visual Studio Code instance running on a remote server accessible through any web browser. It allows you to code anywhere and on any device such as a tablet or laptop with a consistent integrated development environment (IDE). Set up a secure a Linux development machine and get coding on any device with a web browser. Take advantage of a cloud server by offloading the system demanding tasks such as tests, compilations, downloads to another machine. Preserve battery life when you’re on the go or spend your downtime doing something else while the computationally intensive processes are running on your cloud server.[br][br]
-    [b]Configuration[/b][br]
-    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br]
-    [b]/data[/b] This path is used to store source code.[br][br]
-    [b]Documentation[/b][br]
-    https://github.com/binhex/documentation[br][br]
-  </Description>
-  <Overview>
-    Code-server is a Visual Studio Code instance running on a remote server accessible through any web browser. It allows you to code anywhere and on any device such as a tablet or laptop with a consistent integrated development environment (IDE). Set up a secure a Linux development machine and get coding on any device with a web browser.
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>binhex-code-server</Name>
+	<Beta>false</Beta>
+    <Category>Cloud: Productivity: Tools:Utilities</Category>
+    <Repository>binhex/arch-code-server</Repository>
+    <Registry>https://github.com/binhex/arch-code-server</Registry>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <ExtraParams></ExtraParams>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/binhex/arch-code-server</GitHub>
+    <ReadMe>https://github.com/binhex/documentation</ReadMe>
+    <Support>https://forums.unraid.net/topic/110282-support-binhex-code-server/</Support>
+    <Project>https://https://github.com/cdr/code-server/</Project>
+    <Overview>Code-server is a Visual Studio Code instance running on a remote server accessible through any web browser. It allows you to code anywhere and on any device such as a tablet or laptop with a consistent integrated development environment (IDE). Set up a secure a Linux development machine and get coding on any device with a web browser. Take advantage of a cloud server by offloading the system demanding tasks such as tests, compilations, downloads to another machine. Preserve battery life when you’re on the go or spend your downtime doing something else while the computationally intensive processes are running on your cloud server.</Overview>
+    <WebUI>http://[IP]:[PORT:8500]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/code-server.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/code-server-icon.png</Icon>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+    <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+    <Date>1970-01-01</Date>
+    <Changes></Changes>
+    <Config Name="Port: Web Interface" Target="8500" Default="8500" Mode="tcp" Description="This is the Web UI port for for the application." Type="Port" Display="always" Required="true" Mask="false"/>
 
-    Take advantage of a cloud server by offloading the system demanding tasks such as tests, compilations, downloads to another machine. Preserve battery life when you’re on the go or spend your downtime doing something else while the computationally intensive processes are running on your cloud server.
-  </Overview>
-  <Support>https://forums.unraid.net/topic/110282-support-binhex-code-server/</Support>
-  <ReadMe>https://github.com/binhex/documentation</ReadMe>
-  <Registry>https://registry.hub.docker.com/r/binhex/arch-code-server/</Registry>
-  <GitHub>https://github.com/binhex/arch-code-server</GitHub>
-  <Repository>binhex/arch-code-server</Repository>
-  <Project>https://github.com/cdr/code-server</Project>
-  <BindTime>true</BindTime>
-  <Privileged>false</Privileged>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8500</HostPort>
-        <ContainerPort>8500</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Environment>
-    <Variable>
-      <Name>CERT_PATH</Name>
-      <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>CERT_KEY_PATH</Name>
-      <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>SELF_SIGNED_CERT</Name>
-      <Value>yes</Value>
-    </Variable>
-    <Variable>
-      <Name>BIND_CLOUD_NAME</Name>
-      <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>ENABLE_STARTUP_SCRIPTS</Name>
-      <Value>yes</Value>
-    </Variable>
-    <Variable>
-      <Name>PASSWORD</Name>
-      <Value>code-server</Value>
-    </Variable>
-    <Variable>
-      <Name>UMASK</Name>
-      <Value>000</Value>
-    </Variable>
-    <Variable>
-      <Name>PUID</Name>
-      <Value>99</Value>
-    </Variable>
-    <Variable>
-      <Name>PGID</Name>
-      <Value>100</Value>
-    </Variable>
-  </Environment>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/config</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/data</HostDir>
-      <ContainerDir>/data</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <WebUI>https://[IP]:[PORT:8500]/</WebUI>
-  <Banner></Banner>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/code-server-icon.png</Icon>
-  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
-  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
-  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
-  <ExtraParams></ExtraParams>
-</Containers>
+    <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/code-server" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
+	<Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="This is the container path to your downloaded files or user created content." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /shared" Target="/shared" Default="shared" Mode="rw" Description="This is a special Docker Volume used to store shared information between containers, such as incoming port number." Type="Path" Display="advanced" Required="false" Mask="false"/>
+
+    <Config Name="Variable: CERT_PATH" Target="CERT_PATH" Default="" Description="Specify the path to the certificate used for SSL/TLS." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: CERT_KEY_PATH" Target="CERT_KEY_PATH" Default="" Description="Specify the path to the certificate key used for SSL/TLS." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: SELF_SIGNED_CERT" Target="SELF_SIGNED_CERT" Default="yes|no" Description="Specify whether to use a self-signed certificate." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: BIND_CLOUD_NAME" Target="BIND_CLOUD_NAME" Default="" Description="Specify the bind cloud name used for SSL/TLS." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: ENABLE_STARTUP_SCRIPTS" Target="ENABLE_STARTUP_SCRIPTS" Default="no|yes" Description="Specify whether to run startup scripts to install and/or configure additional applications." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: PASSWORD" Target="PASSWORD" Default="code-server" Description="Specify the password used to access the Web UI." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: PUID" Target="PUID" Default="99" Description="User ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Group ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: UMASK" Target="UMASK" Default="000" Description="UMASK for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+</Container>

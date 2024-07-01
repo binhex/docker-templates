@@ -32,7 +32,7 @@
 	<RemoveFromCA>true</RemoveFromCA><!-- REMOVE THIS LINE -->
     <Date>1970-01-01</Date>
     <Changes></Changes>
-    <Config Name="Port: Web Interface" Target="0000" Default="0000" Mode="tcp" Description="This is the port for the Web UI for the application" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: Web Interface" Target="0000" Default="0000" Mode="tcp" Description="This is the Web UI port for for the application." Type="Port" Display="always" Required="true" Mask="false"/>
 
     <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/APPNAME" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
 	<Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="This is the container path to your downloaded files or user created content." Type="Path" Display="always" Required="true" Mask="false"/>
