@@ -24,6 +24,7 @@
   <Project>https://krusader.org/</Project>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
+  <PrivilegedReq>true</PrivilegedReq>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>

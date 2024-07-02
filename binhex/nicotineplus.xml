@@ -7,6 +7,7 @@
     <Registry>https://github.com/binhex/arch-nicotineplus</Registry>
     <Network>bridge</Network>
     <Privileged>true</Privileged>
+    <PrivilegedReq>true</PrivilegedReq>
     <ExtraParams></ExtraParams>
     <Shell>bash</Shell>
     <GitHub>https://github.com/binhex/arch-nicotineplus</GitHub>
