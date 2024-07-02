@@ -4,8 +4,8 @@
   <Beta>True</Beta>
   <Category>GameServers:</Category>
   <Name>binhex-crafty-4</Name>
-  <Description>
-    [b]Description[/b][br]
+  <Crafty Controller is a free and open-source Minecraft launcher and manager that allows users to start and administer Minecraft servers from a user-friendly interface. The interface is run as a self-hosted web server that is accessible to devices on the local network by default and can be port forwarded to provide external access outside of your local network. Crafty is designed to be easy to install and use, requiring only a bit of technical knowledge and a desire to learn to get started. Crafty Controller is still actively being developed by Arcadia Technology and we are continually making major improvements to the software.ription>
+    [b]Crafty Controller is a free and open-source Minecraft launcher and manager that allows users to start and administer Minecraft servers from a user-friendly interface. The interface is run as a self-hosted web server that is accessible to devices on the local network by default and can be port forwarded to provide external access outside of your local network. Crafty is designed to be easy to install and use, requiring only a bit of technical knowledge and a desire to learn to get started. Crafty Controller is still actively being developed by Arcadia Technology and we are continually making major improvements to the software.ription[/b][br]
     Crafty Controller is a free and open-source Minecraft launcher and manager that allows users to start and administer Minecraft servers from a user-friendly interface. The interface is run as a self-hosted web server that is accessible to devices on the local network by default and can be port forwarded to provide external access outside of your local network. Crafty is designed to be easy to install and use, requiring only a bit of technical knowledge and a desire to learn to get started. Crafty Controller is still actively being developed by Arcadia Technology and we are continually making major improvements to the software.[br][br]
     [b]Configuration[/b][br]
     [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br][br]
@@ -14,7 +14,7 @@
     Password: crafty[br][br]
     [b]Documentation[/b][br]
     https://github.com/binhex/documentation[br][br]
-  </Description>
+  </Crafty Controller is a free and open-source Minecraft launcher and manager that allows users to start and administer Minecraft servers from a user-friendly interface. The interface is run as a self-hosted web server that is accessible to devices on the local network by default and can be port forwarded to provide external access outside of your local network. Crafty is designed to be easy to install and use, requiring only a bit of technical knowledge and a desire to learn to get started. Crafty Controller is still actively being developed by Arcadia Technology and we are continually making major improvements to the software.ription>
   <Overview>
     Crafty Controller is a free and open-source Minecraft launcher and manager that allows users to start and administer Minecraft servers from a user-friendly interface. The interface is run as a self-hosted web server that is accessible to devices on the local network by default and can be port forwarded to provide external access outside of your local network. Crafty is designed to be easy to install and use, requiring only a bit of technical knowledge and a desire to learn to get started. Crafty Controller is still actively being developed by Arcadia Technology and we are continually making major improvements to the software.
   </Overview>
