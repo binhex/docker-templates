@@ -22,10 +22,11 @@
     <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
     <Date>1970-01-01</Date>
     <Changes></Changes>
-    <Config Name="Port: Web Interface" Target="6080" Default="6080" Mode="tcp" Description="This is the Web UI port for for the application." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: VNC Interface" Target="5900" Default="5900" Mode="tcp" Description="Specify the port used for VNC client connectivity." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: Web Interface" Target="6080" Default="6080" Mode="tcp" Description="Specify the Web UI port for for the application." Type="Port" Display="always" Required="true" Mask="false"/>
 
-    <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/fleet" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
-	<Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="This is the container path to your downloaded files or user created content." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/fleet" Mode="rw" Description="Specify the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
+	<Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Specify the container path to your downloaded files or user created content." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /shared" Target="/shared" Default="shared" Mode="rw" Description="This is a special Docker Volume used to store shared information between containers, such as incoming port number." Type="Path" Display="advanced" Required="false" Mask="false"/>
 
     <Config Name="Variable: VNC_PASSWORD" Target="VNC_PASSWORD" Default="" Description="Specify the password to access the Web UI, if blank no password will be prompted." Type="Variable" Display="always" Required="false" Mask="false"/>
