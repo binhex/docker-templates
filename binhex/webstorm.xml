@@ -11,7 +11,7 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/binhex/arch-webstorm</GitHub>
     <ReadMe>https://github.com/binhex/documentation</ReadMe>
-    <Support>https://forums.unraid.net/topic/THREAD/</Support>
+    <Support>https://forums.unraid.net/topic/169562-support-binhex-webstorm/</Support>
     <Project>https://www.jetbrains.com/webstorm/</Project>
     <Overview>Get straight to coding without having to install and configure lots of plugins. WebStorm includes everything you need for JavaScript and TypeScript development right from the start. You can personalize it further with various plugins and settings.</Overview>
     <WebUI>http://[IP]:[PORT:6080]/vnc.html?resize=remote&amp;host=[IP]&amp;port=[PORT:6080]&amp;autoconnect=1</WebUI>

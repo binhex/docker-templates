@@ -11,7 +11,7 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/binhex/arch-fleet</GitHub>
     <ReadMe>https://github.com/binhex/documentation</ReadMe>
-    <Support>https://forums.unraid.net/topic/THREAD/</Support>
+    <Support>https://forums.unraid.net/topic/169561-support-binhex-fleet/</Support>
     <Project>https://www.jetbrains.com/fleet/</Project>
     <Overview>Do you enjoy working with different programming languages in the same project? Well, we’ve got you covered! With Fleet, you can start coding in the language of your choice. Fleet is designed to automatically detect your project configuration from the source code, maximizing the value you get from its smart code-processing engine while minimizing the need for project configuration.</Overview>
     <WebUI>http://[IP]:[PORT:6080]/vnc.html?resize=remote&amp;host=[IP]&amp;port=[PORT:6080]&amp;autoconnect=1</WebUI>
