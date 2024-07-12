@@ -21,7 +21,7 @@
     <GitHub>https://github.com/binhex/arch-APPNAME</GitHub>
     <ReadMe>https://github.com/binhex/documentation</ReadMe>
     <Support>https://forums.unraid.net/topic/THREAD/</Support>
-    <Project>https://PROJECTURL/</Project>
+    <Project>PROJECTURL/</Project>
     <Overview>DESC</Overview>
     <WebUI>http://[IP]:[PORT:0000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/APPNAME.xml</TemplateURL>

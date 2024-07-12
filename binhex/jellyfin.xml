@@ -1,69 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/jellyfin.xml</TemplateURL>
-  <Beta>False</Beta>
-  <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
-  <Name>binhex-jellyfin</Name>
-  <Description>
-    [b]Description[/b][br]
-    Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps. Jellyfin is descended from Emby's 3.5.2 release and ported to the .NET Core framework to enable full cross-platform support. There are no strings attached, no premium licenses or features, and no hidden agendas: just a team who want to build something better and work together to achieve it.[br][br]
-    [b]Configuration[/b][br]
-    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br]
-    [b]/media[/b] This is the path to media located on the host system.[br][br]
-    [b]Documentation[/b][br]
-    https://github.com/binhex/documentation[br][br]
-  </Description>
-  <Overview>
-    Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps. Jellyfin is descended from Emby's 3.5.2 release and ported to the .NET Core framework to enable full cross-platform support. There are no strings attached, no premium licenses or features, and no hidden agendas: just a team who want to build something better and work together to achieve it.
-  </Overview>
-  <Support>https://forums.unraid.net/topic/77506-support-binhex-jellyfin/</Support>
-  <ReadMe>https://github.com/binhex/documentation</ReadMe>
-  <Registry>https://registry.hub.docker.com/r/binhex/arch-jellyfin/</Registry>
-  <GitHub>https://github.com/binhex/arch-jellyfin</GitHub>
-  <Repository>binhex/arch-jellyfin</Repository>
-  <Project>https://github.com/jellyfin/jellyfin</Project>
-  <BindTime>true</BindTime>
-  <Privileged>false</Privileged>
-    <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8096</HostPort>
-        <ContainerPort>8096</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-    </Networking>
-  <Environment>
-    <Variable>
-      <Name>UMASK</Name>
-      <Value>000</Value>
-    </Variable>
-    <Variable>
-      <Name>PUID</Name>
-      <Value>99</Value>
-    </Variable>
-    <Variable>
-      <Name>PGID</Name>
-      <Value>100</Value>
-    </Variable>
-  </Environment>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/config</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user</HostDir>
-      <ContainerDir>/media</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <WebUI>http://[IP]:[PORT:8096]/</WebUI>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/jellyfin-icon.png</Icon>
-  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
-  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
-  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
-  <ExtraParams></ExtraParams>
-</Containers>
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>binhex-jellyfin</Name>
+	<Beta>false</Beta>
+    <Category>>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
+    <Repository>binhex/arch-jellyfin</Repository>
+    <Registry>https://github.com/binhex/arch-jellyfin</Registry>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <ExtraParams></ExtraParams>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/binhex/arch-jellyfin</GitHub>
+    <ReadMe>https://github.com/binhex/documentation</ReadMe>
+    <Support>https://forums.unraid.net/topic/77506-support-binhex-jellyfin/</Support>
+    <Project>https://github.com/jellyfin/jellyfin/</Project>
+    <Overview>Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps. Jellyfin is descended from Emby's 3.5.2 release and ported to the .NET Core framework to enable full cross-platform support. There are no strings attached, no premium licenses or features, and no hidden agendas: just a team who want to build something better and work together to achieve it.</Overview>
+    <WebUI>http://[IP]:[PORT:8096]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/jellyfin.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/jellyfin-icon.png</Icon>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+    <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+    <Date>1970-01-01</Date>
+    <Changes></Changes>
+    <Config Name="Port: Web Interface" Target="8096" Default="8096" Mode="tcp" Description="This is the Web UI port for the application." Type="Port" Display="always" Required="true" Mask="false"/>
+
+    <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/jellyfin" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /media" Target="/media" Default="" Mode="rw" Description="This is the container path to your media files, e.g. movies, tv, music, pictures etc." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /shared" Target="/shared" Default="shared" Mode="rw" Description="This is a special Docker Volume used to store shared information between containers, such as incoming port number." Type="Path" Display="advanced" Required="false" Mask="false"/>
+
+    <Config Name="Variable: SHARED_NETWORK" Target="SHARED_NETWORK" Default="no|yes" Description="Specify whether this container is sharing the network with another VPN container, if set to 'yes' then this container will stop when the VPN container is stopped." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: PUID" Target="PUID" Default="99" Description="User ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Group ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: UMASK" Target="UMASK" Default="000" Description="UMASK for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+</Container>
