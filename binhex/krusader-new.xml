@@ -1,22 +1,23 @@
 <?xml version="1.0"?>
 <Container version="2">
-    <Name>binhex-webstorm</Name>
+    <Name>binhex-krusader</Name>
 	<Beta>false</Beta>
     <Category>Productivity: Tools:</Category>
-    <Repository>binhex/arch-webstorm</Repository>
-    <Registry>https://github.com/binhex/arch-webstorm</Registry>
+    <Repository>binhex/arch-krusader</Repository>
+    <Registry>https://github.com/binhex/arch-krusader</Registry>
     <Network>bridge</Network>
-    <Privileged>false</Privileged>
+    <Privileged>true</Privileged>
+    <PrivilegedReq>true</PrivilegedReq>
     <ExtraParams></ExtraParams>
     <Shell>bash</Shell>
-    <GitHub>https://github.com/binhex/arch-webstorm</GitHub>
+    <GitHub>https://github.com/binhex/arch-krusader</GitHub>
     <ReadMe>https://github.com/binhex/documentation</ReadMe>
-    <Support>https://forums.unraid.net/topic/169562-support-binhex-webstorm/</Support>
-    <Project>https://www.jetbrains.com/webstorm/</Project>
-    <Overview>Get straight to coding without having to install and configure lots of plugins. WebStorm includes everything you need for JavaScript and TypeScript development right from the start. You can personalize it further with various plugins and settings.</Overview>
+    <Support>https://forums.unraid.net/topic/130806-support-binhex-krusader/</Support>
+    <Project>https://krusader.org/</Project>
+    <Overview>Krusader is an advanced orthodox file manager for KDE and other desktops in the Unix world. It is similar to the console-based GNU Midnight Commander, GNOME Commander for the GNOME desktop environment, or Total Commander for Windows, all of which can trace their paradigmatic features to the original Norton Commander for DOS. It supports extensive archive handling, mounted filesystem support, FTP, advanced search, viewer/editor, directory synchronisation, file content comparisons, batch renaming, etc.</Overview>
     <WebUI>http://[IP]:[PORT:6080]/vnc.html?resize=remote&amp;host=[IP]&amp;port=[PORT:6080]&amp;autoconnect=1</WebUI>
-    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/webstorm.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/webstorm-icon.png</Icon>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/krusader.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/krusader-icon.png</Icon>
     <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
     <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
     <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
@@ -25,11 +26,12 @@
     <Config Name="Port: VNC Interface" Target="5900" Default="5900" Mode="tcp" Description="Specify the port used for VNC client connectivity." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: Web Interface" Target="6080" Default="6080" Mode="tcp" Description="Specify the Web UI port for for the application." Type="Port" Display="always" Required="true" Mask="false"/>
 
-    <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/webstorm" Mode="rw" Description="Specify the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
-	<Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Specify the container path to your downloaded files or user created content." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/krusader" Mode="rw" Description="Specify the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /media" Target="/media" Default="/mnt/user" Mode="rw" Description="This is the container path to your media files, e.g. movies, tv, music, pictures etc." Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="Path: /shared" Target="/shared" Default="binhex-shared" Mode="rw" Description="This is a special Docker Volume used to store shared information between containers, such as incoming port number." Type="Path" Display="advanced" Required="false" Mask="false"/>
 
-    <Config Name="Variable: WEBPAGE_TITLE" Target="WEBPAGE_TITLE" Default="WebStorm" Description="Specify the web title shown for the webpage" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: TEMP_FOLDER" Target="TEMP_FOLDER" Default="/config/home/.config/krusader/tmp" Description="Specify the path for Krusader to save temorary files." Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: WEBPAGE_TITLE" Target="WEBPAGE_TITLE" Default="Krusader" Description="Specify the web title shown for the webpage" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Variable: VNC_PASSWORD" Target="VNC_PASSWORD" Default="" Description="Specify the password to access the Web UI, if blank no password will be prompted." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: ENABLE_STARTUP_SCRIPTS" Target="ENABLE_STARTUP_SCRIPTS" Default="no|yes" Description="Specify whether to run a startup script which can in turn install additional packages." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: SHARED_NETWORK" Target="SHARED_NETWORK" Default="no|yes" Description="Specify whether this container is sharing the network with another VPN container, if set to 'yes' then this container will stop when the VPN container is stopped." Type="Variable" Display="always" Required="false" Mask="false"/>

@@ -26,7 +26,7 @@
     <Config Name="Port: Web Interface" Target="8090" Default="8090" Mode="tcp" Description="This is the Web UI port for the application." Type="Port" Display="always" Required="true" Mask="false"/>
 
     <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/jenkins" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="Path: /shared" Target="/shared" Default="shared" Mode="rw" Description="This is a special Docker Volume used to store shared information between containers, such as incoming port number." Type="Path" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Path: /shared" Target="/shared" Default="binhex-shared" Mode="rw" Description="This is a special Docker Volume used to store shared information between containers, such as incoming port number." Type="Path" Display="advanced" Required="false" Mask="false"/>
 
     <Config Name="Variable: JAVA_ARGS" Target="JAVA_ARGS" Default="-Xmx512m" Description="Specify the Java arguments for Jenkins." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: JAVA_OPTS" Target="JAVA_OPTS" Default="-Dhudson.footerURL=http://mycompany.com" Description="Specify the Java options for Jenkins." Type="Variable" Display="always" Required="false" Mask="false"/>

@@ -24,7 +24,7 @@
     <Changes></Changes>
     <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/get-iplayer" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
 	<Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="This is the container path to your downloaded files or user created content." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="Path: /shared" Target="/shared" Default="shared" Mode="rw" Description="This is a special Docker Volume used to store shared information between containers, such as incoming port number." Type="Path" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Path: /shared" Target="/shared" Default="binhex-shared" Mode="rw" Description="This is a special Docker Volume used to store shared information between containers, such as incoming port number." Type="Path" Display="advanced" Required="false" Mask="false"/>
 
     <Config Name="Variable: SHOWS" Target="SHOWS" Default="" Description="Specify the name of the shows seperated by a comma to download e.g. 'EastEnders,BBC News'." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: SHOWS_PID" Target="SHOWS_PID" Default="" Description="Specify the PID of the shows seperated by a comma to download e.g. 'm0020zpl,m0020jxw'." Type="Variable" Display="always" Required="false" Mask="false"/>
