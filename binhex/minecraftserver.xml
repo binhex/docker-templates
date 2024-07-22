@@ -1,121 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/minecraftserver.xml</TemplateURL>
-  <Beta>False</Beta>
-  <Category>GameServers:</Category>
-  <Name>binhex-minecraftserver</Name>
-  <Description>
-    [b]Description[/b][br]
-    Minecraft is a sandbox video game created by Swedish game developer Markus Persson and released by Mojang in 2011. The game allows players to build with a variety of different blocks in a 3D procedurally generated world, requiring creativity from players. Other activities in the game include exploration, resource gathering, crafting, and combat. Multiple game modes that change gameplay are available, including—but not limited to—a survival mode, in which players must acquire resources to build the world and maintain health, and a creative mode, where players have unlimited resources to build with.[br][br]
-    [b]Configuration[/b][br]
-    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br][br]
-    [b]Documentation[/b][br]
-    https://github.com/binhex/documentation[br][br]
-  </Description>
-  <Overview>
-    Minecraft is a sandbox video game created by Swedish game developer Markus Persson and released by Mojang in 2011. The game allows players to build with a variety of different blocks in a 3D procedurally generated world, requiring creativity from players. Other activities in the game include exploration, resource gathering, crafting, and combat. Multiple game modes that change gameplay are available, including—but not limited to—a survival mode, in which players must acquire resources to build the world and maintain health, and a creative mode, where players have unlimited resources to build with.
-  </Overview>
-  <Support>https://forums.unraid.net/topic/84880-support-binhex-minecraftserver/</Support>
-  <ReadMe>https://github.com/binhex/documentation</ReadMe>
-  <Registry>https://registry.hub.docker.com/r/binhex/arch-minecraftserver/</Registry>
-  <GitHub>https://github.com/binhex/arch-minecraftserver</GitHub>
-  <Repository>binhex/arch-minecraftserver</Repository>
-  <Project>https://www.minecraft.net/en-us/download/server/</Project>
-  <BindTime>true</BindTime>
-  <Privileged>false</Privileged>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>25565</HostPort>
-        <ContainerPort>25565</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>8222</HostPort>
-        <ContainerPort>8222</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Environment>
-    <Variable>
-      <Name>CREATE_BACKUP_HOURS</Name>
-      <Value>12</Value>
-    </Variable>
-    <Variable>
-      <Name>PURGE_BACKUP_DAYS</Name>
-      <Value>14</Value>
-    </Variable>
-    <Variable>
-      <Name>ENABLE_WEBUI_CONSOLE</Name>
-      <Value>yes</Value>
-    </Variable>
-    <Variable>
-      <Name>ENABLE_WEBUI_AUTH</Name>
-      <Value>yes</Value>
-    </Variable>
-    <Variable>
-      <Name>WEBUI_USER</Name>
-      <Value>admin</Value>
-    </Variable>
-    <Variable>
-      <Name>WEBUI_PASS</Name>
-      <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>WEBUI_CONSOLE_TITLE</Name>
-      <Value>Minecraft Java</Value>
-    </Variable>
-    <Variable>
-      <Name>CUSTOM_JAR_PATH</Name>
-      <Value>/config/minecraft/minecraft_server.jar</Value>
-    </Variable>
-    <Variable>
-      <Name>JAVA_VERSION</Name>
-      <Value>latest</Value>
-    </Variable>
-    <Variable>
-      <Name>JAVA_INITIAL_HEAP_SIZE</Name>
-      <Value>512M</Value>
-    </Variable>
-    <Variable>
-      <Name>JAVA_MAX_HEAP_SIZE</Name>
-      <Value>1024M</Value>
-    </Variable>
-    <Variable>
-      <Name>JAVA_MAX_THREADS</Name>
-      <Value>1</Value>
-    </Variable>
-    <Variable>
-      <Name>STARTUP_CMD</Name>
-      <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>UMASK</Name>
-      <Value>000</Value>
-    </Variable>
-    <Variable>
-      <Name>PUID</Name>
-      <Value>99</Value>
-    </Variable>
-    <Variable>
-      <Name>PGID</Name>
-      <Value>100</Value>
-    </Variable>
-  </Environment>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/config</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Banner></Banner>
-  <WebUI>http://[IP]:[PORT:8222]/</WebUI>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/minecraftserver-icon.png</Icon>
-  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
-  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
-  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
-  <ExtraParams></ExtraParams>
-</Containers>
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>binhex-minecraftserver</Name>
+	<Beta>false</Beta>
+    <Category>GameServers:</Category>
+    <Repository>binhex/arch-minecraftserver</Repository>
+    <Registry>https://github.com/binhex/arch-minecraftserver</Registry>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <PrivilegedReq>false</PrivilegedReq>
+    <ExtraParams></ExtraParams>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/binhex/arch-minecraftserver</GitHub>
+    <ReadMe>https://github.com/binhex/documentation</ReadMe>
+    <Support>https://forums.unraid.net/topic/84880-support-binhex-minecraftserver/</Support>
+    <Project>https://www.minecraft.net/en-us/download/server/</Project>
+    <Overview>Minecraft is a sandbox video game created by Swedish game developer Markus Persson and released by Mojang in 2011. The game allows players to build with a variety of different blocks in a 3D procedurally generated world, requiring creativity from players. Other activities in the game include exploration, resource gathering, crafting, and combat. Multiple game modes that change gameplay are available, including—but not limited to—a survival mode, in which players must acquire resources to build the world and maintain health, and a creative mode, where players have unlimited resources to build with.</Overview>
+    <WebUI>http://[IP]:[PORT:8222]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/minecraftserver.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/minecraftserver-icon.png</Icon>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+    <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+    <Date>1970-01-01</Date>
+    <Changes></Changes>
+    <Config Name="Port: Web Interface" Target="8222" Default="8222" Mode="tcp" Description="This is the Web UI port for the console." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: Minecraft Server connection (TCP)" Target="25565" Default="25565" Mode="tcp" Description="Minecraft Server connection (TCP)." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: Minecraft Server connection (UDP)" Target="25565" Default="25565" Mode="udp" Description="Minecraft Server connection (UDP)." Type="Port" Display="always" Required="true" Mask="false"/>
+
+    <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/minecraftbedrockserver" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /shared" Target="/shared" Default="binhex-shared" Mode="rw" Description="This is a special Docker Volume used to store shared information between containers, such as incoming port number." Type="Path" Display="advanced" Required="false" Mask="false"/>
+
+    <Config Name="Variable: CREATE_BACKUP_HOURS" Target="CREATE_BACKUP_HOURS" Default="12" Description="Specify the hour in 24 hour format to perform the backup." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: PURGE_BACKUP_DAYS" Target="PURGE_BACKUP_DAYS" Default="14" Description="Specify the number of days before a backup is considered for purging." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: ENABLE_WEBUI_CONSOLE" Target="ENABLE_WEBUI_CONSOLE" Default="yes|no" Description="Specify whether you want to enable the Web UI console." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: ENABLE_WEBUI_AUTH" Target="ENABLE_WEBUI_AUTH" Default="yes|no" Description="Specify whether you want authentication prompts when connecting to the Web UI console." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: WEBUI_USER" Target="WEBUI_USER" Default="admin" Description="Specify the Web UI username." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="Variable: WEBUI_PASS" Target="WEBUI_PASS" Default="" Description="Specify the Web UI password." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="Variable: WEBUI_CONSOLE_TITLE" Target="WEBUI_CONSOLE_TITLE" Default="Minecraft Java Server" Description="Specify the Web UI console title." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: CUSTOM_JAR_PATH" Target="CUSTOM_JAR_PATH" Default="/config/minecraft/minecraft_server.jar" Description="Specify the absolute path to custom Jar." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: JAVA_VERSION" Target="JAVA_VERSION" Default="latest|8|11|17" Description="Specify the version of Java Runtime." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: JAVA_INITIAL_HEAP_SIZE" Target="JAVA_INITIAL_HEAP_SIZE" Default="512M" Description="Specify the initial Java Heap size in MB." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: JAVA_MAX_HEAP_SIZE" Target="JAVA_MAX_HEAP_SIZE" Default="1024M" Description="Specify the maximum Java Heap size in MB." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: JAVA_MAX_THREADS" Target="JAVA_MAX_THREADS" Default="1" Description="Specify the maximum number of Java threads." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: JAVA_CUSTOM_ARGS" Target="JAVA_CUSTOM_ARGS" Default="" Description="Specify custom Java arguments." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: STARTUP_CMD" Target="STARTUP_CMD" Default="" Description="Specify the Minecraft command you want to run on startup of the server." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: SHARED_NETWORK" Target="SHARED_NETWORK" Default="no|yes" Description="Specify whether this container is sharing the network with another VPN container, if set to 'yes' then this container will stop when the VPN container is stopped." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: PUID" Target="PUID" Default="99" Description="User ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Group ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: UMASK" Target="UMASK" Default="000" Description="UMASK for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+</Container>
