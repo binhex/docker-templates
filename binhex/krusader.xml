@@ -12,7 +12,7 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/binhex/arch-krusader</GitHub>
     <ReadMe>https://github.com/binhex/documentation</ReadMe>
-    <Support>https://forums.unraid.net/topic/130806-support-binhex-krusader/</Support>
+    <Support>https://forums.unraid.net/topic/71764-support-binhex-krusader/</Support>
     <Project>https://krusader.org/</Project>
     <Overview>Krusader is an advanced orthodox file manager for KDE and other desktops in the Unix world. It is similar to the console-based GNU Midnight Commander, GNOME Commander for the GNOME desktop environment, or Total Commander for Windows, all of which can trace their paradigmatic features to the original Norton Commander for DOS. It supports extensive archive handling, mounted filesystem support, FTP, advanced search, viewer/editor, directory synchronisation, file content comparisons, batch renaming, etc.</Overview>
     <WebUI>http://[IP]:[PORT:6080]/vnc.html?resize=remote&amp;host=[IP]&amp;port=[PORT:6080]&amp;autoconnect=1</WebUI>
