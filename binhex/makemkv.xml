@@ -26,7 +26,7 @@
     <Config Name="Port: Web Interface" Target="6080" Default="6080" Mode="tcp" Description="Specify the Web UI port for for the application." Type="Port" Display="always" Required="true" Mask="false"/>
 
     <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/makemkv" Mode="rw" Description="Specify the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="Path: /media" Target="/media" Default="" Mode="rw" Description="This is the container path to your media files, e.g. movies, tv, music, pictures etc." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /media" Target="/media" Default="/mnt/user" Mode="rw" Description="This is the container path to your media files, e.g. movies, tv, music, pictures etc." Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="Path: /shared" Target="/shared" Default="binhex-shared" Mode="rw" Description="This is a special Docker Volume used to store shared information between containers, such as incoming port number." Type="Path" Display="advanced" Required="false" Mask="false"/>
 
     <Config Name="Variable: WEBPAGE_TITLE" Target="WEBPAGE_TITLE" Default="MakeMKV" Description="Specify the web title shown for the webpage" Type="Variable" Display="advanced" Required="true" Mask="false"/>

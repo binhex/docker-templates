@@ -24,7 +24,7 @@
     <Date>1970-01-01</Date>
     <Changes></Changes>
     <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/minidlna" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="Path: /media" Target="/media" Default="" Mode="rw" Description="This is the container path to your media files, e.g. movies, tv, music, pictures etc." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /media" Target="/media" Default="/mnt/user" Mode="rw" Description="This is the container path to your media files, e.g. movies, tv, music, pictures etc." Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="Path: /shared" Target="/shared" Default="binhex-shared" Mode="rw" Description="This is a special Docker Volume used to store shared information between containers, such as incoming port number." Type="Path" Display="advanced" Required="false" Mask="false"/>
 
     <Config Name="Variable: SCHEDULE_SCAN_DAYS" Target="SCHEDULE_SCAN_DAYS" Default="06" Description="Specify the day of the week to scan media, for example to scan on Monday set the value to '00'." Type="Variable" Display="always" Required="false" Mask="false"/>
