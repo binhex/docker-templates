@@ -2,7 +2,7 @@
 <Container version="2">
     <Name>binhex-jellyfin</Name>
 	<Beta>false</Beta>
-    <Category>>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
+    <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
     <Repository>binhex/arch-jellyfin</Repository>
     <Registry>https://github.com/binhex/arch-jellyfin</Registry>
     <Network>bridge</Network>
