@@ -1,120 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/rclone.xml</TemplateURL>
-  <Beta>False</Beta>
-  <Category>Backup: Cloud: Tools:Utilities</Category>
-  <Name>binhex-rclone</Name>
-  <Description>
-    [b]Description[/b][br]
-    Rclone is a command line program to manage files on cloud storage. It is a feature rich alternative to cloud vendors' web storage interfaces. Over 40 cloud storage products support rclone including S3 object stores, business and consumer file storage services, as well as standard transfer protocols. Rclone has powerful cloud equivalents to the unix commands rsync, cp, mv, mount, ls, ncdu, tree, rm, and cat. Rclone's familiar syntax includes shell pipeline support, and --dry-run protection. It is used at the command line, in scripts or via its API. Users call rclone The Swiss army knife of cloud storage, and Technology indistinguishable from magic.[br][br]
-    [b]Configuration[/b][br]
-    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br]
-    [b]/media[/b] This is the path to media located on the host system.[br][br]
-    [b]Documentation[/b][br]
-    https://github.com/binhex/documentation[br][br]
-  </Description>
-  <Overview>
-    Rclone is a command line program to manage files on cloud storage. It is a feature rich alternative to cloud vendors' web storage interfaces. Over 40 cloud storage products support rclone including S3 object stores, business and consumer file storage services, as well as standard transfer protocols.
-    Rclone has powerful cloud equivalents to the unix commands rsync, cp, mv, mount, ls, ncdu, tree, rm, and cat. Rclone's familiar syntax includes shell pipeline support, and --dry-run protection. It is used at the command line, in scripts or via its API.
-    Users call rclone The Swiss army knife of cloud storage, and Technology indistinguishable from magic.
-  </Overview>
-  <Support>https://forums.unraid.net/topic/111235-support-binhex-rclone/</Support>
-  <ReadMe>https://github.com/binhex/documentation</ReadMe>
-  <Registry>https://registry.hub.docker.com/r/binhex/arch-rclone/</Registry>
-  <GitHub>https://github.com/binhex/arch-rclone</GitHub>
-  <Repository>binhex/arch-rclone</Repository>
-  <Project>https://rclone.org/</Project>
-  <BindTime>true</BindTime>
-  <Privileged>false</Privileged>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>53682</HostPort>
-        <ContainerPort>53682</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>5572</HostPort>
-        <ContainerPort>5572</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Environment>
-    <Variable>
-      <Name>RCLONE_CONFIG_PATH</Name>
-      <Value>/config/rclone/config/rclone.conf</Value>
-    </Variable>
-    <Variable>
-      <Name>RCLONE_MEDIA_SHARES</Name>
-      <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>RCLONE_REMOTE_NAME</Name>
-      <Value>remote</Value>
-    </Variable>
-    <Variable>
-      <Name>RCLONE_SLEEP_PERIOD</Name>
-      <Value>24h</Value>
-    </Variable>
-    <Variable>
-      <Name>RCLONE_USER_FLAGS</Name>
-      <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>RCLONE_OPERATION</Name>
-      <Value>copy</Value>
-    </Variable>
-    <Variable>
-      <Name>RCLONE_DIRECTION</Name>
-      <Value>localtoremote</Value>
-    </Variable>
-    <Variable>
-      <Name>RCLONE_POST_CHECK</Name>
-      <Value>yes</Value>
-    </Variable>
-    <Variable>
-      <Name>ENABLE_WEBUI</Name>
-      <Value>yes</Value>
-    </Variable>
-    <Variable>
-      <Name>WEBUI_USER</Name>
-      <Value>admin</Value>
-    </Variable>
-    <Variable>
-      <Name>WEBUI_PASS</Name>
-      <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>UMASK</Name>
-      <Value>000</Value>
-    </Variable>
-    <Variable>
-      <Name>PUID</Name>
-      <Value>99</Value>
-    </Variable>
-    <Variable>
-      <Name>PGID</Name>
-      <Value>100</Value>
-    </Variable>
-  </Environment>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/config</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user</HostDir>
-      <ContainerDir>/media</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <WebUI>http://[IP]:[PORT:5572]/</WebUI>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/rclone-icon.png</Icon>
-  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
-  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
-  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
-  <ExtraParams></ExtraParams>
-</Containers>
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>binhex-rclone</Name>
+	<Beta>false</Beta>
+    <Category>Backup: Cloud: Tools:Utilities</Category>
+    <Repository>binhex/arch-rclone</Repository>
+    <Registry>https://github.com/binhex/arch-rclone</Registry>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <PrivilegedReq>false</PrivilegedReq>
+    <ExtraParams></ExtraParams>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/binhex/arch-rclone</GitHub>
+    <ReadMe>https://github.com/binhex/documentation</ReadMe>
+    <Support>https://forums.unraid.net/topic/111235-support-binhex-rclone/</Support>
+    <Project>https://rclone.org</Project>
+    <Overview>Rclone is a command line program to manage files on cloud storage. It is a feature rich alternative to cloud vendors web storage interfaces. Over 40 cloud storage products support rclone including S3 object stores, business and consumer file storage services, as well as standard transfer protocols. Rclone has powerful cloud equivalents to the unix commands rsync, cp, mv, mount, ls, ncdu, tree, rm, and cat. Rclone's familiar syntax includes shell pipeline support, and --dry-run protection. It is used at the command line, in scripts or via its API. Users call rclone The Swiss army knife of cloud storage, and Technology indistinguishable from magic.</Overview>
+    <WebUI>http://[IP]:[PORT:5572]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/rclone.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/rclone-icon.png</Icon>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+    <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+    <Date>1970-01-01</Date>
+    <Changes></Changes>
+    <Config Name="Port: Web Interface" Target="5572" Default="5572" Mode="tcp" Description="This is the Web UI port for the application." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: Rclone Authorization" Target="53682" Default="53682" Mode="tcp" Description="This is the Rclone authorization port." Type="Port" Display="always" Required="true" Mask="false"/>
+
+    <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/rclone" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /media" Target="/media" Default="/mnt/user" Mode="rw" Description="This is the container path to your media files, e.g. movies, tv, music, pictures etc." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /shared" Target="/shared" Default="binhex-shared" Mode="rw" Description="This is a special Docker Volume used to store shared information between containers, such as incoming port number." Type="Path" Display="advanced" Required="false" Mask="false"/>
+
+    <Config Name="Variable: RCLONE_CONFIG_PATH" Target="RCLONE_CONFIG_PATH" Default="/config/rclone/config/rclone.conf" Description="Specify the file path to your preconfigured rclone configuration file." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: RCLONE_MEDIA_SHARES" Target="RCLONE_MEDIA_SHARES" Default="" Description="Specify the media shares to process in rclone." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: RCLONE_REMOTE_NAME" Target="RCLONE_REMOTE_NAME" Default="remote" Description="Specify the remote name as defined in the rclone configuration file." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: RCLONE_SLEEP_PERIOD" Target="RCLONE_SLEEP_PERIOD" Default="24h" Description="Specify the delay between re-runs of rclone." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: RCLONE_OPERATION" Target="RCLONE_OPERATION" Default="copy|sync" Description="Specify whether to copy new files or syncronise, syncronise may cause delete operation so use with caution." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: RCLONE_DIRECTION" Target="RCLONE_DIRECTION" Default="localtoremote|remotetolocal|both" Description="Specify the direction to syncronise, local to remote, remote to local or two way sync." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: ENABLE_WEBUI" Target="ENABLE_WEBUI" Default="yes|no" Description="Specify whether to enable the rclone Web UI." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: WEBUI_USER" Target="WEBUI_USER" Default="admin" Description="Specify the rclone Web UI username." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="Variable: WEBUI_PASS" Target="WEBUI_PASS" Default="" Description="Specify the rclone Web UI password." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="Variable: RCLONE_USER_FLAGS" Target="RCLONE_USER_FLAGS" Default="" Description="Specify any additional user defined flags for rclone." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: RCLONE_POST_CHECK" Target="RCLONE_POST_CHECK" Default="yes|no" Description="Specify whether to verify local and remote files match." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: RCLONE_POST_REPORT" Target="RCLONE_POST_REPORT" Default="combined|differ|error|match|missing-on-dst|missing-on-src" Description="Specify what post check level to report." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: SHARED_NETWORK" Target="SHARED_NETWORK" Default="no|yes" Description="Specify whether this container is sharing the network with another VPN container, if set to 'yes' then this container will stop when the VPN container is stopped." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: PUID" Target="PUID" Default="99" Description="User ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Group ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: UMASK" Target="UMASK" Default="000" Description="UMASK for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+</Container>
