@@ -12,7 +12,7 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/binhex/arch-bitmagnet</GitHub>
     <ReadMe>https://github.com/binhex/documentation</ReadMe>
-    <Support>https://forums.unraid.net/topic/THREAD/</Support>
+    <Support>https://forums.unraid.net/topic/174999-support-binhex-bitmagnet</Support>
     <Project>https://github.com/bitmagnet-io/bitmagnet</Project>
     <Overview>A self-hosted BitTorrent indexer, DHT crawler, content classifier and torrent search engine with web UI, GraphQL API and Servarr stack integration.</Overview>
     <WebUI>http://[IP]:[PORT:3333]</WebUI>
