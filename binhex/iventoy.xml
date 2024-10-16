@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>binhex-iventoy</Name>
+	<Beta>false</Beta>
+    <Category>Productivity: Tools:Utilities Network:Other</Category>
+    <Repository>binhex/arch-iventoy</Repository>
+    <Registry>https://github.com/binhex/arch-iventoy</Registry>
+    <Network>host</Network>
+    <Privileged>true</Privileged>
+    <PrivilegedReq>true</PrivilegedReq>
+    <ExtraParams></ExtraParams>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/binhex/arch-iventoy</GitHub>
+    <ReadMe>https://github.com/binhex/documentation</ReadMe>
+    <Support>https://forums.unraid.net/topic/THREAD/</Support>
+    <Project>https://www.iventoy.com/en/index.html</Project>
+    <Overview>iVentoy is an enhanced version of the PXE server. With iVentoy you can boot and install OS on multiple machines at the same time through the network. iVentoy is extremely easy to use, without complicated configuration, just put the ISO file in the specified location and select PXE boot in the client machine. iVentoy supports x86 Legacy BIOS, IA32 UEFI, x86_64 UEFI and ARM64 UEFI mode at the same time. iVentoy support 110+ common types of OS (Windows/WinPE/Linux/VMware).</Overview>
+    <WebUI>http://[IP]:[PORT:26000]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/iventoy.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/iventoy-icon.png</Icon>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+    <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+    <Date>1970-01-01</Date>
+    <Changes></Changes>
+    <Config Name="Port: Web Interface" Target="26000" Default="26000" Mode="tcp" Description="This is the Web UI port for the application." Type="Port" Display="always" Required="true" Mask="false"/>
+
+    <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/iventoy" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
+
+    <Config Name="Variable: PUID" Target="PUID" Default="99" Description="User ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Group ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: UMASK" Target="UMASK" Default="000" Description="UMASK for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+</Container>
