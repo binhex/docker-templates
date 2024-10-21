@@ -13,7 +13,7 @@
 	<Beta>false</Beta>
     <Category>CACATEGORY</Category>
     <Repository>binhex/arch-APPNAME</Repository>
-    <Registry>https://github.com/binhex/arch-APPNAME</Registry>
+    <Registry>https://hub.docker.com/repository/docker/binhex/arch-APPNAME</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <PrivilegedReq>false</PrivilegedReq>
