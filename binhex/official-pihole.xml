@@ -30,6 +30,6 @@
     <Config Name="Port: DNS UDP" Target="53" Default="8153" Mode="udp" Description="This is the UDP port for Name Resolution." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: Network Discovery UDP" Target="67" Default="8167" Mode="udp" Description="This is the UDP network discovery port." Type="Port" Display="always" Required="true" Mask="false"/>
 
-    <Config Name="Path: /etc/pihole" Target="/etc/pihole" Default="/mnt/user/appdata/official-pihole/pihole" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="Path: /etc/dnsmasq.d" Target="/etc/dnsmasq.d" Default="/mnt/user/appdata/official-pihole/pihole/dnsmasq" Mode="rw" Description="This is the container path to your media files, e.g. movies, tv, music, pictures etc." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /etc/pihole" Target="/etc/pihole" Default="/mnt/user/appdata/official-pihole/pihole" Mode="rw" Description="This is the container path to store pihole configuration files" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /etc/dnsmasq.d" Target="/etc/dnsmasq.d" Default="/mnt/user/appdata/official-pihole/pihole/dnsmasq" Mode="rw" Description="This is the container path to store dnsmaqs configuration files" Type="Path" Display="always" Required="true" Mask="false"/>
 </Container>
