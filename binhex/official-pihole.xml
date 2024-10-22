@@ -1,11 +1,10 @@
 <?xml version="1.0"?>
 <Container version="2">
-	<!-- Find and replace 'THREAD' with the forum ID after creating the Support Thread -->
     <Name>binhex-official-pihole</Name>
 	<Beta>false</Beta>
     <Category>Network:Other Other:</Category>
     <Repository>pihole/pihole</Repository>
-    <Registry>https://hub.docker.com/repository/docker/binhex/arch-official-pihole</Registry>
+    <Registry>https://hub.docker.com/r/pihole/pihole</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <PrivilegedReq>false</PrivilegedReq>
