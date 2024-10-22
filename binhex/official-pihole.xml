@@ -29,7 +29,7 @@
     <Config Name="Port: DNS UDP" Target="53" Default="53" Mode="udp" Description="This is the UDP port for Name Resolution." Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="Port: Network Discovery UDP" Target="67" Default="67" Mode="udp" Description="This is the UDP network discovery port." Type="Port" Display="always" Required="true" Mask="false"/>
 
-    <Config Name="Variable: DNSMASQ_LISTENING" Target="DNSMASQ_LISTENING" Default="all" Description="Specify the Pi-hole web UI to change the DNS settings Interface listening behavior to 'all', required when network is set to 'bridge'." Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: DNSMASQ_LISTENING" Target="DNSMASQ_LISTENING" Default="all" Description="Specify the DNS settings Interface listening behavior to 'all', required when network is set to 'bridge'." Type="Variable" Display="advanced" Required="true" Mask="false"/>
 
     <Config Name="Path: /etc/pihole" Target="/etc/pihole" Default="/mnt/user/appdata/official-pihole/pihole" Mode="rw" Description="This is the container path to store pihole configuration files" Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /etc/dnsmasq.d" Target="/etc/dnsmasq.d" Default="/mnt/user/appdata/official-pihole/pihole/dnsmasq" Mode="rw" Description="This is the container path to store dnsmaqs configuration files" Type="Path" Display="always" Required="true" Mask="false"/>
