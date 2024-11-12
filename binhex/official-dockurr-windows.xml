@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>dockurr-windows</Name>
+	<Beta>false</Beta>
+    <Category>Other:</Category>
+    <Repository>dockurr/windows</Repository>
+    <Registry>https://hub.docker.com/r/dockurr/windows</Registry>
+    <Privileged>false</Privileged>
+    <PrivilegedReq>false</PrivilegedReq>
+    <ExtraParams>--stop-timeout 2m --device /dev/kvm --cap-add NET_ADMIN</ExtraParams>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/dockur/windows</GitHub>
+    <Support>https://github.com/dockur/windows/issues</Support>
+    <Project>https://github.com/dockur/windows</Project>
+    <Overview>Windows inside a Docker container.</Overview>
+    <WebUI>http://[IP]:[PORT:8006]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/official-dockurr-windows.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/windows-icon.png</Icon>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+    <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+    <Date>1970-01-01</Date>
+    <Changes></Changes>
+    <Config Name="Port: Web Interface" Target="8006" Default="8006" Mode="tcp" Description="This is the Web UI port for the application." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: RDP Interface TCP" Target="3389" Default="3389" Mode="tcp" Description="This is the Web UI port for the application." Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: RDP Interface UDP" Target="3389" Default="3389" Mode="udp" Description="This is the Web UI port for the application." Type="Port" Display="always" Required="false" Mask="false"/>
+
+    <Config Name="Path: /storage" Target="/storage" Default="/mnt/user/appdata/windows/storage" Mode="rw" Description="This is the container path to store the VM's vdisk etc." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /data" Target="/data" Default="/mnt/user/appdata/windows/shared" Mode="rw" Description="This is the container path to store shared files accessible from the VM." Type="Path" Display="always" Required="false" Mask="false"/>
+	<Config Name="Path: /custom.iso" Target="/custom.iso" Default="" Mode="rw" Description="This is the container path to a custom iso file." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /oem" Target="/oem" Default="" Mode="rw" Description="This is the container path to a folder containing custom scripts to run post install." Type="Path" Display="always" Required="false" Mask="false"/>
+
+    <Config Name="Variable: DISK_SIZE" Target="DISK_SIZE" Default="30G" Description="Specify the virtual disk size in GB." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: RAM_SIZE" Target="RAM_SIZE" Default="8G" Description="Specify the amount of RAM allocated in GB." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: CPU_CORES" Target="CPU_CORES" Default="2" Description="Specify the number of cores." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: USERNAME" Target="USERNAME" Default="" Description="Specify the username for Windows." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: PASSWORD" Target="PASSWORD" Default="" Description="Specify the password for Windows." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: LANGUAGE" Target="LANGUAGE" Default="en-US" Description="Specify the language for Windows." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: REGION" Target="REGION" Default="en-US" Description="Specify the region for Windows." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: KEYBOARD" Target="KEYBOARD" Default="en-US" Description="Specify the keyboard layout for Windows." Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
