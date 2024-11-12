@@ -5,6 +5,7 @@
     <Category>Other:</Category>
     <Repository>dockurr/windows</Repository>
     <Registry>https://hub.docker.com/r/dockurr/windows</Registry>
+    <Network>bridge</Network>
     <Privileged>false</Privileged>
     <PrivilegedReq>false</PrivilegedReq>
     <ExtraParams>--stop-timeout 120 --device /dev/kvm --cap-add NET_ADMIN</ExtraParams>
