@@ -25,8 +25,8 @@
     <Config Name="Port: RDP Interface TCP" Target="3389" Default="3389" Mode="tcp" Description="This is the Web UI port for the application." Type="Port" Display="always" Required="false" Mask="false"/>
     <Config Name="Port: RDP Interface UDP" Target="3389" Default="3389" Mode="udp" Description="This is the Web UI port for the application." Type="Port" Display="always" Required="false" Mask="false"/>
 
-    <Config Name="Path: /storage" Target="/storage" Default="/mnt/user/appdata/windows/storage" Mode="rw" Description="This is the container path to store the VM's vdisk etc." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="Path: /data" Target="/data" Default="/mnt/user/appdata/windows/shared" Mode="rw" Description="This is the container path to store shared files accessible from the VM." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /storage" Target="/storage" Default="/mnt/user/appdata/official-windows/storage" Mode="rw" Description="This is the container path to store the VM's vdisk etc." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /data" Target="/data" Default="/mnt/user/appdata/official-windows/shared" Mode="rw" Description="This is the container path to store shared files accessible from the VM." Type="Path" Display="always" Required="false" Mask="false"/>
 	<Config Name="Path: /custom.iso" Target="/custom.iso" Default="" Mode="rw" Description="This is the container path to a custom iso file." Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="Path: /oem" Target="/oem" Default="" Mode="rw" Description="This is the container path to a folder containing custom scripts to run post install." Type="Path" Display="always" Required="false" Mask="false"/>
 
