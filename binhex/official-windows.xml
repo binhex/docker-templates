@@ -7,7 +7,7 @@
     <Registry>https://hub.docker.com/r/dockurr/windows</Registry>
     <Privileged>false</Privileged>
     <PrivilegedReq>false</PrivilegedReq>
-    <ExtraParams>--stop-timeout 2m --device /dev/kvm --cap-add NET_ADMIN</ExtraParams>
+    <ExtraParams>--stop-timeout 120 --device /dev/kvm --cap-add NET_ADMIN</ExtraParams>
     <Shell>bash</Shell>
     <GitHub>https://github.com/dockur/windows</GitHub>
     <Support>https://github.com/dockur/windows/issues</Support>
