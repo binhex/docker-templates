@@ -28,9 +28,10 @@
 
     <Config Name="Path: /storage" Target="/storage" Default="/mnt/user/appdata/official-windows/storage" Mode="rw" Description="This is the container path to store the VM's vdisk etc." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /data" Target="/data" Default="/mnt/user/appdata/official-windows/shared" Mode="rw" Description="This is the container path to store shared files accessible from the VM." Type="Path" Display="always" Required="false" Mask="false"/>
-	<Config Name="Path: /custom.iso" Target="/custom.iso" Default="" Mode="rw" Description="This is the container path to a custom iso file." Type="Path" Display="always" Required="false" Mask="false"/>
+	<Config Name="Path: /custom.iso" Target="/custom.iso" Default="" Mode="rw" Description="This is the container path to a custom iso file, please note if this is specified then it will override the version of Windows specified via the variable 'VERSION'." Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="Path: /oem" Target="/oem" Default="" Mode="rw" Description="This is the container path to a folder containing custom scripts to run post install." Type="Path" Display="always" Required="false" Mask="false"/>
 
+    <Config Name="Variable: VERSION" Target="VERSION" Default="11|11l|11e|10|10l|10e|8|8e|7e|ve|xp|2025|2022|2019|2016|2012|2008|2003" Description="Specify the version of Windows to install (see https://github.com/dockur/windows#how-do-i-use-it for full version description), please note these are all evaluation versions of Windows downloaded from Microsoft." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="Variable: DISK_SIZE" Target="DISK_SIZE" Default="30G" Description="Specify the virtual disk size in GB." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: RAM_SIZE" Target="RAM_SIZE" Default="8G" Description="Specify the amount of RAM allocated in GB." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: CPU_CORES" Target="CPU_CORES" Default="2" Description="Specify the number of cores." Type="Variable" Display="always" Required="false" Mask="false"/>
