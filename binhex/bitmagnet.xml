@@ -29,7 +29,6 @@
     <Config Name="Port: Postgres" Target="5432" Default="5432" Mode="tcp" Description="This is the port for Postgres, this is optional." Type="Port" Display="always" Required="false" Mask="false"/>
 
     <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/bitmagnet" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="Path: /shared" Target="/shared" Default="binhex-shared" Mode="rw" Description="This is a special Docker Volume used to store shared information between containers, such as incoming port number." Type="Path" Display="advanced" Required="false" Mask="false"/>
 
     <Config Name="Variable: TMDB_API_KEY" Target="TMDB_API_KEY" Default="" Description="Specify your TMDB API key, if you do not specify your own key then a default key will be used which may result in slower indexing due to rate limiting." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="Variable: SHARED_NETWORK" Target="SHARED_NETWORK" Default="no|yes" Description="Specify whether this container is sharing the network with another VPN container, if set to 'yes' then this container will stop when the VPN container is stopped." Type="Variable" Display="always" Required="false" Mask="false"/>

@@ -26,7 +26,6 @@
 
     <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/code-server" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
 	<Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="This is the container path to your downloaded files or user created content." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="Path: /shared" Target="/shared" Default="binhex-shared" Mode="rw" Description="This is a special Docker Volume used to store shared information between containers, such as incoming port number." Type="Path" Display="advanced" Required="false" Mask="false"/>
 
     <Config Name="Variable: CERT_PATH" Target="CERT_PATH" Default="" Description="Specify the path to the certificate used for SSL/TLS." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: CERT_KEY_PATH" Target="CERT_KEY_PATH" Default="" Description="Specify the path to the certificate key used for SSL/TLS." Type="Variable" Display="always" Required="false" Mask="false"/>

@@ -29,7 +29,6 @@
     <Config Name="Port: Minecraft Java servers (TCP)" Target="25565-25575" Default="25565-25575" Mode="tcp" Description="This is the TCP port range for Minecraft Java servers." Type="Port" Display="always" Required="true" Mask="false"/>
 
     <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/APPNAME" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="Path: /shared" Target="/shared" Default="binhex-shared" Mode="rw" Description="This is a special Docker Volume used to store shared information between containers, such as incoming port number." Type="Path" Display="advanced" Required="false" Mask="false"/>
 
     <Config Name="Variable: TZ" Target="TZ" Default="Etc/UTC" Description="Specify the timezone." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: JAVA_VERSION" Target="JAVA_VERSION" Default="latest" Description="Specify the version of Java." Type="Variable" Display="always" Required="false" Mask="false"/>

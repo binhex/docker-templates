@@ -28,7 +28,6 @@
     <Config Name="Port: Minecraft Server connection (UDP)" Target="25565" Default="25565" Mode="udp" Description="Minecraft Server connection (UDP)." Type="Port" Display="always" Required="true" Mask="false"/>
 
     <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/minecraftbedrockserver" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="Path: /shared" Target="/shared" Default="binhex-shared" Mode="rw" Description="This is a special Docker Volume used to store shared information between containers, such as incoming port number." Type="Path" Display="advanced" Required="false" Mask="false"/>
 
     <Config Name="Variable: CREATE_BACKUP_HOURS" Target="CREATE_BACKUP_HOURS" Default="12" Description="Specify the hour in 24 hour format to perform the backup." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: PURGE_BACKUP_DAYS" Target="PURGE_BACKUP_DAYS" Default="14" Description="Specify the number of days before a backup is considered for purging." Type="Variable" Display="always" Required="false" Mask="false"/>

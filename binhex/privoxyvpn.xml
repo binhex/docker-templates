@@ -30,7 +30,6 @@
     <Config Name="Port: Incoming port UDP" Target="58946" Default="58946" Mode="udp" Description="This is the UDP incoming port when VPN_ENABLED is set to 'no'." Type="Port" Display="advanced" Required="false" Mask="false"/>
 
     <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/privoxyvpn" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="Path: /shared" Target="/shared" Default="binhex-shared" Mode="rw" Description="This is a special Docker Volume used to store shared information between containers, such as incoming port number." Type="Path" Display="advanced" Required="false" Mask="false"/>
 
     <Config Name="Variable: VPN_ENABLED" Target="VPN_ENABLED" Default="yes|no" Description="Specify whether to enable the VPN." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="Variable: VPN_USER" Target="VPN_USER" Default="" Description="Specify your VPN providers username." Type="Variable" Display="always" Required="true" Mask="true"/>

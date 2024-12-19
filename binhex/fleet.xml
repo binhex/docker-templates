@@ -27,7 +27,6 @@
 
     <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/fleet" Mode="rw" Description="Specify the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
 	<Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Specify the container path to your downloaded files or user created content." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="Path: /shared" Target="/shared" Default="binhex-shared" Mode="rw" Description="This is a special Docker Volume used to store shared information between containers, such as incoming port number." Type="Path" Display="advanced" Required="false" Mask="false"/>
 
     <Config Name="Variable: WEBPAGE_TITLE" Target="WEBPAGE_TITLE" Default="Fleet" Description="Specify the web title shown for the webpage" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Variable: VNC_PASSWORD" Target="VNC_PASSWORD" Default="" Description="Specify the password to access the Web UI, if blank no password will be prompted." Type="Variable" Display="always" Required="false" Mask="false"/>
