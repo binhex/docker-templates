@@ -6,7 +6,7 @@
 	<!-- Find and replace 'CACATEGORY' with the CA category of the application -->
 	<!-- Find and replace 'THREAD' with the forum ID after creating the Support Thread -->
 	<!-- Find and replace '0000' with the Web UI port of the application -->
-    <!-- Remove any unrequired paths, e.g. /shared, /media -->
+    <!-- Remove any unrequired paths, e.g. /data /media -->
     <!-- Remove line containing 'RemoveFromCA' -->
     <!-- Remove these comments -->
     <Name>binhex-APPNAME</Name>
