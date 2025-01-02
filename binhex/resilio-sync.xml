@@ -1,81 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/resilio-sync.xml</TemplateURL>
-  <Beta>False</Beta>
-  <Category>Productivity: Tools: Backup:</Category>
-  <Name>binhex-resilio-sync</Name>
-  <Description>
-    [b]Description[/b][br]
-    Resilio Sync (formerly BitTorrent Sync) by Resilio, Inc. is a proprietary peer-to-peer file synchronization tool available for Windows, Mac, Linux, Android, iOS, Windows Phone, Amazon Kindle Fire and BSD. It can sync files between devices on a local network, or between remote devices over the Internet via a modified version of the BitTorrent protocol. Although not touted by the developers as an intended direct replacement nor competitor to cloud-based file synchronization services, it has attained much of its publicity in this potential role.This is mainly due to the ability of Resilio Sync to address many of the concerns in existing services relating to file storage limits, privacy, cost, and performance.[br][br]
-    [b]Configuration[/b][br]
-    [b]/config[/b] This is where the application will store its configuration files, database and logs etc.[br]
-    [b]/media[/b] This is media to sync.[br][br]
-    [b]Documentation[/b][br]
-    https://github.com/binhex/documentation[br][br]
-  </Description>
-  <Overview>
-    Resilio Sync (formerly BitTorrent Sync) by Resilio, Inc. is a proprietary peer-to-peer file synchronization tool available for Windows, Mac, Linux, Android, iOS, Windows Phone, Amazon Kindle Fire and BSD. It can sync files between devices on a local network, or between remote devices over the Internet via a modified version of the BitTorrent protocol.
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>binhex-resilio-sync</Name>
+	<Beta>false</Beta>
+    <Category>Productivity: Tools: Backup:</Category>
+    <Repository>binhex/arch-resilio-sync</Repository>
+    <Registry>https://hub.docker.com/repository/docker/binhex/arch-resilio-sync</Registry>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <PrivilegedReq>false</PrivilegedReq>
+    <ExtraParams></ExtraParams>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/binhex/arch-resilio-sync</GitHub>
+    <ReadMe>https://github.com/binhex/documentation</ReadMe>
+    <Support>https://forums.unraid.net/topic/103784-support-binhex-resilio-sync/</Support>
+    <Project>https://www.resilio.com/individuals/</Project>
+    <Overview>Resilio Sync (formerly BitTorrent Sync) by Resilio, Inc. is a proprietary peer-to-peer file synchronization tool available for Windows, Mac, Linux, Android, iOS, Windows Phone, Amazon Kindle Fire and BSD. It can sync files between devices on a local network, or between remote devices over the Internet via a modified version of the BitTorrent protocol. Although not touted by the developers as an intended direct replacement nor competitor to cloud-based file synchronization services, it has attained much of its publicity in this potential role.This is mainly due to the ability of Resilio Sync to address many of the concerns in existing services relating to file storage limits, privacy, cost, and performance.</Overview>
+    <WebUI>http://[IP]:[PORT:8888]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/resilio-sync.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/resilio-sync-icon.png</Icon>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+    <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+    <Date>1970-01-01</Date>
+    <Changes></Changes>
+    <Config Name="Port: Web Interface" Target="8888" Default="8888" Mode="tcp" Description="This is the Web UI port for the application." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: Resilio Sync port (TCP)" Target="5555" Default="5555" Mode="tcp" Description="Resilio sync port (TCP)." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: Resilio Sync port (UDP)" Target="5555" Default="5555" Mode="udp" Description="Resilio sync port (UDP)." Type="Port" Display="always" Required="true" Mask="false"/>
 
-    Although not touted by the developers as an intended direct replacement nor competitor to cloud-based file synchronization services, it has attained much of its publicity in this potential role.This is mainly due to the ability of Resilio Sync to address many of the concerns in existing services relating to file storage limits, privacy, cost, and performance.
-  </Overview>
-  <Support>https://forums.unraid.net/topic/103784-support-binhex-resilio-sync/</Support>
-  <ReadMe>https://github.com/binhex/documentation</ReadMe>
-  <Registry>https://registry.hub.docker.com/r/binhex/arch-resilio-sync/</Registry>
-  <GitHub>https://github.com/binhex/arch-resilio-sync</GitHub>
-  <Repository>binhex/arch-resilio-sync</Repository>
-  <Project>https://www.resilio.com/individuals/</Project>
-  <BindTime>true</BindTime>
-  <Privileged>false</Privileged>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8888</HostPort>
-        <ContainerPort>8888</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>55555</HostPort>
-        <ContainerPort>55555</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>55555</HostPort>
-        <ContainerPort>55555</ContainerPort>
-        <Protocol>udp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Environment>
-    <Variable>
-      <Name>UMASK</Name>
-      <Value>000</Value>
-    </Variable>
-    <Variable>
-      <Name>PUID</Name>
-      <Value>99</Value>
-    </Variable>
-    <Variable>
-      <Name>PGID</Name>
-      <Value>100</Value>
-    </Variable>
-  </Environment>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/config</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user</HostDir>
-      <ContainerDir>/media</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <WebUI>http://[IP]:[PORT:8888]/</WebUI>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/resilio-sync-icon.png</Icon>
-  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
-  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
-  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
-  <ExtraParams></ExtraParams>
-</Containers>
+    <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/resilio-sync" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /media" Target="/media" Default="/mnt/user" Mode="rw" Description="This is the container path to your media files, e.g. movies, tv, music, pictures etc." Type="Path" Display="always" Required="false" Mask="false"/>
+
+    <Config Name="Variable: SHARED_NETWORK" Target="SHARED_NETWORK" Default="no|yes" Description="Specify whether this container is sharing the network with another VPN container, if set to 'yes' then this container will stop when the VPN container is stopped." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: PUID" Target="PUID" Default="99" Description="User ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Group ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: UMASK" Target="UMASK" Default="000" Description="UMASK for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+</Container>
