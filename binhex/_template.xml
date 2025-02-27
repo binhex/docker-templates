@@ -12,7 +12,7 @@
     <Name>binhex-APPNAME</Name>
 	<Beta>false</Beta>
     <Category>CACATEGORY</Category>
-    <Repository>binhex/arch-APPNAME</Repository>
+    <Repository>ghcr.io/binhex/arch-APPNAME</Repository>
     <Registry>https://hub.docker.com/repository/docker/binhex/arch-APPNAME</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

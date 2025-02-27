@@ -3,7 +3,7 @@
     <Name>binhex-crafty-4</Name>
 	<Beta>false</Beta>
     <Category>GameServers:</Category>
-    <Repository>binhex/arch-crafty-4</Repository>
+    <Repository>ghcr.io/binhex/arch-crafty-4</Repository>
     <Registry>https://github.com/binhex/arch-crafty-4</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

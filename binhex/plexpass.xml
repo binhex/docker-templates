@@ -3,7 +3,7 @@
     <Name>binhex-plexpass</Name>
 	<Beta>false</Beta>
     <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
-    <Repository>binhex/arch-plexpass</Repository>
+    <Repository>ghcr.io/binhex/arch-plexpass</Repository>
     <Registry>https://github.com/binhex/arch-plexpass</Registry>
     <Network>host</Network>
     <Privileged>false</Privileged>

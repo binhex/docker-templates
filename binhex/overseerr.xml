@@ -3,7 +3,7 @@
     <Name>binhex-overseerr</Name>
 	<Beta>false</Beta>
     <Category>Downloaders: MediaApp:Video</Category>
-    <Repository>binhex/arch-overseerr</Repository>
+    <Repository>ghcr.io/binhex/arch-overseerr</Repository>
     <Registry>https://github.com/binhex/arch-overseerr</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

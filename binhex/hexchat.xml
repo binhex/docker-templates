@@ -3,7 +3,7 @@
     <Name>binhex-hexchat</Name>
 	<Beta>false</Beta>
     <Category>Productivity: Tools:</Category>
-    <Repository>binhex/arch-hexchat</Repository>
+    <Repository>ghcr.io/binhex/arch-hexchat</Repository>
     <Registry>https://github.com/binhex/arch-hexchat</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

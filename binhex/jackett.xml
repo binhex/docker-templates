@@ -3,7 +3,7 @@
     <Name>binhex-jackett</Name>
 	<Beta>false</Beta>
     <Category>Downloaders: MediaApp:Video</Category>
-    <Repository>binhex/arch-jackett</Repository>
+    <Repository>ghcr.io/binhex/arch-jackett</Repository>
     <Registry>https://github.com/binhex/arch-jackett</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

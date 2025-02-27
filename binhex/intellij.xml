@@ -3,7 +3,7 @@
     <Name>binhex-intellij</Name>
 	<Beta>false</Beta>
     <Category>Productivity: Tools:</Category>
-    <Repository>binhex/arch-intellij</Repository>
+    <Repository>ghcr.io/binhex/arch-intellij</Repository>
     <Registry>https://github.com/binhex/arch-intellij</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

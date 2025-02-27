@@ -3,7 +3,7 @@
     <Name>binhex-prowlarr</Name>
 	<Beta>false</Beta>
     <Category>Downloaders: MediaApp:Video</Category>
-    <Repository>binhex/arch-prowlarr</Repository>
+    <Repository>ghcr.io/binhex/arch-prowlarr</Repository>
     <Registry>https://github.com/binhex/arch-prowlarr</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

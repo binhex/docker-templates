@@ -3,7 +3,7 @@
     <Name>binhex-libreoffice</Name>
 	<Beta>false</Beta>
     <Category>Productivity: Tools:</Category>
-    <Repository>binhex/arch-libreoffice</Repository>
+    <Repository>ghcr.io/binhex/arch-libreoffice</Repository>
     <Registry>https://github.com/binhex/arch-libreoffice</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

@@ -3,7 +3,7 @@
     <Name>binhex-code-server</Name>
 	<Beta>false</Beta>
     <Category>Cloud: Productivity: Tools:Utilities</Category>
-    <Repository>binhex/arch-code-server</Repository>
+    <Repository>ghcr.io/binhex/arch-code-server</Repository>
     <Registry>https://github.com/binhex/arch-code-server</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

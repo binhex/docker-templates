@@ -21,7 +21,7 @@
   <ReadMe>https://github.com/binhex/documentation</ReadMe>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-sickchill/</Registry>
   <GitHub>https://github.com/binhex/arch-sickchill</GitHub>
-  <Repository>binhex/arch-sickchill</Repository>
+  <Repository>ghcr.io/binhex/arch-sickchill</Repository>
   <Project>https://github.com/SickChill/SickChill</Project>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>

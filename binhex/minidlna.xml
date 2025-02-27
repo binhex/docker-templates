@@ -3,7 +3,7 @@
     <Name>binhex-minidlna</Name>
 	<Beta>false</Beta>
     <Category>MediaServer:Video</Category>
-    <Repository>binhex/arch-minidlna</Repository>
+    <Repository>ghcr.io/binhex/arch-minidlna</Repository>
     <Registry>https://github.com/binhex/arch-minidlna</Registry>
     <Network>host</Network>
     <Privileged>false</Privileged>

@@ -3,7 +3,7 @@
     <Name>binhex-readarr</Name>
 	<Beta>false</Beta>
     <Category>Downloaders: MediaApp:Video</Category>
-    <Repository>binhex/arch-readarr</Repository>
+    <Repository>ghcr.io/binhex/arch-readarr</Repository>
     <Registry>https://hub.docker.com/repository/docker/binhex/arch-readarr</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

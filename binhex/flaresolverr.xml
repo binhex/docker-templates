@@ -3,7 +3,7 @@
     <Name>binhex-flaresolverr</Name>
 	<Beta>false</Beta>
     <Category>Downloaders: MediaApp:Video</Category>
-    <Repository>binhex/arch-flaresolverr</Repository>
+    <Repository>ghcr.io/binhex/arch-flaresolverr</Repository>
     <Registry>https://github.com/binhex/arch-flaresolverr</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

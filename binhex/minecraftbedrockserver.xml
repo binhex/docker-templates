@@ -3,7 +3,7 @@
     <Name>binhex-minecraftbedrockserver</Name>
 	<Beta>false</Beta>
     <Category>GameServers:</Category>
-    <Repository>binhex/arch-minecraftbedrockserver</Repository>
+    <Repository>ghcr.io/binhex/arch-minecraftbedrockserver</Repository>
     <Registry>https://github.com/binhex/arch-minecraftbedrockserver</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

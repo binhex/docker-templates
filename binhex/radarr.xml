@@ -3,7 +3,7 @@
     <Name>binhex-radarr</Name>
 	<Beta>false</Beta>
     <Category>Downloaders: MediaApp:Video</Category>
-    <Repository>binhex/arch-radarr</Repository>
+    <Repository>ghcr.io/binhex/arch-radarr</Repository>
     <Registry>https://github.com/binhex/arch-radarr</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

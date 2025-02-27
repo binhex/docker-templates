@@ -3,7 +3,7 @@
     <Name>binhex-webstorm</Name>
 	<Beta>false</Beta>
     <Category>Productivity: Tools:</Category>
-    <Repository>binhex/arch-webstorm</Repository>
+    <Repository>ghcr.io/binhex/arch-webstorm</Repository>
     <Registry>https://github.com/binhex/arch-webstorm</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

@@ -3,7 +3,7 @@
     <Name>binhex-get-iplayer</Name>
 	<Beta>false</Beta>
     <Category>MediaApp:Video MediaServer:Video</Category>
-    <Repository>binhex/arch-get-iplayer</Repository>
+    <Repository>ghcr.io/binhex/arch-get-iplayer</Repository>
     <Registry>https://github.com/binhex/arch-get-iplayer</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

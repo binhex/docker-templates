@@ -3,7 +3,7 @@
     <Name>binhex-minecraftserver</Name>
 	<Beta>false</Beta>
     <Category>GameServers:</Category>
-    <Repository>binhex/arch-minecraftserver</Repository>
+    <Repository>ghcr.io/binhex/arch-minecraftserver</Repository>
     <Registry>https://github.com/binhex/arch-minecraftserver</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

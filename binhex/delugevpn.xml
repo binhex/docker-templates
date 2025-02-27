@@ -3,7 +3,7 @@
     <Name>binhex-delugevpn</Name>
 	<Beta>false</Beta>
     <Category>Downloaders:</Category>
-    <Repository>binhex/arch-delugevpn</Repository>
+    <Repository>ghcr.io/binhex/arch-delugevpn</Repository>
     <Registry>https://github.com/binhex/arch-delugevpn</Registry>
     <Network>bridge</Network>
     <Privileged>true</Privileged>

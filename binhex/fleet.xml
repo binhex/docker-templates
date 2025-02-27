@@ -3,7 +3,7 @@
     <Name>binhex-fleet</Name>
 	<Beta>false</Beta>
     <Category>Productivity: Tools:</Category>
-    <Repository>binhex/arch-fleet</Repository>
+    <Repository>ghcr.io/binhex/arch-fleet</Repository>
     <Registry>https://github.com/binhex/arch-fleet</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

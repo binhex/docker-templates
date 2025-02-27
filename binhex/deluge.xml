@@ -3,7 +3,7 @@
     <Name>binhex-deluge</Name>
 	<Beta>false</Beta>
     <Category>Downloaders:</Category>
-    <Repository>binhex/arch-deluge</Repository>
+    <Repository>ghcr.io/binhex/arch-deluge</Repository>
     <Registry>https://github.com/binhex/arch-deluge</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

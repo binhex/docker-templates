@@ -3,7 +3,7 @@
     <Name>binhex-medusa</Name>
 	<Beta>false</Beta>
     <Category>Downloaders: MediaApp:Video</Category>
-    <Repository>binhex/arch-medusa</Repository>
+    <Repository>ghcr.io/binhex/arch-medusa</Repository>
     <Registry>https://github.com/binhex/arch-medusa</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

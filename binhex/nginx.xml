@@ -3,7 +3,7 @@
     <Name>binhex-nginx</Name>
 	<Beta>false</Beta>
     <Category>Network:Web Network:Proxy</Category>
-    <Repository>binhex/arch-nginx</Repository>
+    <Repository>ghcr.io/binhex/arch-nginx</Repository>
     <Registry>https://github.com/binhex/arch-nginx</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

@@ -3,7 +3,7 @@
     <Name>binhex-fdroidserver</Name>
 	<Beta>false</Beta>
     <Category>MediaServer:Other</Category>
-    <Repository>binhex/arch-fdroidserver</Repository>
+    <Repository>ghcr.io/binhex/arch-fdroidserver</Repository>
     <Registry>https://github.com/binhex/arch-fdroidserver</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

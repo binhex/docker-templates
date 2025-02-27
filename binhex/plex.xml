@@ -3,7 +3,7 @@
     <Name>binhex-plex</Name>
 	<Beta>false</Beta>
     <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
-    <Repository>binhex/arch-plex</Repository>
+    <Repository>ghcr.io/binhex/arch-plex</Repository>
     <Registry>https://github.com/binhex/arch-plex</Registry>
     <Network>host</Network>
     <Privileged>false</Privileged>

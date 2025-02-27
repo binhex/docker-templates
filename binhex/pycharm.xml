@@ -3,7 +3,7 @@
     <Name>binhex-pycharm</Name>
 	<Beta>false</Beta>
     <Category>Productivity: Tools:</Category>
-    <Repository>binhex/arch-pycharm</Repository>
+    <Repository>ghcr.io/binhex/arch-pycharm</Repository>
     <Registry>https://github.com/binhex/arch-pycharm</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

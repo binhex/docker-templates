@@ -3,7 +3,7 @@
     <Name>binhex-resilio-sync</Name>
 	<Beta>false</Beta>
     <Category>Productivity: Tools: Backup:</Category>
-    <Repository>binhex/arch-resilio-sync</Repository>
+    <Repository>ghcr.io/binhex/arch-resilio-sync</Repository>
     <Registry>https://hub.docker.com/repository/docker/binhex/arch-resilio-sync</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Container version="2">
+	<!-- Find and replace 'binhex-official-docker-registry-proxy' with the name of the application -->
+	<!-- Find and replace 'https://github.com/rpardini/docker-registry-proxy' with the project URL of the application -->
+	<!-- Find and replace 'A caching proxy for Docker; allows centralised management of (multiple) registries and their authentication; caches images from any registry. Caches the potentially huge blob/layer requests (for bandwidth/time savings), and optionally caches manifest requests ("pulls") to avoid rate-limiting.' with the description of the application -->
+	<!-- Find and replace 'Other:' with the CA category of the application -->
+	<!-- Find and replace 'https://github.com/rpardini/docker-registry-proxy/issues' with the forum ID after creating the Support https://github.com/rpardini/docker-registry-proxy/issues -->
+	<!-- Find and replace '3128' with the Web UI port of the application -->
+    <!-- Remove any unrequired paths, e.g. /data /media -->
+    <!-- Remove line containing 'RemoveFromCA' -->
+    <!-- Remove these comments -->
+    <Name>binhex-official-docker-registry-proxy</Name>
+	<Beta>false</Beta>
+    <Category>Other:</Category>
+    <Repository>rpardini/docker-registry-proxy</Repository>
+    <Registry>https://hub.docker.com/r/rpardini/docker-registry-proxy</Registry>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <PrivilegedReq>false</PrivilegedReq>
+    <ExtraParams></ExtraParams>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/rpardini/docker-registry-proxy</GitHub>
+    <ReadMe>https://github.com/rpardini/docker-registry-proxy</ReadMe>
+    <Support>https://github.com/rpardini/docker-registry-proxy/issues</Support>
+    <Project>https://github.com/rpardini/docker-registry-proxy</Project>
+    <Overview>A caching proxy for Docker; allows centralised management of (multiple) registries and their authentication; caches images from any registry. Caches the potentially huge blob/layer requests (for bandwidth/time savings), and optionally caches manifest requests ("pulls") to avoid rate-limiting.</Overview>
+    <WebUI></WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/official-docker-registry-proxy.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/official-docker-registry-proxy-icon.png</Icon>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+    <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+    <Date>1970-01-01</Date>
+    <Changes></Changes>
+    <Config Name="Port: Registry Proxy Interface" Target="3128" Default="3128" Mode="tcp" Description="This is the port for the application." Type="Port" Display="always" Required="true" Mask="false"/>
+
+    <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/binhex-official-docker-registry-proxy" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /docker_mirror_cache" Target="/docker_mirror_cache" Default="/mnt/user/appdata/binhex-official-docker-registry-proxy/docker_mirror_cache" Mode="rw" Description="This is the container path to your media files, e.g. movies, tv, music, pictures etc." Type="Path" Display="always" Required="false" Mask="false"/>
+	<Config Name="Path: /ca" Target="/ca" Default="/mnt/user/appdata/binhex-official-docker-registry-proxy/ca" Mode="rw" Description="This is the container path to your downloaded files or user created content." Type="Path" Display="always" Required="true" Mask="false"/>
+
+    <Config Name="Variable: ENABLE_MANIFEST_CACHE" Target="ENABLE_MANIFEST_CACHE" Default="true|false" Description="Specify whether this container is sharing the network with another VPN container, if set to 'yes' then this container will stop when the VPN container is stopped." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: REGISTRIES" Target="REGISTRIES" Default="" Description="User ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: AUTH_REGISTRIES" Target="AUTH_REGISTRIES" Default="" Description="Group ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+</Container>

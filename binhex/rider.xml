@@ -3,7 +3,7 @@
     <Name>binhex-rider</Name>
 	<Beta>false</Beta>
     <Category>Productivity: Tools:</Category>
-    <Repository>binhex/arch-rider</Repository>
+    <Repository>ghcr.io/binhex/arch-rider</Repository>
     <Registry>https://github.com/binhex/arch-rider</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

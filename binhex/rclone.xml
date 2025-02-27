@@ -3,7 +3,7 @@
     <Name>binhex-rclone</Name>
 	<Beta>false</Beta>
     <Category>Backup: Cloud: Tools:Utilities</Category>
-    <Repository>binhex/arch-rclone</Repository>
+    <Repository>ghcr.io/binhex/arch-rclone</Repository>
     <Registry>https://github.com/binhex/arch-rclone</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

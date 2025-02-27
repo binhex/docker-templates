@@ -3,7 +3,7 @@
     <Name>binhex-nzbget</Name>
 	<Beta>false</Beta>
     <Category>Downloaders:</Category>
-    <Repository>binhex/arch-nzbget</Repository>
+    <Repository>ghcr.io/binhex/arch-nzbget</Repository>
     <Registry>https://github.com/binhex/arch-nzbget</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

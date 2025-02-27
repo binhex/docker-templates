@@ -3,7 +3,7 @@
     <Name>binhex-lidarr</Name>
 	<Beta>false</Beta>
     <Category>Downloaders: MediaApp:Music</Category>
-    <Repository>binhex/arch-lidarr</Repository>
+    <Repository>ghcr.io/binhex/arch-lidarr</Repository>
     <Registry>https://github.com/binhex/arch-lidarr</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

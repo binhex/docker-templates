@@ -3,7 +3,7 @@
     <Name>binhex-goland</Name>
 	<Beta>false</Beta>
     <Category>Productivity: Tools:</Category>
-    <Repository>binhex/arch-goland</Repository>
+    <Repository>ghcr.io/binhex/arch-goland</Repository>
     <Registry>https://github.com/binhex/arch-goland</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>

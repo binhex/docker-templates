@@ -3,7 +3,7 @@
     <Name>binhex-nzbhydra2</Name>
 	<Beta>false</Beta>
     <Category>Downloaders: MediaApp:Video</Category>
-    <Repository>binhex/arch-nzbhydra2</Repository>
+    <Repository>ghcr.io/binhex/arch-nzbhydra2</Repository>
     <Registry>https://github.com/binhex/arch-nzbhydra2</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
