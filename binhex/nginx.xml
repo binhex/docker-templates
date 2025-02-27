@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Network:Web Network:Proxy</Category>
     <Repository>ghcr.io/binhex/arch-nginx</Repository>
-    <Registry>https://github.com/binhex/arch-nginx</Registry>
+    <Registry>https://github.com/binhex/arch-nginx/pkgs/container/arch-nginx</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <PrivilegedReq>false</PrivilegedReq>

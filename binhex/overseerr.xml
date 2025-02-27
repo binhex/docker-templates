@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Downloaders: MediaApp:Video</Category>
     <Repository>ghcr.io/binhex/arch-overseerr</Repository>
-    <Registry>https://github.com/binhex/arch-overseerr</Registry>
+    <Registry>https://github.com/binhex/arch-overseerr/pkgs/container/arch-overseerr</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <ExtraParams></ExtraParams>

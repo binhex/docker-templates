@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Productivity: Tools:</Category>
     <Repository>ghcr.io/binhex/arch-makemkv</Repository>
-    <Registry>https://github.com/binhex/arch-makemkv</Registry>
+    <Registry>https://github.com/binhex/arch-makemkv/pkgs/container/arch-makemkv</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <ExtraParams></ExtraParams>

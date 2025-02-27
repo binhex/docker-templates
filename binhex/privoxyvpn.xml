@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Productivity: Tools:</Category>
     <Repository>ghcr.io/binhex/arch-privoxyvpn</Repository>
-    <Registry>https://github.com/binhex/arch-privoxyvpn</Registry>
+    <Registry>https://github.com/binhex/arch-privoxyvpn/pkgs/container/arch-privoxyvpn</Registry>
     <Network>bridge</Network>
     <Privileged>true</Privileged>
     <PrivilegedReq>true</PrivilegedReq>

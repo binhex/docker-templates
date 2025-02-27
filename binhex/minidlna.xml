@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>MediaServer:Video</Category>
     <Repository>ghcr.io/binhex/arch-minidlna</Repository>
-    <Registry>https://github.com/binhex/arch-minidlna</Registry>
+    <Registry>https://github.com/binhex/arch-minidlna/pkgs/container/arch-minidlna</Registry>
     <Network>host</Network>
     <Privileged>false</Privileged>
     <PrivilegedReq>false</PrivilegedReq>

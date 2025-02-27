@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Downloaders: MediaApp:Video</Category>
     <Repository>ghcr.io/binhex/arch-flaresolverr</Repository>
-    <Registry>https://github.com/binhex/arch-flaresolverr</Registry>
+    <Registry>https://github.com/binhex/arch-flaresolverr/pkgs/container/arch-flaresolverr</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <ExtraParams></ExtraParams>

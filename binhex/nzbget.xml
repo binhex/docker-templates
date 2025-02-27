@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Downloaders:</Category>
     <Repository>ghcr.io/binhex/arch-nzbget</Repository>
-    <Registry>https://github.com/binhex/arch-nzbget</Registry>
+    <Registry>https://github.com/binhex/arch-nzbget/pkgs/container/arch-nzbget</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <PrivilegedReq>false</PrivilegedReq>

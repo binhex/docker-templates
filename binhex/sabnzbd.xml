@@ -18,7 +18,7 @@
   </Overview>
   <Support>http://forums.unraid.net/index.php?topic=45821.0</Support>
   <ReadMe>https://github.com/binhex/documentation</ReadMe>
-  <Registry>https://registry.hub.docker.com/r/binhex/arch-sabnzbd/</Registry>
+  <Registry>https://registry.hub.docker.com/r/binhex/arch-sabnzbd/pkgs/container/arch-sabnzbd</Registry>
   <GitHub>https://github.com/binhex/arch-sabnzbd</GitHub>
   <Repository>ghcr.io/binhex/arch-sabnzbd</Repository>
   <Project>http://sabnzbd.org/</Project>

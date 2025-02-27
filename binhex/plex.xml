@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
     <Repository>ghcr.io/binhex/arch-plex</Repository>
-    <Registry>https://github.com/binhex/arch-plex</Registry>
+    <Registry>https://github.com/binhex/arch-plex/pkgs/container/arch-plex</Registry>
     <Network>host</Network>
     <Privileged>false</Privileged>
     <PrivilegedReq>false</PrivilegedReq>

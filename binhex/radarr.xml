@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Downloaders: MediaApp:Video</Category>
     <Repository>ghcr.io/binhex/arch-radarr</Repository>
-    <Registry>https://github.com/binhex/arch-radarr</Registry>
+    <Registry>https://github.com/binhex/arch-radarr/pkgs/container/arch-radarr</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <PrivilegedReq>false</PrivilegedReq>

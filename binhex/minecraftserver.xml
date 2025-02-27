@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>GameServers:</Category>
     <Repository>ghcr.io/binhex/arch-minecraftserver</Repository>
-    <Registry>https://github.com/binhex/arch-minecraftserver</Registry>
+    <Registry>https://github.com/binhex/arch-minecraftserver/pkgs/container/arch-minecraftserver</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <PrivilegedReq>false</PrivilegedReq>

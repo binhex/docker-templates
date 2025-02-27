@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Downloaders: MediaApp:Video</Category>
     <Repository>ghcr.io/binhex/arch-medusa</Repository>
-    <Registry>https://github.com/binhex/arch-medusa</Registry>
+    <Registry>https://github.com/binhex/arch-medusa/pkgs/container/arch-medusa</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <PrivilegedReq>false</PrivilegedReq>

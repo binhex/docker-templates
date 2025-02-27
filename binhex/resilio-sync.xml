@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Productivity: Tools: Backup:</Category>
     <Repository>ghcr.io/binhex/arch-resilio-sync</Repository>
-    <Registry>https://hub.docker.com/repository/docker/binhex/arch-resilio-sync</Registry>
+    <Registry>https://github.com/binhex/arch-resilio-sync/pkgs/container/arch-resilio-sync</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <PrivilegedReq>false</PrivilegedReq>

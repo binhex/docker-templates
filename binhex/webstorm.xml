@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Productivity: Tools:</Category>
     <Repository>ghcr.io/binhex/arch-webstorm</Repository>
-    <Registry>https://github.com/binhex/arch-webstorm</Registry>
+    <Registry>https://github.com/binhex/arch-webstorm/pkgs/container/arch-webstorm</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <ExtraParams></ExtraParams>

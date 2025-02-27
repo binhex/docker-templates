@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>GameServers:</Category>
     <Repository>ghcr.io/binhex/arch-crafty-4</Repository>
-    <Registry>https://github.com/binhex/arch-crafty-4</Registry>
+    <Registry>https://github.com/binhex/arch-crafty-4/pkgs/container/arch-crafty-4</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <ExtraParams></ExtraParams>

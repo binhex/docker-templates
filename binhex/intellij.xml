@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Productivity: Tools:</Category>
     <Repository>ghcr.io/binhex/arch-intellij</Repository>
-    <Registry>https://github.com/binhex/arch-intellij</Registry>
+    <Registry>https://github.com/binhex/arch-intellij/pkgs/container/arch-intellij</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <ExtraParams></ExtraParams>

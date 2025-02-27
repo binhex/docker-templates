@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Downloaders: MediaApp:Video</Category>
     <Repository>ghcr.io/binhex/arch-prowlarr</Repository>
-    <Registry>https://github.com/binhex/arch-prowlarr</Registry>
+    <Registry>https://github.com/binhex/arch-prowlarr/pkgs/container/arch-prowlarr</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <PrivilegedReq>false</PrivilegedReq>

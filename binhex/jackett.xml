@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Downloaders: MediaApp:Video</Category>
     <Repository>ghcr.io/binhex/arch-jackett</Repository>
-    <Registry>https://github.com/binhex/arch-jackett</Registry>
+    <Registry>https://github.com/binhex/arch-jackett/pkgs/container/arch-jackett</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <ExtraParams></ExtraParams>

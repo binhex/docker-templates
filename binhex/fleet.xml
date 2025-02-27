@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Productivity: Tools:</Category>
     <Repository>ghcr.io/binhex/arch-fleet</Repository>
-    <Registry>https://github.com/binhex/arch-fleet</Registry>
+    <Registry>https://github.com/binhex/arch-fleet/pkgs/container/arch-fleet</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <ExtraParams></ExtraParams>

@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Productivity: Tools:</Category>
     <Repository>ghcr.io/binhex/arch-goland</Repository>
-    <Registry>https://github.com/binhex/arch-goland</Registry>
+    <Registry>https://github.com/binhex/arch-goland/pkgs/container/arch-goland</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <ExtraParams></ExtraParams>

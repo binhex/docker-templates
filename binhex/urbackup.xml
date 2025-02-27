@@ -22,7 +22,7 @@
   </Overview>
   <Support>https://forums.unraid.net/topic/82198-support-binhex-urbackup/</Support>
   <ReadMe>https://github.com/binhex/documentation</ReadMe>
-  <Registry>https://registry.hub.docker.com/r/binhex/arch-urbackup/</Registry>
+  <Registry>https://registry.hub.docker.com/r/binhex/arch-urbackup/pkgs/container/arch-urbackup</Registry>
   <GitHub>https://github.com/binhex/arch-urbackup</GitHub>
   <Repository>ghcr.io/binhex/arch-urbackup</Repository>
   <Project>https://urbackup.org/</Project>

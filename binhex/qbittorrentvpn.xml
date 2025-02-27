@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Downloaders:</Category>
     <Repository>ghcr.io/binhex/arch-qbittorrentvpn</Repository>
-    <Registry>https://github.com/binhex/arch-qbittorrentvpn</Registry>
+    <Registry>https://github.com/binhex/arch-qbittorrentvpn/pkgs/container/arch-qbittorrentvpn</Registry>
     <Network>bridge</Network>
     <Privileged>true</Privileged>
     <PrivilegedReq>true</PrivilegedReq>

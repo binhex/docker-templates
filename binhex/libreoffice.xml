@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Productivity: Tools:</Category>
     <Repository>ghcr.io/binhex/arch-libreoffice</Repository>
-    <Registry>https://github.com/binhex/arch-libreoffice</Registry>
+    <Registry>https://github.com/binhex/arch-libreoffice/pkgs/container/arch-libreoffice</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <ExtraParams></ExtraParams>

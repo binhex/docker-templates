@@ -20,7 +20,7 @@
   </Overview>
   <Support>http://forums.unraid.net/index.php?topic=45849.0</Support>
   <ReadMe>https://github.com/binhex/documentation</ReadMe>
-  <Registry>https://registry.hub.docker.com/r/binhex/arch-teamspeak/</Registry>
+  <Registry>https://registry.hub.docker.com/r/binhex/arch-teamspeak/pkgs/container/arch-teamspeak</Registry>
   <GitHub>https://github.com/binhex/arch-teamspeak</GitHub>
   <Repository>ghcr.io/binhex/arch-teamspeak</Repository>
   <Project>https://www.teamspeak.com/en/</Project>

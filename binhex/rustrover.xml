@@ -20,7 +20,7 @@
   </Overview>
   <Support>https://forums.unraid.net/topic/146085-support-binhex-rustrover/</Support>
   <ReadMe>https://github.com/binhex/documentation</ReadMe>
-  <Registry>https://registry.hub.docker.com/r/binhex/arch-rustrover/</Registry>
+  <Registry>https://registry.hub.docker.com/r/binhex/arch-rustrover/pkgs/container/arch-rustrover</Registry>
   <GitHub>https://github.com/binhex/arch-rustrover</GitHub>
   <Repository>ghcr.io/binhex/arch-rustrover</Repository>
   <Project>https://www.jetbrains.com/rust/</Project>

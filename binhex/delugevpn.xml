@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Downloaders:</Category>
     <Repository>ghcr.io/binhex/arch-delugevpn</Repository>
-    <Registry>https://github.com/binhex/arch-delugevpn</Registry>
+    <Registry>https://github.com/binhex/arch-delugevpn/pkgs/container/arch-delugevpn</Registry>
     <Network>bridge</Network>
     <Privileged>true</Privileged>
     <PrivilegedReq>true</PrivilegedReq>

@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Downloaders:</Category>
     <Repository>ghcr.io/binhex/arch-deluge</Repository>
-    <Registry>https://github.com/binhex/arch-deluge</Registry>
+    <Registry>https://github.com/binhex/arch-deluge/pkgs/container/arch-deluge</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <ExtraParams></ExtraParams>

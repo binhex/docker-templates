@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Backup: Cloud: Tools:Utilities</Category>
     <Repository>ghcr.io/binhex/arch-rclone</Repository>
-    <Registry>https://github.com/binhex/arch-rclone</Registry>
+    <Registry>https://github.com/binhex/arch-rclone/pkgs/container/arch-rclone</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <PrivilegedReq>false</PrivilegedReq>

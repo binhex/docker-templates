@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Cloud: Productivity: Tools:Utilities</Category>
     <Repository>ghcr.io/binhex/arch-code-server</Repository>
-    <Registry>https://github.com/binhex/arch-code-server</Registry>
+    <Registry>https://github.com/binhex/arch-code-server/pkgs/container/arch-code-server</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <ExtraParams></ExtraParams>

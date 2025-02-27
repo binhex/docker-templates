@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Downloaders: MediaApp:Video</Category>
     <Repository>ghcr.io/binhex/arch-bitmagnet</Repository>
-    <Registry>https://github.com/binhex/arch-bitmagnet</Registry>
+    <Registry>https://github.com/binhex/arch-bitmagnet/pkgs/container/arch-bitmagnet</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <PrivilegedReq>false</PrivilegedReq>

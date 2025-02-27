@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>MediaServer:Other</Category>
     <Repository>ghcr.io/binhex/arch-fdroidserver</Repository>
-    <Registry>https://github.com/binhex/arch-fdroidserver</Registry>
+    <Registry>https://github.com/binhex/arch-fdroidserver/pkgs/container/arch-fdroidserver</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <ExtraParams></ExtraParams>

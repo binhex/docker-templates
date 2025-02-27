@@ -4,7 +4,7 @@
 	<Beta>false</Beta>
     <Category>Downloaders: MediaApp:Music</Category>
     <Repository>ghcr.io/binhex/arch-lidarr</Repository>
-    <Registry>https://github.com/binhex/arch-lidarr</Registry>
+    <Registry>https://github.com/binhex/arch-lidarr/pkgs/container/arch-lidarr</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <PrivilegedReq>false</PrivilegedReq>
