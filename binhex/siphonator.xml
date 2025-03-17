@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+	<!-- Find and replace 'THREAD' with the forum ID after creating the Support Thread -->
+    <Name>binhex-siphonator</Name>
+	<Beta>false</Beta>
+    <Category>Downloaders: MediaApp:Video</Category>
+    <Repository>ghcr.io/binhex/arch-siphonator</Repository>
+    <Registry>https://github.com/binhex/arch-siphonator/pkgs/container/arch-siphonator</Registry>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <PrivilegedReq>false</PrivilegedReq>
+    <ExtraParams></ExtraParams>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/binhex/arch-siphonator</GitHub>
+    <ReadMe>https://github.com/binhex/documentation</ReadMe>
+    <Support>https://forums.unraid.net/topic/THREAD/</Support>
+    <Project>https://github.com/binhex/siphonator</Project>
+    <Overview>Siphonator is a command line tool written in Python, designed to streamline the process of discovering and acquiring movies based on precise user-defined criteria, leveraging the extensive IMDb database. Users can construct complex filters to pinpoint films matching their specific preferences, automating the download process through integration with a torrent client.</Overview>
+    <WebUI></WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/siphonator.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/siphonator-icon.png</Icon>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+    <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+	<RemoveFromCA>true</RemoveFromCA><!-- REMOVE THIS LINE -->
+    <Date>1970-01-01</Date>
+    <Changes></Changes>
+
+    <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/siphonator" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /media" Target="/media" Default="/mnt/user" Mode="rw" Description="This is the container path to your media files, e.g. movies, tv, music, pictures etc." Type="Path" Display="always" Required="false" Mask="false"/>
+	<Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="This is the container path to your downloaded files or user created content." Type="Path" Display="always" Required="true" Mask="false"/>
+
+    <Config Name="Variable: SHARED_NETWORK" Target="SHARED_NETWORK" Default="no|yes" Description="Specify whether this container is sharing the network with another VPN container, if set to 'yes' then this container will stop when the VPN container is stopped." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: PUID" Target="PUID" Default="99" Description="User ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Group ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: UMASK" Target="UMASK" Default="000" Description="UMASK for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+</Container>
