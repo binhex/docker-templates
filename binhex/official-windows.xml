@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <Container version="2">
     <Name>binhex-official-windows</Name>
-	<Beta>false</Beta>
+    <Beta>false</Beta>
     <Category>Other:</Category>
     <Repository>dockurr/windows</Repository>
     <Registry>https://hub.docker.com/r/dockurr/windows</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <PrivilegedReq>false</PrivilegedReq>
-    <ExtraParams>--stop-timeout 120 --device /dev/kvm --cap-add NET_ADMIN</ExtraParams>
+    <ExtraParams>--stop-timeout 120 --device-cgroup-rule='c *:* rwm' --cap-add NET_ADMIN</ExtraParams>
     <Shell>bash</Shell>
     <GitHub>https://github.com/dockur/windows</GitHub>
     <Support>https://github.com/dockur/windows/issues</Support>
@@ -22,18 +22,22 @@
     <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
     <Date>1970-01-01</Date>
     <Changes></Changes>
-    <Config Name="Port: Web Interface" Target="8006" Default="8006" Mode="tcp" Description="This is the Web UI port for the application." Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Port: RDP Interface TCP" Target="3389" Default="3389" Mode="tcp" Description="This is the Web UI port for the application." Type="Port" Display="always" Required="false" Mask="false"/>
-    <Config Name="Port: RDP Interface UDP" Target="3389" Default="3389" Mode="udp" Description="This is the Web UI port for the application." Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="KVM" Target="" Default="" Mode="" Description="" Type="Device" Display="advanced" Required="false" Mask="false">/dev/kvm</Config>
+    <Config Name="TUN" Target="" Default="" Mode="" Description="" Type="Device" Display="advanced" Required="false" Mask="false">/dev/net/tun</Config>
+    <Config Name="VHost" Target="" Default="" Mode="" Description="" Type="Device" Display="advanced" Required="false" Mask="false">/dev/vhost-net</Config>
 
+    <Config Name="Port: Web Interface" Target="8006" Default="8006" Mode="tcp" Description="This is the Web UI port for the application." Type="Port" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Port: RDP Interface TCP" Target="3389" Default="3389" Mode="tcp" Description="This is the RDP port for the application." Type="Port" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Port: RDP Interface UDP" Target="3389" Default="3389" Mode="udp" Description="This is the RDP UDP port for the application." Type="Port" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Path: /storage" Target="/storage" Default="/mnt/user/appdata/official-windows/storage" Mode="rw" Description="This is the container path to store the VM's vdisk etc." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /data" Target="/data" Default="/mnt/user/appdata/official-windows/shared" Mode="rw" Description="This is the container path to store shared files accessible from the VM." Type="Path" Display="always" Required="false" Mask="false"/>
-	<Config Name="Path: /custom.iso" Target="/custom.iso" Default="" Mode="rw" Description="This is the container path to a custom iso file, please note if this is specified then it will override the version of Windows specified via the variable 'VERSION'." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Path: /custom.iso" Target="/custom.iso" Default="" Mode="rw" Description="This is the container path to a custom iso file, please note if this is specified then it will override the version of Windows specified via the variable 'VERSION'." Type="Path" Display="always" Required="false" Mask="false"/>
     <Config Name="Path: /oem" Target="/oem" Default="" Mode="rw" Description="This is the container path to a folder containing custom scripts to run post install." Type="Path" Display="always" Required="false" Mask="false"/>
 
-    <Config Name="Variable: VERSION" Target="VERSION" Default="11|11l|11e|10|10l|10e|8|8e|7e|ve|xp|2025|2022|2019|2016|2012|2008|2003" Description="Specify the version of Windows to install (see https://github.com/dockur/windows#how-do-i-use-it for full version description), please note these are all evaluation versions of Windows downloaded from Microsoft." Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="Variable: DISK_SIZE" Target="DISK_SIZE" Default="30G" Description="Specify the virtual disk size in GB." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="Variable: RAM_SIZE" Target="RAM_SIZE" Default="8G" Description="Specify the amount of RAM allocated in GB." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: VERSION" Target="VERSION" Default="11|11l|11e|10|10l|10e|8|8e|7e|ve|xp|2025|2022|2019|2016|2012|2008|2003" Description="Specify the version of Windows to install (see https://github.com/dockur/windows#how-do-i-select-the-windows-version for full version description), please note these are all evaluation versions of Windows downloaded from Microsoft." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: DHCP" Target="DHCP" Default="N" Description="Specify Y to enable DHCP (required for custom br0 network)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: DISK_SIZE" Target="DISK_SIZE" Default="64G" Description="Specify the virtual disk size in GB." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: RAM_SIZE" Target="RAM_SIZE" Default="4G" Description="Specify the amount of RAM allocated in GB." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: CPU_CORES" Target="CPU_CORES" Default="2" Description="Specify the number of cores." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: USERNAME" Target="USERNAME" Default="" Description="Specify the username for Windows." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="Variable: PASSWORD" Target="PASSWORD" Default="" Description="Specify the password for Windows." Type="Variable" Display="always" Required="true" Mask="false"/>
