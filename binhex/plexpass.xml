@@ -15,7 +15,7 @@
     <Support>https://forums.unraid.net/topic/index.php?topic=45845.0/</Support>
     <Project>https://plexpass.tv/</Project>
     <Overview>The plexpass Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free!</Overview>
-    <WebUI>http://[IP]:[PORT:32400]</WebUI>
+    <WebUI>http://[IP]:[PORT:32400]/web</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/plexpass.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/plex-icon.png</Icon>
     <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
