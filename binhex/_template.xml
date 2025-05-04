@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
 <Container version="2">
-	<!-- Find and replace 'APPNAME' with the name of the application -->
-	<!-- Find and replace 'PROJECTURL' with the project URL of the application -->
-	<!-- Find and replace 'OVERVIEWTEXT' with the description of the application -->
-	<!-- Find and replace 'CACATEGORY' with the CA category of the application -->
-	<!-- Find and replace 'THREAD' with the forum ID after creating the Support Thread -->
-	<!-- Find and replace '0000' with the Web UI port of the application -->
+	<!-- Find and replace 'APPNAME' with the name of the application e.g. 'rustrover' -->
+	<!-- Find and replace 'PROJECTURL' with the project URL of the application e.g. 'https://www.jetbrains.com/rust/' -->
+	<!-- Find and replace 'OVERVIEWTEXT' with the description of the application e.g. 'My apps description.' -->
+	<!-- Find and replace 'CACATEGORY' with the CA category of the application  e.g. 'Productivity: Tools:' -->
+	<!-- Find and replace 'THREAD' with the forum ID after creating the Support Thread e.g. '/146085-support-binhex-rustrover' -->
+	<!-- Find and replace '0000' with the Web UI port of the application e.g. '8080' -->
+
     <!-- Remove any unrequired paths, e.g. /data /media -->
     <!-- Remove line containing 'RemoveFromCA' -->
     <!-- Remove these comments -->
@@ -39,7 +40,6 @@
     <Config Name="Path: /media" Target="/media" Default="/mnt/user" Mode="rw" Description="This is the container path to your media files, e.g. movies, tv, music, pictures etc." Type="Path" Display="always" Required="false" Mask="false"/>
 	<Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="This is the container path to your downloaded files or user created content." Type="Path" Display="always" Required="true" Mask="false"/>
 
-    <Config Name="Variable: SHARED_NETWORK" Target="SHARED_NETWORK" Default="no|yes" Description="Specify whether this container is sharing the network with another VPN container, if set to 'yes' then this container will stop when the VPN container is stopped." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: PUID" Target="PUID" Default="99" Description="User ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Group ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Variable: UMASK" Target="UMASK" Default="000" Description="UMASK for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
