@@ -12,7 +12,7 @@
     <GitHub>https://github.com/binhex/arch-emby</GitHub>
     <ReadMe>https://github.com/binhex/documentation</ReadMe>
     <Support>https://forums.unraid.net/topic/index.php?topic=46382.0/</Support>
-    <Project>https://https://emby.media//</Project>
+    <Project>https://https://emby.media/</Project>
     <Overview>Bringing all of your home videos, music, and photos together into one place has never been easier. Your personal Emby Server automatically converts and streams your media on-the-fly to play on any device.</Overview>
     <WebUI>http://[IP]:[PORT:8096]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/emby.xml</TemplateURL>
