@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>binhex-official-byparr</Name>
+	<Beta>false</Beta>
+    <Category>Network:Other Other:</Category>
+    <Repository>ghcr.io/thephaseless/byparr</Repository>
+    <Registry>https://github.com/ThePhaseless/Byparr/pkgs/container/byparr</Registry>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <PrivilegedReq>false</PrivilegedReq>
+    <ExtraParams>--shm-size=2gb</ExtraParams>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/ThePhaseless/Byparr</GitHub>
+    <Support>https://github.com/ThePhaseless/Byparr/issues</Support>
+    <Project>https://github.com/ThePhaseless/Byparr</Project>
+    <Overview>An alternative to FlareSolverr as a drop-in replacement, built with seleniumbase and FastAPI.</Overview>
+    <WebUI></WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/official-byparr.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/flaresolverr-icon.png</Icon>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+    <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+    <Date>1970-01-01</Date>
+    <Changes></Changes>
+    <Config Name="Port: API TCP" Target="8191" Default="8191" Mode="tcp" Description="This is the TCP port that Byparr listens for incoming requests." Type="Port" Display="always" Required="true" Mask="false"/>
+
+    <Config Name="Variable: USE_HEADLESS" Target="USE_HEADLESS" Default="default" Description="Specify whether to run headless or not." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: PROXY" Target="PROXY" Default="" Description="Specify the Proxy to use in format: protocol://username:password@host:port." Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
