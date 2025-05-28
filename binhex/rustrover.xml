@@ -15,7 +15,7 @@
     <Support>https://forums.unraid.net/topic/146085-support-binhex-rustrover/</Support>
     <Project>https://www.jetbrains.com/rust/</Project>
     <Overview>RustRover allows you to write code faster by completing relevant names everywhere in your code, adding details such as missing fields, imports, or trait methods, and generating typical constructs with live templates. While you type, RustRover applies a set of inspections to your code and suggests quick-fixes to resolve any problems automatically. RustRover offers many refactorings that work across the whole codebase.</Overview>
-    <WebUI>http://[IP]:[PORT:6080]/vnc.html?resize=remote&amp;host=[IP]&amp;port=[PORT:6080]&amp;autoconnect=1</WebUI>
+    <WebUI>https://[IP]:[PORT:6080]/vnc.html?resize=remote&amp;host=[IP]&amp;port=[PORT:6080]&amp;autoconnect=1</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/rustrover.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/rustrover-icon.png</Icon>
     <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
@@ -28,6 +28,12 @@
     <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/rustrover" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
 	<Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="This is the container path to your downloaded files or user created content." Type="Path" Display="always" Required="true" Mask="false"/>
 
+    <Config Name="Variable: HTTPS_CERT_PATH" Target="HTTPS_CERT_PATH" Default="" Description="Specify the path to the HTTPS certificate file" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HTTPS_KEY_PATH" Target="HTTPS_KEY_PATH" Default="" Description="Specify the path to the HTTPS key file" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: WEBPAGE_TITLE" Target="WEBPAGE_TITLE" Default="RustRover" Description="Specify the web title shown for the webpage" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: VNC_PASSWORD" Target="VNC_PASSWORD" Default="" Description="Specify the password to access the Web UI, if blank no password will be prompted." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: ENABLE_STARTUP_SCRIPTS" Target="ENABLE_STARTUP_SCRIPTS" Default="no|yes" Description="Specify whether to run a startup script which can in turn install additional packages." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: SHARED_NETWORK" Target="SHARED_NETWORK" Default="no|yes" Description="Specify whether this container is sharing the network with another VPN container, if set to 'yes' then this container will stop when the VPN container is stopped." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: PUID" Target="PUID" Default="99" Description="User ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Group ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Variable: UMASK" Target="UMASK" Default="000" Description="UMASK for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>

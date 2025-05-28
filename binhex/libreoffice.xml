@@ -14,7 +14,7 @@
     <Support>https://forums.unraid.net/topic/61110-support-binhex-libreoffice-fresh/</Support>
     <Project>https://www.libreoffice.org/download/libreoffice-fresh/</Project>
     <Overview>LibreOffice is a free and open source office suite, a project of The Document Foundation. It was forked from OpenOffice.org in 2010, which was an open-sourced version of the earlier StarOffice. The LibreOffice suite comprises programs for word processing, the creation and editing of spreadsheets, slideshows, diagrams and drawings, working with databases, and composing mathematical formulae. It is available in 110 languages.</Overview>
-    <WebUI>http://[IP]:[PORT:6080]/vnc.html?resize=remote&amp;host=[IP]&amp;port=[PORT:6080]&amp;autoconnect=1</WebUI>
+    <WebUI>https://[IP]:[PORT:6080]/vnc.html?resize=remote&amp;host=[IP]&amp;port=[PORT:6080]&amp;autoconnect=1</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/libreoffice.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/libreoffice-icon.png</Icon>
     <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
@@ -28,6 +28,8 @@
     <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/libreoffice" Mode="rw" Description="Specify the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
 	<Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Specify the container path to your downloaded files or user created content." Type="Path" Display="always" Required="true" Mask="false"/>
 
+    <Config Name="Variable: HTTPS_CERT_PATH" Target="HTTPS_CERT_PATH" Default="" Description="Specify the path to the HTTPS certificate file" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HTTPS_KEY_PATH" Target="HTTPS_KEY_PATH" Default="" Description="Specify the path to the HTTPS key file" Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: WEBPAGE_TITLE" Target="WEBPAGE_TITLE" Default="LibreOffice" Description="Specify the web title shown for the webpage" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Variable: VNC_PASSWORD" Target="VNC_PASSWORD" Default="" Description="Specify the password to access the Web UI, if blank no password will be prompted." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: ENABLE_STARTUP_SCRIPTS" Target="ENABLE_STARTUP_SCRIPTS" Default="no|yes" Description="Specify whether to run a startup script which can in turn install additional packages." Type="Variable" Display="always" Required="false" Mask="false"/>
