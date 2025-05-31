@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>binhex-official-purgarr</Name>
+	<Beta>false</Beta>
+    <Category>Network:Other Other:</Category>
+    <Repository>ghcr.io/steveharsant/purgarr</Repository>
+    <Registry>https://github.com/steveharsant/purgarr/pkgs/container/purgarr</Registry>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <PrivilegedReq>false</PrivilegedReq>
+    <ExtraParams></ExtraParams>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/steveharsant/purgarr</GitHub>
+    <Support>https://github.com/steveharsant/purgarr/issues</Support>
+    <Project>https://github.com/steveharsant/purgarr</Project>
+    <Overview>Purgarr is a lightweight companion to your Arr stack designed to keep your torrent queue clean and ready for high quality downloads. Features Include: Cleans your torrent client of media imported by Sonarr and Radarr, Detects and removes stalled torrents, Adds stalled torrents to Sonarr's and Radarr's blocklist, Triggers a search to replace low quality torrents.</Overview>
+    <WebUI></WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/official-purgarr.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/official-purgarr-icon.png</Icon>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+    <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+    <Date>1970-01-01</Date>
+    <Changes></Changes>
+    <Config Name="Variable: LOG_LEVEL" Target="LOG_LEVEL" Default="info" Description="Specify the logging level for the application." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: PURGE_STALLED" Target="PURGE_STALLED" Default="True" Description="Specify whether to purge stalled torrents." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: PURGE_STALLED_INTERVAL" Target="PURGE_STALLED_INTERVAL" Default="300" Description="Specify the interval for purging stalled torrents in seconds." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: BLOCK_STALLED_TORRENTS" Target="BLOCK_STALLED_TORRENTS" Default="True" Description="Specify whether to block stalled torrents." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: PURGE_IMPORTED" Target="PURGE_IMPORTED" Default="True" Description="Specify whether to purge imported torrents." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: PURGE_IMPORTED_INTERVAL" Target="PURGE_IMPORTED_INTERVAL" Default="600" Description="Specify the interval for purging imported torrents in seconds." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: DELETE_FILES" Target="DELETE_FILES" Default="True" Description="Specify whether to delete files after processing." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: RETRY_SEARCH" Target="RETRY_SEARCH" Default="True" Description="Specify whether to retry search for stalled torrents." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: TORRENT_CLIENT" Target="TORRENT_CLIENT" Default="qbittorrent" Description="Specify the torrent client to use." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: TORRENT_AGE" Target="TORRENT_AGE" Default="5" Description="Specify the age of torrents to consider for purging in minutes." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: QBIT_URL" Target="QBIT_URL" Default="" Description="Specify the IP address or hostname to QBittorent webUI." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: QBIT_USER" Target="QBIT_USER" Default="admin" Description="Specify the username for QBittorent webUI." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: QBIT_PASSWORD" Target="QBIT_PASSWORD" Default="" Description="Specify the password for QBittorent webUI." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: QBIT_TOKEN_REFRESH_INTERVAL" Target="QBIT_TOKEN_REFRESH_INTERVAL" Default="600" Description="Specify the interval for refreshing the QBittorrent API token in seconds." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: SONARR_API_KEY" Target="SONARR_API_KEY" Default="" Description="Specify the API key for Sonarr." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: SONARR_LABELS" Target="SONARR_LABELS" Default="tv-sonarr" Description="Specify the labels to apply to Sonarr." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: SONARR_IMPORTED_LABEL" Target="SONARR_IMPORTED_LABEL" Default="sonarr-imported" Description="Specify the label to apply to imported episodes in Sonarr." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: SONARR_URL" Target="SONARR_URL" Default="" Description="Specify the URL for Sonarr." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: RADARR_API_KEY" Target="RADARR_API_KEY" Default="s" Description="Specify the API key for Radarr." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: RADARR_LABELS" Target="RADARR_LABELS" Default="radarr" Description="Specify the labels to apply to Radarr." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: RADARR_URL" Target="RADARR_URL" Default="" Description="Specify the URL for Radarr." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: RADARR_IMPORTED_LABEL" Target="RADARR_IMPORTED_LABEL" Default="radarr-imported" Description="Specify the labels to apply to Radarr." Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
