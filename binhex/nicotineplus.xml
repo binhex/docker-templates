@@ -35,6 +35,8 @@
     <Config Name="Variable: WEBPAGE_TITLE" Target="WEBPAGE_TITLE" Default="Nicotine+" Description="Specify the web title shown for the webpage" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Variable: VNC_PASSWORD" Target="VNC_PASSWORD" Default="" Description="Specify the password for the VNC interface" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: ENABLE_STARTUP_SCRIPTS" Target="ENABLE_STARTUP_SCRIPTS" Default="no|yes" Description="Specify whether to run a script located in '/config/home/scripts/' on startup" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: CONFIGURE_INCOMING_PORT" Target="CONFIGURE_INCOMING_PORT" Default="no|yes" Description="Specify whether to attempt to identify and configure the applications listening port when connected to the gluetun network." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: APPLICATION_NAME" Target="APPLICATION_NAME" Default="nicotineplus" Description="Specify the name of the application to configure with the VPN incoming port." Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: PUID" Target="PUID" Default="99" Description="User ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Group ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Variable: UMASK" Target="UMASK" Default="000" Description="UMASK for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
