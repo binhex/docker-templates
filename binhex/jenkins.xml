@@ -29,7 +29,6 @@
 
     <Config Name="Variable: JAVA_ARGS" Target="JAVA_ARGS" Default="-Xmx512m" Description="Specify the Java arguments for Jenkins." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: JAVA_OPTS" Target="JAVA_OPTS" Default="-Dhudson.footerURL=http://mycompany.com" Description="Specify the Java options for Jenkins." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="Variable: SHARED_NETWORK" Target="SHARED_NETWORK" Default="no|yes" Description="Specify whether this container is sharing the network with another VPN container, if set to 'yes' then this container will stop when the VPN container is stopped." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: PUID" Target="PUID" Default="99" Description="User ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Group ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Variable: UMASK" Target="UMASK" Default="000" Description="UMASK for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>

@@ -39,7 +39,6 @@
     <Config Name="Variable: WEBUI_PASS" Target="WEBUI_PASS" Default="" Description="Specify the Web UI password." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="Variable: WEBUI_CONSOLE_TITLE" Target="WEBUI_CONSOLE_TITLE" Default="Minecraft Bedrock" Description="Specify the Web UI console title." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: STARTUP_CMD" Target="STARTUP_CMD" Default="" Description="Specify the Minecraft command you want to run on startup of the server." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="Variable: SHARED_NETWORK" Target="SHARED_NETWORK" Default="no|yes" Description="Specify whether this container is sharing the network with another VPN container, if set to 'yes' then this container will stop when the VPN container is stopped." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: PUID" Target="PUID" Default="99" Description="User ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Group ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Variable: UMASK" Target="UMASK" Default="000" Description="UMASK for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
