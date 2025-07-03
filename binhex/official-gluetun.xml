@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>binhex-official-gluetun</Name>
+    <Beta>false</Beta>
+    <Category>Network:VPN Tools:</Category>
+    <Repository>qmcgaw/gluetun</Repository>
+    <Registry>https://github.com/qdm12/gluetun/pkgs/container/gluetun</Registry>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <PrivilegedReq>false</PrivilegedReq>
+    <ExtraParams>--cap-add=NET_ADMIN --device /dev/net/tun:/dev/net/tun</ExtraParams>
+    <Shell>sh</Shell>
+    <GitHub>https://github.com/qdm12/gluetun</GitHub>
+    <Support>https://github.com/qdm12/gluetun/issues</Support>
+    <Project>https://github.com/qdm12/gluetun</Project>
+    <Overview>Gluetun is a lightweight swiss-knife-like VPN client to tunnel to Cyberghost, ExpressVPN, FastestVPN, HideMyAss, IPVanish, IVPN, Mullvad, NordVPN, Perfect Privacy, Privado, PrivateVPN, ProtonVPN, PureVPN, Surfshark, TorGuard, VyprVPN, Windscribe servers using OpenVPN or Wireguard, iptables killswitch, DNS over TLS, ShadowSocks, and an HTTP proxy server.</Overview>
+    <WebUI>http://[IP]:[PORT:8000]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/official-gluetun.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/gluetun-icon.png</Icon>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+    <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+    <Date>1970-01-01</Date>
+    <Changes></Changes>
+
+		<!-- Container Paths -->
+		<Config Name="Path: /gluetun" Target="/gluetun" Default="/mnt/cache/appdata/gluetun" Mode="rw" Description="This is the container path to store gluetun related configuration." Type="Path" Display="always" Required="false" Mask="false"/>
+
+		<!-- Container Ports -->
+    <Config Name="Port: HTTP Control Server Port" Target="8000" Default="8000" Mode="tcp" Description="HTTP Control Server port" Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: HTTP Proxy Port" Target="8888" Default="8888" Mode="tcp" Description="HTTP Proxy port (when HTTPPROXY=on)" Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: Shadowsocks Port TCP" Target="8388" Default="8388" Mode="tcp" Description="Shadowsocks port TCP (when SHADOWSOCKS=on)" Type="Port" Display="always" Required="false" Mask="false"/>
+    <Config Name="Port: Shadowsocks Port UDP" Target="8388" Default="8388" Mode="udp" Description="Shadowsocks port UDP (when SHADOWSOCKS=on)" Type="Port" Display="always" Required="false" Mask="false"/>
+
+    <!-- Core VPN Configuration -->
+    <Config Name="Variable: VPN_SERVICE_PROVIDER" Target="VPN_SERVICE_PROVIDER" Default="private internet access|airvpn|cyberghost|expressvpn|fastestvpn|hidemyass|ipvanish|ivpn|mullvad|nordvpn|perfect privacy|privado|privatevpn|protonvpn|purevpn|slickvpn|surfshark|torguard|vpnsecure|vpn unlimited|vyprvpn|wevpn|windscribe|custom" Description="Specify a supported VPN provider to use" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: VPN_TYPE" Target="VPN_TYPE" Default="openvpn|wireguard" Description="VPN protocol to use. Not all providers support Wireguard." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: VPN_INTERFACE" Target="VPN_INTERFACE" Default="tun0|en0" Description="Specify a custom network interface name to use" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+    <!-- OpenVPN Configuration -->
+    <Config Name="Variable: OPENVPN_USER" Target="OPENVPN_USER" Default="" Description="OpenVPN username (required for OpenVPN)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: OPENVPN_PASSWORD" Target="OPENVPN_PASSWORD" Default="" Description="OpenVPN password (required for OpenVPN)" Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="Variable: OPENVPN_PROTOCOL" Target="OPENVPN_PROTOCOL" Default="udp|tcp" Description="Network protocol to use for OpenVPN" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: OPENVPN_VERSION" Target="OPENVPN_VERSION" Default="2.6|2.5" Description="Set the OpenVPN version to run" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: OPENVPN_ENDPOINT_IP" Target="OPENVPN_ENDPOINT_IP" Default="" Description="Specify a target VPN server IP address to use" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: OPENVPN_ENDPOINT_PORT" Target="OPENVPN_ENDPOINT_PORT" Default="" Description="Specify a target VPN server port number to use" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: OPENVPN_VERBOSITY" Target="OPENVPN_VERBOSITY" Default="1|2|3|4|5|6" Description="OpenVPN verbosity level (1-6)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: OPENVPN_FLAGS" Target="OPENVPN_FLAGS" Default="" Description="Space delimited OpenVPN flags to pass to openvpn" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: OPENVPN_ROOT" Target="OPENVPN_ROOT" Default="no|yes" Description="Run OpenVPN as root" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: OPENVPN_CIPHERS" Target="OPENVPN_CIPHERS" Default="" Description="Specify a custom cipher to use (e.g. aes-256-gcm)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: OPENVPN_AUTH" Target="OPENVPN_AUTH" Default="" Description="Specify a custom auth algorithm to use (e.g. sha256)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: OPENVPN_MSSFIX" Target="OPENVPN_MSSFIX" Default="0" Description="Set the MSS fix parameter (0-9999, 0 to use defaults)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: OPENVPN_CUSTOM_CONFIG" Target="OPENVPN_CUSTOM_CONFIG" Default="" Description="Path to custom OpenVPN configuration file for custom provider" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+    <!-- Wireguard Configuration -->
+    <Config Name="Variable: WIREGUARD_PRIVATE_KEY" Target="WIREGUARD_PRIVATE_KEY" Default="" Description="Wireguard client private key (required for Wireguard)" Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="Variable: WIREGUARD_ADDRESSES" Target="WIREGUARD_ADDRESSES" Default="" Description="Wireguard IP network interface address (xx.xx.xx.xx/xx)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: WIREGUARD_PUBLIC_KEY" Target="WIREGUARD_PUBLIC_KEY" Default="" Description="Wireguard server public key" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: WIREGUARD_ENDPOINT_IP" Target="WIREGUARD_ENDPOINT_IP" Default="" Description="Wireguard server endpoint IP address" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: WIREGUARD_ENDPOINT_PORT" Target="WIREGUARD_ENDPOINT_PORT" Default="" Description="Wireguard server endpoint port number" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: WIREGUARD_PRESHARED_KEY" Target="WIREGUARD_PRESHARED_KEY" Default="" Description="Wireguard pre-shared key" Type="Variable" Display="advanced" Required="false" Mask="true"/>
+    <Config Name="Variable: WIREGUARD_ALLOWED_IPS" Target="WIREGUARD_ALLOWED_IPS" Default="0.0.0.0/0,::/0" Description="Wireguard peer allowed IPs (CSV format)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: WIREGUARD_IMPLEMENTATION" Target="WIREGUARD_IMPLEMENTATION" Default="auto|kernelspace|userspace" Description="Wireguard implementation to use" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: WIREGUARD_MTU" Target="WIREGUARD_MTU" Default="1400" Description="Wireguard MTU (1-65535)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: WIREGUARD_PERSISTENT_KEEPALIVE_INTERVAL" Target="WIREGUARD_PERSISTENT_KEEPALIVE_INTERVAL" Default="" Description="Wireguard persistent keepalive interval (e.g. 25s)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+    <!-- Server Selection -->
+    <Config Name="Variable: SERVER_COUNTRIES" Target="SERVER_COUNTRIES" Default="" Description="Comma separated list of countries" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: SERVER_REGIONS" Target="SERVER_REGIONS" Default="" Description="Comma separated list of regions" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: SERVER_CITIES" Target="SERVER_CITIES" Default="" Description="Comma separated list of cities" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: SERVER_HOSTNAMES" Target="SERVER_HOSTNAMES" Default="" Description="Comma separated list of server hostnames" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: SERVER_NAMES" Target="SERVER_NAMES" Default="" Description="Comma separated list of server names" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: SERVER_CATEGORIES" Target="SERVER_CATEGORIES" Default="" Description="Comma separated list of server categories (NordVPN)" Type="Variable" Display="always" Required="false" Mask="false"/>
+
+    <!-- Port Forwarding -->
+    <Config Name="Variable: VPN_PORT_FORWARDING" Target="VPN_PORT_FORWARDING" Default="off|on" Description="Enable custom port forwarding code for supported providers" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: VPN_PORT_FORWARDING_PROVIDER" Target="VPN_PORT_FORWARDING_PROVIDER" Default="" Description="Choose the custom port forwarding code to use" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: VPN_PORT_FORWARDING_STATUS_FILE" Target="VPN_PORT_FORWARDING_STATUS_FILE" Default="/gluetun/forwarded_port" Description="File path to use for writing the forwarded port obtained" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: VPN_PORT_FORWARDING_LISTENING_PORT" Target="VPN_PORT_FORWARDING_LISTENING_PORT" Default="" Description="Port redirection for the VPN server side port forwarded" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+    <!-- Firewall Configuration -->
+    <Config Name="Variable: FIREWALL_VPN_INPUT_PORTS" Target="FIREWALL_VPN_INPUT_PORTS" Default="" Description="Comma separated list of ports to allow from the VPN server side" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: FIREWALL_INPUT_PORTS" Target="FIREWALL_INPUT_PORTS" Default="" Description="Comma separated list of ports to allow through the default interface" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: FIREWALL_DEBUG" Target="FIREWALL_DEBUG" Default="off|on" Description="Prints every firewall related command (debugging only)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: FIREWALL_OUTBOUND_SUBNETS" Target="FIREWALL_OUTBOUND_SUBNETS" Default="" Description="Comma separated subnets that Gluetun is allowed to access" Type="Variable" Display="always" Required="false" Mask="false"/>
+
+    <!-- DNS Configuration -->
+    <Config Name="Variable: DOT" Target="DOT" Default="on" Description="Activate DNS over TLS with Unbound" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: DOT_PROVIDERS" Target="DOT_PROVIDERS" Default="cloudflare|google|quad9|quadrant|cleanbrowsing" Description="DNS over TLS providers (cloudflare, google, quad9, etc.)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: DOT_CACHING" Target="DOT_CACHING" Default="on|off" Description="Unbound caching" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+		<Config Name="Variable: DOT_PRIVATE_ADDRESS" Target="DOT_PRIVATE_ADDRESS" Default="127.0.0.1/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,169.254.0.0/16,::1/128,fc00::/7,fe80::/10,::ffff:7f00:1/104,::ffff:a00:0/104,::ffff:a9fe:0/112,::ffff:ac10:0/108,::ffff:c0a8:0/112" Description="All private CIDRs ranges. Comma separated list of CIDRs or single IP addresses Unbound won't resolve to. Note that the default setting prevents DNS rebinding" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: DOT_IPV6" Target="DOT_IPV6" Default="off|on" Description="DNS IPv6 resolution" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: DNS_UPDATE_PERIOD" Target="DNS_UPDATE_PERIOD" Default="24h" Description="Period to update block lists and restart Unbound" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: BLOCK_MALICIOUS" Target="BLOCK_MALICIOUS" Default="on|off" Description="Block malicious hostnames and IPs with Unbound" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: BLOCK_SURVEILLANCE" Target="BLOCK_SURVEILLANCE" Default="off|on" Description="Block surveillance hostnames and IPs with Unbound" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: BLOCK_ADS" Target="BLOCK_ADS" Default="off|on" Description="Block ads hostnames and IPs with Unbound" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: UNBLOCK" Target="UNBLOCK" Default="" Description="Comma separated list of domain names to leave unblocked" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: DNS_ADDRESS" Target="DNS_ADDRESS" Default="127.0.0.1" Description="IP address to use as DNS resolver" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: DNS_KEEP_NAMESERVER" Target="DNS_KEEP_NAMESERVER" Default="off|on" Description="Keep /etc/resolv.conf untouched" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+    <!-- HTTP Proxy -->
+    <Config Name="Variable: HTTPPROXY" Target="HTTPPROXY" Default="off|on" Description="Enable the internal HTTP proxy" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: HTTPPROXY_LOG" Target="HTTPPROXY_LOG" Default="off|on" Description="Logs every tunnel requests" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HTTPPROXY_LISTENING_ADDRESS" Target="HTTPPROXY_LISTENING_ADDRESS" Default=":8888" Description="Internal listening address for the HTTP proxy" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HTTPPROXY_USER" Target="HTTPPROXY_USER" Default="" Description="Username to use to connect to the HTTP proxy" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HTTPPROXY_PASSWORD" Target="HTTPPROXY_PASSWORD" Default="" Description="Password to use to connect to the HTTP proxy" Type="Variable" Display="advanced" Required="false" Mask="true"/>
+    <Config Name="Variable: HTTPPROXY_STEALTH" Target="HTTPPROXY_STEALTH" Default="off|on" Description="Stealth mode means HTTP proxy headers are not added" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+    <!-- Shadowsocks -->
+    <Config Name="Variable: SHADOWSOCKS" Target="SHADOWSOCKS" Default="off|on" Description="Enable the internal Shadowsocks proxy" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: SHADOWSOCKS_LOG" Target="SHADOWSOCKS_LOG" Default="off|on" Description="Enable Shadowsocks logging" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: SHADOWSOCKS_LISTENING_ADDRESS" Target="SHADOWSOCKS_LISTENING_ADDRESS" Default=":8388" Description="Internal listening address for Shadowsocks" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: SHADOWSOCKS_PASSWORD" Target="SHADOWSOCKS_PASSWORD" Default="" Description="Password to use to connect to Shadowsocks" Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="Variable: SHADOWSOCKS_CIPHER" Target="SHADOWSOCKS_CIPHER" Default="chacha20-ietf-poly1305|aes-128-gcm|aes-256-gcm" Description="AEAD Cipher to use for Shadowsocks" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+    <!-- Control Server -->
+    <Config Name="Variable: HTTP_CONTROL_SERVER_ADDRESS" Target="HTTP_CONTROL_SERVER_ADDRESS" Default=":8000" Description="Listening address for the HTTP control server" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HTTP_CONTROL_SERVER_LOG" Target="HTTP_CONTROL_SERVER_LOG" Default="on|off" Description="Enable logging of HTTP requests" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HTTP_CONTROL_SERVER_AUTH_CONFIG_FILEPATH" Target="HTTP_CONTROL_SERVER_AUTH_CONFIG_FILEPATH" Default="" Description="Path to a TOML file containing authentication configuration" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+    <!-- Health Check -->
+    <Config Name="Variable: HEALTH_TARGET_ADDRESS" Target="HEALTH_TARGET_ADDRESS" Default="cloudflare.com:443" Description="Address to ping on every internal health check" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HEALTH_VPN_DURATION_INITIAL" Target="HEALTH_VPN_DURATION_INITIAL" Default="6s" Description="Initial duration to wait for the VPN to be ready" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HEALTH_VPN_DURATION_ADDITION" Target="HEALTH_VPN_DURATION_ADDITION" Default="5s" Description="Additional duration to add for each consecutive VPN failure" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HEALTH_SUCCESS_WAIT_DURATION" Target="HEALTH_SUCCESS_WAIT_DURATION" Default="5s" Description="Duration to wait after a success check" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HEALTH_SERVER_ADDRESS" Target="HEALTH_SERVER_ADDRESS" Default="127.0.0.1:9999" Description="Internal health check server listening address" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+    <!-- Updater -->
+    <Config Name="Variable: UPDATER_PERIOD" Target="UPDATER_PERIOD" Default="0" Description="Period to update VPN servers data (0 to disable)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: UPDATER_MIN_RATIO" Target="UPDATER_MIN_RATIO" Default="0.8" Description="Ratio of servers to be found for update to succeed" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: UPDATER_VPN_SERVICE_PROVIDERS" Target="UPDATER_VPN_SERVICE_PROVIDERS" Default="" Description="List of providers to update servers data for" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+    <!-- Storage -->
+    <Config Name="Variable: STORAGE_FILEPATH" Target="STORAGE_FILEPATH" Default="/gluetun/servers.json" Description="Path of servers.json file (empty to disable caching)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+    <!-- General Configuration -->
+		<Config Name="Variable: TZ" Target="TZ" Default="" Description="Specify a timezone to use to have correct log times. i.e. Europe/London" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: PUID" Target="PUID" Default="99" Description="User ID to run as non root" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Group ID to run as non root" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: PUBLICIP_ENABLED" Target="PUBLICIP_ENABLED" Default="true" Description="Check for public IP address information on VPN connection" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: PUBLICIP_API" Target="PUBLICIP_API" Default="ipinfo" Description="Public IP echo service API to use" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: PUBLICIP_API_TOKEN" Target="PUBLICIP_API_TOKEN" Default="" Description="Optional API token for the public IP echo service" Type="Variable" Display="advanced" Required="false" Mask="true"/>
+    <Config Name="Variable: PUBLICIP_FILE" Target="PUBLICIP_FILE" Default="/gluetun/ip" Description="Filepath to store the public IP address assigned" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: VERSION_INFORMATION" Target="VERSION_INFORMATION" Default="on" Description="Logs a message indicating if a newer version is available" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
