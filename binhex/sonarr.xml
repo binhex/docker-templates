@@ -8,7 +8,7 @@
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <PrivilegedReq>false</PrivilegedReq>
-    <ExtraParams></ExtraParams>
+    <ExtraParams>--restart=always</ExtraParams>
     <Shell>bash</Shell>
     <GitHub>https://github.com/binhex/arch-sonarr</GitHub>
     <ReadMe>https://github.com/binhex/documentation</ReadMe>

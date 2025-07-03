@@ -7,7 +7,7 @@
     <Registry>https://github.com/binhex/arch-deluge/pkgs/container/arch-deluge</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
-    <ExtraParams></ExtraParams>
+    <ExtraParams>--restart=always</ExtraParams>
     <Shell>bash</Shell>
     <GitHub>https://github.com/binhex/arch-deluge</GitHub>
     <ReadMe>https://github.com/binhex/documentation</ReadMe>

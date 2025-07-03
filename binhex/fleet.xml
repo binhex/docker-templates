@@ -7,7 +7,7 @@
     <Registry>https://github.com/binhex/arch-fleet/pkgs/container/arch-fleet</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
-    <ExtraParams></ExtraParams>
+    <ExtraParams>--restart=always</ExtraParams>ys</ExtraParams>
     <Shell>bash</Shell>
     <GitHub>https://github.com/binhex/arch-fleet</GitHub>
     <ReadMe>https://github.com/binhex/documentation</ReadMe>

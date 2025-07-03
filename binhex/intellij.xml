@@ -7,7 +7,7 @@
     <Registry>https://github.com/binhex/arch-intellij/pkgs/container/arch-intellij</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
-    <ExtraParams></ExtraParams>
+    <ExtraParams>--restart=always</ExtraParams>ys</ExtraParams>
     <Shell>bash</Shell>
     <GitHub>https://github.com/binhex/arch-intellij</GitHub>
     <ReadMe>https://github.com/binhex/documentation</ReadMe>
