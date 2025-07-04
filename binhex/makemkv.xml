@@ -7,7 +7,7 @@
     <Registry>https://github.com/binhex/arch-makemkv/pkgs/container/arch-makemkv</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
-    <ExtraParams>--restart=always</ExtraParams>ys</ExtraParams>
+    <ExtraParams>--restart=always</ExtraParams>
     <Shell>bash</Shell>
     <GitHub>https://github.com/binhex/arch-makemkv</GitHub>
     <ReadMe>https://github.com/binhex/documentation</ReadMe>
