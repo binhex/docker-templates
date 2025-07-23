@@ -38,6 +38,7 @@
     <Config Name="Variable: VPN_INTERFACE" Target="VPN_INTERFACE" Default="tun0|en0" Description="Specify a custom network interface name to use" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 
     <!-- OpenVPN Configuration -->
+    <Config Name="Variable: PRIVATE_INTERNET_ACCESS_OPENVPN_ENCRYPTION_PRESET" Target="PRIVATE_INTERNET_ACCESS_OPENVPN_ENCRYPTION_PRESET" Default="normal|strong|none" Description="Encryption preset, 'none' disables the cipher and auth OpenVPN options (not recommended)." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: OPENVPN_USER" Target="OPENVPN_USER" Default="" Description="OpenVPN username (required for OpenVPN)" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: OPENVPN_PASSWORD" Target="OPENVPN_PASSWORD" Default="" Description="OpenVPN password (required for OpenVPN)" Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="Variable: OPENVPN_PROTOCOL" Target="OPENVPN_PROTOCOL" Default="udp|tcp" Description="Network protocol to use for OpenVPN" Type="Variable" Display="always" Required="false" Mask="false"/>
