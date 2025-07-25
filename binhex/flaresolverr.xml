@@ -14,7 +14,7 @@
     <Support>https://forums.unraid.net/topic/155853-support-binhex-flaresolverr/</Support>
     <Project>https://github.com/Flaresolverr/Flaresolverr</Project>
     <Overview>FlareSolverr starts a proxy server, and it waits for user requests in an idle state using few resources. When some request arrives, it uses Selenium with the undetected-chromedriver to create a web browser (Chrome). It opens the URL with user parameters and waits until the Cloudflare challenge is solved (or timeout). The HTML code and the cookies are sent back to the user, and those cookies can be used to bypass Cloudflare using other HTTP clients.</Overview>
-    <WebUI>http://[IP]:[PORT:8191]/v1</WebUI>
+    <WebUI></WebUI>
     <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/flaresolverr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/flaresolverr-icon.png</Icon>
     <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
@@ -22,7 +22,7 @@
     <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
     <Date>1970-01-01</Date>
     <Changes></Changes>
-    <Config Name="Port: Web Interface" Target="8191" Default="8191" Mode="tcp" Description="This is the Web UI port for the application." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: Flaresolverr" Target="8191" Default="8191" Mode="tcp" Description="This is the port for the application." Type="Port" Display="always" Required="true" Mask="false"/>
 
     <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/flaresolverr" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
 
