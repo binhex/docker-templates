@@ -31,7 +31,7 @@
     <Config Name="Variable: QBIT_DRY_RUN" Target="QBIT_DRY_RUN" Default="0" Description="Set to 1 for testing mode (no actual deletions)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 
     <Config Name="Variable: WATCH_POLL_SECONDS" Target="WATCH_POLL_SECONDS" Default="3.0" Description="How often to check qBittorrent for new torrents (seconds)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-    <Config Name="Variable: WATCH_PROCESS_EXISTING_AT_START" Target="WATCH_PROCESS_EXISTING_AT_START" Default="0" Description="Process existing torrents when container starts (0 or 1)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: WATCH_PROCESS_EXISTING_AT_START" Target="WATCH_PROCESS_EXISTING_AT_START" Default="0" Description="Process existing torrents when container starts (0 or 1)" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: WATCH_RESCAN_KEYWORD" Target="WATCH_RESCAN_KEYWORD" Default="rescan" Description="Keyword in category/tags to force reprocessing" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 
     <Config Name="Variable: ENABLE_PREAIR_CHECK" Target="ENABLE_PREAIR_CHECK" Default="1" Description="Enable pre-air checking (0 or 1)" Type="Variable" Display="always" Required="false" Mask="false"/>
