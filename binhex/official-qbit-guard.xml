@@ -3,16 +3,16 @@
     <Name>binhex-official-qbit-guard</Name>
 	<Beta>false</Beta>
     <Category>Downloaders: Other:</Category>
-    <Repository>ghcr.io/GEngines/qbit-guard</Repository>
-    <Registry>https://github.com/GEngines/qbit-guard/pkgs/container/qbit-guard</Registry>
+    <Repository>ghcr.io/gengines/qbit-guard</Repository>
+    <Registry>https://github.com/gengines/qbit-guard/pkgs/container/qbit-guard</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <PrivilegedReq>false</PrivilegedReq>
     <ExtraParams></ExtraParams>
     <Shell>bash</Shell>
-    <GitHub>https://github.com/GEngines/qbit-guard</GitHub>
-    <Support>https://github.com/GEngines/qbit-guard/issues</Support>
-    <Project>https://github.com/GEngines/qbit-guard</Project>
+    <GitHub>https://github.com/gengines/qbit-guard</GitHub>
+    <Support>https://github.com/gengines/qbit-guard/issues</Support>
+    <Project>https://github.com/gengines/qbit-guard</Project>
     <Overview>A zero-dependency Python guard for qBittorrent that blocks pre-air TV episodes (Sonarr), deletes ISO/BDMV-only torrents, and auto-blocklists bad releases in Sonarr/Radarr (with dedupe + queue failover). Runs on "torrent added", fetches metadata safely, and logs everything to stdout.</Overview>
     <WebUI></WebUI>
     <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/official-qbit-guard.xml</TemplateURL>
