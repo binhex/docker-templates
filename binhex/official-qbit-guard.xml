@@ -3,7 +3,7 @@
     <Name>binhex-official-qbit-guard</Name>
 	<Beta>false</Beta>
     <Category>Downloaders: Other:</Category>
-    <Repository>GEngines/qbit-guard</Repository>
+    <Repository>ghcr.io/GEngines/qbit-guard</Repository>
     <Registry>https://github.com/GEngines/qbit-guard/pkgs/container/qbit-guard</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
@@ -71,11 +71,11 @@
     <Config Name="Variable: METADATA_MAX_WAIT_SEC" Target="METADATA_MAX_WAIT_SEC" Default="0" Description="Max wait for metadata resolution (0 = infinite)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: METADATA_DOWNLOAD_BUDGET_BYTES" Target="METADATA_DOWNLOAD_BUDGET_BYTES" Default="0" Description="Max bytes to download during metadata wait (0 = no limit)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 
-    <Config Name="Variable: GUARD_EXT_STRATEGY" Target="GUARD_EXT_STRATEGY" Default="block" Description="Extension strategy: block or allow" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-    <Config Name="Variable: GUARD_ALLOWED_EXTS" Target="GUARD_ALLOWED_EXTS" Default="" Description="Comma-separated list of allowed extensions (for allow mode)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-    <Config Name="Variable: GUARD_BLOCKED_EXTS" Target="GUARD_BLOCKED_EXTS" Default="" Description="Comma-separated list of blocked extensions (overrides defaults in block mode)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-    <Config Name="Variable: GUARD_EXT_DELETE_IF_ALL_BLOCKED" Target="GUARD_EXT_DELETE_IF_ALL_BLOCKED" Default="1" Description="Delete only if all files are disallowed (0 or 1)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-    <Config Name="Variable: GUARD_EXT_DELETE_IF_ANY_BLOCKED" Target="GUARD_EXT_DELETE_IF_ANY_BLOCKED" Default="0" Description="Delete if any file is disallowed (0 or 1)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: GUARD_EXT_STRATEGY" Target="GUARD_EXT_STRATEGY" Default="block" Description="Extension strategy: block or allow" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: GUARD_ALLOWED_EXTS" Target="GUARD_ALLOWED_EXTS" Default="" Description="Comma-separated list of allowed extensions (for allow mode)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: GUARD_BLOCKED_EXTS" Target="GUARD_BLOCKED_EXTS" Default="" Description="Comma-separated list of blocked extensions (overrides defaults in block mode)" Type="always" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: GUARD_EXT_DELETE_IF_ALL_BLOCKED" Target="GUARD_EXT_DELETE_IF_ALL_BLOCKED" Default="1" Description="Delete only if all files are disallowed (0 or 1)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: GUARD_EXT_DELETE_IF_ANY_BLOCKED" Target="GUARD_EXT_DELETE_IF_ANY_BLOCKED" Default="0" Description="Delete if any file is disallowed (0 or 1)" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: GUARD_EXT_VIOLATION_TAG" Target="GUARD_EXT_VIOLATION_TAG" Default="trash:ext" Description="Tag applied to torrents deleted for extension violations" Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: GUARD_DISC_EXTS" Target="GUARD_DISC_EXTS" Default="iso,img,mdf,nrg,cue,bin" Description="Disc image extensions" Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: GUARD_EXTS_FILE" Target="GUARD_EXTS_FILE" Default="" Description="Path to JSON config file (optional)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
