@@ -23,8 +23,8 @@
     <Date>1970-01-01</Date>
     <Changes></Changes>
     <Config Name="Variable: QBIT_HOST" Target="QBIT_HOST" Default="http://127.0.0.1:8080" Description="qBittorrent WebUI URL" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="Variable: QBIT_USER" Target="QBIT_USER" Default="admin" Description="qBittorrent WebUI username" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="Variable: QBIT_PASS" Target="QBIT_PASS" Default="adminadmin" Description="qBittorrent WebUI password" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="Variable: QBIT_USER" Target="QBIT_USER" Default="admin" Description="qBittorrent WebUI username" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: QBIT_PASS" Target="QBIT_PASS" Default="adminadmin" Description="qBittorrent WebUI password" Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="Variable: QBIT_ALLOWED_CATEGORIES" Target="QBIT_ALLOWED_CATEGORIES" Default="radarr,tv-sonarr" Description="Comma-separated list of categories to process" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: QBIT_DELETE_FILES" Target="QBIT_DELETE_FILES" Default="true" Description="Delete files when removing torrents" Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: QBIT_IGNORE_TLS" Target="QBIT_IGNORE_TLS" Default="0" Description="Set to 1 to ignore SSL certificate errors" Type="Variable" Display="advanced" Required="false" Mask="false"/>
