@@ -14,7 +14,7 @@
     <ReadMe>https://github.com/binhex/documentation</ReadMe>
     <Support>https://forums.unraid.net/topic/116459-support-binhex-readarr/</Support>
     <Project>https://github.com/Readarr/Readarr</Project>
-    <Overview>Readarr is an ebook and audiobook collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new books from your favorite authors and will grab, sort and rename them. Note that only one type of a given book is supported. If you want both an audiobook and ebook of a given book you will need multiple instances.</Overview>
+    <Overview>IMPORTANT - Development of the application has stopped and the repository has been archived. Readarr is an ebook and audiobook collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new books from your favorite authors and will grab, sort and rename them. Note that only one type of a given book is supported. If you want both an audiobook and ebook of a given book you will need multiple instances.</Overview>
     <WebUI>http://[IP]:[PORT:8787]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/readarr.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/readarr-icon.png</Icon>
