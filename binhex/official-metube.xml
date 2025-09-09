@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>binhex-official-metube</Name>
+	<Beta>false</Beta>
+    <Category>Downloaders:</Category>
+    <Repository>ghcr.io/alexta69/metube</Repository>
+    <Registry>https://github.com/alexta69/metube/pkgs/container/metube</Registry>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <PrivilegedReq>false</PrivilegedReq>
+    <ExtraParams></ExtraParams>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/alexta69/metube</GitHub>
+    <Support>https://github.com/alexta69/metube/issues</Support>
+    <Project>https://github.com/alexta69/metube</Project>
+    <Overview>MeTube is a web GUI for youtube-dl with playlist support. Allows you to download videos from YouTube and dozens of other sites. Features: Download videos from YouTube, Vimeo, and many other sites, Queue downloads and track progress, Playlist support, Dark/light themes, Custom output directories, Audio-only downloads, and much more.</Overview>
+    <WebUI>http://[IP]:[PORT:8333]/</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/official-metube.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/official-metube-icon.png</Icon>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+    <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+    <Date>1970-01-01</Date>
+    <Changes></Changes>
+
+    <Config Name="Port: Web Interface" Target="8081" Default="8333" Mode="tcp" Description="This is the TCP port for the WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
+
+    <Config Name="Variable: CUSTOM_DIRS" Target="CUSTOM_DIRS" Default="true|false" Description="Whether to enable downloading videos into custom directories" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: DOWNLOAD_MODE" Target="DOWNLOAD_MODE" Default="sequential|concurrent|limited" Description="Controls how downloads are scheduled and executed" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: MAX_CONCURRENT_DOWNLOADS" Target="MAX_CONCURRENT_DOWNLOADS" Default="3" Description="Maximum number of simultaneous downloads (used with limited mode)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: DOWNLOAD_DIR" Target="DOWNLOAD_DIR" Default="/downloads" Description="Path to where the downloads will be saved" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: DEFAULT_THEME" Target="DEFAULT_THEME" Default="light|dark|auto" Description="Default theme to use for the UI" Type="Variable" Display="always" Required="false" Mask="false"/>
+
+    <Config Name="Variable: AUDIO_DOWNLOAD_DIR" Target="AUDIO_DOWNLOAD_DIR" Default="" Description="Path to where audio-only downloads will be saved (defaults to DOWNLOAD_DIR if empty)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: DOWNLOAD_DIRS_INDEXABLE" Target="DOWNLOAD_DIRS_INDEXABLE" Default="true|false" Description="If true, the download dirs are indexable on the webserver" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: CREATE_CUSTOM_DIRS" Target="CREATE_CUSTOM_DIRS" Default="true|false" Description="Whether to support automatically creating directories if they do not exist" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: CUSTOM_DIRS_EXCLUDE_REGEX" Target="CUSTOM_DIRS_EXCLUDE_REGEX" Default="(^|/)[.@].*$" Description="Regular expression to exclude some custom directories from the drop-down" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: STATE_DIR" Target="STATE_DIR" Default="/downloads/.metube" Description="Path to where the queue persistence files will be saved" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: TEMP_DIR" Target="TEMP_DIR" Default="/downloads" Description="Path where intermediary download files will be saved" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: DELETE_FILE_ON_TRASHCAN" Target="DELETE_FILE_ON_TRASHCAN" Default="true|false" Description="If true, downloaded files are deleted when trashed from the UI" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: URL_PREFIX" Target="URL_PREFIX" Default="/" Description="Base path for the web server (for reverse proxy use)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: PUBLIC_HOST_URL" Target="PUBLIC_HOST_URL" Default="" Description="Base URL for download links shown in the UI" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HTTPS" Target="HTTPS" Default="false|true" Description="Use HTTPS instead of HTTP (requires CERTFILE and KEYFILE)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: CERTFILE" Target="CERTFILE" Default="" Description="HTTPS certificate file path" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: KEYFILE" Target="KEYFILE" Default="" Description="HTTPS key file path" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: PUBLIC_HOST_AUDIO_URL" Target="PUBLIC_HOST_AUDIO_URL" Default="" Description="Base URL for audio download links" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: OUTPUT_TEMPLATE" Target="OUTPUT_TEMPLATE" Default="%(title)s.%(ext)s" Description="Template for downloaded video filenames" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: OUTPUT_TEMPLATE_CHAPTER" Target="OUTPUT_TEMPLATE_CHAPTER" Default="%(title)s - %(section_number)s %(section_title)s.%(ext)s" Description="Template for chapter filenames" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: OUTPUT_TEMPLATE_PLAYLIST" Target="OUTPUT_TEMPLATE_PLAYLIST" Default="%(playlist_title)s/%(title)s.%(ext)s" Description="Template for playlist video filenames" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: DEFAULT_OPTION_PLAYLIST_STRICT_MODE" Target="DEFAULT_OPTION_PLAYLIST_STRICT_MODE" Default="true|false" Description="If true, strict playlist mode is enabled by default" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: DEFAULT_OPTION_PLAYLIST_ITEM_LIMIT" Target="DEFAULT_OPTION_PLAYLIST_ITEM_LIMIT" Default="0" Description="Maximum number of playlist items that can be downloaded (0 = no limit)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: YTDL_OPTIONS" Target="YTDL_OPTIONS" Default="" Description="Additional options to pass to yt-dlp in JSON format" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: YTDL_OPTIONS_FILE" Target="YTDL_OPTIONS_FILE" Default="" Description="Path to JSON file for yt-dlp options" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: ROBOTS_TXT" Target="ROBOTS_TXT" Default="" Description="Path to robots.txt file mounted in the container" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: LOGLEVEL" Target="LOGLEVEL" Default="DEBUG|INFO|WARNING|ERROR|CRITICAL|NONE" Description="Log level for the application" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: ENABLE_ACCESSLOG" Target="ENABLE_ACCESSLOG" Default="true|false" Description="Whether to enable access log" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: PUID" Target="PUID" Default="99" Description="User ID under which MeTube will run" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Group ID under which MeTube will run" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: UMASK" Target="UMASK" Default="022" Description="Umask value used by MeTube" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+    <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="This is the path to store downloaded videos" Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/metube" Mode="rw" Description="This is the path to store MeTube configuration files" Type="Path" Display="always" Required="true" Mask="false"/>
+</Container>
