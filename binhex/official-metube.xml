@@ -29,7 +29,7 @@
     <Config Name="Variable: DOWNLOAD_MODE" Target="DOWNLOAD_MODE" Default="sequential|concurrent|limited" Description="Controls how downloads are scheduled and executed" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: MAX_CONCURRENT_DOWNLOADS" Target="MAX_CONCURRENT_DOWNLOADS" Default="3" Description="Maximum number of simultaneous downloads (used with limited mode)" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: DOWNLOAD_DIR" Target="DOWNLOAD_DIR" Default="/downloads" Description="Path to where the downloads will be saved" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="Variable: DEFAULT_THEME" Target="DEFAULT_THEME" Default="light|dark|auto" Description="Default theme to use for the UI" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: DEFAULT_THEME" Target="DEFAULT_THEME" Default="auto|light|dark" Description="Default theme to use for the UI" Type="Variable" Display="always" Required="false" Mask="false"/>
 
     <Config Name="Variable: AUDIO_DOWNLOAD_DIR" Target="AUDIO_DOWNLOAD_DIR" Default="" Description="Path to where audio-only downloads will be saved (defaults to DOWNLOAD_DIR if empty)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: DOWNLOAD_DIRS_INDEXABLE" Target="DOWNLOAD_DIRS_INDEXABLE" Default="true|false" Description="If true, the download dirs are indexable on the webserver" Type="Variable" Display="advanced" Required="false" Mask="false"/>
