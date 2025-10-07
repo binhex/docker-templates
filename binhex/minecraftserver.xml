@@ -34,7 +34,7 @@
     <Config Name="Variable: ENABLE_WEBUI_CONSOLE" Target="ENABLE_WEBUI_CONSOLE" Default="yes|no" Description="Specify whether you want to enable the Web UI console." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: ENABLE_WEBUI_AUTH" Target="ENABLE_WEBUI_AUTH" Default="yes|no" Description="Specify whether you want authentication prompts when connecting to the Web UI console." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: WEBUI_USER" Target="WEBUI_USER" Default="admin" Description="Specify the Web UI username." Type="Variable" Display="always" Required="false" Mask="true"/>
-    <Config Name="Variable: WEBUI_PASS" Target="WEBUI_PASS" Default="" Description="Specify the Web UI password." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="Variable: WEBUI_PASS" Target="WEBUI_PASS" Default="admin" Description="Specify the Web UI password." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="Variable: WEBUI_CONSOLE_TITLE" Target="WEBUI_CONSOLE_TITLE" Default="Minecraft Java Server" Description="Specify the Web UI console title." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: CUSTOM_JAR_PATH" Target="CUSTOM_JAR_PATH" Default="/config/minecraft/minecraft_server.jar" Description="Specify the absolute path to custom Jar." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: JAVA_VERSION" Target="JAVA_VERSION" Default="latest|21|17|11|8" Description="Specify the version of Java Runtime." Type="Variable" Display="always" Required="false" Mask="false"/>
