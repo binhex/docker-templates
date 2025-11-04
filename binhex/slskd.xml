@@ -33,7 +33,7 @@
     <Config Name="Variable: SLSK_USERNAME" Target="SLSK_USERNAME" Default="" Description="Username for the Soulseek network." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="Variable: SLSK_PASSWORD" Target="SLSK_PASSWORD" Default="" Description="Password for the Soulseek network." Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="Variable: SLSK_LISTEN_PORT" Target="SLSK_LISTEN_PORT" Default="50300" Description="Port on which to listen for incoming connections." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="Variable: SHARED_PATHS" Target="SHARED_PATHS" Default="" Description="Comma-separated list of container paths to shared files." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: SHARED_PATHS" Target="SHARED_PATHS" Default="" Description="Comma-separated list of container paths to shared files. !!WARNING!! Be careful not to share sensitive information." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: INCOMPLETE_PATH" Target="INCOMPLETE_PATH" Default="/data/incomplete" Description="Path where incomplete downloads are saved." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: DOWNLOADS_PATH" Target="DOWNLOADS_PATH" Default="/data/completed" Description="Path where downloaded files are saved." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: WEBUI_HTTP_PORT" Target="WEBUI_HTTP_PORT" Default="8980" Description="HTTP port for web UI." Type="Variable" Display="always" Required="true" Mask="false"/>
