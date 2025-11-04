@@ -15,7 +15,7 @@
     <Support>https://forums.unraid.net/topic/THREAD/</Support>
     <Project>https://github.com/slskd/slskd</Project>
     <Overview>A modern client-server application for the Soulseek file-sharing network.</Overview>
-    <WebUI>http://[IP]:[PORT:8990]</WebUI>
+    <WebUI>http://[IP]:[PORT:8980]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/slskd.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/slskd-icon.png</Icon>
     <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
