@@ -33,13 +33,15 @@
     <Config Name="Variable: SLSK_USERNAME" Target="SLSK_USERNAME" Default="" Description="Username for the Soulseek network." Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="Variable: SLSK_PASSWORD" Target="SLSK_PASSWORD" Default="" Description="Password for the Soulseek network." Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="Variable: SLSK_LISTEN_PORT" Target="SLSK_LISTEN_PORT" Default="50300" Description="Port on which to listen for incoming connections." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="Variable: SHARED_PATHS" Target="SHARED_PATHS" Default="" Description="Comma-separated list of container paths to shared files. !!WARNING!! Be careful not to share sensitive information." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: SHARED_PATHS" Target="SHARED_PATHS" Default="" Description="Semi-colon separated list of container paths to shared files. !!WARNING!! Be careful not to share sensitive information." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: INCOMPLETE_PATH" Target="INCOMPLETE_PATH" Default="/data/incomplete" Description="Path where incomplete downloads are saved." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: DOWNLOADS_PATH" Target="DOWNLOADS_PATH" Default="/data/completed" Description="Path where downloaded files are saved." Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="Variable: WEBUI_HTTP_PORT" Target="WEBUI_HTTP_PORT" Default="8980" Description="HTTP port for web UI." Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="Variable: WEBUI_HTTPS_PORT" Target="WEBUI_HTTPS_PORT" Default="8990" Description="HTTPS port for web UI." Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="Variable: WEBUI_USERNAME" Target="WEBUI_USERNAME" Default="slskd" Description="Username for web UI authentication." Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="Variable: WEBUI_PASSWORD" Target="WEBUI_PASSWORD" Default="slskd" Description="Password for web UI authentication." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="Variable: UPLOAD_SPEED_LIMIT" Target="UPLOAD_SPEED_LIMIT" Default="2147483647" Description="Upload speed limit in bits/s." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: DOWNLOAD_SPEED_LIMIT" Target="DOWNLOAD_SPEED_LIMIT" Default="2147483647" Description="Download speed limit in bits/s." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: WEBUI_HTTP_PORT" Target="WEBUI_HTTP_PORT" Default="8980" Description="HTTP port for web UI." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: WEBUI_HTTPS_PORT" Target="WEBUI_HTTPS_PORT" Default="8990" Description="HTTPS port for web UI." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: WEBUI_USERNAME" Target="WEBUI_USERNAME" Default="slskd" Description="Username for web UI authentication." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: WEBUI_PASSWORD" Target="WEBUI_PASSWORD" Default="slskd" Description="Password for web UI authentication." Type="Variable" Display="always" Required="false" Mask="true"/>
     <Config Name="Variable: REMOTE_CONFIGURATION" Target="REMOTE_CONFIGURATION" Default="true|false" Description="Allow remote configuration (true/false)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: REMOTE_FILE_MANAGEMENT" Target="REMOTE_FILE_MANAGEMENT" Default="true|false" Description="Allow remote file management (true/false)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
 
