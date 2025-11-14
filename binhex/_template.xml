@@ -45,7 +45,7 @@
     <!--
     <Config Name="Variable: GLUETUN_INCOMING_PORT" Target="GLUETUN_INCOMING_PORT" Default="no|yes" Description="Specify whether to attempt to identify and configure the applications listening port when connected to the gluetun network." Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: GLUETUN_CONTROL_SERVER_USERNAME" Target="GLUETUN_CONTROL_SERVER_USERNAME" Default="controlserver" Description="Specify the username for the gluetun HTTP Control Server" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="Variable: GLUETUN_CONTROL_SERVER_PASSWORD" Target="GLUETUN_CONTROL_SERVER_PASSWORD" Default="controlserver" Description="Specify the password for the gluetun HTTP Control Server" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: GLUETUN_CONTROL_SERVER_PASSWORD" Target="GLUETUN_CONTROL_SERVER_PASSWORD" Default="controlserver" Description="Specify the password for the gluetun HTTP Control Server" Type="Variable" Display="always" Required="false" Mask="true"/>
     -->
 
     <Config Name="Variable: HEALTHCHECK_COMMAND" Target="HEALTHCHECK_COMMAND" Default="" Description="The command to execute in the healthcheck script, if not specified this will be DNS and HTTPS checks against google.com." Type="Variable" Display="advanced" Required="false" Mask="false"/>
