@@ -12,7 +12,7 @@
     <GitHub>https://github.com/binhex/arch-seerr</GitHub>
     <ReadMe>https://github.com/binhex/documentation</ReadMe>
     <Support>https://forums.unraid.net/topic/122509-support-binhex-seerr/</Support>
-    <Project>https://https://github.com/sct/seerr/</Project>
+    <Project>https://github.com/seerr-team/seerr</Project>
     <Overview>Seerr is a free and open source software application for managing requests for your media library. It integrates with the media server of your choice: Jellyfin, Plex, and Emby. In addition, it integrates with your existing services, such as Sonarr, Radarr.</Overview>
     <WebUI>http://[IP]:[PORT:5055]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/seerr.xml</TemplateURL>
