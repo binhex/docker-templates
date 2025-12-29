@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>binhex-healarr</Name>
+	<Beta>false</Beta>
+    <Category>Tools:</Category>
+    <Repository>ghcr.io/binhex/arch-healarr</Repository>
+    <Registry>https://github.com/binhex/arch-healarr/pkgs/container/arch-healarr</Registry>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <ExtraParams>--restart=always</ExtraParams>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/binhex/arch-healarr</GitHub>
+    <ReadMe>https://github.com/binhex/documentation</ReadMe>
+    <Support>https://forums.unraid.net/topic/TBD/</Support>
+    <Project>https://github.com/binhex/arch-healarr</Project>
+    <Overview>Healarr monitors Docker containers for unhealthy status and automatically performs configurable actions (restart, stop, etc.) with retry logic to prevent false positives. It supports filtering by container label, environment variable, or name, and includes comprehensive logging.</Overview>
+    <WebUI></WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/healarr.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/healarr-icon.png</Icon>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+    <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+    <Date>2025-12-29</Date>
+    <Changes></Changes>
+    <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/healarr" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /var/run/docker.sock" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="Docker socket for container management - REQUIRED for healarr to function." Type="Path" Display="always" Required="true" Mask="false"/>
+
+    <Config Name="Variable: MONITOR_INTERVAL" Target="MONITOR_INTERVAL" Default="60" Description="Time in seconds between checking for containers that are 'unhealthy' (default: 60)." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: RETRY_COUNT" Target="RETRY_COUNT" Default="3" Description="Number of times to verify unhealthy status before taking action (default: 3)." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: RETRY_DELAY" Target="RETRY_DELAY" Default="10" Description="Time in seconds to wait between retry health checks (default: 10)." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: ACTION" Target="ACTION" Default="restart" Description="Docker action to execute on unhealthy containers: restart, stop, pause, unpause, kill (default: restart)." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: CONTAINER_LABEL" Target="CONTAINER_LABEL" Default="" Description="Filter containers by label (e.g. 'com.example.monitor=true'). Filters use OR logic." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: CONTAINER_ENV_VAR" Target="CONTAINER_ENV_VAR" Default="" Description="Filter containers by environment variable (e.g. 'MONITOR_ENABLED=true'). Filters use OR logic." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: CONTAINER_NAME" Target="CONTAINER_NAME" Default="" Description="Filter containers by name, comma-separated (e.g. 'sonarr,radarr,plex'). Filters use OR logic." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: LOG_LEVEL" Target="LOG_LEVEL" Default="1" Description="Logging level: 0=DEBUG, 1=INFO, 2=WARN, 3=ERROR (default: 1)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: ENABLE_HEALTHCHECK" Target="ENABLE_HEALTHCHECK" Default="yes|no" Description="Enable or disable healthchecks (this container)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HEALTHCHECK_COMMAND" Target="HEALTHCHECK_COMMAND" Default="" Description="The command to execute in the healthcheck script, if not specified this will be DNS and HTTPS checks against google.com." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HEALTHCHECK_ACTION" Target="HEALTHCHECK_ACTION" Default="" Description="The action to execute if the healthcheck command returns a non zero exit code, if not specified the action will be 'exit 1', if you want the container to exit on failure then set the action to 'kill 1'." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HEALTHCHECK_HOSTNAME" Target="HEALTHCHECK_HOSTNAME" Default="google.com" Description="The hostname used when performing HTTPS and DNS healthchecking." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: PUID" Target="PUID" Default="99" Description="User ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Group ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: UMASK" Target="UMASK" Default="000" Description="UMASK for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+</Container>
