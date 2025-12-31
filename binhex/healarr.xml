@@ -11,7 +11,7 @@
     <Shell>bash</Shell>
     <GitHub>https://github.com/binhex/arch-healarr</GitHub>
     <ReadMe>https://github.com/binhex/documentation</ReadMe>
-    <Support>https://forums.unraid.net/topic/TBD/</Support>
+    <Support>https://forums.unraid.net/topic/196150-support-binhex-healarr/</Support>
     <Project>https://github.com/binhex/arch-healarr</Project>
     <Overview>Healarr monitors Docker containers for unhealthy status and automatically performs configurable actions (restart, stop, etc.) with retry logic to prevent false positives. It supports filtering by container label, environment variable, or name, and includes comprehensive logging.</Overview>
     <WebUI></WebUI>
