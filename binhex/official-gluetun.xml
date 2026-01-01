@@ -86,18 +86,18 @@
     <Config Name="Variable: FIREWALL_OUTBOUND_SUBNETS" Target="FIREWALL_OUTBOUND_SUBNETS" Default="" Description="Comma separated subnets that Gluetun is allowed to access" Type="Variable" Display="always" Required="false" Mask="false"/>
 
     <!-- DNS Configuration -->
-    <Config Name="Variable: DOT" Target="DOT" Default="on" Description="Activate DNS over TLS with Unbound" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="Variable: DOT_PROVIDERS" Target="DOT_PROVIDERS" Default="cloudflare|google|quad9|quadrant|cleanbrowsing" Description="DNS over TLS providers (cloudflare, google, quad9, etc.)" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="Variable: DOT_CACHING" Target="DOT_CACHING" Default="on|off" Description="Unbound caching" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-		<Config Name="Variable: DOT_PRIVATE_ADDRESS" Target="DOT_PRIVATE_ADDRESS" Default="127.0.0.1/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,169.254.0.0/16,::1/128,fc00::/7,fe80::/10,::ffff:7f00:1/104,::ffff:a00:0/104,::ffff:a9fe:0/112,::ffff:ac10:0/108,::ffff:c0a8:0/112" Description="All private CIDRs ranges. Comma separated list of CIDRs or single IP addresses Unbound won't resolve to. Note that the default setting prevents DNS rebinding" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-    <Config Name="Variable: DOT_IPV6" Target="DOT_IPV6" Default="off|on" Description="DNS IPv6 resolution" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: DNS_SERVER" Target="DNS_SERVER" Default="on" Description="Activate DNS over TLS with Unbound" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: DNS_UPSTREAM_RESOLVERS" Target="DNS_UPSTREAM_RESOLVERS" Default="cloudflare|google|quad9|quadrant|cleanbrowsing" Description="DNS over TLS providers" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: DNS_CACHING" Target="DNS_CACHING" Default="on|off" Description="Unbound caching" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+		<Config Name="Variable: DNS_BLOCK_IP_PREFIXES" Target="DNS_BLOCK_IP_PREFIXES" Default="127.0.0.1/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,169.254.0.0/16,::1/128,fc00::/7,fe80::/10,::ffff:7f00:1/104,::ffff:a00:0/104,::ffff:a9fe:0/112,::ffff:ac10:0/108,::ffff:c0a8:0/112" Description="All private CIDRs ranges. Comma separated list of CIDRs or single IP addresses Unbound won't resolve to. Note that the default setting prevents DNS rebinding" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: DNS_UPSTREAM_IPV6" Target="DNS_UPSTREAM_IPV6" Default="off|on" Description="DNS IPv6 resolution" Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: DNS_UPDATE_PERIOD" Target="DNS_UPDATE_PERIOD" Default="24h" Description="Period to update block lists and restart Unbound" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: DNS_ADDRESS" Target="DNS_ADDRESS" Default="127.0.0.1" Description="IP address to use as DNS resolver" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: DNS_KEEP_NAMESERVER" Target="DNS_KEEP_NAMESERVER" Default="off|on" Description="Keep /etc/resolv.conf untouched" Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: BLOCK_MALICIOUS" Target="BLOCK_MALICIOUS" Default="on|off" Description="Block malicious hostnames and IPs with Unbound" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: BLOCK_SURVEILLANCE" Target="BLOCK_SURVEILLANCE" Default="off|on" Description="Block surveillance hostnames and IPs with Unbound" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: BLOCK_ADS" Target="BLOCK_ADS" Default="off|on" Description="Block ads hostnames and IPs with Unbound" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: UNBLOCK" Target="UNBLOCK" Default="" Description="Comma separated list of domain names to leave unblocked" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-    <Config Name="Variable: DNS_ADDRESS" Target="DNS_ADDRESS" Default="127.0.0.1" Description="IP address to use as DNS resolver" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-    <Config Name="Variable: DNS_KEEP_NAMESERVER" Target="DNS_KEEP_NAMESERVER" Default="off|on" Description="Keep /etc/resolv.conf untouched" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 
     <!-- HTTP Proxy -->
     <Config Name="Variable: HTTPPROXY" Target="HTTPPROXY" Default="off|on" Description="Enable the internal HTTP proxy" Type="Variable" Display="always" Required="false" Mask="false"/>
@@ -121,7 +121,7 @@
     <Config Name="Variable: HTTP_CONTROL_SERVER_AUTH_CONFIG_FILEPATH" Target="HTTP_CONTROL_SERVER_AUTH_CONFIG_FILEPATH" Default="" Description="Path to a TOML file containing authentication configuration for the HTTP Control Server" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 
     <!-- Health Check -->
-    <Config Name="Variable: HEALTH_TARGET_ADDRESS" Target="HEALTH_TARGET_ADDRESS" Default="cloudflare.com:443" Description="Address to ping on every internal health check" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HEALTH_TARGET_ADDRESSES" Target="HEALTH_TARGET_ADDRESSES" Default="cloudflare.com:443" Description="Comma-separated addresses to ping on every internal health check (replaces HEALTH_TARGET_ADDRESS)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: HEALTH_VPN_DURATION_INITIAL" Target="HEALTH_VPN_DURATION_INITIAL" Default="6s" Description="Initial duration to wait for the VPN to be ready" Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: HEALTH_VPN_DURATION_ADDITION" Target="HEALTH_VPN_DURATION_ADDITION" Default="5s" Description="Additional duration to add for each consecutive VPN failure" Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: HEALTH_SUCCESS_WAIT_DURATION" Target="HEALTH_SUCCESS_WAIT_DURATION" Default="5s" Description="Duration to wait after a success check" Type="Variable" Display="advanced" Required="false" Mask="false"/>
