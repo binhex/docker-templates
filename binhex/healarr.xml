@@ -23,8 +23,9 @@
     <Date>2025-12-29</Date>
     <Changes></Changes>
     <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/healarr" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="Path: /var/run/docker.sock" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="Docker socket for container management - REQUIRED for healarr to function." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /var/run/docker.sock" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="Docker socket for container management - REQUIRED if not using DOCKER_HOST. Remove this if using Docker socket proxy." Type="Path" Display="always" Required="false" Mask="false"/>
 
+    <Config Name="Variable: DOCKER_HOST" Target="DOCKER_HOST" Default="" Description="Docker socket proxy address (e.g. 'tcp://dockersocket:2375'). Use this as a secure alternative to mounting /var/run/docker.sock. Leave empty to use direct socket mount." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: MONITOR_INTERVAL" Target="MONITOR_INTERVAL" Default="60" Description="Time in seconds between checking for containers that are 'unhealthy' (default: 60)." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: RETRY_COUNT" Target="RETRY_COUNT" Default="3" Description="Number of times to verify unhealthy status before taking action (default: 3)." Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: RETRY_DELAY" Target="RETRY_DELAY" Default="10" Description="Time in seconds to wait between retry health checks (default: 10)." Type="Variable" Display="always" Required="false" Mask="false"/>
