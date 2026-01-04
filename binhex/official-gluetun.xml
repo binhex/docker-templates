@@ -128,7 +128,7 @@
     <Config Name="Variable: HEALTH_SERVER_ADDRESS" Target="HEALTH_SERVER_ADDRESS" Default="127.0.0.1:9999" Description="Internal health check server listening address" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 
     <!-- Updater -->
-    <Config Name="Variable: UPDATER_PERIOD" Target="UPDATER_PERIOD" Default="0" Description="Period to update VPN servers data (0 to disable)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: UPDATER_PERIOD" Target="UPDATER_PERIOD" Default="0" Description="Period to update VPN servers data e.g. '24h' (0 to disable)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: UPDATER_MIN_RATIO" Target="UPDATER_MIN_RATIO" Default="0.8" Description="Ratio of servers to be found for update to succeed" Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: UPDATER_VPN_SERVICE_PROVIDERS" Target="UPDATER_VPN_SERVICE_PROVIDERS" Default="" Description="List of providers to update servers data for" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 
