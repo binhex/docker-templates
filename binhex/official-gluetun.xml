@@ -87,17 +87,22 @@
 
     <!-- DNS Configuration -->
     <Config Name="Variable: DNS_SERVER" Target="DNS_SERVER" Default="on" Description="Activate DNS over TLS with Unbound" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="Variable: DNS_UPSTREAM_RESOLVERS" Target="DNS_UPSTREAM_RESOLVERS" Default="cloudflare|google|quad9|quadrant|cleanbrowsing" Description="DNS over TLS providers" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: DNS_UPSTREAM_RESOLVER_TYPE" Target="DNS_UPSTREAM_RESOLVER_TYPE" Default="dot|doh|plain" Description="How to connect to upstream DNS servers: dot (DNS over TLS), doh (DNS over HTTPS), plain (UDP DNS)" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: DNS_UPSTREAM_RESOLVERS" Target="DNS_UPSTREAM_RESOLVERS" Default="cloudflare" Description="Comma delimited list of DNS over TLS providers, valid values are: 'google', 'quad9', 'quadrant', 'cleanbrowsing', 'cira family', 'cira private', 'cira protected', 'cleanbrowsing adult', 'cleanbrowsing family', 'cleanbrowsing security', 'cloudflare family', 'cloudflare security', 'libredns', 'opendns', 'quad9 secured', 'quad9 unsecured'" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: DNS_UNBLOCK_HOSTNAMES" Target="DNS_UNBLOCK_HOSTNAMES" Default="" Description="Comma separated list of domain names to leave unblocked from the filtering" Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: DNS_CACHING" Target="DNS_CACHING" Default="on|off" Description="Unbound caching" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 		<Config Name="Variable: DNS_BLOCK_IP_PREFIXES" Target="DNS_BLOCK_IP_PREFIXES" Default="127.0.0.1/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,169.254.0.0/16,::1/128,fc00::/7,fe80::/10,::ffff:7f00:1/104,::ffff:a00:0/104,::ffff:a9fe:0/112,::ffff:ac10:0/108,::ffff:c0a8:0/112" Description="All private CIDRs ranges. Comma separated list of CIDRs or single IP addresses Unbound won't resolve to. Note that the default setting prevents DNS rebinding" Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: DNS_UPSTREAM_IPV6" Target="DNS_UPSTREAM_IPV6" Default="off|on" Description="DNS IPv6 resolution" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-    <Config Name="Variable: DNS_UPDATE_PERIOD" Target="DNS_UPDATE_PERIOD" Default="24h" Description="Period to update block lists and restart Unbound" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: DNS_BLOCK_IPS" Target="DNS_BLOCK_IPS" Default="" Description="Comma separated list of IP addresses to not resolve public domains to" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: DNS_REBINDING_PROTECTION_EXEMPT_HOSTNAMES" Target="DNS_REBINDING_PROTECTION_EXEMPT_HOSTNAMES" Default="" Description="Comma separated list of public domain names to exclude from DNS rebinding protection" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: DNS_UPDATE_PERIOD" Target="DNS_UPDATE_PERIOD" Default="24h" Description="Period to update block lists and restart Unbound (e.g. 24h, 0 to disable)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: DNS_ADDRESS" Target="DNS_ADDRESS" Default="127.0.0.1" Description="IP address to use as DNS resolver" Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: DNS_KEEP_NAMESERVER" Target="DNS_KEEP_NAMESERVER" Default="off|on" Description="Keep /etc/resolv.conf untouched" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+    <!-- Blocks -->
     <Config Name="Variable: BLOCK_MALICIOUS" Target="BLOCK_MALICIOUS" Default="on|off" Description="Block malicious hostnames and IPs with Unbound" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: BLOCK_SURVEILLANCE" Target="BLOCK_SURVEILLANCE" Default="off|on" Description="Block surveillance hostnames and IPs with Unbound" Type="Variable" Display="always" Required="false" Mask="false"/>
     <Config Name="Variable: BLOCK_ADS" Target="BLOCK_ADS" Default="off|on" Description="Block ads hostnames and IPs with Unbound" Type="Variable" Display="always" Required="false" Mask="false"/>
-    <Config Name="Variable: UNBLOCK" Target="UNBLOCK" Default="" Description="Comma separated list of domain names to leave unblocked" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 
     <!-- HTTP Proxy -->
     <Config Name="Variable: HTTPPROXY" Target="HTTPPROXY" Default="off|on" Description="Enable the internal HTTP proxy" Type="Variable" Display="always" Required="false" Mask="false"/>
