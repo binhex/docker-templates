@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>binhex-soularr</Name>
+	<Beta>false</Beta>
+    <Category>Downloaders:</Category>
+    <Repository>ghcr.io/binhex/arch-soularr</Repository>
+    <Registry>https://github.com/binhex/arch-soularr/pkgs/container/arch-soularr</Registry>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <PrivilegedReq>false</PrivilegedReq>
+    <ExtraParams>--restart=always</ExtraParams>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/binhex/arch-soularr</GitHub>
+    <ReadMe>https://github.com/binhex/documentation</ReadMe>
+    <Support>https://forums.unraid.net/topic/index.php?topic=152959.0/</Support>
+    <Project>https://github.com/mrusse/soularr</Project>
+    <Overview>Soularr is a Python application that automates music downloads from Soulseek for Lidarr. It monitors Lidarr for wanted albums and searches Soulseek to download them, providing seamless integration between your music collection manager and the Soulseek network.</Overview>
+    <WebUI></WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/soularr.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/soularr-icon.png</Icon>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+    <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+    <Date>1970-01-01</Date>
+    <Changes></Changes>
+
+    <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/soularr" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
+	<Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="This is the container path to your downloaded files or user created content." Type="Path" Display="always" Required="true" Mask="false"/>
+
+    <Config Name="Variable: LIDARR_API_KEY" Target="LIDARR_API_KEY" Default="" Description="API key for Lidarr instance." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="Variable: LIDARR_HOST_URL" Target="LIDARR_HOST_URL" Default="http://lidarr:8686" Description="URL to Lidarr instance." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: LIDARR_DOWNLOAD_DIR" Target="LIDARR_DOWNLOAD_DIR" Default="/data/lidarr_downloads" Description="Download directory for Lidarr." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: LIDARR_DISABLE_SYNC" Target="LIDARR_DISABLE_SYNC" Default="False|True" Description="Disable syncing with Lidarr (True/False)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+    <Config Name="Variable: SLSKD_API_KEY" Target="SLSKD_API_KEY" Default="" Description="API key for Slskd instance." Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="Variable: SLSKD_HOST_URL" Target="SLSKD_HOST_URL" Default="http://slskd:5030" Description="URL to Slskd instance." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: SLSKD_URL_BASE" Target="SLSKD_URL_BASE" Default="/" Description="URL base path for Slskd." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: SLSKD_DOWNLOAD_DIR" Target="SLSKD_DOWNLOAD_DIR" Default="/data/slskd_downloads" Description="Download directory for Slskd." Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: SLSKD_DELETE_SEARCHES" Target="SLSKD_DELETE_SEARCHES" Default="False|True" Description="Delete searches after completion (True/False)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: SLSKD_STALLED_TIMEOUT" Target="SLSKD_STALLED_TIMEOUT" Default="3600" Description="Timeout in seconds for stalled downloads." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+    <Config Name="Variable: ENABLE_HEALTHCHECK" Target="ENABLE_HEALTHCHECK" Default="yes|no" Description="Enable or disable healthchecks." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HEALTHCHECK_COMMAND" Target="HEALTHCHECK_COMMAND" Default="" Description="The command or script to execute, if not specified then the script healthcheck.sh will be used (process, dns and https checking)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HEALTHCHECK_ACTION" Target="HEALTHCHECK_ACTION" Default="" Description="The action to execute if the healthcheck command returns a non zero exit code, if not specified the action will be 'exit 1', if you want the container to exit on failure then set the action to 'kill 1'." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HEALTHCHECK_HOSTNAME" Target="HEALTHCHECK_HOSTNAME" Default="cloudflare.com" Description="The hostname used when performing HTTPS and DNS healthchecking." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: PUID" Target="PUID" Default="99" Description="User ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Group ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: UMASK" Target="UMASK" Default="000" Description="UMASK for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+</Container>
