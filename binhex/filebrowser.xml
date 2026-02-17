@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>binhex-filebrowser</Name>
+	<Beta>false</Beta>
+    <Category>Productivity: Tools:</Category>
+    <Repository>ghcr.io/binhex/arch-filebrowser</Repository>
+    <Registry>https://github.com/binhex/arch-filebrowser/pkgs/container/arch-filebrowser</Registry>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <PrivilegedReq>false</PrivilegedReq>
+    <ExtraParams>--restart=always</ExtraParams>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/binhex/arch-filebrowser</GitHub>
+    <ReadMe>https://github.com/binhex/documentation</ReadMe>
+    <Support>https://forums.unraid.net/topic/THREAD/</Support>
+    <Project>https://github.com/filebrowser/filebrowser</Project>
+    <Overview>File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview and edit your files. It is a create-your-own-cloud-kind of software where you can just install it on your server, direct it to a path and access your files through a nice web interface.</Overview>
+    <WebUI>http://[IP]:[PORT:8125]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/filebrowser.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/filebrowser-icon.png</Icon>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+    <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+    <Date>1970-01-01</Date>
+    <Changes></Changes>
+    <Config Name="Port: Web Interface" Target="8125" Default="8125" Mode="tcp" Description="This is the Web UI port for the application." Type="Port" Display="always" Required="true" Mask="false"/>
+
+    <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/filebrowser" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /media" Target="/media" Default="/mnt/user" Mode="rw" Description="This is the container path to your media files, e.g. movies, tv, music, pictures etc." Type="Path" Display="always" Required="false" Mask="false"/>
+
+    <Config Name="Variable: FILEBROWSER_USERNAME" Target="FILEBROWSER_USERNAME" Default="admin" Description="Specify the username for the File Browser web interface" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: FILEBROWSER_PASSWORD" Target="FILEBROWSER_PASSWORD" Default="filebrowser" Description="Specify the password for the File Browser web interface" Type="Variable" Display="always" Required="true" Mask="true"/>
+    <Config Name="Variable: FILEBROWSER_ROOT" Target="FILEBROWSER_ROOT" Default="/media" Description="Specify the root path for the File Browser web interface" Type="Variable" Display="always" Required="true" Mask="false"/>
+    <Config Name="Variable: FILEBROWSER_BASEURL" Target="FILEBROWSER_BASEURL" Default="/" Description="Specify the base URL for the File Browser web interface" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: ENABLE_TLS" Target="ENABLE_TLS" Default="no|yes" Description="Enable or disable TLS for the File Browser web interface" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+    <Config Name="Variable: ENABLE_HEALTHCHECK" Target="ENABLE_HEALTHCHECK" Default="yes|no" Description="Enable or disable healthchecks." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HEALTHCHECK_COMMAND" Target="HEALTHCHECK_COMMAND" Default="" Description="The command or script to execute, if not specified then the script healthcheck.sh will be used (process, dns and https checking)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HEALTHCHECK_ACTION" Target="HEALTHCHECK_ACTION" Default="" Description="The action to execute if the healthcheck command returns a non zero exit code, if not specified the action will be 'exit 1', if you want the container to exit on failure then set the action to 'kill 1'." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: HEALTHCHECK_HOSTNAME" Target="HEALTHCHECK_HOSTNAME" Default="cloudflare.com" Description="The hostname used when performing HTTPS and DNS healthchecking." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: PUID" Target="PUID" Default="99" Description="User ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Group ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: UMASK" Target="UMASK" Default="000" Description="UMASK for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+</Container>
