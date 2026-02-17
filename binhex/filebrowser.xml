@@ -28,8 +28,6 @@
     <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/filebrowser" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="Path: /media" Target="/media" Default="/mnt/user" Mode="rw" Description="This is the container path to your media files, e.g. movies, tv, music, pictures etc." Type="Path" Display="always" Required="false" Mask="false"/>
 
-    <Config Name="Variable: FILEBROWSER_USERNAME" Target="FILEBROWSER_USERNAME" Default="admin" Description="Specify the username for the File Browser web interface" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="Variable: FILEBROWSER_PASSWORD" Target="FILEBROWSER_PASSWORD" Default="filebrowser" Description="Specify the password for the File Browser web interface" Type="Variable" Display="always" Required="true" Mask="true"/>
     <Config Name="Variable: FILEBROWSER_ROOT" Target="FILEBROWSER_ROOT" Default="/media" Description="Specify the root path for the File Browser web interface" Type="Variable" Display="always" Required="true" Mask="false"/>
     <Config Name="Variable: FILEBROWSER_BASEURL" Target="FILEBROWSER_BASEURL" Default="/" Description="Specify the base URL for the File Browser web interface" Type="Variable" Display="advanced" Required="true" Mask="false"/>
     <Config Name="Variable: ENABLE_TLS" Target="ENABLE_TLS" Default="no|yes" Description="Enable or disable TLS for the File Browser web interface" Type="Variable" Display="advanced" Required="false" Mask="false"/>
