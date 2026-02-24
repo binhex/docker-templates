@@ -1,26 +1,26 @@
 <?xml version="1.0"?>
 <Container version="2">
-    <Name>binhex-official-simple-cloudflare-solver</Name>
+    <Name>binhex-official-simple-google-solver</Name>
 	<Beta>false</Beta>
     <Category>Network:Other Other:</Category>
-    <Repository>ghcr.io/nlevee/simple-cloudflare-solver:sha-a3cdb8b</Repository>
-    <Registry>https://github.com/nlevee/simple-cloudflare-solver/pkgs/container/simple-cloudflare-solver</Registry>
+    <Repository>ghcr.io/nlevee/simple-google-solver:sha-a3cdb8b</Repository>
+    <Registry>https://github.com/nlevee/simple-google-solver/pkgs/container/simple-google-solver</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
     <PrivilegedReq>false</PrivilegedReq>
     <ExtraParams></ExtraParams>
     <Shell>bash</Shell>
-    <GitHub>https://github.com/nlevee/simple-cloudflare-solver</GitHub>
-    <Support>https://github.com/nlevee/simple-cloudflare-solver/issues</Support>
-    <Project>https://github.com/nlevee/simple-cloudflare-solver</Project>
-    <Overview>simple-cloudflare-solver is an API for bypassing Cloudflare's protection system. It can be used as a gateway by applications like Jackett and Prowlarr to access protected resources.</Overview>
+    <GitHub>https://github.com/nlevee/simple-google-solver</GitHub>
+    <Support>https://github.com/nlevee/simple-google-solver/issues</Support>
+    <Project>https://github.com/nlevee/simple-google-solver</Project>
+    <Overview>simple-google-solver is an API for bypassing google's protection system. It can be used as a gateway by applications like Jackett and Prowlarr to access protected resources.</Overview>
     <WebUI></WebUI>
-    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/official-simple-cloudflare-solver.xml</TemplateURL>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/official-simple-google-solver.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/flaresolverr-icon.png</Icon>
     <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
     <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
     <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
     <Date>1970-01-01</Date>
     <Changes></Changes>
-    <Config Name="Port: API TCP" Target="8080" Default="8191" Mode="tcp" Description="This is the TCP port that simple-cloudflare-solver listens for incoming requests." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: API TCP" Target="8080" Default="8191" Mode="tcp" Description="This is the TCP port that simple-google-solver listens for incoming requests." Type="Port" Display="always" Required="true" Mask="false"/>
 </Container>
