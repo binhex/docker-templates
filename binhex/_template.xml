@@ -3,14 +3,15 @@
 	<!-- Find and replace 'APPNAME' with the name of the application e.g. 'rustrover' -->
 	<!-- Find and replace 'PROJECTURL' with the project URL of the application e.g. 'https://www.jetbrains.com/rust/' -->
 	<!-- Find and replace 'OVERVIEWTEXT' with the description of the application e.g. 'My apps description.' -->
+    <!-- Find and replace 'NOTESTEXT' with the notes or additional information about the application e.g. '**Default authentication**&#10;Username: admin&#10;Password: filebrowser&#10;&#10;**Important**: Please ensure you change the default password after first login, you can do this through the web interface.' -->
 	<!-- Find and replace 'CACATEGORY' with the CA category of the application  e.g. 'Productivity: Tools:' -->
 	<!-- Find and replace 'THREAD' with the forum ID after creating the Support Thread e.g. '/146085-support-binhex-rustrover' -->
 	<!-- Find and replace '0000' with the Web UI port of the application e.g. '8080' -->
 
     <!-- Check extra-parameters, check network type -->
-
     <!-- Remove any unrequired paths, e.g. /data /media -->
     <!-- Remove line containing 'RemoveFromCA' -->
+    <!-- Remove gluetun variables if not required -->
     <!-- Remove these comments -->
     <Name>binhex-APPNAME</Name>
 	<Beta>false</Beta>
@@ -27,6 +28,7 @@
     <Support>https://forums.unraid.net/topic/THREAD/</Support>
     <Project>PROJECTURL</Project>
     <Overview>OVERVIEWTEXT</Overview>
+    <Requires>NOTESTEXT</Requires>
     <WebUI>http://[IP]:[PORT:0000]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/APPNAME.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/APPNAME-icon.png</Icon>
