@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>binhex-official-teamspeak-server6</Name>
+    <Beta>true</Beta>
+    <Category>Network:Voip</Category>
+    <Repository>teamspeaksystems/teamspeak6-server:latest</Repository>
+    <Registry>https://hub.docker.com/r/teamspeaksystems/teamspeak6-server</Registry>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <PrivilegedReq>false</PrivilegedReq>
+    <ExtraParams>--restart=unless-stopped --user 99:100</ExtraParams>
+    <Shell>sh</Shell>
+    <GitHub>https://github.com/teamspeak/teamspeak6-server</GitHub>
+    <ReadMe>https://hub.docker.com/r/teamspeaksystems/teamspeak6-server</ReadMe>
+    <Support>https://community.teamspeak.com/</Support>
+    <Project>https://teamspeak.com/en/</Project>
+    <Overview>TeamSpeak 6 Server (Beta). Tried and tested for nearly 25 years, TeamSpeak offers ideal voice communication for gaming, education and training, internal business communication, and staying in touch with friends and family. This is the official TeamSpeak 6 server Docker image from TeamSpeak Systems.&#13;&#10;&#13;&#10;NOTE: This is a Beta release. TeamSpeak 3 server licenses are NOT compatible with TeamSpeak 6, and there is currently no migration path from TeamSpeak 3 to TeamSpeak 6.</Overview>
+    <Requires>**License Required**: You MUST set TSSERVER_LICENSE_ACCEPTED to 'accept' to confirm you have read and accepted the TeamSpeak server license agreement — the server will NOT start without this.&#10;&#10;**Beta Status**: This is a beta release. Some features may be unstable or subject to change.&#10;&#10;**TS3 Incompatibility**: TeamSpeak 3 server licenses are NOT compatible with TS6. There is currently no migration path from TS3 to TS6.&#10;&#10;**Larger Licenses**: It is not yet possible to obtain or upgrade to a larger license for TeamSpeak 6.&#10;&#10;**File Transfer Port**: The internal container port for file transfers MUST match the external host port exactly — mismatches will cause client connectivity issues.</Requires>
+    <WebUI></WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/official-teamspeak.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/teamspeak-icon.png</Icon>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+    <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+    <Date>2026-02-25</Date>
+    <Changes></Changes>
+
+    <!-- Ports -->
+    <Config Name="Port: Voice" Target="9987" Default="9987" Mode="udp" Description="UDP port for TeamSpeak voice communication. Clients connect to this port to join the server." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: File Transfer" Target="30033" Default="30033" Mode="tcp" Description="TCP port used for file transfers between clients and the server. The internal container port MUST match the external host port." Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Port: Web Query" Target="10080" Default="10080" Mode="tcp" Description="TCP port for the HTTP Web Query interface. Enable with TSSERVER_QUERY_HTTP_ENABLED=1." Type="Port" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Port: SSH Query" Target="10022" Default="10022" Mode="tcp" Description="TCP port for the SSH Query interface. Enable with TSSERVER_QUERY_SSH_ENABLED=1." Type="Port" Display="advanced" Required="false" Mask="false"/>
+
+    <!-- Data Path -->
+    <Config Name="Path: /config" Target="/var/tsserver" Default="/mnt/user/appdata/official-teamspeak6" Mode="rw" Description="Container path for all TeamSpeak server data including the SQLite database, logs, crash dumps, and configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
+
+    <!-- Required Variables -->
+    <Config Name="Variable: TSSERVER_LICENSE_ACCEPTED" Target="TSSERVER_LICENSE_ACCEPTED" Default="accept|deny" Description="Set to 'accept' to confirm you have read and accepted the TeamSpeak server license agreement. The server will NOT start without this value set." Type="Variable" Display="always" Required="true" Mask="false"/>
+
+    <!-- Core Variables -->
+    <Config Name="Variable: TSSERVER_DEFAULT_PORT" Target="TSSERVER_DEFAULT_PORT" Default="9987" Description="Permanently sets the default UDP voice port for the first virtual server created. Should match the Voice port mapping above." Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: TSSERVER_FILE_TRANSFER_PORT" Target="TSSERVER_FILE_TRANSFER_PORT" Default="30033" Description="TCP port used for file transfers. Must match the File Transfer port mapping above — internal and external ports MUST be identical." Type="Variable" Display="always" Required="false" Mask="false"/>
+
+    <!-- Query Variables -->
+    <Config Name="Variable: TSSERVER_QUERY_ADMIN_PASSWORD" Target="TSSERVER_QUERY_ADMIN_PASSWORD" Default="" Description="Override the query password for the built-in serveradmin account. If left blank, a random password is generated on first start and printed to the container logs." Type="Variable" Display="always" Required="false" Mask="true"/>
+    <Config Name="Variable: TSSERVER_QUERY_HTTP_ENABLED" Target="TSSERVER_QUERY_HTTP_ENABLED" Default="0" Description="Set to '1' to enable the HTTP Web Query interface. Also ensure the Web Query port is published above." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: TSSERVER_QUERY_HTTP_PORT" Target="TSSERVER_QUERY_HTTP_PORT" Default="10080" Description="Port on which the HTTP Web Query interface listens. Default: 10080." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: TSSERVER_QUERY_SSH_ENABLED" Target="TSSERVER_QUERY_SSH_ENABLED" Default="0" Description="Set to '1' to enable the SSH Query interface. Also ensure the SSH Query port is published above." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: TSSERVER_QUERY_SSH_PORT" Target="TSSERVER_QUERY_SSH_PORT" Default="10022" Description="Port on which the SSH Query interface listens. Default: 10022." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+    <!-- Database Variables -->
+    <Config Name="Variable: TSSERVER_DATABASE_PLUGIN" Target="TSSERVER_DATABASE_PLUGIN" Default="sqlite3|mariadb" Description="Database backend to use. 'sqlite3' (default, no external DB needed) or 'mariadb' for a MariaDB/MySQL database." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: TSSERVER_DATABASE_HOST" Target="TSSERVER_DATABASE_HOST" Default="" Description="Hostname or IP address of the MariaDB database server. Only required when TSSERVER_DATABASE_PLUGIN=mariadb." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: TSSERVER_DATABASE_PORT" Target="TSSERVER_DATABASE_PORT" Default="3306" Description="Port of the MariaDB database server. Only required when TSSERVER_DATABASE_PLUGIN=mariadb." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: TSSERVER_DATABASE_NAME" Target="TSSERVER_DATABASE_NAME" Default="" Description="Name of the database to use. Only required when TSSERVER_DATABASE_PLUGIN=mariadb." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: TSSERVER_DATABASE_USERNAME" Target="TSSERVER_DATABASE_USERNAME" Default="" Description="Username for MariaDB authentication. Only required when TSSERVER_DATABASE_PLUGIN=mariadb." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Config Name="Variable: TSSERVER_DATABASE_PASSWORD" Target="TSSERVER_DATABASE_PASSWORD" Default="" Description="Password for MariaDB authentication. Only required when TSSERVER_DATABASE_PLUGIN=mariadb." Type="Variable" Display="advanced" Required="false" Mask="true"/>
+    <Config Name="Variable: TSSERVER_DATABASE_CLIENT_KEEP_DAYS" Target="TSSERVER_DATABASE_CLIENT_KEEP_DAYS" Default="30" Description="Number of days to retain client records in the database before pruning. Default: 30." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
