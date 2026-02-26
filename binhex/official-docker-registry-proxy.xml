@@ -1,14 +1,5 @@
 <?xml version="1.0"?>
 <Container version="2">
-	<!-- Find and replace 'binhex-official-docker-registry-proxy' with the name of the application -->
-	<!-- Find and replace 'https://github.com/rpardini/docker-registry-proxy' with the project URL of the application -->
-	<!-- Find and replace 'A caching proxy for Docker; allows centralised management of (multiple) registries and their authentication; caches images from any registry. Caches the potentially huge blob/layer requests (for bandwidth/time savings), and optionally caches manifest requests ("pulls") to avoid rate-limiting.' with the description of the application -->
-	<!-- Find and replace 'Other:' with the CA category of the application -->
-	<!-- Find and replace 'https://github.com/rpardini/docker-registry-proxy/issues' with the forum ID after creating the Support https://github.com/rpardini/docker-registry-proxy/issues -->
-	<!-- Find and replace '3128' with the Web UI port of the application -->
-    <!-- Remove any unrequired paths, e.g. /data /media -->
-    <!-- Remove line containing 'RemoveFromCA' -->
-    <!-- Remove these comments -->
     <Name>binhex-official-docker-registry-proxy</Name>
 	<Beta>false</Beta>
     <Category>Other:</Category>
