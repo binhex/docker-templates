@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-    <Name>binhex-official-teamspeak-server6</Name>
+    <Name>binhex-official-teamspeak6-server</Name>
     <Beta>true</Beta>
     <Category>Network:Voip</Category>
     <Repository>teamspeaksystems/teamspeak6-server:latest</Repository>
@@ -17,7 +17,7 @@
     <Overview>TeamSpeak 6 Server (Beta). Tried and tested for nearly 25 years, TeamSpeak offers ideal voice communication for gaming, education and training, internal business communication, and staying in touch with friends and family. This is the official TeamSpeak 6 server Docker image from TeamSpeak Systems.&#13;&#10;&#13;&#10;NOTE: This is a Beta release. TeamSpeak 3 server licenses are NOT compatible with TeamSpeak 6, and there is currently no migration path from TeamSpeak 3 to TeamSpeak 6.</Overview>
     <Requires>**License Required**: You MUST set TSSERVER_LICENSE_ACCEPTED to 'accept' to confirm you have read and accepted the TeamSpeak server license agreement — the server will NOT start without this.&#10;&#10;**Beta Status**: This is a beta release. Some features may be unstable or subject to change.&#10;&#10;**TS3 Incompatibility**: TeamSpeak 3 server licenses are NOT compatible with TS6. There is currently no migration path from TS3 to TS6.&#10;&#10;**Larger Licenses**: It is not yet possible to obtain or upgrade to a larger license for TeamSpeak 6.&#10;&#10;**File Transfer Port**: The internal container port for file transfers MUST match the external host port exactly — mismatches will cause client connectivity issues.</Requires>
     <WebUI></WebUI>
-    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/official-teamspeak-server6.xml</TemplateURL>
+    <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/official-teamspeak6-server.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/teamspeak-icon.png</Icon>
     <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
     <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
