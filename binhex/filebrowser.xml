@@ -34,6 +34,7 @@
     <Config Name="Variable: ENABLE_TLS" Target="ENABLE_TLS" Default="no|yes" Description="Enable or disable TLS for the File Browser web interface" Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: ENABLE_AUTHENTICATION" Target="ENABLE_AUTHENTICATION" Default="yes|no" Description="Enable or disable authentication for the File Browser web interface" Type="Variable" Display="always" Required="false" Mask="false"/>
 
+    <Config Name="Variable: ADDITIONAL_PARAMETERS" Target="ADDITIONAL_PARAMETERS" Default="" Description="Additional parameters to pass to the File Browser cli" Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: ENABLE_HEALTHCHECK" Target="ENABLE_HEALTHCHECK" Default="yes|no" Description="Enable or disable healthchecks." Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: HEALTHCHECK_COMMAND" Target="HEALTHCHECK_COMMAND" Default="" Description="The command or script to execute, if not specified then the script healthcheck.sh will be used (process, dns and https checking)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
     <Config Name="Variable: HEALTHCHECK_ACTION" Target="HEALTHCHECK_ACTION" Default="" Description="The action to execute if the healthcheck command returns a non zero exit code, if not specified the action will be 'exit 1', if you want the container to exit on failure then set the action to 'kill 1'." Type="Variable" Display="advanced" Required="false" Mask="false"/>
